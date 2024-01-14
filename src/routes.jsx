@@ -4,39 +4,25 @@ import { GigIndex } from './pages/GigIndex.jsx'
 import { ReviewIndex } from './pages/ReviewIndex.jsx'
 import { ChatApp } from './pages/Chat.jsx'
 import { AdminApp } from './pages/AdminIndex.jsx'
+import { GigSeller } from './pages/GigSeller.jsx'
 
 // Routes accesible from the main navigation (in AppHeader)
 const routes = [
     {
         path: '/',
         component: <HomePage />,
-        label: 'Home 🏠',
+        label: 'LANCERR *',
     },
     {
-        path: 'car',
+        path: 'explore',
         component: <GigIndex />,
-        label: 'Cars'
+        label: 'Explore'
     },
     {
-        path: 'review',
-        component: <ReviewIndex />,
-        label: 'Reviews'
+        path: 'Seller',
+        component: <GigSeller />,
+        label: 'Become a Seller'
     },
-    {
-        path: 'chat',
-        component: <ChatApp />,
-        label: 'Chat'
-    },
-    {
-        path: 'about',
-        component: <AboutUs />,
-        label: 'About us'
-    },
-    {
-        path: 'admin',
-        component: <AdminApp />,
-        label: 'Admin Only'
-    }
 ]
 
 export default routes

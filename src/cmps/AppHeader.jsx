@@ -44,7 +44,7 @@ export function AppHeader() {
                             {user.imgUrl && <img src={user.imgUrl} />}
                             {user.fullname}
                         </Link>
-                        <span className="score">{user.score?.toLocaleString()}</span>
+                        
                         <button onClick={onLogout}>Logout</button>
                     </span>
                 }
