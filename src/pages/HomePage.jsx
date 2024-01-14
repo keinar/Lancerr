@@ -4,26 +4,26 @@ import { CHANGE_COUNT } from '../store/reducers/user.reducer'
 
 
 export function HomePage() {
-    const dispatch = useDispatch()
-    const count = useSelector(storeState => storeState.userModule.count)
-
-    function changeCount(diff) {
-        console.log('Changing count by:', diff);
-        dispatch({ type: CHANGE_COUNT, diff })
-    }
-
+    // Mock data for tags 
+    const allTags = ["logo-design", "wordpress", "voice-over", "artistic", "professional", "accessible"]
+    
     return (
         <section>
             <h2>
-                Count {count}
-                <button onClick={() => {
-                    changeCount(1)
-                }}>+</button>
-                <button onClick={() => {
-                    changeCount(10)
-                }}>+10</button>
+            Here, we will display all the tags. <br/>
+             After selecting a tag, we will navigate to list of gigs with link to gig-details
             </h2 >
-            <img src={'img/vite.svg'} style={{width: '100px'}} />
+          
+
+            <ul>
+                {allTags.map((tag, index) => (
+                    <li key={index}>
+                        <button onClick={() => navigateToGigsPage(tag)}>
+                            {tag}
+                        </button>
+                    </li>
+                ))}
+            </ul>
         </section >
     )
 }

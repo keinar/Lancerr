@@ -54,7 +54,7 @@ export function AppHeader() {
                     </section>
                 }
             </nav>
-            <h1>My App</h1>
+            <h1>Find the right freeLANCERR <br/> service, right away </h1>
         </header>
     )
 }

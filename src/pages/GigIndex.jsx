@@ -6,7 +6,7 @@ import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 import { userService } from '../services/user.service.js'
 import { carService } from '../services/car.service.js'
 
-export function CarIndex() {
+export function GigIndex() {
 
     const cars = useSelector(storeState => storeState.carModule.cars)
 

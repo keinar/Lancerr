@@ -1,6 +1,6 @@
 import { HomePage } from './pages/HomePage.jsx'
 import { AboutUs } from './pages/AboutUs.jsx'
-import { CarIndex } from './pages/CarIndex.jsx'
+import { GigIndex } from './pages/GigIndex.jsx'
 import { ReviewIndex } from './pages/ReviewIndex.jsx'
 import { ChatApp } from './pages/Chat.jsx'
 import { AdminApp } from './pages/AdminIndex.jsx'
@@ -14,7 +14,7 @@ const routes = [
     },
     {
         path: 'car',
-        component: <carIndex />,
+        component: <GigIndex />,
         label: 'Cars'
     },
     {
