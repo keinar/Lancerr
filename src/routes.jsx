@@ -14,7 +14,7 @@ const routes = [
     },
     {
         path: 'car',
-        component: <GigsIndex />,
+        component: <carIndex />,
         label: 'Cars'
     },
     {

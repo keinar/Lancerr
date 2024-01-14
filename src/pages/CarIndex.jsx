@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
-import { loadCars, addCar, updateCar, removeCar, addToCart } from '../store/car.actions.js'
+import { loadCars, addCar, updateCar, removeCar, addToCart } from '../store/actions/gig.actions.js'
 
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 import { userService } from '../services/user.service.js'

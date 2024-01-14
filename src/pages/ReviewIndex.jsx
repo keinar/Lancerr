@@ -5,7 +5,7 @@ import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service'
 import { socketService, SOCKET_EVENT_REVIEW_ADDED } from '../services/socket.service'
 
 import { loadReviews, addReview, removeReview, getActionAddReview } from '../store/review.actions'
-import { loadUsers } from '../store/user.actions'
+import { loadUsers } from '../store/actions/user.actions'
 
 export function ReviewIndex() {
 

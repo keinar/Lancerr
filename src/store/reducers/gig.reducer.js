@@ -13,7 +13,7 @@ const initialState = {
     lastRemovedCar: null
 }
 
-export function carReducer(state = initialState, action) {
+export function gigReducer(state = initialState, action) {
     var newState = state
     var cars
     var cart

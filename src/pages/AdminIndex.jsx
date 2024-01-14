@@ -1,6 +1,6 @@
 import {useEffect} from 'react'
 import {useSelector} from 'react-redux'
-import { loadUsers, removeUser } from '../store/user.actions'
+import { loadUsers, removeUser } from '../store/actions/user.actions'
 
 export function AdminApp() {
     const users = useSelector(storeState => storeState.userModule.users)
