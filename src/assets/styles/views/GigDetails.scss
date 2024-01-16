@@ -1,0 +1,42 @@
+.gig-index{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas: "details packages";
+    .gig-details{
+        height: 58vh;
+        overflow-y: scroll;
+        grid-area: details;
+        .about-the-seller {
+            display: grid;
+            grid-auto-flow: column;
+            
+            .profile-picture{
+                width: 40px;
+                border-style: hidden;
+                border-radius: 50px;
+            }
+        }
+    
+    }
+    .package-content{
+        grid-area: packages;
+        .nav-container{
+            min-width: 25vw;
+            display: flex;
+            justify-content: space-around;
+            input{
+                display: none;
+            }
+            label{
+                text-align: center;
+                min-width: 33%;
+                padding: 1rem;
+                border: 1px solid #dadbdd;
+            }
+            input:checked+label{
+                font-weight: bold;
+                border-bottom: 3px solid #222325;
+            }
+        }
+    }
+}
