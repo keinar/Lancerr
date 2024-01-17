@@ -1,0 +1,50 @@
+.hero {
+  background-image: url(/src/assets/imgs/hero-xl-x1.webp);
+  border-radius: 16px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero-content {
+    width: 672px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      color: white;
+      font-size: 50px;
+
+      span {
+        color: $clr1;
+      }
+    }
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.trusted-by {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0.5;
+
+  ul {
+    display: flex;
+    gap: 64px;
+    list-style: none;
+  }
+  img {
+    height: 14px;
+    width: auto;
+  }
+
+  span {
+    color: white;
+    font-size: 12px;
+  }
+}
