@@ -1,26 +1,73 @@
-import React from "react";
+import { ChevronDown, Globe } from "lucide-react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export function AppHeader() {
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", isActive);
+
+    return () => {
+      window.removeEventListener("scroll", isActive);
+    };
+  }, []);
+
+  function isActive() {
+    window.scrollY > 30 ? setActive(true) : setActive(false);
+  }
   return (
-    <div className="navbar">
-      <div className="container">
-        <div className="logo">
-          {/* <Link to="/"> */}
-          <span className="text">lancerr</span>
-          <span className="dot">.</span>
-          {/* </Link> */}
-        </div>
-        <div className="links">
-          <span>Fiverr Business</span>
-          <span>Explore</span>
-          <span>English</span>
-          <span>Sign-In</span>
-          <span>Become a Seller</span>
-          <button className="join">Join</button>
+    <>
+      <div className="navbar">
+        <div className="container">
+          <div className="logo">
+            <Link to="/">
+              <span className="text">lancerr</span>
+              <span className="dot">.</span>
+            </Link>
+          </div>
+          <div className="search-input">
+            <form className="search-form dark">
+              <input
+                type="search"
+                className="long-placeholder"
+                placeholder="What service are you looking for today?"
+                value=""
+              />
+              <button></button>
+            </form>
+          </div>
+          <div className="links">
+            <span className="dropdown">
+              Fiverr Pro <ChevronDown size={16} />
+            </span>
+            <span className="dropdown">
+              Explore <ChevronDown size={16} />
+            </span>
+            <span>
+              <Globe size={14} /> English
+            </span>
+            <span>Become a Seller</span>
+            <span>Sign in</span>
+            <button className="join">Join</button>
+          </div>
         </div>
       </div>
-    </div>
+      {active && (
+        <div className="categories_menu">
+          <span>Graphics & Design</span>
+          <span>Programming & Tech</span>
+          <span>Digital Marketing</span>
+          <span>Video & Animation</span>
+          <span>Writing & Translation</span>
+          <span>Music & Audio</span>
+          <span>Business</span>
+          <span>Data</span>
+          <span>Photography</span>
+          <span>AI Services</span>
+        </div>
+      )}
+    </>
   );
 }
 
