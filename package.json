@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.5",
+    "@mui/material": "^5.15.5",
     "axios": "^1.5.0",
     "lucide-react": "^0.311.0",
     "react": "^18.2.0",
@@ -17,7 +21,9 @@
     "react-redux": "^8.1.2",
     "react-router": "^6.16.0",
     "react-router-dom": "^6.16.0",
+    "react-slick": "^0.29.0",
     "redux": "^4.2.1",
+    "slick-carousel": "^1.8.1",
     "socket.io-client": "^4.7.2"
   },
   "devDependencies": {
