@@ -7,6 +7,7 @@ import { AdminApp } from './pages/AdminIndex.jsx'
 import { GigSeller } from './pages/GigSeller.jsx'
 import GigDetails from './pages/GigDetails.jsx'
 import CreateGig from './pages/CreateGig.jsx'
+import Payment from './pages/Payment.jsx'
 
 // Routes accesible from the main navigation (in AppHeader)
 const routes = [
@@ -28,11 +29,17 @@ const routes = [
     {
         path: 'Details',
         component: <GigDetails />,
-        label: 'Become a Seller'
+        label: 'Gig Details'
     },
     {
         path: 'Create',
         component: <CreateGig />,
-        label: 'Become a Seller'
+        label: 'Create a new gig'
     },
+    {
+        path: 'Payment',
+        component: <Payment />,
+        label: 'Payment'
+    },
+
 ]

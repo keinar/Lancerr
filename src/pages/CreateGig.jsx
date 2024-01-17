@@ -32,6 +32,8 @@ export default function CreateGig() {
     <form onSubmit={onSubmit}>
       <input type="text" id='title' placeholder='type your title here' value={gig.title} onChange={onChange} required />
       <input type="number" id='price' placeholder='Enter Price' min = '0' value={gig.price} onChange={onChange} required/>
+      <input type="number" id='days-to-make' placeholder='Enter Duration' min = '0' value={gig.daysToMake} onChange={onChange} required/>
+      <input type="text" id='description' placeholder='Write Description' value={gig.description} onChange={onChange} required/>
       <button>Create</button>
     </form>
   )
