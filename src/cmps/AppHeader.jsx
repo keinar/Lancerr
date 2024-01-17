@@ -1,4 +1,4 @@
-import { ChevronDown, Globe } from "lucide-react";
+import { ChevronDown, Globe, Search } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -27,23 +27,27 @@ export function AppHeader() {
             </Link>
           </div>
           <div className="search-input">
-            <form className="search-form dark">
+            <form className="search-form">
               <input
                 type="search"
                 className="long-placeholder"
                 placeholder="What service are you looking for today?"
                 value=""
               />
-              <button></button>
+              <button>
+                <Search size={18} color="white" />
+              </button>
             </form>
           </div>
           <div className="links">
             <span className="dropdown">
               Fiverr Pro <ChevronDown size={16} />
             </span>
-            <span className="dropdown">
-              Explore <ChevronDown size={16} />
-            </span>
+            <Link to={"/explore"}>
+              <span className="dropdown">
+                Explore <ChevronDown size={16} />
+              </span>
+            </Link>
             <span>
               <Globe size={14} /> English
             </span>
