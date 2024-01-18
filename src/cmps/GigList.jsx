@@ -43,6 +43,7 @@ const GigList = () => {
 
   return (
     <div>
+      <h1>Explore Page</h1>
       <h2>Gig List</h2>
       <ul>
         {gigs.map(gig => (
