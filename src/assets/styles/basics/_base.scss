@@ -1,48 +1,48 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ::selection {
-    background-color: $clr1;
-    color: $clr6;
+  background-color: $clr1;
+  color: $clr6;
 }
 
 html {
-    font-family: montserrat;
-    line-height: 1.6;
-    color: $clr2;
+  font-family: "Noto Sans", sans-serif;
+  color: $clr2;
 }
 
 body {
-    font-size: rem(18px);
-    margin: 0;
-    max-width: 1024px;
-    margin: auto;
+  font-size: rem(18px);
+  margin: 0;
+  margin: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: caveat;
-    margin: 0 0 0.6em;
-    line-height: 1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.6em;
+  line-height: 1;
+  font-weight: 500;
 }
 
-
-section, main, footer {
-    padding: 5px;
+section,
+main,
+footer {
+  padding: 5px;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 p {
-    margin: 0 0 1em;
+  margin: 0 0 1em;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
-}
-

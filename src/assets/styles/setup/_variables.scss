@@ -1,27 +1,23 @@
-// colors
-$primary-color: #1dbf73; // for logo dot & join button & search button
-$secondary-color: #404145; // logo text color & titles
 $primary-text-color: #222325;
-$clr1: #ce2e6c;
-$clr2: #4f3a65;
-$clr3: #574f7d;
-$clr4: #95adbe;
+$clr1: #1dbf73; // for logo dot & join button & search button
+$clr2: #404145; // logo text color & titles
+$clr4: #62646a;
 $clr5: #dff0ea;
 $clr6: #fff;
-$clr7: #222;
+$clr7: #003912;
 
 // Background colors
 $background-color-lg: #f5f5f5; // light gray background color
 $background-color-primary: #fff; // Dark background color
 
 // Button colors
-$button-color: $primary-color;
+$button-color: $clr1;
 $button-text-color: $background-color-primary;
-$button-hover-color: darken($primary-color, 10%);
+$button-hover-color: darken($clr1, 10%);
 
 // Link colors
 $link-color: #74767e;
-$link-hover-color: $primary-color;
+$link-hover-color: $clr1;
 
 // Border colors
 $border-color: #dddddd;
@@ -33,9 +29,4 @@ $footer-background: $background-color-primary;
 // Breakpoints
 $mobile-breakpoint: 460px;
 $narrow-breakpoint: 720px;
-$normal-breakpoint: 960px;
-
-// Breakpoints
-$mobile-breakpoint: 460px;
-$narrow-breakpoint: 720px;
-$normal-breakpoint: 960px;
+$normal-breakpoint: 1400px;

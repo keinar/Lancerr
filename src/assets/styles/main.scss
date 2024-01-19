@@ -11,22 +11,17 @@
 @import "basics/links";
 @import "basics/forms";
 
-
 // Views
 @import "views/AboutUs";
 @import "views/HomePage";
 @import "views/CarIndex";
 @import "views/ReviewIndex";
 @import "views/UserDetails";
+@import "views/GigDetails.scss";
 
 // Components
 @import "cmps/AppHeader";
 @import "cmps/AppFooter";
 @import "cmps/UserMsg";
 @import "cmps/ShoppingCart";
-
-
-
-
-
-
+@import "cmps/ImageCarousel.scss";
