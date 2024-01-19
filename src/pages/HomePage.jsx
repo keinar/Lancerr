@@ -97,15 +97,3 @@ export function HomePage() {
     </main>
   );
 }
-
-//     <section className="main-container">
-//       <h2>Popular services</h2>
-
-//       <ul>
-//         {allTags.map((tag, index) => (
-//           <li key={index}>
-//             <button onClick={() => navigateToGigsPage(tag)}>{tag}</button>
-//           </li>
-//         ))}
-//       </ul>
-//     </section>

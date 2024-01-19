@@ -40,7 +40,7 @@ export function AppHeader() {
             </form>
           </div>
           <div className="links">
-            <span className="dropdown">
+            {/* <span className="dropdown">
               Fiverr Pro <ChevronDown size={16} />
             </span>
             <Link to={"/gig"}>
@@ -50,7 +50,7 @@ export function AppHeader() {
             </Link>
             <span>
               <Globe size={14} /> English
-            </span>
+            </span> */}
             <span>Become a Seller</span>
             <span>Sign in</span>
             <button className="join">Join</button>
