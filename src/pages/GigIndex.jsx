@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 import { userService } from '../services/user.service.js'
-import { carService } from '../services/car.service.js'
+import { gigService } from '../services/gig.service.js'
 import GigList from '../cmps/GigList.jsx'
 
 export function GigIndex() {
