@@ -84,6 +84,94 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo...",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i102",
+                "title": "I will design your logo1",
+                "price": 12,
+                "owner": {
+                  "_id": "u102",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo1...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i103",
+                "title": "I will design your logo2",
+                "price": 12,
+                "owner": {
+                  "_id": "u103",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo2...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i104",
+                "title": "I will design your logo3",
+                "price": 12,
+                "owner": {
+                  "_id": "u104",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo3...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i101",
+                "title": "I will design your logo",
+                "price": 12,
+                "owner": {
+                  "_id": "u101",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo...",
                 "imgUrl": "",
                 "tags": [
                   "logo-design",
@@ -158,7 +246,442 @@ function _createGigs() {
                   "accessible"
                 ],
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
-              }
+              },            {
+                "_id": "i101",
+                "title": "I will design your logo",
+                "price": 12,
+                "owner": {
+                  "_id": "u101",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i102",
+                "title": "I will design your logo1",
+                "price": 12,
+                "owner": {
+                  "_id": "u102",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo1...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i103",
+                "title": "I will design your logo2",
+                "price": 12,
+                "owner": {
+                  "_id": "u103",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo2...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i104",
+                "title": "I will design your logo3",
+                "price": 12,
+                "owner": {
+                  "_id": "u104",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo3...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },            {
+                "_id": "i101",
+                "title": "I will design your logo",
+                "price": 12,
+                "owner": {
+                  "_id": "u101",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i102",
+                "title": "I will design your logo1",
+                "price": 12,
+                "owner": {
+                  "_id": "u102",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo1...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i103",
+                "title": "I will design your logo2",
+                "price": 12,
+                "owner": {
+                  "_id": "u103",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo2...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i104",
+                "title": "I will design your logo3",
+                "price": 12,
+                "owner": {
+                  "_id": "u104",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo3...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },            {
+                "_id": "i101",
+                "title": "I will design your logo",
+                "price": 12,
+                "owner": {
+                  "_id": "u101",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i102",
+                "title": "I will design your logo1",
+                "price": 12,
+                "owner": {
+                  "_id": "u102",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo1...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i103",
+                "title": "I will design your logo2",
+                "price": 12,
+                "owner": {
+                  "_id": "u103",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo2...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i104",
+                "title": "I will design your logo3",
+                "price": 12,
+                "owner": {
+                  "_id": "u104",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo3...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },            {
+                "_id": "i101",
+                "title": "I will design your logo",
+                "price": 12,
+                "owner": {
+                  "_id": "u101",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i102",
+                "title": "I will design your logo1",
+                "price": 12,
+                "owner": {
+                  "_id": "u102",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo1...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i103",
+                "title": "I will design your logo2",
+                "price": 12,
+                "owner": {
+                  "_id": "u103",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo2...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i104",
+                "title": "I will design your logo3",
+                "price": 12,
+                "owner": {
+                  "_id": "u104",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo3...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },            {
+                "_id": "i101",
+                "title": "I will design your logo",
+                "price": 12,
+                "owner": {
+                  "_id": "u101",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i102",
+                "title": "I will design your logo1",
+                "price": 12,
+                "owner": {
+                  "_id": "u102",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo1...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i103",
+                "title": "I will design your logo2",
+                "price": 12,
+                "owner": {
+                  "_id": "u103",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo2...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i104",
+                "title": "I will design your logo3",
+                "price": 12,
+                "owner": {
+                  "_id": "u104",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo3...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
         ]
         utilService.saveToStorage(STORAGE_KEY, gigs)
     }

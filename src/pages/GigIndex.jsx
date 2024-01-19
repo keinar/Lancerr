@@ -19,9 +19,8 @@ export function GigIndex() {
     
     if (!gigs) return <div>Loading..</div>
     return (
-        <section className='gigs-index'>
-            <h3>Results for "Logo Design"
-               Website Design <br/> LIST OF GIGS</h3>
+        <section className='gigs-index main-container'>
+            <h1>Explore Page</h1>
             <main>
             <GigList gigs={gigs} />
             </main>
