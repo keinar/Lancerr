@@ -33,3 +33,23 @@
     }
 
 }
+
+
+.gig-list {
+
+    .gig-preview{
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .gig-img{
+            width: 100%;
+            aspect-ratio: 1.69/1;
+            object-fit: cover;
+            border: 1px solid #e4e5e7;
+            border-radius: .5em;
+            cursor: pointer;
+        }
+    }
+}

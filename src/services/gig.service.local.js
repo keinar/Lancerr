@@ -106,7 +106,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo1...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -128,7 +128,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo2...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -150,7 +150,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo3...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -160,7 +160,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i101",
+                "_id": "i105",
                 "title": "I will design your logo",
                 "price": 12,
                 "owner": {
@@ -172,7 +172,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -182,7 +182,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i102",
+                "_id": "i106",
                 "title": "I will design your logo1",
                 "price": 12,
                 "owner": {
@@ -194,7 +194,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo1...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -204,7 +204,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i103",
+                "_id": "i107",
                 "title": "I will design your logo2",
                 "price": 12,
                 "owner": {
@@ -216,7 +216,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo2...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/de2rdmsca/image/upload/v1698329461/promote-your-facebook-page-to-country-targeted-audience_oppvsc.jpg",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -226,7 +226,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i104",
+                "_id": "i108",
                 "title": "I will design your logo3",
                 "price": 12,
                 "owner": {
@@ -247,7 +247,7 @@ function _createGigs() {
                 ],
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },            {
-                "_id": "i101",
+                "_id": "i109",
                 "title": "I will design your logo",
                 "price": 12,
                 "owner": {
@@ -269,7 +269,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i102",
+                "_id": "i110",
                 "title": "I will design your logo1",
                 "price": 12,
                 "owner": {
@@ -291,7 +291,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i103",
+                "_id": "i111",
                 "title": "I will design your logo2",
                 "price": 12,
                 "owner": {
@@ -303,7 +303,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo2...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/de2rdmsca/image/upload/v1698329461/promote-your-facebook-page-to-country-targeted-audience_oppvsc.jpg",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -313,7 +313,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i104",
+                "_id": "i112",
                 "title": "I will design your logo3",
                 "price": 12,
                 "owner": {
@@ -334,7 +334,7 @@ function _createGigs() {
                 ],
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },            {
-                "_id": "i101",
+                "_id": "i113",
                 "title": "I will design your logo",
                 "price": 12,
                 "owner": {
@@ -346,7 +346,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/de2rdmsca/image/upload/v1698329461/promote-your-facebook-page-to-country-targeted-audience_oppvsc.jpg",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -356,7 +356,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i102",
+                "_id": "i114",
                 "title": "I will design your logo1",
                 "price": 12,
                 "owner": {
@@ -368,7 +368,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo1...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -378,7 +378,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i103",
+                "_id": "i115",
                 "title": "I will design your logo2",
                 "price": 12,
                 "owner": {
@@ -390,7 +390,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo2...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -400,7 +400,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i104",
+                "_id": "i116",
                 "title": "I will design your logo3",
                 "price": 12,
                 "owner": {
@@ -421,7 +421,7 @@ function _createGigs() {
                 ],
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },            {
-                "_id": "i101",
+                "_id": "i117",
                 "title": "I will design your logo",
                 "price": 12,
                 "owner": {
@@ -433,7 +433,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -443,7 +443,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i102",
+                "_id": "i118",
                 "title": "I will design your logo1",
                 "price": 12,
                 "owner": {
@@ -455,7 +455,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo1...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679340/t-1_ozhsab.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -465,7 +465,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i103",
+                "_id": "i119",
                 "title": "I will design your logo2",
                 "price": 12,
                 "owner": {
@@ -477,7 +477,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo2...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676247/jason-2_ykqz4t.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -487,7 +487,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i104",
+                "_id": "i120",
                 "title": "I will design your logo3",
                 "price": 12,
                 "owner": {
@@ -508,7 +508,7 @@ function _createGigs() {
                 ],
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },            {
-                "_id": "i101",
+                "_id": "i121",
                 "title": "I will design your logo",
                 "price": 12,
                 "owner": {
@@ -520,7 +520,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676247/jason-2_ykqz4t.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -530,7 +530,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i102",
+                "_id": "i122",
                 "title": "I will design your logo1",
                 "price": 12,
                 "owner": {
@@ -542,7 +542,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo1...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679340/t-1_ozhsab.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -552,7 +552,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i103",
+                "_id": "i123",
                 "title": "I will design your logo2",
                 "price": 12,
                 "owner": {
@@ -574,7 +574,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i104",
+                "_id": "i124",
                 "title": "I will design your logo3",
                 "price": 12,
                 "owner": {
@@ -586,7 +586,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo3...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676247/jason-2_ykqz4t.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -595,7 +595,7 @@ function _createGigs() {
                 ],
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },            {
-                "_id": "i101",
+                "_id": "i125",
                 "title": "I will design your logo",
                 "price": 12,
                 "owner": {
@@ -617,7 +617,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i102",
+                "_id": "i126",
                 "title": "I will design your logo1",
                 "price": 12,
                 "owner": {
@@ -639,7 +639,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i103",
+                "_id": "i127",
                 "title": "I will design your logo2",
                 "price": 12,
                 "owner": {
@@ -651,7 +651,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo2...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679340/t-1_ozhsab.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -661,7 +661,7 @@ function _createGigs() {
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
-                "_id": "i104",
+                "_id": "i128",
                 "title": "I will design your logo3",
                 "price": 12,
                 "owner": {
@@ -673,7 +673,7 @@ function _createGigs() {
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo3...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676247/jason-2_ykqz4t.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
