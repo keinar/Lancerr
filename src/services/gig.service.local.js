@@ -11,20 +11,13 @@ export const gigService = {
     save,
     remove,
     getEmptyGig,
-    addCarMsg
+    addGigMsg
 }
 window.cs = gigService
 
-
-async function query(filterBy = { txt: '', price: 0 }) {
+_createGigs()
+async function query() {
     var gigs = await storageService.query(STORAGE_KEY)
-    if (filterBy.txt) {
-        const regex = new RegExp(filterBy.txt, 'i')
-        gigs = gigs.filter(gig => regex.test(gig.vendor) || regex.test(gig.description))
-    }
-    if (filterBy.price) {
-        gigs = gigs.filter(gig => gig.price <= filterBy.price)
-    }
     return gigs
 }
 
@@ -49,7 +42,7 @@ async function save(gig) {
     return savedGig
 }
 
-async function addCarMsg(gigId, txt) {
+async function addGigMsg(gigId, txt) {
     // Later, this is all done by the backend
     const gig = await getById(gigId)
     if (!gig.msgs) gig.msgs = []
@@ -74,6 +67,107 @@ function getEmptyGig() {
 
 
 // TEST DATA
+function _createGigs() {
+    let gigs = utilService.loadFromStorage(STORAGE_KEY)
+    if (!gigs || !gigs.length) {
+        gigs = [
+            {
+                "_id": "i101",
+                "title": "I will design your logo",
+                "price": 12,
+                "owner": {
+                  "_id": "u101",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i102",
+                "title": "I will design your logo1",
+                "price": 12,
+                "owner": {
+                  "_id": "u102",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo1...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i103",
+                "title": "I will design your logo2",
+                "price": 12,
+                "owner": {
+                  "_id": "u103",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo2...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              },
+              {
+                "_id": "i104",
+                "title": "I will design your logo3",
+                "price": 12,
+                "owner": {
+                  "_id": "u104",
+                  "fullname": "Dudu Da",
+                  "imgUrl": "url",
+                  "level": "basic/premium",
+                  "rate": 4
+                },
+                "daysToMake": 3,
+                "description": "Make a unique logo3...",
+                "imgUrl": "",
+                "tags": [
+                  "logo-design",
+                  "artistic",
+                  "professional",
+                  "accessible"
+                ],
+                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+              }
+        ]
+        utilService.saveToStorage(STORAGE_KEY, gigs)
+    }
+
+
+}
+
+
+
 // storageService.post(STORAGE_KEY, {vendor: 'Subali Rahok 2', price: 980}).then(x => console.log(x))
 
 
