@@ -4,22 +4,26 @@ import { useSelector } from 'react-redux'
 
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 import { userService } from '../services/user.service.js'
-import { carService } from '../services/car.service.js'
-import GigList from '../cmps/GigList.jsx'
+import { gigService } from '../services/gig.service.local.js'
+import {GigList} from '../cmps/GigList.jsx'
+import { loadGigs } from '../store/actions/gig.actions.js'
 
 export function GigIndex() {
 
-    // const gigs = useSelector(storeState => storeState.gigModule.gigs)
+    const gigs = useSelector(storeState => storeState.gigModule.gigs)
 
-  
-
+    useEffect(() => {
+        // Sanitize filterBy
+        loadGigs()        
+    }, [])
+    
+    if (!gigs) return <div>Loading..</div>
     return (
-        <div>
-            <h3>Results for "Logo Design"
-Website Design <br/> LIST OF GIGS</h3>
+        <section className='gigs-index main-container'>
+            <h1>Explore Page</h1>
             <main>
-            <GigList />
+            <GigList gigs={gigs} />
             </main>
-        </div>
+        </section>
     )
 }
