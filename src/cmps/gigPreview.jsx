@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function GigPreview({ gig }) {
     return <article className="gig-preview">
-        <Link to={`/gig/${gig._id}`}>
+        <Link to={`/details/${gig._id}`}>
             {/* <img src={`https://robohash.org/${robot.type}`} /> */}
             <img src={gig.imgUrl} alt="gig-img" />
         </Link>  
