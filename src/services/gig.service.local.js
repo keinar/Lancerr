@@ -11,7 +11,8 @@ export const gigService = {
     save,
     remove,
     getEmptyGig,
-    addGigMsg
+    addGigMsg,
+    
 }
 window.cs = gigService
 
@@ -36,7 +37,7 @@ async function save(gig) {
         savedGig = await storageService.put(STORAGE_KEY, gig)
     } else {
         // Later, owner is set by the backend
-        gig.owner = userService.getLoggedinUser()
+        // gig.owner = userService.getLoggedinUser()
         savedGig = await storageService.post(STORAGE_KEY, gig)
     }
     return savedGig
@@ -57,14 +58,41 @@ async function addGigMsg(gigId, txt) {
 
     return msg
 }
-
-function getEmptyGig() {
-    return {
-        vendor: 'Susita-' + (Date.now() % 1000),
-        price: utilService.getRandomIntInclusive(1000, 9000),
-    }
+function createGig(model = '', type = '', batteryStatus = 100) {
+  return {
+      model,
+      batteryStatus,
+      type
+  }
 }
 
+function getEmptyGig() {
+  const title = '';
+  const price = '';
+  const owner = {
+    _id: 'u101',
+    fullname: 'Dudu Da',
+    imgUrl: 'url',
+    level: 'basic/premium',
+    rate: 4
+  };
+  const daysToMake = '3';
+  const description = 'I will...';
+  const imgUrl = 'https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp';
+  const tags = ['logo-design', 'artistic', 'professional', 'accessible'];
+  const likedByUsers = ['mini-user'];
+
+  return {
+    title,
+    price,
+    owner,
+    daysToMake,
+    description,
+    imgUrl,
+    tags,
+    likedByUsers // for user-wishlist: use $in
+  };
+}
 
 // TEST DATA
 function _createGigs() {

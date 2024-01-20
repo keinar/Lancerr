@@ -27,14 +27,14 @@ export function HomePage() {
             Find the right <span>freelance</span> service, right away
           </h1>
 
-          <form class="search-form-home">
+          <form className="search-form-home">
             <input
               type="search"
-              class="long-placeholder"
+              className="long-placeholder"
               placeholder="Search for any service..."
             />
             <button>
-              <div class="submit-button-icon">
+              <div className="submit-button-icon">
                 <Search size={20} color="white" />
               </div>
             </button>

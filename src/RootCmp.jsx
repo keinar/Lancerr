@@ -6,12 +6,11 @@ import routes from "./routes";
 import { AppHeader } from "./cmps/AppHeader";
 import { AppFooter } from "./cmps/AppFooter";
 import { UserDetails } from "./pages/UserDetails";
-
 export function RootCmp() {
   return (
     <div>
       <AppHeader />
-      <main>
+      <main className="main-container">
         <Routes>
           {routes.map((route) => (
             <Route

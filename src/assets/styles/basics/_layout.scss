@@ -11,6 +11,8 @@
     }
   }
 
+
+
   @include for-narrow-layout {
     grid-template-columns:
       minmax(20px, 1fr)
@@ -35,4 +37,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
+}
+
+main.main-container{
+    min-height: 100vh;  
 }

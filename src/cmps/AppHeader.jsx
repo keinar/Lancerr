@@ -43,7 +43,7 @@ export function AppHeader() {
             <span className="dropdown">
               Fiverr Pro <ChevronDown size={16} />
             </span>
-            <Link to={"/explore"}>
+            <Link to={"/gig"}>
               <span className="dropdown">
                 Explore <ChevronDown size={16} />
               </span>

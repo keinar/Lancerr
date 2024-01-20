@@ -8,7 +8,7 @@ import profilePic from '../assets/imgs/profile_pic.png'
 import PackTabs from '../cmps/PackTabs'
 
 
-export default function GigDetails() {
+export  function GigDetails() {
 
     const images = [
         logo1,

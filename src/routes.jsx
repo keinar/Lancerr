@@ -5,8 +5,8 @@ import { ReviewIndex } from "./pages/ReviewIndex.jsx";
 import { ChatApp } from "./pages/Chat.jsx";
 import { AdminApp } from "./pages/AdminIndex.jsx";
 import { GigSeller } from "./pages/GigSeller.jsx";
-import GigDetails from "./pages/GigDetails.jsx";
-import CreateGig from "./pages/CreateGig.jsx";
+import {GigDetails} from "./pages/GigDetails.jsx";
+import {NewGig} from "./pages/NewGig.jsx";
 import Payment from "./pages/Payment.jsx";
 
 // Routes accesible from the main navigation (in AppHeader)
@@ -17,7 +17,7 @@ const routes = [
     label: "Lancherr",
   },
   {
-    path: "explore",
+    path: "gig",
     component: <GigIndex />,
     label: "Explore",
   },
@@ -32,8 +32,8 @@ const routes = [
     label: "Gig Details",
   },
   {
-    path: "create",
-    component: <CreateGig />,
+    path: "gig/edit/:gigId?",
+    component: <NewGig />,
     label: "Create a new gig",
   },
   {
