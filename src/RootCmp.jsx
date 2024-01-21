@@ -8,7 +8,7 @@ import { AppFooter } from "./cmps/AppFooter";
 import { UserDetails } from "./pages/UserDetails";
 export function RootCmp() {
   return (
-    <div>
+    <div className="root">
       <AppHeader />
       <main className="main-container">
         <Routes>
@@ -23,7 +23,7 @@ export function RootCmp() {
           <Route path="user/:id" element={<UserDetails />} />
         </Routes>
       </main>
-      <AppFooter />
+      {/* <AppFooter /> */}
     </div>
   );
 }

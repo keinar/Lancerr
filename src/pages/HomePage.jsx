@@ -1,12 +1,10 @@
+import { Search } from "lucide-react";
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { CHANGE_COUNT } from "../store/reducers/user.reducer";
 import googleSvg from "../assets/imgs/google.129f8ec.svg";
+import metaSvg from "../assets/imgs/meta.398bc1c.svg";
+import netflixSvg from "../assets/imgs/netflix.e1b0070.svg";
 import paypalSvg from "../assets/imgs/paypal.0520267.svg";
 import pgSvg from "../assets/imgs/pg.a47f1ab.svg";
-import netflixSvg from "../assets/imgs/netflix.e1b0070.svg";
-import metaSvg from "../assets/imgs/meta.398bc1c.svg";
-import { Search } from "lucide-react";
 
 export function HomePage() {
   // Mock data for tags
@@ -20,8 +18,31 @@ export function HomePage() {
   ];
 
   return (
-    <main className="main-container">
-      <div className="hero">
+    <div className="home-page">
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      {/* <div className="hero">
         <div className="hero-content">
           <h1>
             Find the right <span>freelance</span> service, right away
@@ -93,19 +114,28 @@ export function HomePage() {
         </div>
       </div>
 
-      <h2>Popular services</h2>
-    </main>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <h2>Popular services</h2> */}
+    </div>
   );
 }
-
-//     <section className="main-container">
-//       <h2>Popular services</h2>
-
-//       <ul>
-//         {allTags.map((tag, index) => (
-//           <li key={index}>
-//             <button onClick={() => navigateToGigsPage(tag)}>{tag}</button>
-//           </li>
-//         ))}
-//       </ul>
-//     </section>

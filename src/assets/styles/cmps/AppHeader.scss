@@ -1,105 +1,277 @@
-.navbar {
-  z-index: 999;
-  display: flex;
-  justify-content: center;
+.app-header {
   background-color: white;
-  border-bottom: 1px solid #e4e5e7;
+  display: grid;
   position: sticky;
   top: 0;
-  .container {
-    width: $normal-breakpoint;
-    display: flex;
-    justify-content: space-around;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 9px;
+  padding-inline: 32px;
+  gap: 5px;
+  border-bottom: 1px solid #e4e5e7;
+}
+
+.mobile-menu {
+  display: flex;
+}
+
+.logo-wrapper {
+  display: flex;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -2.5px;
+  .logo-dot {
+    color: $clr1;
+  }
+}
+
+.header-links ul {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: 14px;
+  font-weight: 600;
+  color: #62646a;
+  padding: 0;
+  .join-btn {
+    background-color: transparent;
+    border: none;
+  }
+
+  .signin-btn,
+  .become-seller-btn {
+    display: none;
+  }
+}
+
+.search-form-wrapper {
+  display: none;
+  .long-placeholder {
+    display: none;
+  }
+
+  .short-placeholder {
+    display: none;
+  }
+
+  .submit-button {
+    display: none;
+  }
+}
+
+.categories-menu-wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .categories-menu-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    height: 80px;
-    .logo {
-      font-family: "Montserrat", sans-serif;
-      font-size: 30px;
-      font-weight: bold;
-      .text {
-        letter-spacing: -2px;
-        font-weight: 800;
-        color: $clr2;
+    position: relative;
+
+    animation: fadeIn 1s;
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
       }
-      .dot {
-        color: $clr1;
+      100% {
+        opacity: 1;
       }
     }
 
-    .search-form {
+    .scroll-button {
       display: flex;
-      width: 100%;
-      .long-placeholder {
-        font-size: 0.9em;
-        font-weight: 500;
-        border-radius: 4px;
-        border: 1px solid lightgray;
-        width: 380px;
-        padding: 5px 20px;
-      }
-      button {
-        background-color: black;
-        border-radius: 0 4px 4px 0;
-        border: none;
-        padding: 10px 16px;
-      }
-    }
-    .links {
-      display: flex;
+      justify-content: flex-start;
       align-items: center;
-      gap: 24px;
-      font-weight: 600;
-      font-size: 16px;
-      color: $clr4;
-      span {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 3px;
-        &:hover:not(.dropdown) {
-          color: $clr1;
-        }
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      width: 30px;
+      height: 100%;
+      cursor: pointer;
+      z-index: 1;
+      background: linear-gradient(270deg, #fff 50%, hsla(0, 0%, 100%, 0));
+      &.left-scroll {
+        background-color: white;
+        display: none;
+        left: 0;
       }
 
-      button {
-        color: $clr1;
-        font-weight: 600;
-        border-radius: 5px;
-        border: 1px solid $clr1;
-        cursor: pointer;
-        background-color: transparent;
-        padding: 7px 14px;
-        &:hover {
-          background-color: $clr1;
-          border-color: white;
-          color: white;
+      &.right-scroll {
+        right: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+
+    #categories-menu-package {
+      grid-column: 2 / 3;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .categories {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        border-bottom: 1px solid #e4e5e7;
+        padding-right: 25px;
+
+        li {
+          padding: 5px;
+          background: none;
+          border: none;
+          font-size: 1rem;
+          color: #62646a;
+          border-bottom: 3px solid transparent;
+
+          &:hover {
+            border-bottom: 3px solid $clr1;
+          }
+
+          a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+          }
         }
       }
+    }
+
+    &.scrolled {
+      .scroll-button.left-scroll {
+        display: flex;
+      }
+
+      .scroll-button.right-scroll {
+        display: none;
+      }
+      .categories {
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .header-links ul {
+    .signin-btn {
+      display: block;
+    }
+    .join-btn {
+      border: 1px solid $clr1;
+      border-radius: 4px;
+      padding: 5px 16px;
+      color: $clr1;
+
+      &:hover {
+        background-color: $clr1;
+        color: white;
+      }
+    }
+  }
+  .logo-wrapper {
+    padding-right: 10px;
+  }
+
+  .search-form-wrapper {
+    display: flex;
+    flex: 1;
+    visibility: hidden;
+
+    &.display {
+      visibility: visible;
+      animation: fadeIn 1s;
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+
+    form {
+      flex: 1;
+      padding-inline: 30px;
+    }
+
+    .short-placeholder {
+      display: flex;
+      padding: 10px 2px 10px 16px;
+      border-radius: 4px;
+      outline: none;
+      border: 1px solid #c5c6c9;
+      font-size: 16px;
+      width: 100%;
     }
   }
 }
 
-.categories_menu {
-  z-index: 999;
-  border-bottom: 1px solid #e4e5e7;
-  border-top: 1px solid #e4e5e7;
-  background-color: white;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0px 4.5rem;
-  margin: auto;
-  transition: 0.5s all ease;
-  position: sticky;
-  top: 70px;
-
-  span {
-    font-size: 15px;
-    font-weight: 500;
-    color: $clr4;
-    padding: 7px;
-    border-bottom: 3px transparent solid;
-    &:hover {
-      border-bottom: 3px $clr1 solid;
+@media screen and (min-width: 900px) {
+  .search-form-wrapper {
+    flex: 1;
+    padding-inline: 30px;
+    form {
+      display: flex;
+      align-items: center;
+      flex: 1;
     }
+    .short-placeholder {
+      display: none;
+      width: 100%;
+    }
+
+    .long-placeholder {
+      display: flex;
+      padding: 10px 2px 10px 16px;
+      border-radius: 4px;
+      outline: none;
+      border: 1px solid #c5c6c9;
+      font-size: 16px;
+      width: 100%;
+      max-width: 350px;
+    }
+
+    .submit-button {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding-inline: 16px;
+      background-color: black;
+      border-radius: 0 4px 4px 0;
+    }
+  }
+
+  .header-links ul {
+    .become-seller-btn {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  .navbar {
+    padding-inline: 64px;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar {
+    padding-inline: 110px;
   }
 }
