@@ -52,7 +52,7 @@ export function NewGig() {
             <span>Description</span>
             <small>Extended details about your provided service</small>
           </span>
-          <textarea value={description} onChange={handleChange} type="text" id="description" name="description" placeholder='Write Description' required />
+          <textarea className="input-desc" value={description} onChange={handleChange} type="text" id="description" name="description" placeholder='Write Description' required />
         </label>
         <button>Create</button>
       </form>
