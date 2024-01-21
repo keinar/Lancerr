@@ -1,8 +1,6 @@
 .app-header {
   background-color: white;
   display: grid;
-  // padding-inline: 6.5rem;
-  border-bottom: 1px solid #e4e5e7;
   position: sticky;
   top: 0;
 }
@@ -14,6 +12,7 @@
   padding-block: 9px;
   padding-inline: 32px;
   gap: 5px;
+  border-bottom: 1px solid #e4e5e7;
 }
 
 .mobile-menu {
@@ -65,7 +64,106 @@
   }
 }
 
+.categories-menu-wrapper {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
+  .categories-menu-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    position: relative;
+
+    animation: fadeIn 1s;
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .scroll-button {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      width: 30px;
+      height: 100%;
+      cursor: pointer;
+      z-index: 1;
+      background: linear-gradient(270deg, #fff 50%, hsla(0, 0%, 100%, 0));
+      &.left-scroll {
+        background-color: white;
+        display: none;
+        left: 0;
+      }
+
+      &.right-scroll {
+        right: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+
+    #categories-menu-package {
+      grid-column: 2 / 3;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .categories {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        border-bottom: 1px solid #e4e5e7;
+        padding-right: 25px;
+
+        li {
+          padding: 5px;
+          background: none;
+          border: none;
+          font-size: 1rem;
+          color: #62646a;
+          border-bottom: 3px solid transparent;
+
+          &:hover {
+            border-bottom: 3px solid $clr1;
+          }
+
+          a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+          }
+        }
+      }
+    }
+
+    &.scrolled {
+      .scroll-button.left-scroll {
+        display: flex;
+      }
+
+      .scroll-button.right-scroll {
+        display: none;
+      }
+      .categories {
+        justify-content: flex-end;
+      }
+    }
+  }
+
   .header-links ul {
     .signin-btn {
       display: block;
@@ -89,6 +187,20 @@
   .search-form-wrapper {
     display: flex;
     flex: 1;
+    visibility: hidden;
+
+    &.display {
+      visibility: visible;
+      animation: fadeIn 1s;
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
 
     form {
       flex: 1;
