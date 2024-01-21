@@ -16,6 +16,7 @@ body {
   font-size: rem(18px);
   margin: 0;
   margin: auto;
+  background-color: beige; // for testing
 }
 
 h1,
@@ -45,4 +46,8 @@ p {
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }

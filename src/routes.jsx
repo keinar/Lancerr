@@ -1,12 +1,8 @@
-import { HomePage } from "./pages/HomePage.jsx";
-import { AboutUs } from "./pages/AboutUs.jsx";
+import { GigDetails } from "./pages/GigDetails.jsx";
 import { GigIndex } from "./pages/GigIndex.jsx";
-import { ReviewIndex } from "./pages/ReviewIndex.jsx";
-import { ChatApp } from "./pages/Chat.jsx";
-import { AdminApp } from "./pages/AdminIndex.jsx";
 import { GigSeller } from "./pages/GigSeller.jsx";
-import {GigDetails} from "./pages/GigDetails.jsx";
-import {NewGig} from "./pages/NewGig.jsx";
+import { HomePage } from "./pages/HomePage.jsx";
+import { NewGig } from "./pages/NewGig.jsx";
 import Payment from "./pages/Payment.jsx";
 
 // Routes accesible from the main navigation (in AppHeader)

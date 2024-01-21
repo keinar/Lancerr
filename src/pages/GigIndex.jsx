@@ -1,14 +1,9 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { showSuccessMsg, showErrorMsg } from "../services/event-bus.service.js";
-import { userService } from "../services/user.service.js";
-import { gigService } from "../services/gig.service.local.js";
 import { GigList } from "../cmps/GigList.jsx";
 import { loadGigs } from "../store/actions/gig.actions.js";
 
 export function GigIndex() {
-  // const gigs = useSelector(storeState => storeState.gigModule.gigs)
-
   const gigs = useSelector((storeState) => storeState.gigModule.gigs);
 
   useEffect(() => {
