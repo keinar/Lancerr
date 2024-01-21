@@ -51,6 +51,7 @@
         margin-block-end: 1.5625em;
     }
 
+    }
     .form-label{
         min-width: 100%;
         font-size: 1.3rem;
@@ -59,9 +60,26 @@
         gap: 1.3125rem;
         color: #404145;
         justify-content: space-between;
-         span:first-child  {            
+
+         *:first-child  {            
             display: flex;
             flex-direction: column;
+            flex: 1;          
         }
+
+        *:last-child{
+            flex: 1;
+
+            
+        }   
+        
+        *.input-desc{
+            height: 14.1875rem;
+            resize: none;
+            color: #62646a;
+        }
+       
+    
     }
-  }
+
+  
