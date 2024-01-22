@@ -10,30 +10,30 @@ const routes = [
   {
     path: "/",
     component: <HomePage />,
-    label: "Lancherr",
+    label: "Lancerr",
   },
   {
-    path: "gig",
+    path: "Lancerr/gig",
     component: <GigIndex />,
     label: "Explore",
   },
   {
-    path: "seller",
+    path: "Lancerr/seller",
     component: <GigSeller />,
     label: "Become a Seller",
   },
   {
-    path: "details",
+    path: "Lancerr/details",
     component: <GigDetails />,
     label: "Gig Details",
   },
   {
-    path: "gig/edit/:gigId?",
+    path: "Lancerr/gig/edit/:gigId?",
     component: <NewGig />,
     label: "Create a new gig",
   },
   {
-    path: "payment",
+    path: "Lancerr/payment",
     component: <Payment />,
     label: "Payment",
   },
