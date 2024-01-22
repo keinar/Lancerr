@@ -6,6 +6,7 @@ import Instagram from "../assets/imgs/instagram.svg";
 import Linkedin from "../assets/imgs/linkedin.svg";
 import Pinterest from "../assets/imgs/pinterest.svg";
 import Tiktok from "../assets/imgs/tiktok.svg";
+import { Link } from "react-router-dom";
 
 export function AppFooter() {
   const [expandStates, setExpandStates] = useState({
@@ -197,10 +198,12 @@ export function AppFooter() {
         </div>
         <div className="footer-bottom">
           <div className="left">
-            <div className="footer-logo">
-              <div className="logo-text"> Lancerr</div>
-              <div className="logo-dot">.</div>
-            </div>
+            <Link to={"/"}>
+              <div className="footer-logo">
+                <div className="logo-text"> Lancerr</div>
+                <div className="logo-dot">.</div>
+              </div>
+            </Link>
             <div className="copyright-txt">© Lancerr 2024</div>
           </div>
           <div className="right">

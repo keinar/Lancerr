@@ -7,6 +7,7 @@ import {
   Search,
 } from "lucide-react";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export function AppHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,11 +43,12 @@ export function AppHeader() {
         <div className="mobile-menu">
           <Menu size={30} />
         </div>
-        <div className="logo-wrapper">
-          <div className="logo-text"> Lancerr</div>
-          <div className="logo-dot">.</div>
-        </div>
-
+        <Link to={"/"}>
+          <div className="logo-wrapper">
+            <div className="logo-text"> Lancerr</div>
+            <div className="logo-dot">.</div>
+          </div>
+        </Link>
         <div className={`search-form-wrapper ${isOnTop ? " display" : ""} `}>
           <form>
             <input
