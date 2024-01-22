@@ -9,7 +9,7 @@ export default defineConfig(({ command }) => {
   };
 
   if (command !== "serve") {
-    config.base = "/Lancerr/";
+    config.base = "/react-vite-gh-pages/";
   }
 
   return config;
