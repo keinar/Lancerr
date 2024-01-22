@@ -13,7 +13,7 @@ const routes = [
     label: "Lancerr",
   },
   {
-    path: "/gig",
+    path: "Lancerr/gig",
     component: <GigIndex />,
     label: "Explore",
   },
