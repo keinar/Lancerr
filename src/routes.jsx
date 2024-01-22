@@ -13,27 +13,27 @@ const routes = [
     label: "Lancerr",
   },
   {
-    path: "Lancerr/gig",
+    path: "lancerr/gig",
     component: <GigIndex />,
     label: "Explore",
   },
   {
-    path: "Lancerr/seller",
+    path: "lancerr/seller",
     component: <GigSeller />,
     label: "Become a Seller",
   },
   {
-    path: "Lancerr/details",
+    path: "lancerr/details",
     component: <GigDetails />,
     label: "Gig Details",
   },
   {
-    path: "Lancerr/gig/edit/:gigId?",
+    path: "lancerr/gig/edit/:gigId?",
     component: <NewGig />,
     label: "Create a new gig",
   },
   {
-    path: "Lancerr/payment",
+    path: "lancerr/payment",
     component: <Payment />,
     label: "Payment",
   },
