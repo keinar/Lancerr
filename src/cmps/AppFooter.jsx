@@ -1,5 +1,11 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import X from "../assets/imgs/x-logo.svg";
+import Facebook from "../assets/imgs/facebook.svg";
+import Instagram from "../assets/imgs/instagram.svg";
+import Linkedin from "../assets/imgs/linkedin.svg";
+import Pinterest from "../assets/imgs/pinterest.svg";
+import Tiktok from "../assets/imgs/tiktok.svg";
 
 export function AppFooter() {
   const [expandStates, setExpandStates] = useState({
@@ -189,7 +195,37 @@ export function AppFooter() {
             </article>
           </div>
         </div>
-        <div className="footer-bottom"></div>
+        <div className="footer-bottom">
+          <div className="left">
+            <div className="footer-logo">
+              <div className="logo-text"> Lancerr</div>
+              <div className="logo-dot">.</div>
+            </div>
+            <div className="copyright-txt">© Lancerr 2024</div>
+          </div>
+          <div className="right">
+            <ul className="social">
+              <li>
+                <img src={Tiktok} alt="Tiktok Logo" />
+              </li>
+              <li>
+                <img src={Instagram} alt="Instagram Logo" />
+              </li>
+              <li>
+                <img src={Linkedin} alt="Linkedin Logo" />
+              </li>
+              <li>
+                <img src={Facebook} alt="Facebook Logo" />
+              </li>
+              <li>
+                <img src={Pinterest} alt="Pinterest Logo" />
+              </li>
+              <li>
+                <img src={X} alt="X Logo" />
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       {/* <UserMsg /> */}
     </footer>
