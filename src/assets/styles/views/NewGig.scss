@@ -61,19 +61,24 @@
         color: #404145;
         justify-content: space-between;
 
-         *:first-child  {            
+         >*:first-child  {            
             display: flex;
             flex-direction: column;
-            flex: 1;          
+            flex: 1;    
+            .sub-title {
+                font-size: .875rem;
+                font-weight: 400;
+                color: #95979d;
+            } 
         }
 
-        *:last-child{
+        >*:last-child{
             flex: 1;
 
             
         }   
         
-        *.input-desc{
+        >*.input-desc{
             height: 14.1875rem;
             resize: none;
             color: #62646a;

@@ -11,7 +11,8 @@ export const gigService = {
     save,
     remove,
     getEmptyGig,
-    addGigMsg,
+    addGigMsg
+    
     
 }
 window.cs = gigService
@@ -77,7 +78,7 @@ function getEmptyGig() {
     rate: 4
   };
   const daysToMake = '3';
-  const description = 'I will...';
+  const description = '';
   const imgUrl = 'https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp';
   const tags = ['logo-design', 'artistic', 'professional', 'accessible'];
   const likedByUsers = ['mini-user'];
@@ -93,6 +94,49 @@ function getEmptyGig() {
     likedByUsers // for user-wishlist: use $in
   };
 }
+// Catagorey DATA
+export const gigCategories = [
+  {
+    name: 'Web Development',
+    subcategories: ['Front-end Development', 'Back-end Development', 'Full-stack Development', 'UI/UX Design', 'Responsive Design', 'Web Security', 'E-commerce Development', 'CMS Development', 'Website Maintenance', 'Website Redesign']
+  },
+  {
+    name: 'Graphic Design',
+    subcategories: ['Logo Design', 'Brand Identity', 'Print Design', 'Illustration', 'Packaging Design', 'Infographics', 'Social Media Graphics', 'Motion Graphics', 'Brochure Design', 'Poster Design']
+  },
+  {
+    name: 'Digital Marketing',
+    subcategories: ['SEO (Search Engine Optimization)', 'Social Media Marketing', 'Content Marketing', 'Email Marketing', 'PPC (Pay-per-Click) Advertising', 'Affiliate Marketing', 'Online Reputation Management', 'Marketing Analytics', 'Influencer Marketing', 'Video Marketing']
+  },
+  {
+    name: 'Writing & Translation',
+    subcategories: ['Copywriting', 'Content Writing', 'Blog Writing', 'Technical Writing', 'Creative Writing', 'Translation', 'Proofreading', 'Editing', 'Resume Writing', 'Transcription']
+  },
+  {
+    name: 'Video & Animation',
+    subcategories: ['Video Editing', 'Animation', 'Motion Graphics', 'Explainer Videos', 'Whiteboard Animation', 'Product Animation', 'Logo Animation', 'Short Films', 'Video Production', 'Subtitles & Captions']
+  },
+  {
+    name: 'Music & Audio',
+    subcategories: ['Music Production', 'Audio Editing', 'Sound Design', 'Voice Over', 'Podcast Editing', 'Audio Mixing', 'Jingles & Intros', 'Original Compositions', 'Singer-Songwriter', 'Remixing & Mashups']
+  },
+  {
+    name: 'Programming & Tech',
+    subcategories: ['Mobile App Development', 'Game Development', 'Software Development', 'Database Design', 'API Development', 'Scripting & Automation', 'IT Support', 'Network Administration', 'Cybersecurity', 'Web Scraping']
+  },
+  {
+    name: 'Business',
+    subcategories: ['Business Planning', 'Market Research', 'Financial Consulting', 'Legal Consulting', 'Business Analysis', 'Virtual Assistant', 'Project Management', 'Business Support', 'Business Coaching', 'HR Consulting']
+  },
+  {
+    name: 'Data Science & Analytics',
+    subcategories: ['Data Analysis', 'Machine Learning', 'Data Visualization', 'Big Data', 'Statistical Analysis', 'Predictive Modeling', 'Quantitative Research', 'Data Engineering', 'Data Mining', 'Text Analytics']
+  },
+  {
+    name: 'Sales & Marketing',
+    subcategories: ['Sales Strategy', 'Lead Generation', 'Email Campaigns', 'Cold Calling', 'Sales Funnel Optimization', 'Market Research', 'Marketing Strategy', 'Branding Strategy', 'Sales Presentations', 'Customer Retention']
+  }
+];
 
 // TEST DATA
 function _createGigs() {
