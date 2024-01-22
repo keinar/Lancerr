@@ -1,12 +1,19 @@
 import { useState } from "react";
-import { useSelector } from "react-redux";
-import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service";
-
-// import {  } from '../store/actions/gig.actions.js'
-import { UserMsg } from "./UserMsg.jsx";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 export function AppFooter() {
+  const [expandStates, setExpandStates] = useState({
+    categories: false,
+    about: false,
+    supportAndEducation: false,
+    community: false,
+    businessSolutions: false,
+  });
+
+  function handleToggleIsExpand(category) {
+    setExpandStates((prev) => ({ ...prev, [category]: !prev[category] }));
+  }
+
   return (
     <footer className="app-footer">
       <div className="footer-wrapper">
@@ -15,11 +22,22 @@ export function AppFooter() {
             <article>
               <div className="footer-title-wrapper">
                 <div className="item-title">Categories</div>
-                <div className="chevron-wrapper">
-                  <ChevronDown size={20} color="#62646a" />
+                <div
+                  className="chevron-wrapper"
+                  onClick={() => handleToggleIsExpand("categories")}
+                >
+                  {expandStates.categories ? (
+                    <ChevronUp size={20} color="#62646a" />
+                  ) : (
+                    <ChevronDown size={20} color="#62646a" />
+                  )}
                 </div>
               </div>
-              <div className="footer-collapsible-content">
+              <div
+                className={`footer-collapsible-content ${
+                  expandStates.categories ? "display-content" : ""
+                }`}
+              >
                 <ul>
                   <li> Graphics & Design</li>
                   <li>Digital Marketing</li>
@@ -42,11 +60,22 @@ export function AppFooter() {
             <article>
               <div className="footer-title-wrapper">
                 <div className="item-title">About</div>
-                <div className="chevron-wrapper">
-                  <ChevronDown size={20} color="#62646a" />
+                <div
+                  className="chevron-wrapper"
+                  onClick={() => handleToggleIsExpand("about")}
+                >
+                  {expandStates.about ? (
+                    <ChevronUp size={20} color="#62646a" />
+                  ) : (
+                    <ChevronDown size={20} color="#62646a" />
+                  )}
                 </div>
               </div>
-              <div className="footer-collapsible-content">
+              <div
+                className={`footer-collapsible-content ${
+                  expandStates.about ? "display-content" : ""
+                }`}
+              >
                 <ul>
                   <li> Careers</li>
                   <li>Press & News</li>
@@ -63,11 +92,22 @@ export function AppFooter() {
             <article>
               <div className="footer-title-wrapper">
                 <div className="item-title">Support and Education</div>
-                <div className="chevron-wrapper">
-                  <ChevronDown size={20} color="#62646a" />
+                <div
+                  className="chevron-wrapper"
+                  onClick={() => handleToggleIsExpand("supportAndEducation")}
+                >
+                  {expandStates.supportAndEducation ? (
+                    <ChevronUp size={20} color="#62646a" />
+                  ) : (
+                    <ChevronDown size={20} color="#62646a" />
+                  )}
                 </div>
               </div>
-              <div className="footer-collapsible-content">
+              <div
+                className={`footer-collapsible-content ${
+                  expandStates.supportAndEducation ? "display-content" : ""
+                }`}
+              >
                 <ul>
                   <li> Help & Support</li>
                   <li>Trust & Safety</li>
@@ -84,11 +124,22 @@ export function AppFooter() {
             <article>
               <div className="footer-title-wrapper">
                 <div className="item-title">Community</div>
-                <div className="chevron-wrapper">
-                  <ChevronDown size={20} color="#62646a" />
+                <div
+                  className="chevron-wrapper"
+                  onClick={() => handleToggleIsExpand("community")}
+                >
+                  {expandStates.community ? (
+                    <ChevronUp size={20} color="#62646a" />
+                  ) : (
+                    <ChevronDown size={20} color="#62646a" />
+                  )}
                 </div>
               </div>
-              <div className="footer-collapsible-content">
+              <div
+                className={`footer-collapsible-content ${
+                  expandStates.community ? "display-content" : ""
+                }`}
+              >
                 <ul>
                   <li> Customer Success Stories</li>
                   <li>Community Hub</li>
@@ -109,11 +160,22 @@ export function AppFooter() {
             <article>
               <div className="footer-title-wrapper">
                 <div className="item-title">Business Solutions</div>
-                <div className="chevron-wrapper">
-                  <ChevronDown size={20} color="#62646a" />
+                <div
+                  className="chevron-wrapper"
+                  onClick={() => handleToggleIsExpand("businessSolutions")}
+                >
+                  {expandStates.businessSolutions ? (
+                    <ChevronUp size={20} color="#62646a" />
+                  ) : (
+                    <ChevronDown size={20} color="#62646a" />
+                  )}
                 </div>
               </div>
-              <div className="footer-collapsible-content">
+              <div
+                className={`footer-collapsible-content ${
+                  expandStates.businessSolutions ? "display-content" : ""
+                }`}
+              >
                 <ul>
                   <li> About Business Solutions</li>
                   <li>Fiverr Pro</li>
