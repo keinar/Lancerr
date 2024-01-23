@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router";
 
 import routes from "./routes";
 
-import { AppHeader } from "./cmps/AppHeader";
+import { AppHeader } from "./cmps/AppHeader/AppHeader";
 import { UserDetails } from "./pages/UserDetails";
 import { AppFooter } from "./cmps/AppFooter/AppFooter";
 export function RootCmp() {
