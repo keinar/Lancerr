@@ -18,7 +18,7 @@ export default function PackTabs() {
     }
 
     function onPackSelect(){
-        navigate('/Payment')
+        navigate('/Lancerr/payment')
     }
     return (
         <div className='packages-tabs'>

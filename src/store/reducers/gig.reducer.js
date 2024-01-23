@@ -30,7 +30,7 @@ export const UPDATE_GIG = 'UPDATE_GIG'
 // }
 
 const initialState = {
-    gigs: null
+    gigs: []
 }
 
 export function gigReducer(state = initialState, action) {

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Routes, Route } from "react-router";
 
 import routes from "./routes";
@@ -6,7 +6,14 @@ import routes from "./routes";
 import { AppHeader } from "./cmps/AppHeader/AppHeader";
 import { UserDetails } from "./pages/UserDetails";
 import { AppFooter } from "./cmps/AppFooter/AppFooter";
+import {loadGigs} from "./store/actions/gig.actions"
 export function RootCmp() {
+
+  useEffect(() => {
+    // Sanitize filterBy
+    loadGigs();
+  }, []);
+
   return (
     <div className="root">
       <AppHeader />

@@ -23,7 +23,7 @@ const routes = [
     label: "Become a Seller",
   },
   {
-    path: "Lancerr/details",
+    path: "Lancerr/details/:gigId",
     component: <GigDetails />,
     label: "Gig Details",
   },

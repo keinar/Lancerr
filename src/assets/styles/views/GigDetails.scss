@@ -3,10 +3,9 @@
     grid-auto-flow: column;
     grid-template-areas: "details packages";
     .gig-details{
-        min-width: 40vw;
+        min-width: 42vw;
         margin: 10px;
-        height: 58vh;
-        overflow-y: scroll;
+        padding: 1.5rem;
         grid-area: details;
         .about-the-seller {
             display: grid;
@@ -20,13 +19,19 @@
         }
     
     }
+}
+.side-wrapper{
+    display: flex;
+    position: sticky;
+    top:120px;
+    flex-direction: column;
     .package-content{
         margin-top: 10px;
         height: 350px;
         grid-area: packages;
         max-width: 30vw;
         border: 1px solid #dadbdd;
-
+    
         .nav-container{
             min-width: 25vw;
             display: flex;
@@ -68,6 +73,7 @@
                 width: 90%;
                 height: 40px;
                 background-color: black;
+                color: white;
                 border: 1px solid transparent;
                 border-radius: 4px;
                 margin: auto; /* Add this line to center the button horizontally */
@@ -75,24 +81,20 @@
             }
         }
     }
-    .side-wrapper{
-        display: flex;
-        flex-direction: column;
-        .contact-seller{
-            padding: 10px;
+    .contact-seller{
+        padding: 10px;
+        background-color: #fafafa;
+        height: 60px;
+        margin-top: 20px;
+        button{
+            width: 90%;
+            height: 40px;
             background-color: #fafafa;
-            height: 60px;
-            margin-top: 20px;
-            button{
-                width: 90%;
-                height: 40px;
-                background-color: #fafafa;
-                color: black;
-                border: 1px solid black;
-                border-radius: 4px;
-                margin: auto; /* Add this line to center the button horizontally */
-                display: block;
-            }
+            color: black;
+            border: 1px solid black;
+            border-radius: 4px;
+            margin: auto; /* Add this line to center the button horizontally */
+            display: block;
         }
     }
 }
