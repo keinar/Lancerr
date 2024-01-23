@@ -19,8 +19,8 @@
       .footer-item {
         width: 100%;
         article {
+          padding: 0 0 20px;
           .footer-title-wrapper {
-            padding: 0 0 20px;
             .item-title {
               font-weight: 700;
             }
@@ -108,6 +108,7 @@
       display: flex;
       gap: 20px;
       color: lighten($clr4, 10%);
+      padding: 0;
 
       img {
         width: 20px;
@@ -135,7 +136,9 @@
   }
   .footer-item {
     .footer-collapsible-content {
-      display: block !important;
+      max-height: 560px !important;
+      overflow: unset !important;
+      padding-right: 20px;
     }
     .footer-title-wrapper {
       .chevron-wrapper {
