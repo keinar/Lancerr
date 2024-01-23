@@ -13,7 +13,7 @@ export function GigIndex() {
 
   if (!gigs) return <div>Loading..</div>;
   return (
-    <section className="main-containter full">
+    <section className="main-containter">
       <h1>Explore Page</h1>
       <main>
         <GigList gigs={gigs} />
