@@ -30,14 +30,12 @@ export function AppFooter() {
               <div className="footer-title-wrapper">
                 <div className="item-title">Categories</div>
                 <div
-                  className="chevron-wrapper"
+                  className={`chevron-wrapper ${
+                    expandStates.categories ? "chevron-toggle" : ""
+                  }`}
                   onClick={() => handleToggleIsExpand("categories")}
                 >
-                  {expandStates.categories ? (
-                    <ChevronUp size={20} color="#62646a" />
-                  ) : (
-                    <ChevronDown size={20} color="#62646a" />
-                  )}
+                  <ChevronUp size={20} color="#62646a" />
                 </div>
               </div>
               <div
