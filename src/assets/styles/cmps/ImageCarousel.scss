@@ -2,5 +2,45 @@
   width: 40vw;
 }
 
-.selected-image {
+.selected-image-container {
+  position: relative; /* Ensure relative positioning for absolute child */
+  display: flex;
+  flex-direction: row;
+
+  .prev-button {
+    position: absolute;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    top: 50%; 
+    transform: translateY(-50%); 
+    left: -24px; 
+    background-color: white;
+  }
+  .next-button {
+    position: absolute;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    top: 50%; 
+    transform: translateY(-50%);
+    right: -24px; 
+    background-color: white;
+  }
 }
+
+.thumbnail-container {
+  display: inline-flex;
+  height: 60px;
+  padding: 5px 0 5px 5px;
+  img {
+    width: 100px;
+    margin-right: 6px;
+    opacity: 0.5;
+  }
+  img.active {
+    opacity: 1;
+  }
+}
+
+

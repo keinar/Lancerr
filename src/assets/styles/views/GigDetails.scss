@@ -8,13 +8,16 @@
         padding: 1.5rem;
         grid-area: details;
         .about-the-seller {
-            display: grid;
-            grid-auto-flow: column;
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
             
             .profile-picture{
-                width: 40px;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
                 border-style: hidden;
-                border-radius: 50px;
+                margin-right: 20px;
             }
         }
     
@@ -86,6 +89,7 @@
         background-color: #fafafa;
         height: 60px;
         margin-top: 20px;
+        max-width: 30vw;
         button{
             width: 90%;
             height: 40px;

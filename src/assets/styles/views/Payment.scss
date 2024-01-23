@@ -1,0 +1,76 @@
+.payment-body{
+    .payment-main-content{
+        .billing-info{
+            border-style: solid;
+            border-color:#efeff0 ;
+            border-radius: 4px;
+            display: grid;
+            .billing-info-header{
+                background-color: #fafafa;
+                padding: 16px;
+                color: #6d6d70;
+
+            }
+            .billing-info-body{
+                background-color: white;
+                padding: 20px;
+                color: #6d6d70;
+
+                button{
+                    display: inline-block;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    position: relative;
+                    padding: 12px 24px;
+                    border: 1px solid black;
+                    background-color: white;
+                    border-radius: 4px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 100%;
+                    text-decoration: none;
+                    text-align: center;
+                    cursor: pointer;
+                    -webkit-transition: 70ms cubic-bezier(.75,0,.25,1);
+                    -o-transition: 70ms cubic-bezier(.75,0,.25,1);
+                    transition: 70ms cubic-bezier(.75,0,.25,1);
+                }
+
+                button:hover{
+                    background-color: #454547;
+                    color: white;
+                }
+
+                .user-info-preface{
+
+                }
+                .user-billing-info{
+
+                }
+            }
+        }
+        .payment-options{
+            border-radius: 4px;
+
+            margin-top: 10px;
+            display: grid;
+            .payment-options-header{
+                background-color: #fafafa;
+                padding: 16px;
+                color: #6d6d70;
+            }
+            .payment-options-body{
+                display: grid;
+                grid-auto-flow: row;
+                background-color: white;
+                padding: 20px;
+                color: #6d6d70;
+
+                .radio-wrapper{
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
