@@ -66,14 +66,12 @@ export function AppFooter() {
               <div className="footer-title-wrapper">
                 <div className="item-title">About</div>
                 <div
-                  className="chevron-wrapper"
+                  className={`chevron-wrapper ${
+                    expandStates.about ? "chevron-toggle" : ""
+                  }`}
                   onClick={() => handleToggleIsExpand("about")}
                 >
-                  {expandStates.about ? (
-                    <ChevronUp size={20} color="#62646a" />
-                  ) : (
-                    <ChevronDown size={20} color="#62646a" />
-                  )}
+                  <ChevronUp size={20} color="#62646a" />
                 </div>
               </div>
               <div
@@ -98,14 +96,12 @@ export function AppFooter() {
               <div className="footer-title-wrapper">
                 <div className="item-title">Support and Education</div>
                 <div
-                  className="chevron-wrapper"
+                  className={`chevron-wrapper ${
+                    expandStates.supportAndEducation ? "chevron-toggle" : ""
+                  }`}
                   onClick={() => handleToggleIsExpand("supportAndEducation")}
                 >
-                  {expandStates.supportAndEducation ? (
-                    <ChevronUp size={20} color="#62646a" />
-                  ) : (
-                    <ChevronDown size={20} color="#62646a" />
-                  )}
+                  <ChevronUp size={20} color="#62646a" />
                 </div>
               </div>
               <div
@@ -130,14 +126,12 @@ export function AppFooter() {
               <div className="footer-title-wrapper">
                 <div className="item-title">Community</div>
                 <div
-                  className="chevron-wrapper"
+                  className={`chevron-wrapper ${
+                    expandStates.community ? "chevron-toggle" : ""
+                  }`}
                   onClick={() => handleToggleIsExpand("community")}
                 >
-                  {expandStates.community ? (
-                    <ChevronUp size={20} color="#62646a" />
-                  ) : (
-                    <ChevronDown size={20} color="#62646a" />
-                  )}
+                  <ChevronUp size={20} color="#62646a" />
                 </div>
               </div>
               <div
@@ -166,14 +160,12 @@ export function AppFooter() {
               <div className="footer-title-wrapper">
                 <div className="item-title">Business Solutions</div>
                 <div
-                  className="chevron-wrapper"
+                  className={`chevron-wrapper ${
+                    expandStates.businessSolutions ? "chevron-toggle" : ""
+                  }`}
                   onClick={() => handleToggleIsExpand("businessSolutions")}
                 >
-                  {expandStates.businessSolutions ? (
-                    <ChevronUp size={20} color="#62646a" />
-                  ) : (
-                    <ChevronDown size={20} color="#62646a" />
-                  )}
+                  <ChevronUp size={20} color="#62646a" />
                 </div>
               </div>
               <div

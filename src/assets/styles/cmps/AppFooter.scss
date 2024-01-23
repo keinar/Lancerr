@@ -28,10 +28,12 @@
             justify-content: space-between;
           }
           .footer-collapsible-content {
-            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
 
             &.display-content {
-              display: block;
+              max-height: 500px;
             }
             ul {
               padding: 0;
