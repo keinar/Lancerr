@@ -6,10 +6,28 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import CheckIcon from '@mui/icons-material/Check';
 
 const data = {
-    basic:{price:"US$ "+98.48,discount:"Save up to 20%",detailsTitle:"The Cub Package", detailsContent:"3 Logo Designs + High Quality Mockup - NO COMPLEX OR MASCOT LOGO"},
-    standard:{price:"US$ "+126.48,discount:"Save up to 20%",detailsTitle:"The Queen - Most Selling", detailsContent:"4 HQ UltraQuality Logos + AI EPS Vector Source File + 3D Mockup + VIP Support + 5 Social Media Cover"},
-    premium:{price:"US$ "+180.78,discount:"Save up to 20%",detailsTitle:"The King - Rule the Competition", detailsContent:"5 ULTIMATE Logos + AI - EPS PDF JPG PNG File + 3D Mock-up + 5 Social Media Cover + Stationery Design"}
-}
+  basic: {
+    price: "US$ " + 98.48,
+    discount: "Save up to 20%",
+    detailsTitle: "The Cub Package",
+    detailsContent:
+      "3 Logo Designs + High Quality Mockup - NO COMPLEX OR MASCOT LOGO",
+  },
+  standard: {
+    price: "US$ " + 126.48,
+    discount: "Save up to 20%",
+    detailsTitle: "The Queen - Most Selling",
+    detailsContent:
+      "4 HQ UltraQuality Logos + AI EPS Vector Source File + 3D Mockup + VIP Support + 5 Social Media Cover",
+  },
+  premium: {
+    price: "US$ " + 180.78,
+    discount: "Save up to 20%",
+    detailsTitle: "The King - Rule the Competition",
+    detailsContent:
+      "5 ULTIMATE Logos + AI - EPS PDF JPG PNG File + 3D Mock-up + 5 Social Media Cover + Stationery Design",
+  },
+};
 
 export default function PackTabs() {
 
