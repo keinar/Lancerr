@@ -33,7 +33,8 @@
             padding: 12px 2px 12px 16px;
             flex: 1;
             font-size: 16px;
-            border-radius: 8px;
+            border-radius: 12px;
+            height: 52px;
 
             &:focus-visible {
               outline: none;
@@ -43,11 +44,11 @@
             background-color: #003912;
             border-radius: 8px;
             border: none;
-            height: 35px;
+            height: 40px;
             position: absolute;
-            right: 5px;
-            top: 5px;
-            width: 35px;
+            right: 6px;
+            top: 6px;
+            width: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -62,6 +63,14 @@
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .home-page {
+    .hp-hero {
+      margin: 32px 32px 64px;
+    }
+  }
+}
+
 @media only screen and (min-width: 900px) {
   .home-page {
     background-image: url("https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/84c449beda884aa8f9f72023e2d8b3fd-1705308514875/hero-md-x1.png");
@@ -70,5 +79,25 @@
     border-radius: 16px;
     height: 370px;
     padding: 0;
+    display: flex;
+    margin: 20px 30px;
+
+    .hp-hero {
+      max-width: 436px;
+      margin: auto;
+
+      .hp-hero-content {
+        h1 {
+          max-width: fit-content;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1160px) {
+  .home-page {
+    margin: 20px 100px;
+    height: 500px;
   }
 }
