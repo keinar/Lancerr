@@ -1,4 +1,4 @@
-import { ChevronUp } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import React from "react";
 
 export default function FooterCollapsibleSection({
@@ -16,7 +16,7 @@ export default function FooterCollapsibleSection({
             className={`chevron-wrapper ${isExpanded ? "chevron-toggle" : ""}`}
             onClick={toggleExpand}
           >
-            <ChevronUp size={20} color="#62646a" />
+            <ChevronDown size={20} color="#62646a" />
           </div>
         </div>
         <div
