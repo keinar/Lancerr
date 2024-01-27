@@ -14,10 +14,19 @@ export function GigIndex() {
   if (!gigs) return <div>Loading..</div>;
   return (
     <main className="main-container">
+    <section className="GigIndex full main-container">
+      <article className="filter-title">
+      <a class="home" href="/"><img class="home-icon" src="/src/assets/imgs/home-icon.svg"
+       alt="Home" title="Go to homepage"/>        
+      </a>
+      <span class="divider">/</span>
+      <a title="Current main category from filter varaible" href="/gig">Current main category from filter varaible</a>
+      </article>
       <h1>Explore Page</h1>
       <main>
         <GigList gigs={gigs} />
       </main>
+    </section>
     </main>
   );
 }
