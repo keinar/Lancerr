@@ -20,6 +20,11 @@
         height: .8125rem;
         width: .8125rem;
     }
+    .home-title {
+        &:hover{
+          text-decoration: underline;
+        }
+    }
 
 
 }
@@ -34,6 +39,19 @@
 .category-sub-header{
     color: $clr9;
 }
+.filter-btns-container{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    margin-block-start: .125rem;
+    margin-block-end: .875rem;
+    background: $clr7;
+     .filter-btns{
+        padding-block: 1rem;
+        display: grid;
+     }
+}
+
 .gigs-layout{
 
     display: grid;
@@ -55,15 +73,85 @@
 
         display: flex;
         flex-direction: column;
-        align-items: start;
-
+        align-items: flex-start;
+        overflow: hidden;
+        
+        .img-container
+        {
+            flex: 1;            
+            width: 100%;
+            margin-block-end: .4375rem;
+        }
+        .owner-details{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            .owner-details-header{
+                display: flex;
+                gap: .5rem;
+                font-size: 14px;
+            }
+            .owner-details-gig-title{
+                line-height: .8125rem;
+                gap: .1875rem;
+                align-items: center;
+            }
+        
+        }
+        
+        .owner-gig-title{
+            margin-top: 1.25rem;
+            color: $clr3;
+            display: -webkit-box;
+            line-height: 1.6rem;
+            margin-bottom: .5rem;
+            font-weight: 400;
+            min-height: 2.5em;
+            font-size: 1.0625rem;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .gig-price{
+            font-weight: 700;
+            line-height: 1.5rem;
+            margin-top: .5rem;
+            margin-block-start: .5rem;
+            font-size: 1.125rem;
+            color: $clr3;
+        }
         .gig-img{
+            object-fit: cover;
             width: 100%;
             aspect-ratio: 1.69/1;
             object-fit: cover;
             border: 1px solid #e4e5e7;
             border-radius: .5em;
             cursor: pointer;
+        }
+        .owner-rate{
+            font-weight: 700;
+        }
+        .owner-number-rates{
+            color: $clr9;
+        }
+
+        .owner-profile-img{
+            border-radius: 50%;
+            cursor: pointer;
+            width: 1.5em;
+        }
+
+        .owner-fullname{
+            font-weight: 700;
+            line-height: 1.3125rem;
+            cursor: pointer;
+        }
+
+        .level-number{
+            margin-left: auto;
+            font-weight: 600;
+            line-height: 1.3125rem;
         }
     }
 }
