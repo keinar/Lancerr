@@ -14,7 +14,7 @@ export function RootCmp() {
   }, []);
 
   return (
-    <div className="root">
+    <div>
       <AppHeader />
       <Routes>
         {routes.map((route) => (
