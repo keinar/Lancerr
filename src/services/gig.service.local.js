@@ -149,8 +149,8 @@ function _createGigs() {
                 "price": 12,
                 "owner": {
                   "_id": "u101",
-                  "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "fullname": "Dudu Datest",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -172,7 +172,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u102",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -194,7 +194,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u103",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -216,7 +216,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u104",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -238,7 +238,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u101",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -260,7 +260,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u102",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -282,7 +282,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u103",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -304,13 +304,13 @@ function _createGigs() {
                 "owner": {
                   "_id": "u104",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo3...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -325,13 +325,13 @@ function _createGigs() {
                 "owner": {
                   "_id": "u101",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -347,13 +347,13 @@ function _createGigs() {
                 "owner": {
                   "_id": "u102",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo1...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -369,7 +369,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u103",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -391,13 +391,13 @@ function _createGigs() {
                 "owner": {
                   "_id": "u104",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo3...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -412,7 +412,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u101",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -434,7 +434,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u102",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -456,7 +456,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u103",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -478,13 +478,13 @@ function _createGigs() {
                 "owner": {
                   "_id": "u104",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo3...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -499,7 +499,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u101",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -521,7 +521,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u102",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -543,7 +543,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u103",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -565,13 +565,13 @@ function _createGigs() {
                 "owner": {
                   "_id": "u104",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo3...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -586,7 +586,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u101",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -608,7 +608,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u102",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -630,13 +630,13 @@ function _createGigs() {
                 "owner": {
                   "_id": "u103",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo2...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -652,7 +652,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u104",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -673,13 +673,13 @@ function _createGigs() {
                 "owner": {
                   "_id": "u101",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -695,13 +695,13 @@ function _createGigs() {
                 "owner": {
                   "_id": "u102",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
                 "daysToMake": 3,
                 "description": "Make a unique logo1...",
-                "imgUrl": "",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
                 "tags": [
                   "logo-design",
                   "artistic",
@@ -717,7 +717,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u103",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },
@@ -739,7 +739,7 @@ function _createGigs() {
                 "owner": {
                   "_id": "u104",
                   "fullname": "Dudu Da",
-                  "imgUrl": "url",
+                  "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
                   "level": "basic/premium",
                   "rate": 4
                 },

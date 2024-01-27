@@ -22,8 +22,7 @@
       @include for-narrow-layout {
         grid-template-columns:
           32px
-          // minmax(auto, $narrow-breakpoint)      
-          1fr
+          minmax(auto, $narrow-breakpoint)      
           32px;
       }
       @include for-normal-layout {
