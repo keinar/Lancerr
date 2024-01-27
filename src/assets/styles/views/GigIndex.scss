@@ -19,7 +19,27 @@
 //     }
 // }
 
+.filter-title{
+    display: flex;
+    align-items: center;
+    gap: .375em;
+    font-size: .875rem;
+    letter-spacing: .2px;
+    margin-block-end: 0.5rem;
 
+    .divider{
+        margin-inline: .375em;
+        font-size: 1.125em;
+        font-weight: 100;
+        color: $clr4;
+    }
+
+    .home{
+        line-height: .8125rem;
+        height: .8125rem;
+        width: .8125rem;
+    }
+}
 .gigs-layout{
 
     display: grid;
