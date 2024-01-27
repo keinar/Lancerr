@@ -1,23 +1,4 @@
-// .car-list {
-//     list-style: none;
-//     display: flex;
-//     flex-wrap: wrap;
-//     li {
-//         background-color: $clr2;
-//         color: $clr6;
-//         padding: 5px;
-//         margin: 5px;
-//     }
-//     a {
-//         color: $clr1;
-//         padding: 10px;
-//     }
-//     h3 {
-//         background-color: #ddd;
-//         padding: 10px 5px;
-//         margin: 5px;
-//     }
-// }
+
 
 .filter-title{
     display: flex;
@@ -39,6 +20,19 @@
         height: .8125rem;
         width: .8125rem;
     }
+
+
+}
+.category-header{
+    color: $clr2;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    padding: .75rem 0;
+}
+
+.category-sub-header{
+    color: $clr9;
 }
 .gigs-layout{
 

@@ -16,13 +16,14 @@ export function GigIndex() {
     <main className="main-container">
     <section className="GigIndex full main-container">
       <article className="filter-title">
-      <a class="home" href="/"><img class="home-icon" src="/src/assets/imgs/home-icon.svg"
+      <a className="home" href="/"><img class="home-icon" src="/src/assets/imgs/home-icon.svg"
        alt="Home" title="Go to homepage"/>        
       </a>
-      <span class="divider">/</span>
+      <span className="divider">/</span>
       <a title="Current main category from filter varaible" href="/gig">Current main category from filter varaible</a>
       </article>
-      <h1>Explore Page</h1>
+      <h1 className="category-header">Current main category from filter varaible</h1>
+      <p className="category-sub-header">Current sub category from filter varaible</p>
       <main>
         <GigList gigs={gigs} />
       </main>
