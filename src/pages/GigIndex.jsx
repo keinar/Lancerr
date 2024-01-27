@@ -13,11 +13,11 @@ export function GigIndex() {
 
   if (!gigs) return <div>Loading..</div>;
   return (
-    <section className="main-containter">
+    <main className="main-container">
       <h1>Explore Page</h1>
       <main>
         <GigList gigs={gigs} />
       </main>
-    </section>
+    </main>
   );
 }
