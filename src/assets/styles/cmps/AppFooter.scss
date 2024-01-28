@@ -1,12 +1,18 @@
-.app-footer {
+footer {
   border-top: 1px solid #e4e5e7;
+  padding-block: 24px;
+}
+
+.top-border {
+  border-top: 1px solid #e4e5e7;
+}
+.app-footer {
   background-color: white;
   position: relative;
   width: 100%;
   bottom: 0;
 
   .footer-wrapper {
-    padding: 24px;
     width: 100%;
 
     .footer-collapsibles {
@@ -45,14 +51,6 @@
           }
         }
       }
-
-      &::after {
-        background-color: #e4e5e7;
-        content: "";
-        height: 1px;
-        margin: 0 6px;
-        width: 100%;
-      }
     }
   }
 }
@@ -80,7 +78,7 @@
   align-items: center;
 
   .left {
-    padding: 16px 0 0;
+    padding: 16px 0 16px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -128,7 +126,6 @@
 
     .right {
       display: flex;
-      height: 40px;
       .social {
         padding: 0;
       }

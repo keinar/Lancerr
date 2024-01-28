@@ -4,14 +4,16 @@ import FooterLogo from "./FooterLogo";
 
 export default function FooterBottom() {
   return (
-    <div className="footer-bottom">
-      <div className="left">
-        <FooterLogo />
-        <div className="copyright-txt">© Lancerr 2024</div>
+    <section className="full main-container top-border">
+      <div className="footer-bottom">
+        <div className="left">
+          <FooterLogo />
+          <div className="copyright-txt">© Lancerr 2024</div>
+        </div>
+        <div className="right">
+          <SocialLinks />
+        </div>
       </div>
-      <div className="right">
-        <SocialLinks />
-      </div>
-    </div>
+    </section>
   );
 }
