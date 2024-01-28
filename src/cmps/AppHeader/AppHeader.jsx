@@ -6,32 +6,50 @@ import HeaderNavigationLinks from "./HeaderNavigationLinks";
 import HeaderSearchForm from "./HeaderSearchForm";
 
 export function AppHeader() {
-  const [isOnTop, setisOnTop] = useState(false);
+  const [isOnTop, setIsOnTop] = useState(true);
+  const [showCategoriesMenu, setShowCategoriesMenu] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleIsOnTop);
+    function handleScroll() {
+      const currentScrollY = window.scrollY;
+      setIsOnTop(currentScrollY <= 0);
+      setShowCategoriesMenu(currentScrollY > 100);
+    }
+
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleIsOnTop);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  function handleIsOnTop() {
-    window.scrollY > 100 ? setisOnTop(true) : setisOnTop(false);
-  }
-
   return (
-    <div className="app-header">
-      <div className="navbar">
-        <HeaderMobileMenuButton />
-        <HeaderLogo />
-        <div className={`search-form-wrapper ${isOnTop ? " display" : ""} `}>
-          <HeaderSearchForm />
-        </div>
-
-        <HeaderNavigationLinks />
+    <section>
+      <section
+        className={`app-header main-container full fixed ${
+          isOnTop ? "header-transparent" : ""
+        }`}
+      >
+        <header className="navbar">
+          <HeaderMobileMenuButton />
+          <HeaderLogo />
+          <div
+            className={`search-form-wrapper ${
+              showCategoriesMenu ? "display" : ""
+            }`}
+          >
+            <HeaderSearchForm />
+          </div>
+          <HeaderNavigationLinks />
+        </header>
+      </section>
+      <div
+        className={`cat-wrapper full main-container ${
+          showCategoriesMenu ? "visible" : ""
+        }`}
+      >
+        <HeaderCategoriesMenu />
       </div>
-      {isOnTop && <HeaderCategoriesMenu />}
-    </div>
+    </section>
   );
 }
