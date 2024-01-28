@@ -18,23 +18,25 @@ export function HomePage() {
   ];
 
   return (
-    <div className="home-page">
-      <div className="hp-hero">
-        <div className="hp-hero-content">
-          <h1>
-            Find the right <i>freelance</i> service, right away
-          </h1>
-          <div className="hp-hero-search-bar">
-            <form className="hp-search-form">
-              <input type="search" placeholder="Search for any service..." />
-              <button className="inside-button">
-                <SearchIcon size={16} color="white" />
-              </button>
-            </form>
+    <main className="full main-container">
+      <div className="home-page">
+        <div className="hp-hero">
+          <div className="hp-hero-content">
+            <h1>
+              Find the right <i>freelance</i> service, right away
+            </h1>
+            <div className="hp-hero-search-bar">
+              <form className="hp-search-form">
+                <input type="search" placeholder="Search for any service..." />
+                <button className="inside-button">
+                  <SearchIcon size={16} color="white" />
+                </button>
+              </form>
+            </div>
           </div>
+          <div className="hp-hero-trusted"></div>
         </div>
-        <div className="hp-hero-trusted"></div>
       </div>
-    </div>
+    </main>
   );
 }
