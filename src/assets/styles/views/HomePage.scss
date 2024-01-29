@@ -1,103 +1,125 @@
-.home-page {
-  background: linear-gradient(180deg, #003912 36.72%, #19aa64 141.43%);
-  margin: 0 0 16px;
+// .home-page {
+//   background: linear-gradient(180deg, #003912 36.72%, #19aa64 141.43%);
+//   margin: 0 0 16px;
+//   position: relative;
+//   padding: 20px;
+//   .hp-hero {
+//     .hp-hero-content {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 20px;
+//       width: 100%;
+//       h1 {
+//         align-self: center;
+//         color: #fff;
+//         font-size: 40px;
+//         font-style: normal;
+//         font-weight: 400;
+//         letter-spacing: -1.2px;
+//         line-height: 93%;
+//         max-width: 320px;
+//         text-align: center;
+//         margin-inline: auto;
+//         i {
+//           color: $clr1;
+//         }
+//       }
+//       .hp-hero-search-bar {
+//         .hp-search-form {
+//           display: flex;
+//           position: relative;
+//           input {
+//             border: 1px solid #c5c6c9;
+//             padding: 12px 2px 12px 16px;
+//             flex: 1;
+//             font-size: 16px;
+//             border-radius: 12px;
+//             height: 52px;
+
+//             &:focus-visible {
+//               outline: none;
+//             }
+//           }
+//           .inside-button {
+//             background-color: #003912;
+//             border-radius: 8px;
+//             border: none;
+//             height: 40px;
+//             position: absolute;
+//             right: 6px;
+//             top: 6px;
+//             width: 40px;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             outline: none;
+//             &:hover {
+//               background-color: #126f43;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 600px) {
+//   .home-page {
+//     .hp-hero {
+//       margin: 32px 32px 64px;
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 900px) {
+//   .home-page {
+//     background-image: url("https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/84c449beda884aa8f9f72023e2d8b3fd-1705308514875/hero-md-x1.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     border-radius: 16px;
+//     height: 370px;
+//     padding: 0;
+//     display: flex;
+//     margin: 20px 30px;
+
+//     .hp-hero {
+//       max-width: 436px;
+//       margin: auto;
+
+//       .hp-hero-content {
+//         h1 {
+//           max-width: fit-content;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 1160px) {
+//   .home-page {
+//     margin: 20px 100px;
+//     height: 500px;
+//   }
+// }
+
+.hero {
+  height: 680px;
+  padding-top: 80px;
   position: relative;
-  padding: 20px;
-  .hp-hero {
-    .hp-hero-content {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      width: 100%;
-      h1 {
-        align-self: center;
-        color: #fff;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: -1.2px;
-        line-height: 93%;
-        max-width: 320px;
-        text-align: center;
-        margin-inline: auto;
-        i {
-          color: $clr1;
-        }
-      }
-      .hp-hero-search-bar {
-        .hp-search-form {
-          display: flex;
-          position: relative;
-          input {
-            border: 1px solid #c5c6c9;
-            padding: 12px 2px 12px 16px;
-            flex: 1;
-            font-size: 16px;
-            border-radius: 12px;
-            height: 52px;
+  z-index: 0;
 
-            &:focus-visible {
-              outline: none;
-            }
-          }
-          .inside-button {
-            background-color: #003912;
-            border-radius: 8px;
-            border: none;
-            height: 40px;
-            position: absolute;
-            right: 6px;
-            top: 6px;
-            width: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            outline: none;
-            &:hover {
-              background-color: #126f43;
-            }
-          }
-        }
+  .hero-backgrounds {
+    .hero-background {
+      background-color: $clr8;
+      background-position: bottom;
+      position: absolute;
+      top: 0;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      z-index: 1;
+      .hero-jenny {
+        background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,dpr_1.0/v1/attachments/generic_asset/asset/4637ac0b5e7bc7f247cd24c0ca9e36a3-1690384616487/jenny-2x.jpg);
       }
     }
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .home-page {
-    .hp-hero {
-      margin: 32px 32px 64px;
-    }
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .home-page {
-    background-image: url("https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/84c449beda884aa8f9f72023e2d8b3fd-1705308514875/hero-md-x1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 16px;
-    height: 370px;
-    padding: 0;
-    display: flex;
-    margin: 20px 30px;
-
-    .hp-hero {
-      max-width: 436px;
-      margin: auto;
-
-      .hp-hero-content {
-        h1 {
-          max-width: fit-content;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 1160px) {
-  .home-page {
-    margin: 20px 100px;
-    height: 500px;
   }
 }
