@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { addGig } from "../store/actions/gig.actions";
 import { Label } from "@mui/icons-material";
 import { gigService, gigCategories } from "../services/gig.service.local";
 import { saveGig } from "../store/actions/gig.actions.js";

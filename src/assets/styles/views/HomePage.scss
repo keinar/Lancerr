@@ -104,9 +104,11 @@
 
 .hero {
   height: 680px;
-  padding-top: 80px;
   position: relative;
   z-index: 0;
+  padding-top: 80px;
+  background-color: #0a4226;
+  margin: 0 auto 24px;
 
   .hero-backgrounds {
     .hero-background {
@@ -114,11 +116,55 @@
       background-position: bottom;
       position: absolute;
       top: 0;
+      right: 0;
+      left: 0;
       background-repeat: no-repeat;
       background-size: auto 100%;
-      z-index: 1;
-      .hero-jenny {
+      background-size: cover;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding: 0 32px 32px;
+      &.hero-jenny {
+        z-index: 1;
         background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,dpr_1.0/v1/attachments/generic_asset/asset/4637ac0b5e7bc7f247cd24c0ca9e36a3-1690384616487/jenny-2x.jpg);
+      }
+      .blured-box {
+        grid-gap: 12px;
+        align-items: center;
+        backdrop-filter: blur(30px);
+        background: hsla(0, 0%, 100%, 0.14);
+        border: 1px solid hsla(0, 0%, 100%, 0.4);
+        border-radius: 1600px;
+        bottom: 0;
+        box-shadow: 0 20px 30px 0 rgba(0, 37, 19, 0.2);
+        color: #fff;
+        display: flex;
+        padding: 12px 24px 12px 12px;
+        position: relative;
+        right: 0;
+        .worker-image {
+          img {
+            display: block;
+            height: 40px;
+            width: 40px;
+          }
+        }
+        .worker-details {
+          display: flex;
+          font-size: 12px;
+          font-weight: 600;
+          -webkit-justify-content: space-between;
+          justify-content: space-between;
+          flex-direction: column;
+
+          font-size: 16px;
+          .name {
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
       }
     }
   }
