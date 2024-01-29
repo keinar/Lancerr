@@ -1,7 +1,7 @@
 import { GigDetails } from "./pages/GigDetails.jsx";
 import { GigIndex } from "./pages/GigIndex.jsx";
 import { GigSeller } from "./pages/GigSeller.jsx";
-import { HomePage } from "./pages/HomePage.jsx";
+import { HomePage } from "./pages/HomePage/HomePage.jsx";
 import { NewGig } from "./pages/NewGig.jsx";
 import Payment from "./pages/Payment.jsx";
 
