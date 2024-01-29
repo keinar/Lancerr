@@ -126,9 +126,26 @@
       justify-content: flex-end;
       align-items: flex-end;
       padding: 0 32px 32px;
+      transition: opacity 0.9s;
       &.hero-jenny {
         z-index: 1;
         background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,dpr_1.0/v1/attachments/generic_asset/asset/4637ac0b5e7bc7f247cd24c0ca9e36a3-1690384616487/jenny-2x.jpg);
+      }
+      &.hero-colin {
+        z-index: 1;
+        background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,dpr_1.0/v1/attachments/generic_asset/asset/4637ac0b5e7bc7f247cd24c0ca9e36a3-1690384616493/colin-2x.jpg);
+      }
+      &.hero-scarlett {
+        z-index: 1;
+        background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,dpr_1.0/v1/attachments/generic_asset/asset/4637ac0b5e7bc7f247cd24c0ca9e36a3-1690384616487/scarlett-2x.jpg);
+      }
+      &.hero-jordan {
+        z-index: 1;
+        background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,dpr_1.0/v1/attachments/generic_asset/asset/4637ac0b5e7bc7f247cd24c0ca9e36a3-1690384616493/jordan-2x.jpg);
+      }
+      &.hero-christina {
+        z-index: 1;
+        background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,dpr_1.0/v1/attachments/generic_asset/asset/4637ac0b5e7bc7f247cd24c0ca9e36a3-1690384616497/christina-2x.jpg);
       }
       .blured-box {
         grid-gap: 12px;
