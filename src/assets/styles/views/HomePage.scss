@@ -103,16 +103,14 @@
 // }
 
 .hero {
-  height: 680px;
+  height: 760px;
   position: relative;
   z-index: 0;
   padding-top: 80px;
-  background-color: #0a4226;
   margin: 0 auto 24px;
 
   .hero-backgrounds {
     .hero-background {
-      background-color: $clr8;
       background-position: bottom;
       position: absolute;
       top: 0;
@@ -120,7 +118,6 @@
       left: 0;
       background-repeat: no-repeat;
       background-size: auto 100%;
-      background-size: cover;
       height: 100%;
       display: flex;
       justify-content: flex-end;
@@ -130,20 +127,25 @@
       &.hero-jenny {
         z-index: 1;
         background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,dpr_1.0/v1/attachments/generic_asset/asset/4637ac0b5e7bc7f247cd24c0ca9e36a3-1690384616487/jenny-2x.jpg);
+        background-color: #0a4226;
       }
       &.hero-colin {
+        background-color: #a7445a;
         z-index: 1;
         background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,dpr_1.0/v1/attachments/generic_asset/asset/4637ac0b5e7bc7f247cd24c0ca9e36a3-1690384616493/colin-2x.jpg);
       }
       &.hero-scarlett {
+        background-color: #5f1628;
         z-index: 1;
         background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,dpr_1.0/v1/attachments/generic_asset/asset/4637ac0b5e7bc7f247cd24c0ca9e36a3-1690384616487/scarlett-2x.jpg);
       }
       &.hero-jordan {
+        background-color: #0f4926;
         z-index: 1;
         background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,dpr_1.0/v1/attachments/generic_asset/asset/4637ac0b5e7bc7f247cd24c0ca9e36a3-1690384616493/jordan-2x.jpg);
       }
       &.hero-christina {
+        background-color: #ad3906;
         z-index: 1;
         background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,dpr_1.0/v1/attachments/generic_asset/asset/4637ac0b5e7bc7f247cd24c0ca9e36a3-1690384616497/christina-2x.jpg);
       }
