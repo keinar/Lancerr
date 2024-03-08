@@ -2,33 +2,6 @@ export const SET_GIGS = 'SET_GIGS'
 export const ADD_GIG = 'ADD_GIG'
 export const UPDATE_GIG = 'UPDATE_GIG'
 
-
-// const initialState = {
-//     gigs: [{
-//         "_id": "i101",
-//         "title": "I will design your logo",
-//         "price": 12,
-//         "owner": {
-//           "_id": "u101",
-//           "fullname": "Dudu Da",
-//           "imgUrl": "url",
-//           "level": "basic/premium",
-//           "rate": 4
-//         },
-//         "daysToMake": 3,
-//         "description": "Make unique logo...",
-//         "imgUrl": "",
-//         "tags": [
-//           "logo-design",
-//           "artisitic",
-//           "proffesional",
-//           "accessible"
-//         ],
-//         "likedByUsers": ['mini-user'] // for user-wishlist : use $in
-//       }]
-
-// }
-
 const initialState = {
     gigs: []
 }
@@ -43,7 +16,9 @@ export function gigReducer(state = initialState, action) {
         case ADD_GIG:
             return {
                 ...state,
-                gigs: state.gigs ? [...state.gigs, action.gig] : [action.gig]
+                gigs: [action.gig,...state.gigs ]
+                // gigs: state.gigs ? [...state.gigs, action.gig] : [action.gig]
+
             }
         case UPDATE_GIG:
             return {
@@ -58,6 +33,7 @@ export function gigReducer(state = initialState, action) {
         //     return newState
 
         default:
+            return state;
     }
     return newState
 }
