@@ -6,64 +6,70 @@ import { userService } from './user.service.js'
 const STORAGE_KEY = 'gigs'
 
 export const gigService = {
-    query,
-    getById,
-    save,
-    remove,
-    getEmptyGig,
-    addGigMsg
-    
-    
+  query,
+  getById,
+  save,
+  remove,
+  getEmptyGig,
+  addGigMsg
+
+
 }
 window.cs = gigService
 
 _createGigs()
-async function query() {
-    var gigs = await storageService.query(STORAGE_KEY)
-    return gigs
+async function query(filterBy = {}) {
+  const gigs = await storageService.query(STORAGE_KEY)
+  let gigsToReturn = [...gigs]
+  if (filterBy.tags && filterBy.tags.length > 0) {
+    gigsToReturn = gigsToReturn.filter(gig => {
+      return filterBy.tags.some(tag => gig.tags.includes(tag))
+    })
+  }
+  return gigsToReturn
 }
 
 function getById(gigId) {
-    return storageService.get(STORAGE_KEY, gigId)
+  return storageService.get(STORAGE_KEY, gigId)
 }
 
 async function remove(gigId) {
-    // throw new Error('Nope')
-    await storageService.remove(STORAGE_KEY, gigId)
+  // throw new Error('Nope')
+  await storageService.remove(STORAGE_KEY, gigId)
 }
 
 async function save(gig) {
-    var savedGig
-    if (gig._id) {
-        savedGig = await storageService.put(STORAGE_KEY, gig)
-    } else {
-        // Later, owner is set by the backend
-        // gig.owner = userService.getLoggedinUser()
-        savedGig = await storageService.post(STORAGE_KEY, gig)
-    }
-    return savedGig
+  var savedGig
+  if (gig._id) {
+    savedGig = await storageService.put(STORAGE_KEY, gig)
+  } else {
+    // Later, owner is set by the backend
+    // gig.owner = userService.getLoggedinUser()
+    savedGig = await storageService.post(STORAGE_KEY, gig)
+  }
+  return savedGig
 }
 
 async function addGigMsg(gigId, txt) {
-    // Later, this is all done by the backend
-    const gig = await getById(gigId)
-    if (!gig.msgs) gig.msgs = []
+  // Later, this is all done by the backend
+  const gig = await getById(gigId)
+  if (!gig.msgs) gig.msgs = []
 
-    const msg = {
-        id: utilService.makeId(),
-        by: userService.getLoggedinUser(),
-        txt
-    }
-    gig.msgs.push(msg)
-    await storageService.put(STORAGE_KEY, gig)
+  const msg = {
+    id: utilService.makeId(),
+    by: userService.getLoggedinUser(),
+    txt
+  }
+  gig.msgs.push(msg)
+  await storageService.put(STORAGE_KEY, gig)
 
-    return msg
+  return msg
 }
 function createGig(model = '', type = '', batteryStatus = 100) {
   return {
-      model,
-      batteryStatus,
-      type
+    model,
+    batteryStatus,
+    type
   }
 }
 

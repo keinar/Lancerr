@@ -20,7 +20,7 @@ export function gigReducer(state = initialState, action) {
         case ADD_GIG:
             return {
                 ...state,
-                gigs: [action.gig,...state.gigs ]
+                gigs: [action.gig, ...state.gigs]
                 // gigs: state.gigs ? [...state.gigs, action.gig] : [action.gig]
 
             }
@@ -42,6 +42,5 @@ export function gigReducer(state = initialState, action) {
 
         default:
             return state;
-    }
-    return newState
+    }    
 }
