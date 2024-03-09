@@ -1,6 +1,6 @@
 import { store } from '../store.js'
 import * as actions from '../reducers/gig.reducer.js'
-import { ADD_GIG, SET_GIGS, UPDATE_GIG } from "../reducers/gig.reducer.js";
+import { ADD_GIG, SET_GIGS, UPDATE_GIG,SET_FILTER_BY} from "../reducers/gig.reducer.js";
 import { gigService } from '../../services/gig.service.local.js'
 
 export async function addGig(gig){
@@ -25,10 +25,14 @@ export async function saveGig(gigToSave) {
     }
 }
 
+export function setFilterBy(filterBy) {
+    store.dispatch({ type: SET_FILTER_BY, filterBy })
+}
 
-export async function loadGigs() {    
+export async function loadGigs() {  
+    const filterBy = store.getState().gigModule.filterBy  
     try {
-        const gigs = await gigService.query()
+        const gigs = await gigService.query(filterBy)
         store.dispatch({ type: SET_GIGS, gigs })
     } catch (err) {
         console.log('Had issues loading gigs', err);
