@@ -1,6 +1,7 @@
 export const SET_GIGS = 'SET_GIGS'
 export const ADD_GIG = 'ADD_GIG'
 export const UPDATE_GIG = 'UPDATE_GIG'
+export const SET_FILTER_BY = 'SET_FILTER_BY'
 
 const initialState = {
     gigs: []
@@ -8,15 +9,17 @@ const initialState = {
 
 export function gigReducer(state = initialState, action) {
     var newState = state
-   
+
     switch (action.type) {
         case SET_GIGS:
-            newState = { ...state, gigs: action.gigs }
-            break
+            return{
+                ...state,
+                gigs: action.gigs
+            }                   
         case ADD_GIG:
             return {
                 ...state,
-                gigs: [action.gig,...state.gigs ]
+                gigs: [action.gig, ...state.gigs]
                 // gigs: state.gigs ? [...state.gigs, action.gig] : [action.gig]
 
             }
@@ -25,15 +28,12 @@ export function gigReducer(state = initialState, action) {
                 ...state,
                 gigs: state.gigs.map(gig => gig._id === action.gig._id ? action.gig : gig)
             }
-        // case ADD_GIG:
-        //     const gig = action.value
-        //     gig.id = "_" + new Date().getTime()
-        //     newState = { ...state, gigs: [...state.gigs, gig] }
-        //     localStorage.setItem('gigsData', JSON.stringify(newState))
-        //     return newState
-
+        case SET_FILTER_BY:
+            return {
+                ...state,
+                filterBy: { ...action.filterBy }
+            }
         default:
             return state;
-    }
-    return newState
+    }    
 }
