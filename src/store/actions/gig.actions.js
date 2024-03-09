@@ -16,7 +16,7 @@ export async function saveGig(gigToSave) {
     const type = gigToSave.id ? UPDATE_GIG : ADD_GIG
     try {
         const savedGig = await gigService.save(gigToSave)
-        await store.dispatch({ type, gig: savedGig })
+        store.dispatch({ type, gig: savedGig })
     } catch (err) {
         console.log('Had issues saving gig', err);
         throw err
