@@ -11,8 +11,9 @@ export const gigService = {
   save,
   remove,
   getEmptyGig,
-  addGigMsg
-
+  addGigMsg,
+  getDefaultFilter,
+  getFilterFromParams
 
 }
 window.cs = gigService
@@ -37,6 +38,40 @@ async function remove(gigId) {
   // throw new Error('Nope')
   await storageService.remove(STORAGE_KEY, gigId)
 }
+
+function getDefaultFilter() {
+  return {
+      tags: []
+  }
+}
+
+// function getFilterFromParams(searchParams) {
+//   const defaultFilter = getDefaultFilter()
+//   const filterBy = {}
+//   for (const field in defaultFilter) {
+//       filterBy[field] = searchParams.get(field) || defaultFilter[field]
+//   }
+//   return filterBy
+// }
+function getFilterFromParams(searchParams) {
+  const defaultFilter = getDefaultFilter()
+  const filterBy = {}
+
+  for (const field in defaultFilter) {
+    const fieldValue = searchParams.get(field)
+
+    if (field === "tags") {
+      // Convert tags to an array
+      filterBy[field] = fieldValue ? fieldValue.split(",") : defaultFilter[field]
+    } else {
+      // Keep other parameters as they are
+      filterBy[field] = fieldValue || defaultFilter[field]
+    }
+  }
+
+  return filterBy
+}
+
 
 async function save(gig) {
   var savedGig
