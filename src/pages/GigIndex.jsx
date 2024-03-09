@@ -1,29 +1,38 @@
 import { useEffect } from "react"
 import { useSelector } from "react-redux"
 import { GigList } from "../cmps/GigList.jsx"
-import { loadGigs,setFilterBy } from "../store/actions/gig.actions.js"
+import { loadGigs, setFilterBy } from "../store/actions/gig.actions.js"
 import { GigFilter } from "../cmps/GigFilter.jsx"
+import { useSearchParams } from "react-router-dom"
+import { gigService } from "../services/gig.service.local.js"
 
-export function GigIndex() {  
+export function GigIndex() {
+  const [searchParams, setSearchParams] = useSearchParams()
   const gigs = useSelector((storeState) => storeState.gigModule.gigs)
   const filterBy = useSelector(storeState => storeState.gigModule.filterBy)
 
+  useEffect(() => {    
+    setFilterBy(gigService.getFilterFromParams(searchParams))
+  }, [])
+
   useEffect(() => {
     // Sanitize filterBy
+    
     loadGigs();
+    setSearchParams(filterBy)
   }, [filterBy]);
 
   function onSetFilter(fieldsToUpdate) {
-    fieldsToUpdate = { ...filterBy, ...fieldsToUpdate }
+    fieldsToUpdate = { ...filterBy, ...fieldsToUpdate }    
     setFilterBy(fieldsToUpdate)
-}
+  }
 
   if (!gigs) return <div>Loading..</div>
-  
+
   return (
     <main className="main-container">
       <section className="GigIndex full main-container">
-      <GigFilter onSetFilter={onSetFilter}  />
+        <GigFilter onSetFilter={onSetFilter} />
         <article className="filter-title">
           <a className="home" href="/"><img className="home-icon" src="/src/assets/imgs/home-icon.svg"
             alt="Home" title="Go to homepage" />
