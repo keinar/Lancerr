@@ -40,7 +40,7 @@ export function NewGig() {
   async function onSubmitGig(ev) {
     ev.preventDefault()
     try {
-      saveGig(gig)
+      await saveGig(gig)
       navigate('/Lancerr/gig')
     } catch (err) {
       console.log('Had issues saving gig', err);
