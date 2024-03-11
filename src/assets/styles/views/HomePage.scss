@@ -88,6 +88,58 @@
     }
   }
 
+  .hp-hero-search-bar {
+    form {
+      display: flex;
+      input {
+        width: 90%;
+        height: 45px;
+        border: none;
+        border-radius: 4px 0 0 4px;
+        font-size: 1rem;
+        padding-left: 10px;
+      }
+      button {
+        height: 45px;
+        width: 60px;
+        background-color: $clr1;
+        border-radius: 0 4px 4px 0;
+        border: none;
+      }
+    }
+  }
+
+  .popular-tags {
+    display: flex;
+    margin: 10px;
+    button {
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 50px;
+      height: fit-content;
+      padding: 5px 10px;
+      margin: 5px;
+      color: white;
+      font-size: 0.9rem;
+      cursor: pointer;
+      font-weight: 600;
+
+      &:hover {
+        background-color: white;
+        color: #404145;
+      }
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
   .hero-backgrounds {
     .hero-background {
       background-position: bottom;
