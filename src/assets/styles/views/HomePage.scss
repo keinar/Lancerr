@@ -4,6 +4,7 @@
   z-index: 0;
   padding-top: 80px;
   margin: 0 auto 24px;
+  margin-bottom: 0;
 
   .max-width-container {
     position: absolute;
@@ -149,5 +150,19 @@
         }
       }
     }
+  }
+}
+
+.trusted-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: #f5f5f5;
+  padding-block: 20px;
+  margin-bottom: 96px;
+  img {
+    width: 80px;
+    max-height: 60px;
   }
 }
