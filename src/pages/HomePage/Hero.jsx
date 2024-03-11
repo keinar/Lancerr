@@ -24,7 +24,7 @@ export default function Hero(allTags) {
   return (
     <section className="hero">
       <div className="hero-backgrounds">
-        <div class="hero max-width-container">
+        <div className="hero max-width-container">
           <div className="hp-hero-content">
             <h1>
               <strong>Find the right</strong> <i>freelance</i> <br />
