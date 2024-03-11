@@ -1,28 +1,52 @@
-import React, { useEffect, useState } from "react";
+import { SearchIcon } from "lucide-react"
+import React, { useEffect, useState } from "react"
 
-export default function Hero() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+export default function Hero(allTags) {
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      const divs = document.querySelectorAll(".hero-background");
+      const divs = document.querySelectorAll(".hero-background")
       divs.forEach((div, index) => {
         if (index === currentIndex) {
-          div.style.opacity = 1;
+          div.style.opacity = 1
         } else {
-          div.style.opacity = 0;
+          div.style.opacity = 0
         }
-      });
+      })
 
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % divs.length);
-    }, 5000);
+      setCurrentIndex(prevIndex => (prevIndex + 1) % divs.length)
+    }, 5000)
 
-    return () => clearInterval(intervalId);
-  }, [currentIndex]);
+    return () => clearInterval(intervalId)
+  }, [currentIndex])
 
   return (
     <section className="hero">
       <div className="hero-backgrounds">
+        <div className="hero max-width-container">
+          <div className="hp-hero-content">
+            <h1>
+              <strong>Find the right</strong> <i>freelance</i> <br />
+              <strong> service, right away</strong>
+            </h1>
+            <div className="hp-hero-search-bar">
+              <form className="hp-search-form">
+                <input type="search" placeholder="Search for any service..." />
+                <button className="inside-button">
+                  <SearchIcon size={16} color="white" />
+                </button>
+              </form>
+              <div className="popular-tags">
+                <p>Popular:</p>
+                {allTags.allTags.map(tag => (
+                  <button key={tag}>{tag}</button>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="hp-hero-trusted"></div>
+        </div>
         <div className="hero-background hero-jenny" style={{ opacity: 1 }}>
           <div className="blured-box">
             <div className="worker-image">
@@ -90,5 +114,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  );
+  )
 }
