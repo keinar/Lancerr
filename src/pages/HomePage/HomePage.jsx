@@ -11,11 +11,11 @@ import Hero from "./Hero"
 
 export function HomePage() {
   // Mock data for tags
-  const allTags = ["logo-design", "wordpress", "voice-over", "artistic", "professional", "accessible"]
+  const allTags = ["Website Design", "Wordpress", "Logo Design", "AI Services"]
 
   return (
     <main className="home-page">
-      <Hero />
+      <Hero allTags={allTags} />
     </main>
   )
 }
