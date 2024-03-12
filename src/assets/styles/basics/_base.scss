@@ -16,7 +16,7 @@ body {
   font-size: rem(18px);
   margin: 0;
   margin: auto;
-  background-color: rgb(255, 255, 255); // for testing
+  // background-color: rgb(255, 255, 255); // for testing
 }
 
 h1,
@@ -30,14 +30,7 @@ h6 {
   color: $clr2;
 }
 
-h2{
-  margin: 0 0 0.6em;
-  line-height: 1;
-  font-weight: 500;
-  // font-size: 20px;
-}
-
-h2{
+h2 {
   margin: 0 0 0.6em;
   line-height: 1;
   font-weight: 500;
@@ -47,7 +40,7 @@ h2{
 section,
 main,
 footer {
-   padding:0px;
+  padding: 0px;
 }
 
 img {
@@ -62,16 +55,6 @@ p {
 a {
   text-decoration: none;
   color: $clr3;
-}
-
-ul{
-  padding: 0px;
-  margin-top: 0px;
-}
-
-ul{
-  padding: 0px;
-  margin-top: 0px;
 }
 
 li {
