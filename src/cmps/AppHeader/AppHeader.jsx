@@ -4,7 +4,7 @@ import HeaderLogo from "./HeaderLogo"
 import HeaderMobileMenuButton from "./HeaderMobileMenuButton"
 import HeaderNavigationLinks from "./HeaderNavigationLinks"
 import HeaderSearchForm from "./HeaderSearchForm"
-import { useLocation, useSearchParams } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 
 export function AppHeader() {
   const [isOnTop, setIsOnTop] = useState(true)
