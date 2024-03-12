@@ -41,3 +41,10 @@ export async function loadGigs() {
         // store.dispatch({ type: 'SET_IS_LOADING', isLoading: false })
     }
 }
+
+export function onToggleModal(modalData = null) {
+    store.dispatch({
+        type: SET_MODAL_DATA,
+        modalData,
+    })
+}

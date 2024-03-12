@@ -19,13 +19,17 @@ const ImageCarousel = ({ images }) => {
     <div className="carousel-container">
       <div className="selected-image-container">
         <button className="prev-button" onClick={prevSlide}>&lt;</button>
-        <img
-          src={images[currentIndex]}
-          alt={`Slide ${currentIndex + 1}`}
-          className="selected-image"
-        />
+        <div className="selected-image-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Slide ${index + 1}`}
+              className={`selected-image`}
+            />
+          ))}
+        </div>
         <button className="next-button" onClick={nextSlide}>&gt;</button>
-
       </div>
 
       <div className="thumbnail-container">

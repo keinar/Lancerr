@@ -1,104 +1,490 @@
-.gig-index{
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-areas: "details packages";
-    .gig-details{
-        min-width: 42vw;
-        margin: 10px;
-        padding: 1.5rem;
-        grid-area: details;
-        .about-the-seller {
-            display: flex;
-            flex-direction: row;
-            margin-top: 30px;
-            
-            .profile-picture{
-                width: 120px;
-                height: 120px;
-                border-radius: 50%;
-                border-style: hidden;
-                margin-right: 20px;
+.main-container {
+    padding: none;
+    grid-template-columns: 0px 1fr 0px;
+
+    .gig-index {
+        display: grid;
+        grid-auto-flow: column;
+        column-count: 2;
+        grid-template-areas: "details side";
+        width: 100%;
+
+        .gig-details {
+            min-width: 42vw;
+            grid-area: details;
+
+
+            .details-header {
+                width: 100%;
+                padding: 32px 24px 0px;
+
+                .about-the-seller {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 30px;
+
+                    .profile-picture {
+                        width: 38px;
+                        height: 38px;
+                        margin-left: 0px;
+                        border-radius: 50%;
+                        border-style: hidden;
+                        margin-right: 20px;
+                        margin-bottom: initial;
+                    }
+
+                    svg {
+                        margin-right: 4px;
+                    }
+
+                    .seller-info-text {
+                        margin-left: initial;
+                        margin-right: initial;
+                    }
+
+                    
+                }
+
             }
-        }
-    
-    }
-}
-.side-wrapper{
-    display: flex;
-    position: sticky;
-    top:120px;
-    flex-direction: column;
-    .package-content{
-        margin-top: 10px;
-        height: 350px;
-        grid-area: packages;
-        max-width: 30vw;
-        border: 1px solid #dadbdd;
-    
-        .nav-container{
-            min-width: 25vw;
-            display: flex;
-            justify-content: space-around;
-            input{
-                display: none;
-            }
-            label{
-                text-align: center;
-                min-width: 33%;
-                padding: 1rem;
-                border: 1px solid #dadbdd;
-            }
-            input:checked+label{
-                font-weight: bold;
-                border-bottom: 3px solid #222325;
-            }
-        }
-        .package-body{
-            padding: 10px;
-            .price-wrapper{
-                display: grid;
-                grid-auto-flow: column;
-                gap: 2px;
-            }
-            b{
-                font-weight:1000;
-            }
-            .delivery-wrapper{
-                display: flex;
-                flex-direction: row;
-                svg{
-                    width: 16px;
-                    padding-bottom: 20px;
-                    margin-right: 5px;
+
+            .carousel-container {
+                width: 90%;
+
+                .selected-image-container{
+                    background-color: #f5f5f5;
+                }
+
+                .thumbnail-container {
+                    img {
+                        width: 100%;
+                        height: 12.9vh;
+
+                    }
                 }
             }
-            button{
-                width: 90%;
+
+            .about-this-gig {
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid #dadbdd;
+                .gig-description {
+                    padding: 32px 24px 0px;
+                    p{
+                        color: #696b71;
+                    }
+                    li{
+                        list-style: unset;
+                    }
+                    h2{
+                        padding: 0;
+                    }
+                }
+
+
+                h2 {
+                    padding: 32px 24px 0px;
+                    color: #404145 ;
+                }
+            }
+
+            .about-the-seller-big{
+                display: grid;
+                margin-top: 30px;
+                padding: 32px 24px 0px;
+                grid-template-areas: 
+                    "s"
+                    "pw "
+                ;
+                margin-bottom: 10px;
+
+                .profile-wrapper{
+                    grid-area: pw;
+                    display: flex;
+                    flex-direction: row;
+                }
+
+            
+                span {
+                    margin-bottom: 30px;
+                    grid-area: s;
+                }
+
+                .seller-info-text{
+                    grid-area: t;
+                    margin-left: 19px;
+                    
+                    p{
+                        margin-top: 7px;
+                        margin-bottom: 31px;
+                    }
+                    //padding: 25px 13px ;
+                }
+
+                .profile-picture {
+                    grid-area: p;
+                    width: 98px;
+                    height: 98px;
+                    border-radius: 50%;
+                    border-style: hidden;
+                    margin-bottom: 15px;
+                }
+
+                svg {
+                    margin-right: 4px;
+                }
+            }
+            .user-description{
+                border: 1px solid #dadbdd;
+                padding: 24px;
+                grid-area: ud;
+                width: 92%;
+                .user-stats{
+                    display: flex;
+                    // justify-content: space-between;
+                    border-bottom: 1px solid #dadbdd;
+                    padding: 0;
+                    div{
+                        margin-right: 180px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .user-story{
+                    p{
+                        margin-bottom: 0px;
+                    }
+                }
+
+            }
+
+        }
+
+        .big-side {
+            display: none;
+        }
+    }
+
+    .side-wrapper {
+        display: flex;
+        // position: sticky;
+        grid-area: side;
+        top: 120px;
+        flex-direction: column;
+        width: 100%;
+        height: 30vh;
+        grid-area: side;
+        margin-bottom: 180px;
+
+        .package-content {
+            margin-top: 10px;
+            height: fit-content;
+            border-top: 1px solid #dadbdd;
+            border-left: 1px solid #dadbdd;
+            border-right: 1px solid #dadbdd;
+            border-bottom: 1px solid #dadbdd;
+
+            .nav-container {
+                display: flex;
+                justify-content: space-around;
+
+                input {
+                    display: none;
+                }
+
+                label {
+                    text-align: center;
+                    min-width: 33%;
+                    padding: 1rem;
+                    border: 0.5px solid #dadbdd;
+                    border-top: 0px;
+                    background-color: #fafafa;
+                }
+
+                input:checked+label {
+                    font-weight: bold;
+                    background-color: #ffffff;
+                    border-bottom: 3px solid #222325;
+                }
+            }
+
+            .package-body {
+                padding: 32px 24px 10px;
+                min-height: 35vh;
+
+                .pack-description{
+                    p{
+                        margin: 0px;
+                        margin-top: 23px;
+                    }
+                }
+
+                .collapsible {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color:#fff;
+                    color: #444;
+                    cursor: pointer;
+                    padding: 0px;
+                    margin: 0px;
+                    border: none;
+                    text-align: right;
+                    outline: none;
+                    font-size: 15px;
+                  }
+                  
+                  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+                  .active, .collapsible:hover {
+                    //background-color: #ccc;
+                  }
+                  
+                  /* Style the collapsible content. Note: hidden by default */
+                  .content {
+                    display: none;
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                  }
+
+                .price-wrapper {
+                    display: grid;
+                    grid-auto-flow: column;
+                    gap: 2px;
+                }
+
+                b {
+                    font-weight: 1000;
+                }
+
+                .delivery-wrapper {
+                    display: flex;
+                    flex-direction: row;
+
+                    svg {
+                        width: 16px;
+                        padding-bottom: 20px;
+                        margin-right: 5px;
+                    }
+                }
+
+                button {
+                    width: 85vw;
+                    height: 40px;
+                    background-color: black;
+                    color: white;
+                    border: 1px solid transparent;
+                    border-radius: 4px;
+                    margin: auto;
+                    /* Add this line to center the button horizontally */
+                    display: block;
+                    /* Add this line to center the button horizontally */
+                }
+            }
+        }
+
+        .contact-seller {
+            padding: 10px;
+            // background-color: #fafafa;
+            height: 60px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            button {
+                width: 85vw;
                 height: 40px;
-                background-color: black;
-                color: white;
-                border: 1px solid transparent;
+                background-color: #fafafa;
+                color: black;
+                border: 1px solid black;
                 border-radius: 4px;
-                margin: auto; /* Add this line to center the button horizontally */
-                display: block; /* Add this line to center the button horizontally */
+                margin: auto;
+                /* Add this line to center the button horizontally */
+                display: block;
             }
         }
     }
-    .contact-seller{
-        padding: 10px;
-        background-color: #fafafa;
-        height: 60px;
-        margin-top: 20px;
-        max-width: 30vw;
-        button{
-            width: 90%;
-            height: 40px;
-            background-color: #fafafa;
-            color: black;
-            border: 1px solid black;
-            border-radius: 4px;
-            margin: auto; /* Add this line to center the button horizontally */
-            display: block;
+
+    @media (min-width: 600px) {
+        .gig-index {
+
+            .gig-details {
+                display: grid;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "dh"
+                    "carousel"
+                    "about";
+
+                .details-header {
+                    grid-area: dh;
+                }
+
+                .carousel-container {
+                    grid-area: carousel;
+                    // padding: 0px;
+
+                        .selected-image-container {
+
+                            img {
+                                width: 95vw;
+                                height: 95vw;
+                            }
+
+                        }
+
+                        .indication-dots-wrapper {
+                            display: none;
+                        }
+                    
+                    .thumbnail-container {
+                        position: relative;
+                        width: 100%;
+                        background-color: white;
+
+                        img {
+                            width: 18vw;
+                            height: 12vw;
+                        }
+                    }
+                }
+
+                .about-this-gig {
+                    .gig-description {
+                        grid-area: description;
+                    }
+
+                    .side-wrapper {
+                        grid-area: side1;
+
+                        .contact-seller{
+                            background-color: #fafafa;
+                        }
+                    }
+
+                    h3 {
+                        grid-area: h;
+                    }
+                }
+            }
         }
+
     }
+
+    @media (min-width: 900px) {
+
+        .gig-index {
+            
+            padding: 0 250px;
+            display: grid;
+            grid-template-areas:
+                "details side1";
+
+            .gig-details {
+                grid-area: details;
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+                margin-right: 5.15%;
+                .details-header {
+                    grid-area: dh;
+                }
+
+                .carousel-container {
+                    
+                    background-color: #f5f5f5;
+                    width: 92%;
+
+                    .selected-image-container {
+                        position: relative;
+                        height: 45vh;
+                        .selected-image-wrapper{
+                            height: 100%;
+                            .selected-image {
+                                width: 100%;
+                                min-width: 100%;
+                                height: initial;
+                                padding: 0 34px;
+                            }
+                        }
+
+                        .prev-button {
+                            left:-24px;
+                          }
+                          
+                          .next-button {
+                            right: -24px;
+                          }
+
+                    }
+
+                    .indication-dots-wrapper {
+                        display: none;
+                    }
+                    
+
+                    .thumbnail-container {
+                        overflow-x: clip;
+                        height: 84px;
+
+                        img {
+                            width: 100px;
+                            height:60px;
+                        }
+                    }
+                }
+
+                .about-this-gig {
+
+                    .gig-description {
+                        grid-area: description;
+                        padding: 32px 0px 0px;
+
+                        ul{
+                            padding: 15px;
+                        }
+                    }
+
+                    .small-side {
+                        display: none;
+
+                        .side-wrapper {
+                            grid-area: side1;
+
+                        }
+                    }
+                    
+                    h2{
+                        padding: 32px 0px 0px;
+                    }
+
+                    h3 {
+                        grid-area: h;
+                    }
+                }
+
+                .about-the-seller-big {
+                    grid-area: seller;
+                    padding: 32px 0px 0px;
+                }
+            }
+
+            .big-side {
+                display: block;
+
+                .side-wrapper {
+                    top: 120px;
+                    position: sticky;
+                    width: 24vw;
+
+                    .contact-seller{
+                        background-color: #fafafa;
+                    }
+
+                    button{
+                        width: 21vw;
+                    }
+                }
+            }
+        }
+
+    }
+
+
 }
