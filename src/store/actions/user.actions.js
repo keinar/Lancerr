@@ -6,6 +6,16 @@ import { showErrorMsg } from '../../services/event-bus.service.js'
 import { LOADING_DONE, LOADING_START } from "../system.reducer.js";
 import { REMOVE_USER, SET_USER, SET_USERS, SET_WATCHED_USER } from "../reducers/user.reducer.js";
 
+
+export async function setLoggedinUser(loggedinUser) {
+    try {
+        store.dispatch({ type: SET_USER, loggedinUser })
+    } catch (err) {
+        console.log("Had issues loggedin user")
+        throw err
+    }
+}
+
 export async function loadUsers() {
     try {
         store.dispatch({ type: LOADING_START })
