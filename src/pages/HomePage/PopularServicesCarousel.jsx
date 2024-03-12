@@ -55,7 +55,13 @@ export default function PopularServicesCarousel() {
     <div className="slider-container">
       <Slider {...settings}>
         <div className="slider-item">
-          <img src={AIArtists} alt="AI Artists" />
+          <h4>
+            <small>Add talent to AI</small>AI Artists
+          </h4>
+          <picture>
+            <source srcSet={AIArtists} type="image/webp" />
+            <img src={AIArtists} alt="AI Artists" />
+          </picture>
         </div>
         <div className="slider-item">
           <img src={LogoDesign} alt="Logo Design" />
