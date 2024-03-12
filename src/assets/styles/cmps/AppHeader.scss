@@ -5,16 +5,60 @@
   z-index: 999;
 }
 
-dialog.auth-dialog {
-  position: fixed;
-  top: 30%;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-  padding: 20px;
-  border-radius: 4px;
-  background-color: white;
-  z-index: 100;
+.auth-dialog-container {
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  dialog.auth-dialog {
+    position: fixed;
+    top: 5%;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    padding: 0;
+    background-color: white;
+    z-index: 100;
+    width: 75%;
+    height: 90%;
+    border-radius: 12px;
+
+    .dialog-left,
+    .dialog-right {
+      width: 50%;
+      padding: 50px;
+    }
+
+    .dialog-left {
+      background-image: url("/src/assets/imgs/dialog-background.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 12px 0 0 12px;
+
+      h2 {
+        color: white;
+        font-weight: bold;
+        font-size: 32px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        color: white;
+        li {
+          display: flex;
+          font-size: 18px;
+          font-weight: 500;
+          span {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .app-header {
