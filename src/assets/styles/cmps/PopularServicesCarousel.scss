@@ -1,0 +1,31 @@
+.slider-container {
+  width: 90vw;
+  margin: 0 auto;
+
+  .slider-item {
+    padding-inline: 8px;
+    img {
+      border-radius: 4px;
+    }
+  }
+}
+
+.slick-prev {
+  z-index: 2;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.custom-arrow {
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 2px #0000008f;
+}
