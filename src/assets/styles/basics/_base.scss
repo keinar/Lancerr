@@ -16,7 +16,7 @@ body {
   font-size: rem(18px);
   margin: 0;
   margin: auto;
-  // background-color: rgb(255, 255, 255); // for testing
+  background-color: rgb(255, 255, 255); // for testing
 }
 
 h1,
@@ -37,6 +37,7 @@ h2 {
   // font-size: 20px;
 }
 
+
 section,
 main,
 footer {
@@ -56,6 +57,7 @@ a {
   text-decoration: none;
   color: $clr3;
 }
+
 
 li {
   list-style: none;
