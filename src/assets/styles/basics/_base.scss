@@ -16,11 +16,10 @@ body {
   font-size: rem(18px);
   margin: 0;
   margin: auto;
-  background-color: beige; // for testing
+  background-color: rgb(255, 255, 255); // for testing
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -28,6 +27,13 @@ h6 {
   margin: 0 0 0.6em;
   line-height: 1;
   font-weight: 500;
+}
+
+h2{
+  margin: 0 0 0.6em;
+  line-height: 1;
+  font-weight: 500;
+  // font-size: 20px;
 }
 
 section,
@@ -46,6 +52,11 @@ p {
 
 a {
   text-decoration: none;
+}
+
+ul{
+  padding: 0px;
+  margin-top: 0px;
 }
 
 li {

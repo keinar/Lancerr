@@ -1,46 +1,57 @@
-.carousel-container {
-  width: 40vw;
+.selected-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
-.selected-image-container {
-  position: relative; /* Ensure relative positioning for absolute child */
+.selected-image-wrapper {
   display: flex;
-  flex-direction: row;
+  transition: transform 0.5s ease;
+  box-sizing: content-box; /* Ensure padding is included in the width */
+}
 
-  .prev-button {
-    position: absolute;
-    border-radius: 50%;
-    height: 48px;
-    width: 48px;
-    top: 50%; 
-    transform: translateY(-50%); 
-    left: -24px; 
-    background-color: white;
-  }
-  .next-button {
-    position: absolute;
-    border-radius: 50%;
-    height: 48px;
-    width: 48px;
-    top: 50%; 
-    transform: translateY(-50%);
-    right: -24px; 
-    background-color: white;
-  }
+.selected-image {
+  width: 100%;
+  min-width: 100%;
+}
+
+.prev-button,
+.next-button {
+  border-radius: 50%;
+  border-width: 0;
+  height: 48px;
+  width: 48px;
+  background-color: white;
+  box-shadow: #62646a 0 0.0625em 0.1875em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
 }
 
 .thumbnail-container {
   display: inline-flex;
   height: 60px;
   padding: 5px 0 5px 5px;
-  img {
-    width: 100px;
-    margin-right: 6px;
-    opacity: 0.5;
-  }
-  img.active {
-    opacity: 1;
-  }
 }
 
+.thumbnail-container img {
+  width: 100px;
+  margin-right: 6px;
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
 
+.thumbnail-container img.active {
+  opacity: 1;
+}

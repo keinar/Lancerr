@@ -144,202 +144,225 @@ function _createGigs() {
     if (!gigs || !gigs.length) {
         gigs = [
             {
-                "_id": "i101",
-                "title": "I will design your logo",
+               "_id": "i101",
+                "title": "I will design clean and responsive wordpress website",
                 "price": 12,
                 "owner": {
-                  "_id": "u101",
+                  "_id":  "u101",
                   "fullname": "Dudu Da",
                   "imgUrl": "url",
                   "level": "basic/premium",
-                  "rate": 4
+                  "rate": 4,
+                  "userStory": "We are PixxelStudio, A full-service design and developing web agency. From designing logos to developing websites to satisfying our customer’s every digital need is what we thrive for. We’ve worked not only with brilliant individuals but also with top companies all around the world. Our mission is to become an indispensable partner to our clients by offering the best ideas, skills and services they could possibly get."
                 },
                 "daysToMake": 3,
-                "description": "Make a unique logo...",
+                "description": "Greetings! We are passionate, hardworking and professional bunch of people working together side by side to provide our clients the absolute best. Our products are always CLEAN HIGH-QUALITY RESPONSIVE DESIGN.We don't just deliver a WordPress site, we make sure that you can easily manage your website by yourself, which results in you managing it on your own without any help. We also provide small video tutorials on demand explaining the complete know-hows of your website.",
+                "services" : [
+                  "100% Clean Responsive Design",
+                  "Ecommerce site Design (Standard and Premium Plans Only)",
+                  "Multiple Payment Methods (PayPal, Stripe, Bank, Credit Card, etc.)",
+                ],
                 "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
                 "tags": [
-                  "logo-design",
-                  "artistic",
+                  "website-design",
+                  "wordpress",
                   "professional",
                   "accessible"
                 ],
+                "packages": {
+                  "basic": {
+                    "header": "Basic (10 products & 4 pages)",
+                    "price": "451.37",
+                    "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
+                    "time": "3 Days Delivery",
+                    "included":[
+                      "Functional website",
+                      "4 pages",
+                      "Responsive design",
+                      "E-commerce functionality",
+                      "10 products",
+                      "Payment processing"
+                    ]
+                  },
+                },
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
               {
                 "_id": "i102",
-                "title": "I will design your logo1",
-                "price": 12,
+                "title": "I will edit professional videos for any occasion",
+                "price": 20,
                 "owner": {
                   "_id": "u102",
-                  "fullname": "Dudu Da",
+                  "fullname": "John Doe",
                   "imgUrl": "url",
-                  "level": "basic/premium",
-                  "rate": 4
+                  "level": "premium",
+                  "rate": 4.5
                 },
-                "daysToMake": 3,
-                "description": "Make a unique logo1...",
+                "daysToMake": 7,
+                "description": "Transform your raw footage into polished, professional videos! Whether it's for weddings, events, or marketing purposes, we've got you covered. Our editing services include color correction, audio enhancement, and seamless transitions to create engaging content.",
                 "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
                 "tags": [
-                  "logo-design",
-                  "artistic",
+                  "video-editing",
                   "professional",
-                  "accessible"
+                  "wedding",
+                  "marketing"
                 ],
-                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+                "likedByUsers": []
               },
               {
                 "_id": "i103",
-                "title": "I will design your logo2",
-                "price": 12,
-                "owner": {
-                  "_id": "u103",
-                  "fullname": "Dudu Da",
-                  "imgUrl": "url",
-                  "level": "basic/premium",
-                  "rate": 4
-                },
-                "daysToMake": 3,
-                "description": "Make a unique logo2...",
-                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
-                "tags": [
-                  "logo-design",
-                  "artistic",
-                  "professional",
-                  "accessible"
-                ],
-                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
-              },
-              {
-                "_id": "i104",
-                "title": "I will design your logo3",
-                "price": 12,
-                "owner": {
-                  "_id": "u104",
-                  "fullname": "Dudu Da",
-                  "imgUrl": "url",
-                  "level": "basic/premium",
-                  "rate": 4
-                },
-                "daysToMake": 3,
-                "description": "Make a unique logo3...",
-                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
-                "tags": [
-                  "logo-design",
-                  "artistic",
-                  "professional",
-                  "accessible"
-                ],
-                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
-              },
-              {
-                "_id": "i105",
-                "title": "I will design your logo",
-                "price": 12,
+                "title": "I will create modern and impactful logo designs",
+                "price": 15,
                 "owner": {
                   "_id": "u101",
-                  "fullname": "Dudu Da",
+                  "fullname": "Alice Smith",
                   "imgUrl": "url",
-                  "level": "basic/premium",
-                  "rate": 4
+                  "level": "premium",
+                  "rate": 4.8
                 },
-                "daysToMake": 3,
-                "description": "Make a unique logo...",
+                "daysToMake": 5,
+                "description": "Need a unique logo that represents your brand? Look no further! We specialize in creating modern, memorable, and impactful logo designs. Our designs are tailored to your brand's identity, ensuring that you stand out from the competition.",
                 "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
                 "tags": [
                   "logo-design",
-                  "artistic",
-                  "professional",
-                  "accessible"
+                  "branding",
+                  "modern",
+                  "unique"
                 ],
-                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
-              },
+                "likedByUsers": []
+              },              
+              {
+                "_id": "i104",
+                "title": "I will manage your social media accounts effectively",
+                "price": 25,
+                "owner": {
+                  "_id": "u103",
+                  "fullname": "Emily Johnson",
+                  "imgUrl": "url",
+                  "level": "premium",
+                  "rate": 4.9
+                },
+                "daysToMake": 7,
+                "description": "Maximize your online presence with our social media management services! We'll handle everything from content creation and scheduling to audience engagement and analytics. Let us take the stress out of managing your social media accounts.",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
+                "tags": [
+                  "social-media-management",
+                  "content-creation",
+                  "audience-engagement",
+                  "analytics"
+                ],
+                "likedByUsers": []
+              },              
+              {
+                "_id": "i105",
+                "title": "I will design eye-catching graphics for your brand",
+                "price": 18,
+                "owner": {
+                  "_id": "u104",
+                  "fullname": "Michael Brown",
+                  "imgUrl": "url",
+                  "level": "premium",
+                  "rate": 4.7
+                },
+                "daysToMake": 4,
+                "description": "Elevate your brand with stunning graphics! From posters and flyers to social media graphics and infographics, we'll bring your ideas to life. Our designs are tailored to your brand's aesthetic and messaging, ensuring maximum impact.",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
+                "tags": [
+                  "graphic-design",
+                  "branding",
+                  "marketing",
+                  "visuals"
+                ],
+                "likedByUsers": []
+              },              
               {
                 "_id": "i106",
-                "title": "I will design your logo1",
-                "price": 12,
+                "title": "I will build a custom e-commerce website for your business",
+                "price": 30,
                 "owner": {
-                  "_id": "u102",
-                  "fullname": "Dudu Da",
+                  "_id": "u106",
+                  "fullname": "David Wilson",
                   "imgUrl": "url",
-                  "level": "basic/premium",
-                  "rate": 4
+                  "level": "premium",
+                  "rate": 4.9
                 },
-                "daysToMake": 3,
-                "description": "Make a unique logo1...",
+                "daysToMake": 10,
+                "description": "Take your business online with a custom e-commerce website! Our solutions are tailored to your specific needs, whether you're selling products or services. From user-friendly interfaces to secure payment gateways, we've got you covered.",
                 "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
                 "tags": [
-                  "logo-design",
-                  "artistic",
-                  "professional",
-                  "accessible"
+                  "e-commerce",
+                  "website-development",
+                  "custom-solutions",
+                  "online-shopping"
                 ],
-                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+                "likedByUsers": []
               },
               {
                 "_id": "i107",
-                "title": "I will design your logo2",
-                "price": 12,
+                "title": "I will create innovative mobile apps for iOS and Android",
+                "price": 35,
                 "owner": {
-                  "_id": "u103",
-                  "fullname": "Dudu Da",
+                  "_id": "u107",
+                  "fullname": "Daniel Harris",
                   "imgUrl": "url",
-                  "level": "basic/premium",
-                  "rate": 4
+                  "level": "premium",
+                  "rate": 4.8
                 },
-                "daysToMake": 3,
-                "description": "Make a unique logo2...",
-                "imgUrl": "https://res.cloudinary.com/de2rdmsca/image/upload/v1698329461/promote-your-facebook-page-to-country-targeted-audience_oppvsc.jpg",
+                "daysToMake": 14,
+                "description": "Bring your app idea to life with our mobile app development services! Whether it's for iOS or Android, we'll create innovative and user-friendly apps that stand out in the crowded app market. From concept to launch, we'll guide you every step of the way.",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
                 "tags": [
-                  "logo-design",
-                  "artistic",
-                  "professional",
-                  "accessible"
+                  "mobile-app-development",
+                  "iOS",
+                  "Android",
+                  "innovative"
                 ],
-                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
-              },
+                "likedByUsers": []
+              },              
               {
                 "_id": "i108",
-                "title": "I will design your logo3",
-                "price": 12,
+                "title": "I will optimize your website for search engines",
+                "price": 20,
                 "owner": {
-                  "_id": "u104",
-                  "fullname": "Dudu Da",
+                  "_id": "u108",
+                  "fullname": "Jessica Lee",
                   "imgUrl": "url",
-                  "level": "basic/premium",
-                  "rate": 4
+                  "level": "premium",
+                  "rate": 4.7
                 },
-                "daysToMake": 3,
-                "description": "Make a unique logo3...",
-                "imgUrl": "",
+                "daysToMake": 5,
+                "description": "Increase your online visibility with our SEO optimization services! We'll analyze your website, identify opportunities for improvement, and implement strategies to boost your search engine rankings. Get ready to attract more organic traffic and grow your business.",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
                 "tags": [
-                  "logo-design",
-                  "artistic",
-                  "professional",
-                  "accessible"
+                  "SEO",
+                  "search-engine-optimization",
+                  "organic-traffic",
+                  "website-ranking"
                 ],
-                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
-              },            {
-                "_id": "i109",
-                "title": "I will design your logo",
-                "price": 12,
-                "owner": {
-                  "_id": "u101",
-                  "fullname": "Dudu Da",
-                  "imgUrl": "url",
-                  "level": "basic/premium",
-                  "rate": 4
-                },
-                "daysToMake": 3,
-                "description": "Make a unique logo...",
-                "imgUrl": "",
-                "tags": [
-                  "logo-design",
-                  "artistic",
-                  "professional",
-                  "accessible"
-                ],
-                "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+                "likedByUsers": []
               },
+              {
+                "_id": "i109",
+                "title": "I will be your dedicated virtual assistant",
+                "price": 18,
+                "owner": {
+                  "_id": "u109",
+                  "fullname": "Sarah Johnson",
+                  "imgUrl": "url",
+                  "level": "premium",
+                  "rate": 4.6
+                },
+                "daysToMake": 7,
+                "description": "Hire a virtual assistant to handle your administrative tasks efficiently! From managing emails and scheduling appointments to data entry and research, we'll take care of the details so you can focus on what matters most – growing your business.",
+                "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
+                "tags": [
+                  "virtual-assistant",
+                  "administrative-tasks",
+                  "efficiency",
+                  "remote-support"
+                ],
+                "likedByUsers": []
+              },              
               {
                 "_id": "i110",
                 "title": "I will design your logo1",
