@@ -91,9 +91,9 @@
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  position: fixed;
   top: 83px;
   z-index: 9;
+  border-bottom: 1px solid #e4e5e7;
   &.visible {
     opacity: 1;
     visibility: visible;
