@@ -59,7 +59,7 @@ export default function Hero(allTags, allHrefTags) {
                 >
                   <SearchIcon size={16} color="white" />
                 </button>
-              </form>
+              </form>    
               <div className="popular-tags">
                 <p>Popular:</p>
                 {allTags.allTags.map(tag => (
