@@ -45,7 +45,7 @@ export default function PopularServicesCarousel() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -64,34 +64,94 @@ export default function PopularServicesCarousel() {
           </picture>
         </div>
         <div className="slider-item">
-          <img src={LogoDesign} alt="Logo Design" />
+          <h4>
+            <small>Build your brand</small>Logo Design
+          </h4>
+          <picture>
+            <source srcSet={LogoDesign} type="image/webp" />
+            <img src={LogoDesign} alt="Logo Design" />
+          </picture>
         </div>
         <div className="slider-item">
-          <img src={Wordpress} alt="Wordpress" />
+          <h4>
+            <small>Customize your site</small>WordPress
+          </h4>
+          <picture>
+            <source srcSet={Wordpress} type="image/webp" />
+            <img src={Wordpress} alt="Wordpress" />
+          </picture>
         </div>
         <div className="slider-item">
-          <img src={VoiceOver} alt="Voice Over" />
+          <h4>
+            <small>Share your message</small>Voice Over
+          </h4>
+          <picture>
+            <source srcSet={VoiceOver} type="image/webp" />
+            <img src={VoiceOver} alt="Voice Over" />
+          </picture>
         </div>
         <div className="slider-item">
-          <img src={AnimatedExp} alt="Animated Explainer" />
+          <h4>
+            <small>Engage your audience</small>Video Explainer
+          </h4>
+          <picture>
+            <source srcSet={AnimatedExp} type="image/webp" />
+            <img src={AnimatedExp} alt="Animated Explainer" />
+          </picture>
         </div>
         <div className="slider-item">
-          <img src={SocialMedia} alt="Social Media" />
+          <h4>
+            <small>Reach more customers</small>Social Media
+          </h4>
+          <picture>
+            <source srcSet={SocialMedia} type="image/webp" />
+            <img src={SocialMedia} alt="Social Media" />
+          </picture>
         </div>
         <div className="slider-item">
-          <img src={SEO} alt="SEO" />
+          <h4>
+            <small>Unlock growth online</small>SEO
+          </h4>
+          <picture>
+            <source srcSet={SEO} type="image/webp" />
+            <img src={SEO} alt="SEO" />
+          </picture>
         </div>
         <div className="slider-item">
-          <img src={Illustration} alt="Illustration" />
+          <h4>
+            <small>Color your dreams</small>Illustration
+          </h4>
+          <picture>
+            <source srcSet={Illustration} type="image/webp" />
+            <img src={Illustration} alt="Illustration" />
+          </picture>
         </div>
         <div className="slider-item">
-          <img src={Translation} alt="Translation" />
+          <h4>
+            <small>Go global</small>Translation
+          </h4>
+          <picture>
+            <source srcSet={Translation} type="image/webp" />
+            <img src={Translation} alt="Translation" />
+          </picture>
         </div>
         <div className="slider-item">
-          <img src={DataEntry} alt="Data Entry" />
+          <h4>
+            <small>Learn your business</small>Data Entry
+          </h4>
+          <picture>
+            <source srcSet={DataEntry} type="image/webp" />
+            <img src={DataEntry} alt="Data Entry" />
+          </picture>
         </div>
         <div className="slider-item">
-          <img src={BookCovers} alt="Book Covers" />
+          <h4>
+            <small>Showcase your story</small>Book Covers
+          </h4>
+          <picture>
+            <source srcSet={BookCovers} type="image/webp" />
+            <img src={BookCovers} alt="Book Covers" />
+          </picture>
         </div>
       </Slider>
     </div>

@@ -8,6 +8,7 @@ import paypalPng from "../../assets/imgs/paypal.png"
 export default function TrustedBy() {
   return (
     <div className="trusted-by max-width-container">
+      <span className="trusted-by-text">Trusted by: </span>
       <img src={metaPng} alt="Meta" />
       <img src={googlePng} alt="Google" />
       <img src={netflixPng} alt="Netflix" />

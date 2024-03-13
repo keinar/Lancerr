@@ -22,7 +22,7 @@ export default function Hero(allTags) {
   }, [currentIndex])
 
   return (
-    <section className="hero">
+    <section className="hero main-container">
       <div className="hero-backgrounds">
         <div className="hero max-width-container">
           <div className="hp-hero-content">
