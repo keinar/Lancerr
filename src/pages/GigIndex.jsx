@@ -28,7 +28,6 @@ export function GigIndex() {
   //   fieldsToUpdate = { ...filterBy, ...fieldsToUpdate }
   //   setFilterBy(fieldsToUpdate)
   // }
-  console.log("yuval", filterBy?.tags)
   if (!gigs) return <div>Loading..</div>
 
   return (
