@@ -1,7 +1,7 @@
 import { SearchIcon } from "lucide-react"
 import React, { useEffect, useState } from "react"
 
-export default function Hero(allTags) {
+export default function Hero(allTags, allHrefTags) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
@@ -36,11 +36,13 @@ export default function Hero(allTags) {
                 <button className="inside-button">
                   <SearchIcon size={16} color="white" />
                 </button>
-              </form>
+              </form>    
               <div className="popular-tags">
                 <p>Popular:</p>
                 {allTags.allTags.map(tag => (
-                  <button key={tag}>{tag}</button>
+                  <a key={tag.description} href={tag.href}>
+                    <button>{tag.description}</button>
+                  </a>
                 ))}
               </div>
             </div>

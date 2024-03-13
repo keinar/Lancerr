@@ -12,15 +12,15 @@ export function GigIndex() {
   const gigs = useSelector((storeState) => storeState.gigModule.gigs)
   const filterBy = useSelector(storeState => storeState.gigModule.filterBy)
 
-  useEffect(() => {    
+  useEffect(() => {
     setFilterBy(gigService.getFilterFromParams(searchParams))
   }, [])
 
   useEffect(() => {
     // Sanitize filterBy
-    
+
     loadGigs();
-    
+
     setSearchParams(filterBy)
   }, [filterBy]);
 
@@ -28,7 +28,7 @@ export function GigIndex() {
   //   fieldsToUpdate = { ...filterBy, ...fieldsToUpdate }    
   //   setFilterBy(fieldsToUpdate)
   // }
-
+  console.log('yuval', filterBy?.tags)
   if (!gigs) return <div>Loading..</div>
 
   return (
@@ -41,8 +41,11 @@ export function GigIndex() {
             alt="Home" title="Go to homepage" />
           </a>
           <span className="divider">/</span>
-          <a className="home-title" title="Current main category from filter varaible" href="/gig">Current main category from filter varaible</a>
+          <a className="home-title" title="Current main category from filter variable" href={filterBy?.tags && filterBy.tags.length === 0 ? "/gig" : `/gig?tags=${filterBy?.tags}`}>
+            {filterBy?.tags && filterBy.tags.length === 0 ? "Explore" : filterBy?.tags}
+          </a>
         </article>
+        <h1 class="category-header"> {filterBy?.tags && filterBy.tags.length === 0 ? "Explore" : filterBy?.tags}</h1>
         <div className="top-of-gigs">
           <div className="number-of-results">(Counter from service)Num of services available</div>
           <label className="sort-container"><span className="sort-title">Add Filter Sort by:</span><span className="drop-down-btn">Recommended</span></label></div>
