@@ -16,7 +16,7 @@ export function HomePage() {
 
   return (
     <main className="home-page">
-      <Hero allTags={allTags} />
+      <Hero allTags={allTags } />
       <TrustedBy />
       <div className="popular-services">
         <h2>Popular Services</h2>
