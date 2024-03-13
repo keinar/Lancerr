@@ -110,6 +110,7 @@
       color: $clr4;
       &:hover {
         border-bottom: 3px solid $clr1;
+        cursor: pointer;
       }
     }
   }

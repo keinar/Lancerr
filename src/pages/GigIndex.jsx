@@ -5,9 +5,10 @@ import { loadGigs, setFilterBy } from "../store/actions/gig.actions.js"
 import { GigFilter } from "../cmps/GigFilter.jsx"
 import { useSearchParams } from "react-router-dom"
 import { gigService } from "../services/gig.service.local.js"
+import { store } from "../store/store.js"
 
 export function GigIndex() {
-  const [searchParams, setSearchParams] = useSearchParams()
+  const [searchParams, setSearchParams] = useSearchParams(store.getState().gigModule.filterBy)
   const gigs = useSelector((storeState) => storeState.gigModule.gigs)
   const filterBy = useSelector(storeState => storeState.gigModule.filterBy)
 
@@ -19,20 +20,22 @@ export function GigIndex() {
     // Sanitize filterBy
     
     loadGigs();
+    
     setSearchParams(filterBy)
   }, [filterBy]);
 
-  function onSetFilter(fieldsToUpdate) {
-    fieldsToUpdate = { ...filterBy, ...fieldsToUpdate }    
-    setFilterBy(fieldsToUpdate)
-  }
+  // function onSetFilter(fieldsToUpdate) {
+  //   fieldsToUpdate = { ...filterBy, ...fieldsToUpdate }    
+  //   setFilterBy(fieldsToUpdate)
+  // }
 
   if (!gigs) return <div>Loading..</div>
 
   return (
     <main className="main-container">
       <section className="GigIndex full main-container">
-        <GigFilter onSetFilter={onSetFilter} />
+        {/* <GigFilter  /> */}
+        {/* <GigFilter onSetFilter={onSetFilter} /> */}
         <article className="filter-title">
           <a className="home" href="/"><img className="home-icon" src="/src/assets/imgs/home-icon.svg"
             alt="Home" title="Go to homepage" />
