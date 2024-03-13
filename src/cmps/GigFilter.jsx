@@ -19,45 +19,24 @@ export function GigFilter() {
         
      },[])
 
-    function handleTagClick(tag) {
-        
-        
+    function handleTagClick(tag) {                
         // Create a new filter with the clicked tag
         const updatedFilter = {
             // ...filterByToEdit,
             tags: [tag], // Replace the existing tags with the clicked tag
-        }
+        }        
         const fieldsToUpdate = { ...filterBy, ...updatedFilter }
         setFilterBy(fieldsToUpdate)
         navigate('/gig')
         // setFilterByToEdit(updatedFilter)
     }
 
-    return (
-        // <section className="gig-filter">
+    return (        
         <nav
         id="categories-menu-package"
         className="categories-menu-package default has-overflow"
       >
                 <ul className="categories">
-                    {/* <button
-                        className="category-button"
-                        onClick={() => handleTagClick("logo-design")}
-                    >
-                        Logo Design
-                    </button>
-                    <button
-                        className="category-button"
-                        onClick={() => handleTagClick("Programming & Tech")}
-                    >
-                        Programming &amp; Tech
-                    </button>
-                    <button
-                        className="category-button"
-                        onClick={() => handleTagClick("Digital Marketing")}
-                    >
-                        Digital Marketing
-                    </button> */}
                     <li onClick={() => handleTagClick("logo-design")}>Graphics & Design
 
                     </li>
@@ -73,6 +52,6 @@ export function GigFilter() {
                 </ul>
                 </nav>
             
-        // </section>
+        
     )
 }
