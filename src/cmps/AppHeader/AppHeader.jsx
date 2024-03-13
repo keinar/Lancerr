@@ -4,7 +4,8 @@ import HeaderLogo from "./HeaderLogo"
 import HeaderMobileMenuButton from "./HeaderMobileMenuButton"
 import HeaderNavigationLinks from "./HeaderNavigationLinks"
 import HeaderSearchForm from "./HeaderSearchForm"
-import { useLocation } from "react-router-dom"
+import { useLocation, useSearchParams } from "react-router-dom"
+import { GigFilter } from "../GigFilter"
 
 export function AppHeader() {
   const [isOnTop, setIsOnTop] = useState(true)
@@ -37,8 +38,9 @@ export function AppHeader() {
           <HeaderNavigationLinks />
         </header>
       </section>
-      <div className={`cat-wrapper ${location.pathname === "/" && "fixed"} full main-container ${location.pathname === "/" ? (showCategoriesMenu ? "visible" : "") : "visible"}`}>
-        <HeaderCategoriesMenu />
+      <div className={`cat-wrapper ${location.pathname === "/" && "fixed"} full main-container ${location.pathname === "/" ? (showCategoriesMenu ? "visible" : "") : "visible"}`}>     
+       {/* <HeaderCategoriesMenu /> */}
+        <GigFilter />
       </div>
     </section>
   )
