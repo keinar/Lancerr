@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import Login from "./Login"
-import { loadUsers, logout, setLoggedinUser } from "../../store/actions/user.actions"
+import { login, logout, signup } from "../../store/actions/user.actions"
 import { Check } from "lucide-react"
+import { showErrorMsg } from "../../services/event-bus.service"
 
 export default function HeaderNavigationLinks() {
   const [isAuthDialogOpen, setIsAuthDialogOpen] = useState(false)
-  const loggedinUser = useSelector(storeState => storeState.userModule.loggedinUser)
-
-  useEffect(() => {
-    loadUsers()
-  }, [])
+  const user = useSelector(storeState => storeState.userModule.user)
 
   function openAuthDialog() {
     setIsAuthDialogOpen(true)
@@ -19,16 +16,31 @@ export default function HeaderNavigationLinks() {
   function closeAuthDialog() {
     setIsAuthDialogOpen(false)
   }
+  async function onLogin(credentials) {
+    try {
+      const user = await login(credentials)
+      showSuccessMsg(`Welcome: ${user.fullname}`)
+    } catch (err) {
+      showErrorMsg("Cannot login")
+    }
+  }
+
+  async function onSignup(credentials) {
+    try {
+      const user = await signup(credentials)
+      showSuccessMsg(`Welcome new user: ${user.fullname}`)
+    } catch (err) {
+      showErrorMsg("Cannot signup")
+    }
+  }
 
   async function onLogout() {
-    console.log("logout")
     try {
-      logout()
-      setLoggedinUser(null)
+      await logout()
+      showSuccessMsg(`Bye now`)
     } catch (err) {
-      console.log("can not logout")
+      showErrorMsg("Cannot logout")
     }
-    // add logout
   }
 
   return (
@@ -39,7 +51,7 @@ export default function HeaderNavigationLinks() {
         <li className="join-btn" onClick={openAuthDialog}>
           Join
         </li>
-        {isAuthDialogOpen && !loggedinUser && (
+        {isAuthDialogOpen && (
           <div className="auth-dialog-container">
             <dialog open={isAuthDialogOpen} className="auth-dialog">
               <section className="dialog-left">
@@ -66,7 +78,21 @@ export default function HeaderNavigationLinks() {
                 </ul>
               </section>
               <section className="dialog-right">
-                <Login loggedinUser={loggedinUser} setLoggedinUser={setLoggedinUser} />
+                <section className="container">
+                  {user && (
+                    <span className="user-info">
+                      {user.imgUrl && <img src={user.imgUrl} />}
+                      {user.fullname}
+                      <button onClick={onLogout}>Logout</button>
+                    </span>
+                  )}
+                  {!user && (
+                    <div className="user-info">
+                      <Login onLogin={onLogin} onSignup={onSignup} />
+                    </div>
+                  )}
+                </section>
+
                 <button onClick={closeAuthDialog}>Close</button>
               </section>
             </dialog>
