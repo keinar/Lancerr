@@ -60,8 +60,8 @@ export default function Login(props) {
         <form className="login-form" onSubmit={onLogin}>
           <select name="username" value={credentials.username} onChange={handleChange}>
             <option value="">Select User</option>
-            {users.map(user => (
-              <option key={user.id} value={user.username}>
+            {users.map((user, index) => (
+              <option key={index} value={user.username}>
                 {user.fullname}
               </option>
             ))}

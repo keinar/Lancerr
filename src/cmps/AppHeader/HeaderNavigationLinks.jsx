@@ -19,6 +19,7 @@ export default function HeaderNavigationLinks() {
   async function onLogin(credentials) {
     try {
       const user = await login(credentials)
+      setIsAuthDialogOpen(false)
       showSuccessMsg(`Welcome: ${user.fullname}`)
     } catch (err) {
       showErrorMsg("Cannot login")
@@ -47,10 +48,25 @@ export default function HeaderNavigationLinks() {
     <nav className="header-links">
       <ul>
         <li className="become-seller-btn">Become a Seller</li>
-        <li className="signin-btn">Sign in</li>
-        <li className="join-btn" onClick={openAuthDialog}>
-          Join
-        </li>
+        {!user && (
+          <li className="signin-btn" onClick={openAuthDialog}>
+            Sign in
+          </li>
+        )}
+        {!user && (
+          <li className="join-btn" onClick={openAuthDialog}>
+            Join
+          </li>
+        )}
+
+        {user && (
+          <span className="user-info">
+            {user.imgUrl && <img src={user.imgUrl} alt="user-img" className="user-img" />}
+            {user.fullname}
+            <button onClick={onLogout}>Logout</button>
+          </span>
+        )}
+
         {isAuthDialogOpen && (
           <div className="auth-dialog-container">
             <dialog open={isAuthDialogOpen} className="auth-dialog">
@@ -79,13 +95,6 @@ export default function HeaderNavigationLinks() {
               </section>
               <section className="dialog-right">
                 <section className="container">
-                  {user && (
-                    <span className="user-info">
-                      {user.imgUrl && <img src={user.imgUrl} />}
-                      {user.fullname}
-                      <button onClick={onLogout}>Logout</button>
-                    </span>
-                  )}
                   {!user && (
                     <div className="user-info">
                       <Login onLogin={onLogin} onSignup={onSignup} />
