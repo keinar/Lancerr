@@ -34,7 +34,7 @@
 
     .dialog-left {
       background-image: url("/src/assets/imgs/dialog-background.png");
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       border-radius: 12px 0 0 12px;
 
@@ -61,6 +61,14 @@
   }
 }
 
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .user-img {
+    width: 33px;
+  }
+}
 .app-header {
   background-color: white;
   transition: 0.5s all ease;
@@ -191,6 +199,7 @@
   .header-links ul {
     .signin-btn {
       display: block;
+      cursor: pointer;
     }
     .join-btn {
       border: 1px solid $clr1;
@@ -281,6 +290,7 @@
   .header-links ul {
     .become-seller-btn {
       display: block;
+      cursor: pointer;
     }
   }
 }
