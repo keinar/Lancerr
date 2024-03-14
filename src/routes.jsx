@@ -1,9 +1,9 @@
-import { GigDetails } from "./pages/GigDetails.jsx";
-import { GigIndex } from "./pages/GigIndex.jsx";
-import { GigSeller } from "./pages/GigSeller.jsx";
-import { HomePage } from "./pages/HomePage/HomePage.jsx";
-import { NewGig } from "./pages/NewGig.jsx";
-import Payment from "./pages/Payment.jsx";
+import { GigDetails } from "./pages/GigDetails.jsx"
+import { GigIndex } from "./pages/GigIndex.jsx"
+import { GigSeller } from "./pages/GigSeller.jsx"
+import { HomePage } from "./pages/HomePage/HomePage.jsx"
+import { NewGig } from "./pages/NewGig.jsx"
+import Payment from "./pages/Payment.jsx"
 
 // Routes accesible from the main navigation (in AppHeader)
 const routes = [
@@ -13,7 +13,7 @@ const routes = [
     label: "Lancerr",
   },
   {
-    path: "gig",
+    path: "explore",
     component: <GigIndex />,
     label: "Explore",
   },
@@ -28,7 +28,7 @@ const routes = [
     label: "Gig Details",
   },
   {
-    path: "gig/edit/:gigId?",
+    path: "explore/edit/:gigId?",
     component: <NewGig />,
     label: "Create a new gig",
   },
@@ -37,6 +37,6 @@ const routes = [
     component: <Payment />,
     label: "Payment",
   },
-];
+]
 
-export default routes;
+export default routes

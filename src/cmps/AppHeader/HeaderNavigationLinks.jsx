@@ -1,13 +1,29 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { useSelector } from "react-redux"
 import Login from "./Login"
 import { login, logout, signup } from "../../store/actions/user.actions"
 import { Check } from "lucide-react"
 import { showErrorMsg } from "../../services/event-bus.service"
+import { Link } from "react-router-dom"
 
 export default function HeaderNavigationLinks() {
   const [isAuthDialogOpen, setIsAuthDialogOpen] = useState(false)
+  const [isNavDialogOpen, setIsNavDialogOpen] = useState(false)
   const user = useSelector(storeState => storeState.userModule.user)
+  const navDialogRef = useRef(null)
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (navDialogRef.current && !navDialogRef.current.contains(event.target)) {
+        if (isNavDialogOpen) closeNavDialog()
+        if (isAuthDialogOpen) closeAuthDialog()
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [isNavDialogOpen, isAuthDialogOpen])
 
   function openAuthDialog() {
     setIsAuthDialogOpen(true)
@@ -16,6 +32,15 @@ export default function HeaderNavigationLinks() {
   function closeAuthDialog() {
     setIsAuthDialogOpen(false)
   }
+
+  function openNavDialog() {
+    setIsNavDialogOpen(true)
+  }
+
+  function closeNavDialog() {
+    setIsNavDialogOpen(false)
+  }
+
   async function onLogin(credentials) {
     try {
       const user = await login(credentials)
@@ -47,7 +72,11 @@ export default function HeaderNavigationLinks() {
   return (
     <nav className="header-links">
       <ul>
-        <li className="become-seller-btn">Become a Seller</li>
+        {!user && (
+          <Link to={"/explore"}>
+            <li className="explore-btn">Explore</li>
+          </Link>
+        )}
         {!user && (
           <li className="signin-btn" onClick={openAuthDialog}>
             Sign in
@@ -60,10 +89,14 @@ export default function HeaderNavigationLinks() {
         )}
 
         {user && (
-          <span className="user-info">
-            {user.imgUrl && <img src={user.imgUrl} alt="user-img" className="user-img" />}
-            {user.fullname}
-            <button onClick={onLogout}>Logout</button>
+          <span className="user-info" ref={navDialogRef}>
+            <li>Orders</li>
+            {user.imgUrl && <img src={user.imgUrl} alt="user-img" className="user-img" onClick={openNavDialog} title={user.fullname} />}
+            <dialog open={isNavDialogOpen} className="nav-popover-items-content">
+              <ul onClick={onLogout}>
+                <li>Logout</li>
+              </ul>
+            </dialog>
           </span>
         )}
 
