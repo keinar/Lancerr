@@ -72,11 +72,9 @@ export default function HeaderNavigationLinks() {
   return (
     <nav className="header-links">
       <ul>
-        {!user && (
-          <Link to={"/explore"}>
-            <li className="explore-btn">Explore</li>
-          </Link>
-        )}
+        <Link to={"/explore"}>
+          <li className="explore-btn">Explore</li>
+        </Link>
         {!user && (
           <li className="signin-btn" onClick={openAuthDialog}>
             Sign in
@@ -91,12 +89,14 @@ export default function HeaderNavigationLinks() {
         {user && (
           <span className="user-info" ref={navDialogRef}>
             <li>Orders</li>
-            {user.imgUrl && <img src={user.imgUrl} alt="user-img" className="user-img" onClick={openNavDialog} title={user.fullname} />}
-            <dialog open={isNavDialogOpen} className="nav-popover-items-content">
-              <ul onClick={onLogout}>
-                <li>Logout</li>
-              </ul>
-            </dialog>
+            <div>
+              {user.imgUrl && <img src={user.imgUrl} alt="user-img" className="user-img" onClick={openNavDialog} title={user.fullname} />}
+              <dialog open={isNavDialogOpen} className="nav-popover-items-content">
+                <ul onClick={onLogout}>
+                  <li>Logout</li>
+                </ul>
+              </dialog>
+            </div>
           </span>
         )}
 
