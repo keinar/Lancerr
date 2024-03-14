@@ -13,7 +13,6 @@ export const userService = {
     getById,
     remove,
     update,
-    changeBalance,
     getEmptyUser
 }
 
@@ -36,7 +35,7 @@ async function update(userToUpdate) {
     const user = await getById(userToUpdate.id)
     console.log('user', user)
 
-    const updatedUser = await storageService.put(STORAGE_KEY_USER_DB, {...user, ...userToUpdate })
+    const updatedUser = await storageService.put(STORAGE_KEY_USER_DB, { ...user, ...userToUpdate })
     if (getLoggedinUser().id === updatedUser.id) saveLocalUser(updatedUser)
     return updatedUser
 }
@@ -50,7 +49,6 @@ async function login(userCred) {
 }
 
 async function signup(userCred) {
-    userCred.balance = 10000
     if (!userCred.imgUrl) userCred.imgUrl = 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png'
     const user = await storageService.post('user', userCred)
     return saveLocalUser(user)
@@ -69,15 +67,8 @@ function getEmptyUser() {
     }
 }
 
-async function changeBalance(amount) {
-    const user = getLoggedinUser()
-    if (!user) throw new Error('Not loggedin')
-    user.balance = user.balance - amount
-    return await update(user)
-}
-
 function saveLocalUser(user) {
-    user = { _id: user._id, fullname: user.fullname, imgUrl: user.imgUrl, balance: user.balance }
+    user = { _id: user._id, fullname: user.fullname, imgUrl: user.imgUrl }
     sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user))
     return user
 }

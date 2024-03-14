@@ -20,9 +20,9 @@ async function remove(reviewId) {
   await storageService.remove('review', reviewId)
 }
 
-async function add({txt, aboutUserId}) {
+async function add({ txt, aboutUserId }) {
   // const addedReview = await httpService.post(`review`, {txt, aboutUserId})
-  
+
   const aboutUser = await userService.getById(aboutUserId)
 
   const reviewToAdd = {
@@ -34,8 +34,6 @@ async function add({txt, aboutUserId}) {
       imgUrl: aboutUser.imgUrl
     }
   }
-
-  reviewToAdd.byUser.score += 10
   await userService.update(reviewToAdd.byUser)
   const addedReview = await storageService.post('review', reviewToAdd)
   return addedReview
