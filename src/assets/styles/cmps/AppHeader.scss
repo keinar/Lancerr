@@ -1,3 +1,23 @@
+.nav-popover-items-content {
+  position: absolute;
+  top: 70px;
+  left: 72%;
+  width: 180px;
+  padding: 5px;
+  color: #62646a;
+  border-radius: 5px;
+  border: 1px solid rgba(98, 100, 106, 0.2901960784);
+
+  ul {
+    li {
+      width: 100%;
+      &:hover {
+        color: $clr1;
+      }
+    }
+  }
+}
+
 .fixed {
   position: fixed;
   width: 100%;
@@ -64,7 +84,7 @@
 .user-info {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   .user-img {
     width: 33px;
   }
@@ -119,7 +139,7 @@
   align-items: center;
   gap: 1em;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: #62646a;
   padding: 0;
   .join-btn {
@@ -128,7 +148,7 @@
   }
 
   .signin-btn,
-  .become-seller-btn {
+  .explore-btn {
     display: none;
   }
 }
@@ -274,7 +294,6 @@
       border: 1px solid #c5c6c9;
       font-size: 16px;
       width: 100%;
-      max-width: 350px;
     }
 
     .submit-button {
@@ -288,9 +307,10 @@
   }
 
   .header-links ul {
-    .become-seller-btn {
+    .explore-btn {
       display: block;
       cursor: pointer;
+      color: #62646a;
     }
   }
 }
