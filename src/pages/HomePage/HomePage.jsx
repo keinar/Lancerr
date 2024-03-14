@@ -6,18 +6,17 @@ import TrustedBy from "./TrustedBy"
 import PopularServicesCarousel from "./PopularServicesCarousel"
 
 export function HomePage() {
-  // Mock data for tags    
+  // Mock data for tags
   const allTags = [
-    { description: "Website Design", href: "/gig?tags=website-design" },
-    { description: "Wordpress", href: "/gig?tags=wordpress" },
-    { description: "Logo Design", href: "/gig?tags=logo-design" },
-    { description: "AI Services", href: "/gig?tags=ai-services" }
-  ];
-  
+    { description: "Website Design", href: "/explore?tags=website-design" },
+    { description: "Wordpress", href: "/explore?tags=wordpress" },
+    { description: "Logo Design", href: "/explore?tags=logo-design" },
+    { description: "AI Services", href: "/explore?tags=ai-services" },
+  ]
 
   return (
     <main className="home-page">
-      <Hero allTags={allTags } />
+      <Hero allTags={allTags} />
       <TrustedBy />
       <div className="popular-services">
         <h2>Popular Services</h2>
