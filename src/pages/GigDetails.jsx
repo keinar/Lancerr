@@ -5,8 +5,9 @@ import PackTabs from '../cmps/PackTabs'
 import { useParams } from 'react-router'
 import { useSelector } from 'react-redux/es/hooks/useSelector'
 import { DynamicModal } from '../cmps/DynamicModal'
+import { userService } from '../services/user.service'
 
-export function GigDetails() {
+export function GigDetails() {  
 
   const params = useParams()
 
@@ -18,6 +19,14 @@ export function GigDetails() {
       <div>Gig not found</div>
     )
   }
+
+  async function loadUser(){
+    const user = await userService.getById(gig.owner._id)
+    return user
+  }
+
+  const currentUser = loadUser()
+
 
   var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -39,6 +48,7 @@ for (i = 0; i < coll.length; i++) {
     gig.imgUrl,
     gig.imgUrl
   ];
+
 
   return (
     <div className='gig-index'>
@@ -140,7 +150,7 @@ for (i = 0; i < coll.length; i++) {
               </ul>
               <div className='user-story'>
                 <p>
-                  {gig.owner.userStory}
+                  {currentUser.userStory}
                 </p>
               </div>
           </div>

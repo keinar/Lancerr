@@ -1,7 +1,9 @@
 import { storageService } from './async-storage.service'
+import { utilService } from './util.service'
 
 const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
 const STORAGE_KEY_USER_DB = 'user'
+const STORAGE_KEY = 'user'
 
 export const userService = {
     login,
@@ -15,6 +17,8 @@ export const userService = {
     update,
     getEmptyUser
 }
+
+_createUsers()
 
 window.userService = userService
 
@@ -77,6 +81,38 @@ function getLoggedinUser() {
     return JSON.parse(sessionStorage.getItem(STORAGE_KEY_LOGGEDIN_USER))
 }
 
+function _createUsers() {
+    console.log("_create activated");
+    let users = utilService.loadFromStorage(STORAGE_KEY)
+    if (!users || !users.length) {
+        users = [
+            {
+                "_id": "u101",
+                "fullname": "User 1",
+                "imgUrl": "/img/img1.jpg",
+                "username": "user1",
+                "password": "secret",
+                "level": "basic/premium",
+                "reviews": [
+                  {
+                    "id": "madeId",
+                    "gig": "{optional-mini-gig}",
+                    "txt": "Very kind and works fast",
+                    "rate": 4,
+                    "by": {
+                      "_id": "u102",
+                      "fullname": "user2",
+                      "imgUrl": "/img/img2.jpg"
+                    }
+                  }
+                ],
+                "userStory": "We are PixxelStudio, A full-service design and developing web agency. From designing logos to developing websites to satisfying our customer’s every digital need is what we thrive for. We’ve worked not only with brilliant individuals but also with top companies all around the world. Our mission is to become an indispensable partner to our clients by offering the best ideas, skills and services they could possibly get."
+              },
+        ]
+        utilService.saveToStorage(STORAGE_KEY, users)
+
+    }
+}
 
 // ;(async ()=>{
 //     await userService.signup({fullname: 'Puki Norma', username: 'puki', password:'123', isAdmin: false})
