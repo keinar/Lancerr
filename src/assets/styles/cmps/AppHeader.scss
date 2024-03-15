@@ -1,7 +1,8 @@
 .nav-popover-items-content {
   position: absolute;
-  top: 70px;
-  left: 72%;
+  top: 50%;
+  margin-top: 25px;
+  margin-right: -5px;
   width: 180px;
   padding: 5px;
   color: #62646a;
@@ -11,11 +12,17 @@
   ul {
     li {
       width: 100%;
+      color: #62646a !important;
+      cursor: pointer;
       &:hover {
-        color: $clr1;
+        color: $clr1 !important;
       }
     }
   }
+}
+
+svg.lucide.lucide-search {
+  cursor: pointer;
 }
 
 .fixed {
@@ -85,6 +92,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  position: relative;
   .user-img {
     width: 33px;
   }
@@ -107,6 +115,7 @@
       border: 1px solid white;
       color: white;
       transition: 0.5s all ease;
+      cursor: pointer;
     }
   }
 }
@@ -145,6 +154,7 @@
   .join-btn {
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
 
   .signin-btn,
@@ -226,6 +236,7 @@
       border-radius: 4px;
       padding: 5px 16px;
       color: $clr1;
+      cursor: pointer;
 
       &:hover {
         background-color: $clr1;
