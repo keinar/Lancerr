@@ -1,8 +1,15 @@
 import { SearchIcon } from "lucide-react"
 import React, { useEffect, useState } from "react"
+import { store } from "../../store/store.js"
+import { setFilterBy } from "../../store/actions/gig.actions.js"
+import { useNavigate } from "react-router"
+
 
 export default function Hero(allTags, allHrefTags) {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const filterBy = store.getState().gigModule.filterBy
+  const [searchValue, setSearchValue] = useState('')
+  const navigate = useNavigate()
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -21,6 +28,15 @@ export default function Hero(allTags, allHrefTags) {
     return () => clearInterval(intervalId)
   }, [currentIndex])
 
+  function handleClick(inputValue) {    
+    const updatedFilter = {
+      txt: inputValue,
+    }
+    const fieldsToUpdate = { ...filterBy, ...updatedFilter }
+    setFilterBy(fieldsToUpdate)
+    navigate("/explore")
+  }
+
   return (
     <section className="hero main-container">
       <div className="hero-backgrounds">
@@ -32,11 +48,18 @@ export default function Hero(allTags, allHrefTags) {
             </h1>
             <div className="hp-hero-search-bar">
               <form className="hp-search-form">
-                <input type="search" placeholder="Search for any service..." />
-                <button className="inside-button">
+                <input type="search"
+                  placeholder="Search for any service..."
+                  value={searchValue}
+                  onChange={(e) => setSearchValue(e.target.value)} />
+                <button
+                  type="button"
+                  onClick={() => handleClick(searchValue)} 
+                  className="inside-button"
+                >
                   <SearchIcon size={16} color="white" />
                 </button>
-              </form>    
+              </form>
               <div className="popular-tags">
                 <p>Popular:</p>
                 {allTags.allTags.map(tag => (

@@ -44,7 +44,7 @@ export function GigIndex() {
             {filterBy?.tags && filterBy.tags.length === 0 ? "Explore" : filterBy?.tags}
           </a>
         </article>
-        <h1 class="category-header"> {filterBy?.tags && filterBy.tags.length === 0 ? "Explore" : filterBy?.tags}</h1>
+        <h1 className="category-header"> {filterBy?.tags && filterBy.tags.length === 0 ? "Explore" : filterBy?.tags}</h1>
         <div className="top-of-gigs">
           <div className="number-of-results">(Counter from service)Num of services available</div>
           <label className="sort-container">
