@@ -22,6 +22,12 @@ _createGigs()
 async function query(filterBy = {}) {
   const gigs = await storageService.query(STORAGE_KEY)
   let gigsToReturn = [...gigs]
+
+  if (filterBy.txt) {
+    const regexTitle = new RegExp(filterBy.txt, 'i')
+    gigsToReturn = gigsToReturn.filter(gig => regexTitle.test(gig.title))
+  }
+
   if (filterBy.tags && filterBy.tags.length > 0) {
     gigsToReturn = gigsToReturn.filter(gig => {
       return filterBy.tags.some(tag => gig.tags.includes(tag))
@@ -41,7 +47,8 @@ async function remove(gigId) {
 
 function getDefaultFilter() {
   return {
-      tags: []
+      tags: [],
+      txt: ''
   }
 }
 
