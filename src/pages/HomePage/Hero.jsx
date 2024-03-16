@@ -60,7 +60,7 @@ export default function Hero() {
                 <button type="button" onClick={() => handleClick(searchValue)} className="inside-button">
                   <SearchIcon size={16} color="white" />
                 </button>
-              </form>    
+              </form>
               <div className="popular-tags">
                 <p>Popular:</p>
                 {allTags.map(tag => (
