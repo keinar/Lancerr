@@ -25,7 +25,8 @@ export function GigDetails() {
     return user
   }
 
-  const currentUser = loadUser()
+  const user = loadUser()
+  console.log("user is : " + user);
 
 
   var coll = document.getElementsByClassName("collapsible");
@@ -48,7 +49,6 @@ for (i = 0; i < coll.length; i++) {
     gig.imgUrl,
     gig.imgUrl
   ];
-
 
   return (
     <div className='gig-index'>
@@ -150,7 +150,7 @@ for (i = 0; i < coll.length; i++) {
               </ul>
               <div className='user-story'>
                 <p>
-                  {currentUser.userStory}
+                  {user.userStory}
                 </p>
               </div>
           </div>
