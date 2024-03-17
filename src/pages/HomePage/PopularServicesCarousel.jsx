@@ -78,7 +78,7 @@ export default function PopularServicesCarousel() {
           </h4>
           <picture>
             <source srcSet={Wordpress} type="image/webp" />
-            <img src={Wordpress} alt="Wordpress" />
+            <img src={Wordpress} alt="WordPress" />
           </picture>
         </div>
         <div className="slider-item">
