@@ -186,9 +186,11 @@ svg.lucide.lucide-search {
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  top: 83px;
+  top: 88px;
   z-index: 9;
   border-bottom: 1px solid #e4e5e7;
+  display: flex;
+  justify-content: center;
   &.visible {
     opacity: 1;
     visibility: visible;
@@ -199,9 +201,10 @@ svg.lucide.lucide-search {
     gap: 5px;
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
+    width: max-content;
     li {
-      padding-block: 8px;
+      padding: 8px 10px;
       color: $clr4;
       &:hover {
         border-bottom: 3px solid $clr1;
@@ -240,8 +243,9 @@ svg.lucide.lucide-search {
       cursor: pointer;
 
       &:hover {
-        background-color: $clr1;
+        background-color: #19a463;
         color: white;
+        border-color: #19a463;
       }
     }
   }

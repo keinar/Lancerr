@@ -1,18 +1,10 @@
-import { useEffect, useState } from "react"
 import { setFilterBy } from "../store/actions/gig.actions.js"
 import { store } from "../store/store.js"
 import { useNavigate } from "react-router"
 
 export function GigFilter() {
-  // const [filterByToEdit, setFilterByToEdit] = useState()
-
   const filterBy = store.getState().gigModule.filterBy
   const navigate = useNavigate()
-
-  // useEffect(() => {
-  //     onSetFilter(filterByToEdit)
-  // }, [filterByToEdit])
-  useEffect(() => {}, [])
 
   function handleTagClick(tag) {
     // Create a new filter with the clicked tag
@@ -23,13 +15,13 @@ export function GigFilter() {
     const fieldsToUpdate = { ...filterBy, ...updatedFilter }
     setFilterBy(fieldsToUpdate)
     navigate("/explore")
-    // setFilterByToEdit(updatedFilter)
+    window.scrollTo(0, 0)
   }
 
   return (
     <nav id="categories-menu-package" className="categories-menu-package default has-overflow">
       <ul className="categories">
-        <li onClick={() => handleTagClick("logo-design")}>Graphics & Design</li>
+        <li onClick={() => handleTagClick("Logo Design")}>Graphics & Design</li>
         <li onClick={() => handleTagClick("Programming & Tech")}>Programming & Tech</li>
         <li onClick={() => handleTagClick("Digital Marketing")}>Digital Marketing</li>
         <li onClick={() => handleTagClick("Video & Animation")}>Video & Animation</li>
