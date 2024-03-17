@@ -33,7 +33,7 @@ const routes = [
     label: "Create a new gig",
   },
   {
-    path: "payment",
+    path: "payment/:gigId?",
     component: <Payment />,
     label: "Payment",
   },
