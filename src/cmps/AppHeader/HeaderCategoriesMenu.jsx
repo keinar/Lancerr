@@ -1,9 +1,6 @@
 export default function HeaderCategoriesMenu() {
   return (
-    <nav
-      id="categories-menu-package"
-      className="categories-menu-package default has-overflow"
-    >
+    <nav id="categories-menu-package" className="categories-menu-package default has-overflow">
       <ul className="categories">
         <li>Graphics & Design</li>
         <li>Programming & Tech</li>
@@ -17,5 +14,5 @@ export default function HeaderCategoriesMenu() {
         <li>AI Services</li>
       </ul>
     </nav>
-  );
+  )
 }

@@ -38,7 +38,7 @@ export function AppHeader() {
           <HeaderNavigationLinks />
         </header>
       </section>
-      <div className={`cat-wrapper ${location.pathname === "/" && "fixed"} full main-container ${location.pathname === "/" ? (showCategoriesMenu ? "visible" : "") : "visible"}`}>
+      <div className={`cat-wrapper ${location.pathname === "/" && "fixed"} full ${location.pathname === "/" ? (showCategoriesMenu ? "visible" : "") : "visible"}`}>
         {/* <HeaderCategoriesMenu /> */}
         <GigFilter />
       </div>

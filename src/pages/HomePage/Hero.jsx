@@ -4,12 +4,19 @@ import { store } from "../../store/store.js"
 import { setFilterBy } from "../../store/actions/gig.actions.js"
 import { useNavigate } from "react-router"
 
-
-export default function Hero(allTags, allHrefTags) {
+export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const filterBy = store.getState().gigModule.filterBy
-  const [searchValue, setSearchValue] = useState('')
+  const [searchValue, setSearchValue] = useState("")
   const navigate = useNavigate()
+
+  // Mock data for tags
+  const allTags = [
+    { description: "Website Design", href: "/explore?tags=Website%20Design" },
+    { description: "WordPress", href: "/explore?tags=WordPress" },
+    { description: "Logo Design", href: "/explore?tags=Logo%20Design" },
+    { description: "AI Services", href: "/explore?tags=AI%20Services" },
+  ]
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -28,10 +35,11 @@ export default function Hero(allTags, allHrefTags) {
     return () => clearInterval(intervalId)
   }, [currentIndex])
 
-  function handleClick(inputValue) {    
+  function handleClick(inputValue) {
     const updatedFilter = {
       txt: inputValue,
     }
+    if (!inputValue) return
     const fieldsToUpdate = { ...filterBy, ...updatedFilter }
     setFilterBy(fieldsToUpdate)
     navigate("/explore")
@@ -48,21 +56,14 @@ export default function Hero(allTags, allHrefTags) {
             </h1>
             <div className="hp-hero-search-bar">
               <form className="hp-search-form">
-                <input type="search"
-                  placeholder="Search for any service..."
-                  value={searchValue}
-                  onChange={(e) => setSearchValue(e.target.value)} />
-                <button
-                  type="button"
-                  onClick={() => handleClick(searchValue)} 
-                  className="inside-button"
-                >
+                <input type="search" placeholder="Search for any service..." value={searchValue} onChange={e => setSearchValue(e.target.value)} />
+                <button type="button" onClick={() => handleClick(searchValue)} className="inside-button">
                   <SearchIcon size={16} color="white" />
                 </button>
-              </form>    
+              </form>
               <div className="popular-tags">
                 <p>Popular:</p>
-                {allTags.allTags.map(tag => (
+                {allTags.map(tag => (
                   <a key={tag.description} href={tag.href}>
                     <button>{tag.description}</button>
                   </a>

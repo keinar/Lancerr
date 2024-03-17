@@ -6,6 +6,11 @@
   }
   .slider-item {
     padding-inline: 8px;
+    picture,
+    h4 {
+      cursor: pointer;
+    }
+
     img {
       border-radius: 4px;
     }

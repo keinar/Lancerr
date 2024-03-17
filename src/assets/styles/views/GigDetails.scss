@@ -181,7 +181,7 @@
 
       label {
         text-align: center;
-        min-width: 33%;
+        min-width: 33.3333%;
         padding: 1rem;
         border: 0.5px solid #dadbdd;
         border-top: 0px;
@@ -354,9 +354,10 @@
 
 @media (min-width: 900px) {
   .gig-index {
-    padding: 0 230px;
     display: grid;
     grid-template-areas: "details side1";
+    width: 1240px;
+    margin: auto;
 
     .gig-details {
       grid-area: details;
@@ -369,8 +370,8 @@
         margin-top: 18px;
         grid-area: dh;
         padding: 0px;
-        h1{
-          font-size:1.5em;
+        h1 {
+          font-size: 1.5em;
           line-height: 1.3;
           padding-right: 10px;
         }
@@ -458,8 +459,7 @@
       .side-wrapper {
         top: 210px;
         position: sticky;
-        width: 24vw;
-        margin-right: 23px;
+        width: 26vw;
 
         .contact-seller {
           background-color: #fafafa;
