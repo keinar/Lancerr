@@ -50,7 +50,6 @@ for (i = 0; i < coll.length; i++) {
     gig.imgUrl
   ];
 
-
   return (
     <div className='gig-index'>
       <div className='gig-details'>
