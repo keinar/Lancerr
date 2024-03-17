@@ -193,7 +193,7 @@ function _createGigs() {
         gigs = [
             {
                "_id": "i101",
-                "title": "I will design clean and responsive wordpress website",
+                "title": "I will design, redesign, build, rebuild, clone, edit, fix or revamp wordpress website",
                 "price": 12,
                 "owner": {
                   "_id":  "u101",
@@ -232,6 +232,35 @@ function _createGigs() {
                       "Payment processing"
                     ]
                   },
+                  "standard":{
+                    "header": "standard (16 products & 6 pages)",
+                    "price": "580.40",
+                    "description": "Build 16 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
+                    "time": "3 Days Delivery",
+                    "included":[
+                      "Functional website",
+                      "6 pages",
+                      "Responsive design",
+                      "E-commerce functionality",
+                      "16 products",
+                      "Payment processing"
+                    ]
+                  },
+                  "premium":{
+                    "header": "standard (16 products & 6 pages)",
+                    "price": "720.60",
+                    "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
+                    "time": "3 Days Delivery",
+                    "included":[
+                      "Functional website",
+                      "8 pages",
+                      "Responsive design",
+                      "E-commerce functionality",
+                      "20 products",
+                      "Payment processing",
+                      "Chat bot"
+                    ]
+                  }
                 },
                 "likedByUsers": ['mini-user'] // for user-wishlist: use $in
               },
@@ -276,6 +305,35 @@ function _createGigs() {
                       "Payment processing"
                     ]
                   },
+                  "standard":{
+                    "header": "standard (16 products & 6 pages)",
+                    "price": "580.40",
+                    "description": "Build 16 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
+                    "time": "3 Days Delivery",
+                    "included":[
+                      "Functional website",
+                      "6 pages",
+                      "Responsive design",
+                      "E-commerce functionality",
+                      "16 products",
+                      "Payment processing"
+                    ]
+                  },
+                  "premium":{
+                    "header": "standard (16 products & 6 pages)",
+                    "price": "720.60",
+                    "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
+                    "time": "3 Days Delivery",
+                    "included":[
+                      "Functional website",
+                      "8 pages",
+                      "Responsive design",
+                      "E-commerce functionality",
+                      "20 products",
+                      "Payment processing",
+                      "Chat bot"
+                    ]
+                  }
                 },
                 "services" : [
                   "100% Clean Responsive Design",
