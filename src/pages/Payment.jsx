@@ -1,34 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux/es/hooks/useSelector'
-import cardsImg from "../assets/imgs/credit-cards-68469259.svg";
-import check from "../assets/imgs/check.svg";
+import cardsImg from "../assets/imgs/credit-cards-68469259.svg"
+import check from "../assets/imgs/check.svg"
 import { useParams } from 'react-router'
+import { useNavigate } from "react-router"
 
 
 export default function Payment() {
+  // const [order, setOrder] = useState(orderService.getEmptyOrder())
   const params = useParams()
+  const navigate = useNavigate()
 
   const gig = useSelector((storeState) => storeState.gigModule.gigs.find((gig) => gig._id == params.gigId));
-  // const [selectedMethod, setSelectedMethod] = useState("basic");
+   
+  async function onPayment() {
+    
+    try {
+      
+      // await saveOrder(order)
+      // navigate("/order")
+    } catch (err) {
+      console.log("Had issues saving order", err)
+    }
+  }
 
-  // const onTabClick = (method) => {
-  //   setSelectedMethod(method);
-  // };
 
-  // const renderCreditCardInputs = () => {
-  //   if (selectedMethod === 'credit-card') {
-  //     return (
-  //       <>
-  //         <input type="text" placeholder="Credit Card Number" />
-  //         <input type="text" placeholder="Expiration Date (MM/YY)" />
-  //         <input type="text" placeholder="Security Code" />
-  //         <input type="text" placeholder="First Name" />
-  //         <input type="text" placeholder="Last Name" />
-  //       </>
-  //     );
-  //   }
-  //   return null;
-  // };
 
   if (!gig) {
     return <div>Loading...</div>;
@@ -79,7 +75,7 @@ export default function Payment() {
                 <span>1 day</span>
               </div>
               <div className='purchase-btn-container flex'>
-                <button className='btn continue'>Pay in USD</button>
+                <button className='btn continue' onClick={onPayment}>Pay in USD</button>
                 <span>
                   <i className="fa-solid fa-lock" aria-hidden="true"></i> SSL Secure Payment
                 </span>
@@ -169,6 +165,26 @@ export default function Payment() {
       </section>
 
     </main>
+      // const [selectedMethod, setSelectedMethod] = useState("basic");
+
+  // const onTabClick = (method) => {
+  //   setSelectedMethod(method);
+  // };
+
+  // const renderCreditCardInputs = () => {
+  //   if (selectedMethod === 'credit-card') {
+  //     return (
+  //       <>
+  //         <input type="text" placeholder="Credit Card Number" />
+  //         <input type="text" placeholder="Expiration Date (MM/YY)" />
+  //         <input type="text" placeholder="Security Code" />
+  //         <input type="text" placeholder="First Name" />
+  //         <input type="text" placeholder="Last Name" />
+  //       </>
+  //     );
+  //   }
+  //   return null;
+  // };
     // <div className='payment-body'>
     //   <div className='payment-main-content'>
     //     <div className='billing-info'>
