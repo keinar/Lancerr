@@ -9,7 +9,7 @@ export function HomePage() {
   // Mock data for tags
   const allTags = [
     { description: "Website Design", href: "/explore?tags=website-design" },
-    { description: "Wordpress", href: "/explore?tags=wordpress" },
+    { description: "WordPress", href: "/explore?tags=WordPress" },
     { description: "Logo Design", href: "/explore?tags=logo-design" },
     { description: "AI Services", href: "/explore?tags=ai-services" },
   ]
