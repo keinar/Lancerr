@@ -47,8 +47,8 @@ async function remove(OrderId) {
 
 function getDefaultFilter() {
   return {
-      tags: [],
-      txt: ''
+    tags: [],
+    txt: ''
   }
 }
 
@@ -86,7 +86,7 @@ async function save(order) {
     savedOrder = await storageService.put(STORAGE_KEY, order)
   } else {
     // Later, owner is set by the backend
-    // gig.owner = userService.getLoggedinUser()
+    // order.owner = userService.getLoggedinUser()
     savedOrder = await storageService.post(STORAGE_KEY, order)
   }
   return savedOrder
@@ -116,53 +116,69 @@ function createOrder(model = '', type = '', batteryStatus = 100) {
 }
 
 function getEmptyOrder() {
-  const title = '';
-  const price = '';
-  const owner = {
-    _id: 'u101',
-    fullname: 'Dudu Da',
-    imgUrl: 'url',
-    level: 'basic/premium',
-    rate: 4
-  };
-  const daysToMake = '3';
-  const description = '';
-  const imgUrl = 'https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp';
-  const tags = ['logo-design', 'artistic', 'professional', 'accessible'];
-  const likedByUsers = ['mini-user'];
+  const buyer = {
+    "_id": "u103",
+    "fullname": "user3",
+    "imgUrl": "/img/img3.jpg"
+  }
+  const seller = {
+    "_id": "u104",
+    "fullname": "user4",
+    "imgUrl": "/img/img4.jpg"
+  }
+  const gig = {
+    _id: 'i101',
+    tags: 'Design Logo',
+    title,
+    daysToMake: 4
+  }
+  const status = 'pending'
+  const packages = 'basic'
+
 
   return {
-    title,
-    price,
-    owner,
-    daysToMake,
-    description,
-    imgUrl,
-    tags,
-    likedByUsers // for user-wishlist: use $in
-  };
+    buyer,
+    seller,
+    gig,
+    status,
+    packages
+  }
 }
 
 // TEST DATA
 function _createOrders() {
-    let orders = utilService.loadFromStorage(STORAGE_KEY)
-    if (!orders || !orders.length) {
-        orders = [
-          {
-            "_id": "o1225",
-            "buyer": "mini-user",
-            "seller": "mini-user",
-            "gig": {
-              "_id": "i101",
-              "name": "Design Logo",
-              "price": 20
+  let orders = utilService.loadFromStorage(STORAGE_KEY)
+  if (!orders || !orders.length) {
+    orders = [
+      {
+        "_id": "o1225",
+        "buyer": {
+              "_id": "u103",
+              "fullname": "user3",
+              "imgUrl": "/img/img3.jpg"
             },
-            "status": "pending"
-          },
-          
-        ]
-        utilService.saveToStorage(STORAGE_KEY, orders)
-    }
+        "seller": {
+              "_id": "u104",
+              "fullname": "user4",
+              "imgUrl": "/img/img4.jpg"
+            },
+        "gig": {
+          "_id": "i101",
+          "tags": "Design Logo",
+          "price": 20,
+          "daysToMake": 4,
+          "packages": 'basic',
+          "title" : "I will design clean and responsive wordpress website"
+        },
+        "status": "pending"
+      },
+
+    ]
+    
+
+   
+    utilService.saveToStorage(STORAGE_KEY, orders)
+  }
 
 
 }

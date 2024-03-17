@@ -4,10 +4,11 @@ import cardsImg from "../assets/imgs/credit-cards-68469259.svg"
 import check from "../assets/imgs/check.svg"
 import { useParams } from 'react-router'
 import { useNavigate } from "react-router"
+import {orderService} from "../services/order.service.local"
+import { saveOrder } from '../store/actions/order.actions'
 
 
-export default function Payment() {
-  // const [order, setOrder] = useState(orderService.getEmptyOrder())
+export default function Payment() {  
   const params = useParams()
   const navigate = useNavigate()
 
@@ -16,11 +17,42 @@ export default function Payment() {
   async function onPayment() {
     
     try {
+      // Get buyer details from session storage
+      const buyerDetails = JSON.parse(sessionStorage.getItem('loggedinUser'))
+  
+      // Constructing the gig object
+      const gigTosave = {
+        _id: gig._id,
+        tags: gig.tags,
+        title: gig.title,
+        price: gig.price,
+        daysToMake: 4,
+        packages: 'basic'
+      };
+  
+      // Constructing the order object
+      const order = {
+        buyer: {
+          "_id": buyerDetails._id,
+          "fullname": buyerDetails.fullname,
+          "imgUrl": buyerDetails.imgUrl
+        },
+        seller: {
+          "_id": gig.owner._id,
+          "fullname": gig.owner.fullname,
+          "imgUrl": gig.owner.imgUrl
+        },
+        gig: gigTosave,
+        status: 'pending'
+      };
+  
+      // Save the order
+      await saveOrder(order)
       
-      // await saveOrder(order)
-      // navigate("/order")
+      // Navigate to the order page
+      navigate("/order");
     } catch (err) {
-      console.log("Had issues saving order", err)
+      console.log("Had issues saving order", err);
     }
   }
 
@@ -71,7 +103,7 @@ export default function Payment() {
                 <span>{`$${gig.price + 12.5}`}</span>
               </div>
               <div className='user-days flex'>
-                <span class="time">Total delivery time</span>
+                <span className="time">Total delivery time</span>
                 <span>1 day</span>
               </div>
               <div className='purchase-btn-container flex'>
