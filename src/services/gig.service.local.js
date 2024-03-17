@@ -128,7 +128,7 @@ function getEmptyGig() {
   const daysToMake = '3';
   const description = '';
   const imgUrl = 'https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp';
-  const tags = ['logo-design', 'artistic', 'professional', 'accessible'];
+  const tags = ['Logo Design', 'Artistic', 'Professional', 'Accessible'];
   const likedByUsers = ['mini-user'];
 
   return {
@@ -198,7 +198,7 @@ function _createGigs() {
         "owner": {
           "_id": "u101",
           "fullname": "Dudu Da",
-          "imgUrl": "url",
+          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
           "level": "basic/premium",
           "rate": 4,
           "userStory": "We are PixxelStudio, A full-service design and developing web agency. From designing logos to developing websites to satisfying our customer’s every digital need is what we thrive for. We’ve worked not only with brilliant individuals but also with top companies all around the world. Our mission is to become an indispensable partner to our clients by offering the best ideas, skills and services they could possibly get."
@@ -385,7 +385,7 @@ function _createGigs() {
         "owner": {
           "_id": "u102",
           "fullname": "John Doe",
-          "imgUrl": "url",
+          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
           "level": "premium",
           "rate": 4.5
         },
@@ -407,7 +407,7 @@ function _createGigs() {
         "owner": {
           "_id": "u101",
           "fullname": "Alice Smith",
-          "imgUrl": "url",
+          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
           "level": "premium",
           "rate": 4.8
         },
@@ -415,7 +415,7 @@ function _createGigs() {
         "description": "Need a unique logo that represents your brand? Look no further! We specialize in creating modern, memorable, and impactful logo designs. Our designs are tailored to your brand's identity, ensuring that you stand out from the competition.",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "branding",
           "modern",
           "unique"
@@ -429,7 +429,7 @@ function _createGigs() {
         "owner": {
           "_id": "u103",
           "fullname": "Emily Johnson",
-          "imgUrl": "url",
+          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
           "level": "premium",
           "rate": 4.9
         },
@@ -451,7 +451,7 @@ function _createGigs() {
         "owner": {
           "_id": "u104",
           "fullname": "Michael Brown",
-          "imgUrl": "url",
+          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
           "level": "premium",
           "rate": 4.7
         },
@@ -473,7 +473,7 @@ function _createGigs() {
         "owner": {
           "_id": "u106",
           "fullname": "David Wilson",
-          "imgUrl": "url",
+          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
           "level": "premium",
           "rate": 4.9
         },
@@ -495,7 +495,7 @@ function _createGigs() {
         "owner": {
           "_id": "u107",
           "fullname": "Daniel Harris",
-          "imgUrl": "url",
+          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
           "level": "premium",
           "rate": 4.8
         },
@@ -517,7 +517,7 @@ function _createGigs() {
         "owner": {
           "_id": "u108",
           "fullname": "Jessica Lee",
-          "imgUrl": "url",
+          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
           "level": "premium",
           "rate": 4.7
         },
@@ -539,7 +539,7 @@ function _createGigs() {
         "owner": {
           "_id": "u109",
           "fullname": "Sarah Johnson",
-          "imgUrl": "url",
+          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
           "level": "premium",
           "rate": 4.6
         },
@@ -569,7 +569,7 @@ function _createGigs() {
         "description": "Make a unique logo1...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -591,7 +591,7 @@ function _createGigs() {
         "description": "Make a unique logo2...",
         "imgUrl": "https://res.cloudinary.com/de2rdmsca/image/upload/v1698329461/promote-your-facebook-page-to-country-targeted-audience_oppvsc.jpg",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -613,7 +613,7 @@ function _createGigs() {
         "description": "Make a unique logo3...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -634,7 +634,7 @@ function _createGigs() {
         "description": "Make a unique logo...",
         "imgUrl": "https://res.cloudinary.com/de2rdmsca/image/upload/v1698329461/promote-your-facebook-page-to-country-targeted-audience_oppvsc.jpg",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -656,7 +656,7 @@ function _createGigs() {
         "description": "Make a unique logo1...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -678,7 +678,7 @@ function _createGigs() {
         "description": "Make a unique logo2...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -700,7 +700,7 @@ function _createGigs() {
         "description": "Make a unique logo3...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -721,7 +721,7 @@ function _createGigs() {
         "description": "Make a unique logo...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -743,7 +743,7 @@ function _createGigs() {
         "description": "Make a unique logo1...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679340/t-1_ozhsab.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -765,7 +765,7 @@ function _createGigs() {
         "description": "Make a unique logo2...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676247/jason-2_ykqz4t.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -787,7 +787,7 @@ function _createGigs() {
         "description": "Make a unique logo3...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -808,7 +808,7 @@ function _createGigs() {
         "description": "Make a unique logo...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676247/jason-2_ykqz4t.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -830,7 +830,7 @@ function _createGigs() {
         "description": "Make a unique logo1...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679340/t-1_ozhsab.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -852,7 +852,7 @@ function _createGigs() {
         "description": "Make a unique logo2...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -874,7 +874,7 @@ function _createGigs() {
         "description": "Make a unique logo3...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676247/jason-2_ykqz4t.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -895,7 +895,7 @@ function _createGigs() {
         "description": "Make a unique logo...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -917,7 +917,7 @@ function _createGigs() {
         "description": "Make a unique logo1...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -939,7 +939,7 @@ function _createGigs() {
         "description": "Make a unique logo2...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679340/t-1_ozhsab.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"
@@ -961,7 +961,7 @@ function _createGigs() {
         "description": "Make a unique logo3...",
         "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676247/jason-2_ykqz4t.webp",
         "tags": [
-          "logo-design",
+          "Logo Design",
           "artistic",
           "professional",
           "accessible"

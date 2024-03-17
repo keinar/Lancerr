@@ -45,6 +45,7 @@ export default function HeaderNavigationLinks() {
     try {
       const user = await login(credentials)
       setIsAuthDialogOpen(false)
+      setIsNavDialogOpen(false)
       showSuccessMsg(`Welcome: ${user.fullname}`)
     } catch (err) {
       showErrorMsg("Cannot login")
@@ -54,6 +55,7 @@ export default function HeaderNavigationLinks() {
   async function onSignup(credentials) {
     try {
       const user = await signup(credentials)
+      setIsAuthDialogOpen(false)
       showSuccessMsg(`Welcome new user: ${user.fullname}`)
     } catch (err) {
       showErrorMsg("Cannot signup")
@@ -63,6 +65,7 @@ export default function HeaderNavigationLinks() {
   async function onLogout() {
     try {
       await logout()
+      setIsNavDialogOpen(false)
       showSuccessMsg(`Bye now`)
     } catch (err) {
       showErrorMsg("Cannot logout")
