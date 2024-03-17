@@ -4,12 +4,15 @@ import { gigReducer } from './reducers/gig.reducer.js'
 import { userReducer } from './reducers/user.reducer.js'
 import { reviewReducer } from './review.reducer'
 import { systemReducer } from './system.reducer'
+import { orderReducer } from './reducers/order.reducer.js'
 
 const rootReducer = combineReducers({
     gigModule: gigReducer,
     userModule: userReducer,
     systemModule: systemReducer,
     reviewModule: reviewReducer,
+    orderModul: orderReducer
+
 })
 
 

@@ -22,31 +22,31 @@ async function query(filterBy = { txt: '', price: 0 }) {
     return httpService.get(STORAGE_KEY, filterBy)
 }
 
-function getById(gigId) {
-    return httpService.get(`gig/${gigId}`)
+function getById(orderId) {
+    return httpService.get(`order/${orderId}`)
 }
 
-async function remove(gigId) {
-    return httpService.delete(`gig/${gigId}`)
+async function remove(orderId) {
+    return httpService.delete(`order/${orderId}`)
 }
-async function save(gig) {
-    var savedGig
-    if (gig._id) {
-        savedGig = await httpService.put(`gig/${gig._id}`, gig)
+async function save(order) {
+    var savedOrder
+    if (order._id) {
+        savedOrder = await httpService.put(`order/${order._id}`, order)
 
     } else {
-        savedGig = await httpService.post('gig', gig)
+        savedOrder = await httpService.post('order', order)
     }
-    return savedGig
+    return savedOrder
 }
 
-async function addGigMsg(gigId, txt) {
-    const savedMsg = await httpService.post(`gig/${gigId}/msg`, {txt})
+async function addOrderMsg(orderId, txt) {
+    const savedMsg = await httpService.post(`order/${orderId}/msg`, {txt})
     return savedMsg
 }
 
 
-function getEmptyGig() {
+function getEmptyOrder() {
     return {
         vendor: 'Susita-' + (Date.now() % 1000),
         price: utilService.getRandomIntInclusive(1000, 9000),
