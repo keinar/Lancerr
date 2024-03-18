@@ -20,20 +20,15 @@ window.cs = orderService
 
 _createOrders()
 async function query(filterBy = {}) {
-  const orders = await storageService.query(STORAGE_KEY)
-  let ordersToReturn = [...orders]
+  const orders = await storageService.query(STORAGE_KEY);
+  let ordersToReturn = [...orders];
 
-  if (filterBy.txt) {
-    const regexTitle = new RegExp(filterBy.txt, 'i')
-    ordersToReturn = ordersToReturn.filter(order => regexTitle.test(order.title))
+  if (filterBy.loggedinUser) {
+    // Filter only the orders of the logged-in user
+    ordersToReturn = ordersToReturn.filter(order => order.buyer._id === filterBy.loggedinUser);
   }
 
-  if (filterBy.tags && filterBy.tags.length > 0) {
-    ordersToReturn = ordersToReturn.filter(order => {
-      return filterBy.tags.some(tag => order.tags.includes(tag))
-    })
-  }
-  return ordersToReturn
+  return ordersToReturn;
 }
 
 function getById(OrderId) {

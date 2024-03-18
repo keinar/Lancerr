@@ -19,7 +19,7 @@ export default function Payment() {
     try {
       // Get buyer details from session storage
       const buyerDetails = JSON.parse(sessionStorage.getItem('loggedinUser'))
-  
+      const orderDate = new Date().toISOString()
       // Constructing the gig object
       const gigTosave = {
         _id: gig._id,
@@ -27,7 +27,8 @@ export default function Payment() {
         title: gig.title,
         price: gig.price,
         daysToMake: 4,
-        packages: 'basic'
+        packages: 'basic',
+        imgUrl : gig.imgUrl
       };
   
       // Constructing the order object
@@ -43,7 +44,8 @@ export default function Payment() {
           "imgUrl": gig.owner.imgUrl
         },
         gig: gigTosave,
-        status: 'pending'
+        status: 'pending',
+        orderDate: orderDate
       };
   
       // Save the order
