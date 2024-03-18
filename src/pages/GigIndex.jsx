@@ -5,7 +5,7 @@ import { loadGigs, setFilterBy } from "../store/actions/gig.actions.js"
 import { useSearchParams } from "react-router-dom"
 import { gigService } from "../services/gig.service.local.js"
 import { store } from "../store/store.js"
-import BreadCrumbs from "../cmps/BreadCrumbs.jsx"
+import Breadcrumbs from "../cmps/Breadcrumbs.jsx"
 
 export function GigIndex() {
   const [searchParams, setSearchParams] = useSearchParams(store.getState().gigModule.filterBy)
@@ -27,7 +27,7 @@ export function GigIndex() {
   return (
     <main className="main-container">
       <section className="GigIndex full main-container">
-        <BreadCrumbs filterBy={filterBy} />
+        <Breadcrumbs filterBy={filterBy} />
 
         <h1 className="category-header"> {filterBy?.tags && filterBy.tags.length === 0 ? "Explore" : filterBy?.tags}</h1>
         <div className="top-of-gigs">
