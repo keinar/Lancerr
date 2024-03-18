@@ -60,14 +60,18 @@
       display: flex;
       flex-direction: column;
       border-bottom: 1px solid #dadbdd;
+
       .gig-description {
         padding: 32px 24px 0px;
+
         p {
           color: #696b71;
         }
+
         li {
           list-style: unset;
         }
+
         h2 {
           padding: 0;
         }
@@ -107,6 +111,7 @@
           margin-top: 7px;
           margin-bottom: 31px;
         }
+
         //padding: 25px 13px ;
       }
 
@@ -123,16 +128,19 @@
         margin-right: 4px;
       }
     }
+
     .user-description {
       border: 1px solid #dadbdd;
       padding: 24px;
       grid-area: ud;
       width: 92%;
+
       .user-stats {
         display: flex;
         // justify-content: space-between;
         border-bottom: 1px solid #dadbdd;
         padding: 0;
+
         div {
           margin-right: 180px;
           margin-bottom: 20px;
@@ -188,7 +196,7 @@
         background-color: #fafafa;
       }
 
-      input:checked + label {
+      input:checked+label {
         font-weight: bold;
         background-color: #ffffff;
         border-bottom: 3px solid #222325;
@@ -199,6 +207,9 @@
       padding: 32px 24px 10px;
       min-height: 35vh;
 
+      ul{
+        padding: 0px;
+      }
       .pack-description {
         p {
           margin: 0px;
@@ -366,10 +377,12 @@
       flex-direction: column;
       margin-top: 85px;
       margin-right: 3.15%;
+
       .details-header {
         margin-top: 18px;
         grid-area: dh;
         padding: 0px;
+
         h1 {
           font-size: 1.5em;
           line-height: 1.3;
@@ -384,8 +397,10 @@
         .selected-image-container {
           position: relative;
           height: 44.5vh;
+
           .selected-image-wrapper {
             height: 100%;
+
             .selected-image {
               width: 100%;
               min-width: 100%;
@@ -419,6 +434,7 @@
 
       .about-this-gig {
         margin-top: 20px;
+
         .gig-description {
           grid-area: description;
           padding: 20px 0px 0px;
@@ -450,6 +466,47 @@
       .about-the-seller-big {
         grid-area: seller;
         padding: 32px 0px 0px;
+      }
+
+      .reviews {
+
+        margin-top: 20px;
+
+        ul {
+          padding: 0px;
+
+          li {
+            display: flex;
+            flex-direction: row;
+            border-top: 1px solid #dadbdd;
+            padding: 40px 0px;
+
+            .profile-picture {
+              width: 60px;
+              height: 60px;
+              margin-left: 0px;
+              border-radius: 50%;
+              border-style: hidden;
+              margin-right: 20px;
+              margin-bottom: initial;
+            }
+
+            .review-header {
+              margin-bottom: 10px;
+              p {
+                font-weight: 700;
+                margin-bottom: 0px;
+              }
+
+              span {
+                color: #62646a;
+                font-size: 14px;
+                padding-left: 8px;
+              }
+            }
+          }
+
+        }
       }
     }
 

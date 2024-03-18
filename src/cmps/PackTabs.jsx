@@ -55,6 +55,7 @@ export default function PackTabs() {
         navigate(`/payment/${params.gigId}`)
     }
 
+    console.log(gig.packages[selectedTab].description);
     console.log(selectedTab);
     return (
         <div className='packages-tabs'>
