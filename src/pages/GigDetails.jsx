@@ -133,19 +133,19 @@ for (i = 0; i < coll.length; i++) {
                   <li>
                     From <br />
                     <strong>
-                      China
+                      {gig.owner.country}
                     </strong>
                   </li>
                   <li>
                     Avg. response time <br />
                     <strong>
-                      1 hour
+                      {gig.owner.responseTime}
                     </strong>
                   </li>
                   <li>
                     Languages <br />
                     <strong>
-                      Chinese, English
+                      {gig.owner.languages}
                     </strong>
                   </li>
                 </div>
@@ -153,13 +153,13 @@ for (i = 0; i < coll.length; i++) {
                   <li>
                     Member since <br />
                     <strong>
-                      Dec 2021
+                      {gig.owner.joined}
                     </strong>
                   </li>
                   <li>
                     Last delivery <br />
                     <strong>
-                      about 45 minutes
+                      {gig.owner.lastDelivery}
                     </strong>
                   </li>
                 </div>
