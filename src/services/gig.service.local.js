@@ -201,7 +201,12 @@ function _createGigs() {
           "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
           "level": "basic/premium",
           "rate": 4,
-          "userStory": "We are PixxelStudio, A full-service design and developing web agency. From designing logos to developing websites to satisfying our customer’s every digital need is what we thrive for. We’ve worked not only with brilliant individuals but also with top companies all around the world. Our mission is to become an indispensable partner to our clients by offering the best ideas, skills and services they could possibly get."
+          "userStory": "We are PixxelStudio, A full-service design and developing web agency. From designing logos to developing websites to satisfying our customer’s every digital need is what we thrive for. We’ve worked not only with brilliant individuals but also with top companies all around the world. Our mission is to become an indispensable partner to our clients by offering the best ideas, skills and services they could possibly get.",
+          "country": "China",
+          "responseTime": "1 hour",
+          "languages": "Chinese,English",
+          "joined": "Dec 2021",
+          "lastDelivery": "45 minutes"
         },
         "daysToMake": 3,
         "description": "Greetings! We are passionate, hardworking and professional bunch of people working together side by side to provide our clients the absolute best. Our products are always CLEAN HIGH-QUALITY RESPONSIVE DESIGN.We don't just deliver a WordPress site, we make sure that you can easily manage your website by yourself, which results in you managing it on your own without any help. We also provide small video tutorials on demand explaining the complete know-hows of your website.",
