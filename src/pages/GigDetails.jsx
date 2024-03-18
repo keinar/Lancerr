@@ -1,14 +1,14 @@
-import React from 'react'
-import ImageCarousel from '../cmps/ImageCarousel'
-import profilePic from '../assets/imgs/profile_pic.png'
-import PackTabs from '../cmps/PackTabs'
-import { useParams } from 'react-router'
-import { useSelector } from 'react-redux/es/hooks/useSelector'
-import { DynamicModal } from '../cmps/DynamicModal'
-import { userService } from '../services/user.service'
-import { useEffect, useState } from 'react'
-import { Star } from 'lucide-react'
-
+import React from "react"
+import ImageCarousel from "../cmps/ImageCarousel"
+import profilePic from "../assets/imgs/profile_pic.png"
+import PackTabs from "../cmps/PackTabs"
+import { useParams } from "react-router"
+import { useSelector } from "react-redux/es/hooks/useSelector"
+import { DynamicModal } from "../cmps/DynamicModal"
+import { userService } from "../services/user.service"
+import { useEffect, useState } from "react"
+import { Star } from "lucide-react"
+import BreadCrumbs from "../cmps/BreadCrumbs"
 
 export function GigDetails() {
   const params = useParams()
