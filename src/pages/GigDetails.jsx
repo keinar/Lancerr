@@ -6,6 +6,7 @@ import { useParams } from 'react-router'
 import { useSelector } from 'react-redux/es/hooks/useSelector'
 import { DynamicModal } from '../cmps/DynamicModal'
 import { userService } from '../services/user.service'
+import { useEffect, useState } from 'react'
 
 export function GigDetails() {  
 
@@ -20,12 +21,23 @@ export function GigDetails() {
     )
   }
 
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    async function fetchUser() {
+      const fetchedUser = await userService.getById(gig.owner._id);
+      setUser(fetchedUser);
+    }
+    fetchUser();
+  }, [gig.owner._id]);
+
+  
+
   async function loadUser(){
     const user = await userService.getById(gig.owner._id)
     return user
   }
 
-  const user = loadUser()
   console.log("user is : " + user);
 
 
@@ -112,7 +124,9 @@ for (i = 0; i < coll.length; i++) {
             </div>
           </div>
             <div className='user-description'>
-              <ul className='user-stats'>
+              {user&&(
+                <div>
+                  <ul className='user-stats'>
                 <div>
                   <li>
                     From <br />
@@ -153,6 +167,9 @@ for (i = 0; i < coll.length; i++) {
                   {user.userStory}
                 </p>
               </div>
+                </div>
+              )}
+              
           </div>
         </div>
 
