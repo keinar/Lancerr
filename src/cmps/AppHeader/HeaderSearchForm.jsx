@@ -14,7 +14,8 @@ export default function HeaderSearchForm() {
       txt: inputValue,
     }
     if (!inputValue) return
-    const fieldsToUpdate = { ...filterBy, ...updatedFilter }
+    // const fieldsToUpdate = { ...filterBy, ...updatedFilter }
+    const fieldsToUpdate = { ...updatedFilter }
     setFilterBy(fieldsToUpdate)
     navigate("/explore")
   }

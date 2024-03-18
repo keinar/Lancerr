@@ -12,7 +12,8 @@ export function GigFilter() {
       // ...filterByToEdit,
       tags: [tag], // Replace the existing tags with the clicked tag
     }
-    const fieldsToUpdate = { ...filterBy, ...updatedFilter }
+    // const fieldsToUpdate = { ...filterBy, ...updatedFilter }
+     const fieldsToUpdate = { ...updatedFilter }
     setFilterBy(fieldsToUpdate)
     navigate("/explore")
     window.scrollTo(0, 0)
