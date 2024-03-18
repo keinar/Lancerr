@@ -24,7 +24,6 @@ export function RootCmp() {
       </Routes>
       <AppFooter />
 
-      
     </div>
   )
 }
