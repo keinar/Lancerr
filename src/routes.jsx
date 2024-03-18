@@ -3,6 +3,7 @@ import { GigIndex } from "./pages/GigIndex.jsx"
 import { GigSeller } from "./pages/GigSeller.jsx"
 import { HomePage } from "./pages/HomePage/HomePage.jsx"
 import { NewGig } from "./pages/NewGig.jsx"
+import { OrderIndex } from "./pages/OrderIndex.jsx"
 import Payment from "./pages/Payment.jsx"
 
 // Routes accesible from the main navigation (in AppHeader)
@@ -36,6 +37,11 @@ const routes = [
     path: "payment/:gigId?",
     component: <Payment />,
     label: "Payment",
+  },
+  {
+    path: "order",
+    component: <OrderIndex />,
+    label: "Order",
   },
 ]
 

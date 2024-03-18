@@ -18,18 +18,20 @@ export async function saveOrder(orderToSave) {
     }
 }
 
-export async function loadOrders() {  
-    const filterBy = store.getState().orderModule.filterBy  
+
+export async function loadOrders() {
+    const loggedInUser = JSON.parse(sessionStorage.getItem('loggedinUser'))
+    const filterBy = { loggedinUser: loggedInUser._id } // Initialize filterBy with the logged-in user's ID
     try {
-        const orders = await orderService.query(filterBy)
-        store.dispatch({ type: SET_ORDERS, orders })
+      const orders = await orderService.query(filterBy)
+      store.dispatch({ type: SET_ORDERS, orders })
     } catch (err) {
-        console.log('Had issues loading orders', err);
-        throw err
+      console.log('Had issues loading orders', err)
+      throw err;
     } finally {
-        // store.dispatch({ type: 'SET_IS_LOADING', isLoading: false })
+      // store.dispatch({ type: 'SET_IS_LOADING', isLoading: false })
     }
-}
+  }
 
 export function onToggleModal(modalData = null) {
     store.dispatch({

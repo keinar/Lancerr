@@ -9,7 +9,7 @@ import { AppFooter } from "./cmps/AppFooter/AppFooter"
 import { loadGigs } from "./store/actions/gig.actions"
 export function RootCmp() {
   useEffect(() => {
-    // Sanitize filterBy
+    // Sanitize filterBy    
     loadGigs()
   }, [])
 
