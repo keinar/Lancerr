@@ -26,7 +26,7 @@ export default function Payment() {
         tags: gig.tags,
         title: gig.title,
         price: gig.price,
-        daysToMake: 4,
+        daysToMake: gig.daysToMake,
         packages: 'basic',
         imgUrl : gig.imgUrl
       };
