@@ -8,7 +8,7 @@ import { DynamicModal } from "../cmps/DynamicModal"
 import { userService } from "../services/user.service"
 import { useEffect, useState } from "react"
 import { Star } from "lucide-react"
-import BreadCrumbs from "../cmps/BreadCrumbs"
+import Breadcrumbs from "../cmps/Breadcrumbs"
 
 export function GigDetails() {
   const params = useParams()
@@ -49,7 +49,7 @@ export function GigDetails() {
     <div className="gig-index">
       <div className="gig-details">
         <div className="details-header">
-          <BreadCrumbs filterBy={filterBy} />
+          <Breadcrumbs filterBy={filterBy} />
           <h1>{gig.title}</h1>
           <div className="about-the-seller">
             <img className="profile-picture" src={gig.owner.imgUrl.startsWith("http") ? gig.owner.imgUrl : profilePic} alt="profile picture" />
