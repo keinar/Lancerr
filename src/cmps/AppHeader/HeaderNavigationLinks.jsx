@@ -91,7 +91,9 @@ export default function HeaderNavigationLinks() {
 
         {user && (
           <span className="user-info" ref={navDialogRef}>
+              <Link to={"/order"}>
             <li>Orders</li>
+            </Link>
             <div>
               {user.imgUrl && <img src={user.imgUrl} alt="user-img" className="user-img" onClick={openNavDialog} title={user.fullname} />}
               <dialog open={isNavDialogOpen} className="nav-popover-items-content">
