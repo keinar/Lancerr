@@ -8,7 +8,7 @@ import { DynamicModal } from '../cmps/DynamicModal'
 import { userService } from '../services/user.service'
 import { useEffect, useState } from 'react'
 import { Star } from 'lucide-react'
-import ReactCountryFlag from 'react-country-flag';
+
 
 export function GigDetails() {
 
