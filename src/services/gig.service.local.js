@@ -225,50 +225,50 @@ function _createGigs() {
           "pencil sketch"
         ],
         "packages": {
-        "basic": {
-          "header": "Basic (10 products & 4 pages)",
-          "price": "451.37",
-          "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
-          "time": "3 Days Delivery",
-          "included": [
-            "Functional website",
-            "4 pages",
-            "Responsive design",
-            "E-commerce functionality",
-            "10 products",
-            "Payment processing"
-          ]
+          "basic": {
+            "header": "Basic (10 products & 4 pages)",
+            "price": "451.37",
+            "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
+            "time": "3 Days Delivery",
+            "included": [
+              "Functional website",
+              "4 pages",
+              "Responsive design",
+              "E-commerce functionality",
+              "10 products",
+              "Payment processing"
+            ]
+          },
+          "standard": {
+            "header": "standard (16 products & 6 pages)",
+            "price": "580.40",
+            "description": "Build 16 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
+            "time": "3 Days Delivery",
+            "included": [
+              "Functional website",
+              "6 pages",
+              "Responsive design",
+              "E-commerce functionality",
+              "16 products",
+              "Payment processing"
+            ]
+          },
+          "premium": {
+            "header": "standard (16 products & 6 pages)",
+            "price": "720.60",
+            "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
+            "time": "3 Days Delivery",
+            "included": [
+              "Functional website",
+              "8 pages",
+              "Responsive design",
+              "E-commerce functionality",
+              "20 products",
+              "Payment processing",
+              "Chat bot"
+            ]
+          }
         },
-        "standard": {
-          "header": "standard (16 products & 6 pages)",
-          "price": "580.40",
-          "description": "Build 16 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
-          "time": "3 Days Delivery",
-          "included": [
-            "Functional website",
-            "6 pages",
-            "Responsive design",
-            "E-commerce functionality",
-            "16 products",
-            "Payment processing"
-          ]
-        },
-        "premium": {
-          "header": "standard (16 products & 6 pages)",
-          "price": "720.60",
-          "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
-          "time": "3 Days Delivery",
-          "included": [
-            "Functional website",
-            "8 pages",
-            "Responsive design",
-            "E-commerce functionality",
-            "20 products",
-            "Payment processing",
-            "Chat bot"
-          ]
-        }
-      },
         "likedByUsers": ["mini-user"],
         "reviews": [
           {
@@ -333,7 +333,7 @@ function _createGigs() {
           "Mobile App Development (iOS and Android)",
           "Search Engine Optimization (SEO) Services",
           "Social Media Integration and Marketing"
-      ],
+        ],
         "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/197422311/original/1907136f4b9684daa164acfa5cfedc6035b771b1.jpg",
         "tags": [
           "pencil drawing",
@@ -344,49 +344,49 @@ function _createGigs() {
         ],
         "packages": {
           "basic": {
-              "header": "Basic (10 products & 4 pages)",
-              "price": "500.00",
-              "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
-              "time": "5 Days Delivery",
-              "included": [
-                  "Functional website",
-                  "4 pages",
-                  "Responsive design",
-                  "E-commerce functionality",
-                  "10 products",
-                  "Payment processing"
-              ]
+            "header": "Basic (10 products & 4 pages)",
+            "price": "500.00",
+            "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
+            "time": "5 Days Delivery",
+            "included": [
+              "Functional website",
+              "4 pages",
+              "Responsive design",
+              "E-commerce functionality",
+              "10 products",
+              "Payment processing"
+            ]
           },
           "standard": {
-              "header": "Standard (15 products & 6 pages)",
-              "price": "750.00",
-              "description": "Build 15 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
-              "time": "7 Days Delivery",
-              "included": [
-                  "Functional website",
-                  "6 pages",
-                  "Responsive design",
-                  "E-commerce functionality",
-                  "15 products",
-                  "Payment processing"
-              ]
+            "header": "Standard (15 products & 6 pages)",
+            "price": "750.00",
+            "description": "Build 15 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
+            "time": "7 Days Delivery",
+            "included": [
+              "Functional website",
+              "6 pages",
+              "Responsive design",
+              "E-commerce functionality",
+              "15 products",
+              "Payment processing"
+            ]
           },
           "premium": {
-              "header": "Premium (20 products & 8 pages)",
-              "price": "1000.00",
-              "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
-              "time": "10 Days Delivery",
-              "included": [
-                  "Functional website",
-                  "8 pages",
-                  "Responsive design",
-                  "E-commerce functionality",
-                  "20 products",
-                  "Payment processing",
-                  "Chat bot"
-              ]
+            "header": "Premium (20 products & 8 pages)",
+            "price": "1000.00",
+            "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
+            "time": "10 Days Delivery",
+            "included": [
+              "Functional website",
+              "8 pages",
+              "Responsive design",
+              "E-commerce functionality",
+              "20 products",
+              "Payment processing",
+              "Chat bot"
+            ]
           }
-      },  
+        },
         "likedByUsers": ["mini-user"]
       },
       {
@@ -414,54 +414,54 @@ function _createGigs() {
           "Content Management System (CMS) Integration",
           "Secure Payment Gateway Integration",
           "Website Maintenance and Support Packages"
-      ],
+        ],
         "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/155512325/original/9d62fbdec2b0bffd0318f9af43c2de023b62f5f0.jpg",
         "tags": ["pencil", "drawing", "portrait", "realistic", "painting"],
         "packages": {
           "basic": {
-              "header": "Basic (10 products & 4 pages)",
-              "price": "400.00",
-              "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
-              "time": "5 Days Delivery",
-              "included": [
-                  "Functional website",
-                  "4 pages",
-                  "Responsive design",
-                  "E-commerce functionality",
-                  "10 products",
-                  "Payment processing"
-              ]
+            "header": "Basic (10 products & 4 pages)",
+            "price": "400.00",
+            "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
+            "time": "5 Days Delivery",
+            "included": [
+              "Functional website",
+              "4 pages",
+              "Responsive design",
+              "E-commerce functionality",
+              "10 products",
+              "Payment processing"
+            ]
           },
           "standard": {
-              "header": "Standard (15 products & 6 pages)",
-              "price": "600.00",
-              "description": "Build 15 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
-              "time": "7 Days Delivery",
-              "included": [
-                  "Functional website",
-                  "6 pages",
-                  "Responsive design",
-                  "E-commerce functionality",
-                  "15 products",
-                  "Payment processing"
-              ]
+            "header": "Standard (15 products & 6 pages)",
+            "price": "600.00",
+            "description": "Build 15 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
+            "time": "7 Days Delivery",
+            "included": [
+              "Functional website",
+              "6 pages",
+              "Responsive design",
+              "E-commerce functionality",
+              "15 products",
+              "Payment processing"
+            ]
           },
           "premium": {
-              "header": "Premium (20 products & 8 pages)",
-              "price": "800.00",
-              "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
-              "time": "10 Days Delivery",
-              "included": [
-                  "Functional website",
-                  "8 pages",
-                  "Responsive design",
-                  "E-commerce functionality",
-                  "20 products",
-                  "Payment processing",
-                  "Chat bot"
-              ]
+            "header": "Premium (20 products & 8 pages)",
+            "price": "800.00",
+            "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
+            "time": "10 Days Delivery",
+            "included": [
+              "Functional website",
+              "8 pages",
+              "Responsive design",
+              "E-commerce functionality",
+              "20 products",
+              "Payment processing",
+              "Chat bot"
+            ]
           }
-      },  
+        },
         "likedByUsers": ["mini-user"],
         "reviews": [
           {
@@ -525,49 +525,49 @@ function _createGigs() {
           "Custom Logo Design",
           "Mobile App Development",
           "Search Engine Optimization (SEO)"
-      ]
-    ,  
+        ]
+        ,
         "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/207813409/original/9557f50a12d8fccb5c52fb65b35f91cc036f99c6.jpg",
         "tags": ["technical writing"],
         "packages": {
           "basic": {
-              "header": "Basic Package",
-              "price": "200.00",
-              "description": "Includes basic features",
-              "time": "5 Days Delivery",
-              "included": [
-                  "Feature 1",
-                  "Feature 2",
-                  "Feature 3"
-              ]
+            "header": "Basic Package",
+            "price": "200.00",
+            "description": "Includes basic features",
+            "time": "5 Days Delivery",
+            "included": [
+              "Feature 1",
+              "Feature 2",
+              "Feature 3"
+            ]
           },
           "standard": {
-              "header": "Standard Package",
-              "price": "400.00",
-              "description": "Includes standard features",
-              "time": "7 Days Delivery",
-              "included": [
-                  "Feature 1",
-                  "Feature 2",
-                  "Feature 3",
-                  "Feature 4"
-              ]
+            "header": "Standard Package",
+            "price": "400.00",
+            "description": "Includes standard features",
+            "time": "7 Days Delivery",
+            "included": [
+              "Feature 1",
+              "Feature 2",
+              "Feature 3",
+              "Feature 4"
+            ]
           },
           "premium": {
-              "header": "Premium Package",
-              "price": "600.00",
-              "description": "Includes premium features",
-              "time": "10 Days Delivery",
-              "included": [
-                  "Feature 1",
-                  "Feature 2",
-                  "Feature 3",
-                  "Feature 4",
-                  "Feature 5"
-              ]
+            "header": "Premium Package",
+            "price": "600.00",
+            "description": "Includes premium features",
+            "time": "10 Days Delivery",
+            "included": [
+              "Feature 1",
+              "Feature 2",
+              "Feature 3",
+              "Feature 4",
+              "Feature 5"
+            ]
           }
-      }
-    ,  
+        }
+        ,
         "likedByUsers": ["mini-user"],
         "reviews": [
           {
@@ -631,8 +631,8 @@ function _createGigs() {
           "Social Media Marketing",
           "Content Writing",
           "Website Maintenance"
-      ]
-    ,  
+        ]
+        ,
         "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/207580502/original/6d05bb9cde191b9423733c6b49d0e11892e35ee0.jpg",
         "tags": [
           "web research",
@@ -643,40 +643,40 @@ function _createGigs() {
         ],
         "packages": {
           "basic": {
-              "header": "Basic Plan",
-              "price": "250.00",
-              "description": "Includes basic services",
-              "time": "3 Days Delivery",
-              "included": [
-                  "Service A",
-                  "Service B"
-              ]
+            "header": "Basic Plan",
+            "price": "250.00",
+            "description": "Includes basic services",
+            "time": "3 Days Delivery",
+            "included": [
+              "Service A",
+              "Service B"
+            ]
           },
           "standard": {
-              "header": "Standard Plan",
-              "price": "500.00",
-              "description": "Includes standard services",
-              "time": "5 Days Delivery",
-              "included": [
-                  "Service A",
-                  "Service B",
-                  "Service C"
-              ]
+            "header": "Standard Plan",
+            "price": "500.00",
+            "description": "Includes standard services",
+            "time": "5 Days Delivery",
+            "included": [
+              "Service A",
+              "Service B",
+              "Service C"
+            ]
           },
           "premium": {
-              "header": "Premium Plan",
-              "price": "750.00",
-              "description": "Includes premium services",
-              "time": "7 Days Delivery",
-              "included": [
-                  "Service A",
-                  "Service B",
-                  "Service C",
-                  "Service D"
-              ]
+            "header": "Premium Plan",
+            "price": "750.00",
+            "description": "Includes premium services",
+            "time": "7 Days Delivery",
+            "included": [
+              "Service A",
+              "Service B",
+              "Service C",
+              "Service D"
+            ]
           }
-      }
-    ,  
+        }
+        ,
         "likedByUsers": ["mini-user"],
         "reviews": [
           {
@@ -740,8 +740,8 @@ function _createGigs() {
           "Graphic Design",
           "UI/UX Design",
           "Print Design"
-      ]
-    ,  
+        ]
+        ,
         "imgUrl": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/125727662/original/b6712086c2fe1a26a51cb660bc38cc87c1ff5cbc/design-a-unique-sports-mascot-esports-and-gaming-logo.jpg",
         "tags": [
           "web research",
@@ -752,40 +752,40 @@ function _createGigs() {
         ],
         "packages": {
           "basic": {
-              "header": "Basic Bundle",
-              "price": "300.00",
-              "description": "Includes basic features",
-              "time": "4 Days Delivery",
-              "included": [
-                  "Feature X",
-                  "Feature Y"
-              ]
+            "header": "Basic Bundle",
+            "price": "300.00",
+            "description": "Includes basic features",
+            "time": "4 Days Delivery",
+            "included": [
+              "Feature X",
+              "Feature Y"
+            ]
           },
           "standard": {
-              "header": "Standard Bundle",
-              "price": "600.00",
-              "description": "Includes standard features",
-              "time": "6 Days Delivery",
-              "included": [
-                  "Feature X",
-                  "Feature Y",
-                  "Feature Z"
-              ]
+            "header": "Standard Bundle",
+            "price": "600.00",
+            "description": "Includes standard features",
+            "time": "6 Days Delivery",
+            "included": [
+              "Feature X",
+              "Feature Y",
+              "Feature Z"
+            ]
           },
           "premium": {
-              "header": "Premium Bundle",
-              "price": "900.00",
-              "description": "Includes premium features",
-              "time": "8 Days Delivery",
-              "included": [
-                  "Feature X",
-                  "Feature Y",
-                  "Feature Z",
-                  "Feature W"
-              ]
+            "header": "Premium Bundle",
+            "price": "900.00",
+            "description": "Includes premium features",
+            "time": "8 Days Delivery",
+            "included": [
+              "Feature X",
+              "Feature Y",
+              "Feature Z",
+              "Feature W"
+            ]
           }
-      }
-    ,  
+        }
+        ,
         "likedByUsers": ["mini-user"],
         "reviews": [
           {
@@ -849,8 +849,8 @@ function _createGigs() {
           "Website Redesign",
           "E-commerce Integration",
           "Payment Gateway Setup"
-      ]
-    ,  
+        ]
+        ,
         "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/156250659/original/694e80206bfd8cebf4e950fd073d382ed0fcd20a.jpg",
         "tags": [
           "typing job",
@@ -861,40 +861,40 @@ function _createGigs() {
         ],
         "packages": {
           "basic": {
-              "header": "Basic Subscription",
-              "price": "150.00",
-              "description": "Includes basic services",
-              "time": "7 Days Delivery",
-              "included": [
-                  "Service M",
-                  "Service N"
-              ]
+            "header": "Basic Subscription",
+            "price": "150.00",
+            "description": "Includes basic services",
+            "time": "7 Days Delivery",
+            "included": [
+              "Service M",
+              "Service N"
+            ]
           },
           "standard": {
-              "header": "Standard Subscription",
-              "price": "300.00",
-              "description": "Includes standard services",
-              "time": "10 Days Delivery",
-              "included": [
-                  "Service M",
-                  "Service N",
-                  "Service O"
-              ]
+            "header": "Standard Subscription",
+            "price": "300.00",
+            "description": "Includes standard services",
+            "time": "10 Days Delivery",
+            "included": [
+              "Service M",
+              "Service N",
+              "Service O"
+            ]
           },
           "premium": {
-              "header": "Premium Subscription",
-              "price": "450.00",
-              "description": "Includes premium services",
-              "time": "14 Days Delivery",
-              "included": [
-                  "Service M",
-                  "Service N",
-                  "Service O",
-                  "Service P"
-              ]
+            "header": "Premium Subscription",
+            "price": "450.00",
+            "description": "Includes premium services",
+            "time": "14 Days Delivery",
+            "included": [
+              "Service M",
+              "Service N",
+              "Service O",
+              "Service P"
+            ]
           }
-      }
-    ,  
+        }
+        ,
         "likedByUsers": ["mini-user"],
         "reviews": [
           {
@@ -958,8 +958,8 @@ function _createGigs() {
           "Blog Development",
           "Email Marketing Campaigns",
           "Video Production"
-      ]
-    ,  
+        ]
+        ,
         "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/199776653/original/b710f145db1a54491e2d777831107c0174c78565.png",
         "tags": [
           "excel data entry",
@@ -970,43 +970,43 @@ function _createGigs() {
         ],
         "packages": {
           "basic": {
-              "header": "Basic Bundle",
-              "price": "280.00",
-              "description": "Includes basic features",
-              "time": "5 Days Delivery",
-              "included": [
-                  "Feature A",
-                  "Feature B",
-                  "Feature C"
-              ]
+            "header": "Basic Bundle",
+            "price": "280.00",
+            "description": "Includes basic features",
+            "time": "5 Days Delivery",
+            "included": [
+              "Feature A",
+              "Feature B",
+              "Feature C"
+            ]
           },
           "standard": {
-              "header": "Standard Bundle",
-              "price": "520.00",
-              "description": "Includes standard features",
-              "time": "7 Days Delivery",
-              "included": [
-                  "Feature A",
-                  "Feature B",
-                  "Feature C",
-                  "Feature D"
-              ]
+            "header": "Standard Bundle",
+            "price": "520.00",
+            "description": "Includes standard features",
+            "time": "7 Days Delivery",
+            "included": [
+              "Feature A",
+              "Feature B",
+              "Feature C",
+              "Feature D"
+            ]
           },
           "premium": {
-              "header": "Premium Bundle",
-              "price": "780.00",
-              "description": "Includes premium features",
-              "time": "10 Days Delivery",
-              "included": [
-                  "Feature A",
-                  "Feature B",
-                  "Feature C",
-                  "Feature D",
-                  "Feature E"
-              ]
+            "header": "Premium Bundle",
+            "price": "780.00",
+            "description": "Includes premium features",
+            "time": "10 Days Delivery",
+            "included": [
+              "Feature A",
+              "Feature B",
+              "Feature C",
+              "Feature D",
+              "Feature E"
+            ]
           }
-      }
-    ,  
+        }
+        ,
         "likedByUsers": ["mini-user"],
         "reviews": [
           {
@@ -1070,8 +1070,8 @@ function _createGigs() {
           "Web Hosting Services",
           "Domain Registration",
           "Copywriting"
-      ]
-    ,  
+        ]
+        ,
         "imgUrl": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/243230998/original/614d3e3325f660976fc3000e1c2ecfedd0639fee/design-esports-twitch-mascot-and-gaming-logo.jpg",
         "tags": [
           "minimalist",
@@ -1083,40 +1083,40 @@ function _createGigs() {
         ],
         "packages": {
           "basic": {
-              "header": "Basic Plan",
-              "price": "180.00",
-              "description": "Includes basic services",
-              "time": "3 Days Delivery",
-              "included": [
-                  "Service X",
-                  "Service Y"
-              ]
+            "header": "Basic Plan",
+            "price": "180.00",
+            "description": "Includes basic services",
+            "time": "3 Days Delivery",
+            "included": [
+              "Service X",
+              "Service Y"
+            ]
           },
           "standard": {
-              "header": "Standard Plan",
-              "price": "360.00",
-              "description": "Includes standard services",
-              "time": "5 Days Delivery",
-              "included": [
-                  "Service X",
-                  "Service Y",
-                  "Service Z"
-              ]
+            "header": "Standard Plan",
+            "price": "360.00",
+            "description": "Includes standard services",
+            "time": "5 Days Delivery",
+            "included": [
+              "Service X",
+              "Service Y",
+              "Service Z"
+            ]
           },
           "premium": {
-              "header": "Premium Plan",
-              "price": "540.00",
-              "description": "Includes premium services",
-              "time": "7 Days Delivery",
-              "included": [
-                  "Service X",
-                  "Service Y",
-                  "Service Z",
-                  "Service W"
-              ]
+            "header": "Premium Plan",
+            "price": "540.00",
+            "description": "Includes premium services",
+            "time": "7 Days Delivery",
+            "included": [
+              "Service X",
+              "Service Y",
+              "Service Z",
+              "Service W"
+            ]
           }
-      }
-    ,  
+        }
+        ,
         "likedByUsers": ["mini-user"],
         "reviews": [
           {
@@ -1180,8 +1180,8 @@ function _createGigs() {
           "Custom Web Application Development",
           "CRM Integration",
           "Chatbot Development"
-      ]
-    ,  
+        ]
+        ,
         "imgUrl": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/288950630/original/923220b5a5dc5f5a1af2c2e7ab491fba9af2bc38/design-a-playful-and-modern-logo-and-brand-identity-for-you.jpg",
         "tags": [
           "modern logo",
@@ -1192,40 +1192,40 @@ function _createGigs() {
         ],
         "packages": {
           "basic": {
-              "header": "Basic Package",
-              "price": "250.00",
-              "description": "Includes basic features",
-              "time": "4 Days Delivery",
-              "included": [
-                  "Feature P",
-                  "Feature Q"
-              ]
+            "header": "Basic Package",
+            "price": "250.00",
+            "description": "Includes basic features",
+            "time": "4 Days Delivery",
+            "included": [
+              "Feature P",
+              "Feature Q"
+            ]
           },
           "standard": {
-              "header": "Standard Package",
-              "price": "500.00",
-              "description": "Includes standard features",
-              "time": "6 Days Delivery",
-              "included": [
-                  "Feature P",
-                  "Feature Q",
-                  "Feature R"
-              ]
+            "header": "Standard Package",
+            "price": "500.00",
+            "description": "Includes standard features",
+            "time": "6 Days Delivery",
+            "included": [
+              "Feature P",
+              "Feature Q",
+              "Feature R"
+            ]
           },
           "premium": {
-              "header": "Premium Package",
-              "price": "750.00",
-              "description": "Includes premium features",
-              "time": "8 Days Delivery",
-              "included": [
-                  "Feature P",
-                  "Feature Q",
-                  "Feature R",
-                  "Feature S"
-              ]
+            "header": "Premium Package",
+            "price": "750.00",
+            "description": "Includes premium features",
+            "time": "8 Days Delivery",
+            "included": [
+              "Feature P",
+              "Feature Q",
+              "Feature R",
+              "Feature S"
+            ]
           }
-      }
-    ,  
+        }
+        ,
         "likedByUsers": ["mini-user"],
         "reviews": [
           {
@@ -1289,8 +1289,8 @@ function _createGigs() {
           "Responsive Email Templates",
           "Local SEO Services",
           "PPC Campaign Management"
-      ]
-    ,  
+        ]
+        ,
         "imgUrl": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs3/229132321/original/96776d631a542573d7faf7e1a71189e9c7a83af1/design-a-feminine-botanical-boho-hand-drawn-logo-for-you.jpg",
         "tags": [
           "modern logo",
@@ -1302,40 +1302,40 @@ function _createGigs() {
         ],
         "packages": {
           "basic": {
-              "header": "Basic Bundle",
-              "price": "220.00",
-              "description": "Includes basic features",
-              "time": "6 Days Delivery",
-              "included": [
-                  "Feature F",
-                  "Feature G"
-              ]
+            "header": "Basic Bundle",
+            "price": "220.00",
+            "description": "Includes basic features",
+            "time": "6 Days Delivery",
+            "included": [
+              "Feature F",
+              "Feature G"
+            ]
           },
           "standard": {
-              "header": "Standard Bundle",
-              "price": "440.00",
-              "description": "Includes standard features",
-              "time": "8 Days Delivery",
-              "included": [
-                  "Feature F",
-                  "Feature G",
-                  "Feature H"
-              ]
+            "header": "Standard Bundle",
+            "price": "440.00",
+            "description": "Includes standard features",
+            "time": "8 Days Delivery",
+            "included": [
+              "Feature F",
+              "Feature G",
+              "Feature H"
+            ]
           },
           "premium": {
-              "header": "Premium Bundle",
-              "price": "660.00",
-              "description": "Includes premium features",
-              "time": "10 Days Delivery",
-              "included": [
-                  "Feature F",
-                  "Feature G",
-                  "Feature H",
-                  "Feature I"
-              ]
+            "header": "Premium Bundle",
+            "price": "660.00",
+            "description": "Includes premium features",
+            "time": "10 Days Delivery",
+            "included": [
+              "Feature F",
+              "Feature G",
+              "Feature H",
+              "Feature I"
+            ]
           }
-      }
-      
+        }
+
         ,
         "likedByUsers": ["mini-user"],
         "reviews": [
@@ -1400,8 +1400,8 @@ function _createGigs() {
           "Conversion Rate Optimization (CRO)",
           "Social Media Advertising",
           "Online Reputation Management"
-      ]
-    ,  
+        ]
+        ,
         "imgUrl": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/delivery/asset/d2111161cdf3a16052d4dcc9fe5d1df8-1704743105/jobprofit-01-min.jpg",
         "tags": [
           "modern logo",
@@ -1413,40 +1413,40 @@ function _createGigs() {
         ],
         "packages": {
           "basic": {
-              "header": "Basic Subscription",
-              "price": "300.00",
-              "description": "Includes basic services",
-              "time": "5 Days Delivery",
-              "included": [
-                  "Service H",
-                  "Service I"
-              ]
+            "header": "Basic Subscription",
+            "price": "300.00",
+            "description": "Includes basic services",
+            "time": "5 Days Delivery",
+            "included": [
+              "Service H",
+              "Service I"
+            ]
           },
           "standard": {
-              "header": "Standard Subscription",
-              "price": "600.00",
-              "description": "Includes standard services",
-              "time": "8 Days Delivery",
-              "included": [
-                  "Service H",
-                  "Service I",
-                  "Service J"
-              ]
+            "header": "Standard Subscription",
+            "price": "600.00",
+            "description": "Includes standard services",
+            "time": "8 Days Delivery",
+            "included": [
+              "Service H",
+              "Service I",
+              "Service J"
+            ]
           },
           "premium": {
-              "header": "Premium Subscription",
-              "price": "900.00",
-              "description": "Includes premium services",
-              "time": "12 Days Delivery",
-              "included": [
-                  "Service H",
-                  "Service I",
-                  "Service J",
-                  "Service K"
-              ]
+            "header": "Premium Subscription",
+            "price": "900.00",
+            "description": "Includes premium services",
+            "time": "12 Days Delivery",
+            "included": [
+              "Service H",
+              "Service I",
+              "Service J",
+              "Service K"
+            ]
           }
-      }
-    ,  
+        }
+        ,
         "likedByUsers": ["mini-user"],
         "reviews": [
           {
@@ -1510,8 +1510,8 @@ function _createGigs() {
           "WordPress Website Development",
           "Shopify Store Setup",
           "Magento Customization"
-      ]
-    ,  
+        ]
+        ,
         "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/157827646/original/8f14f50a81ddd1a60b4af990ea5154a26975d150.jpg",
         "tags": [
           "bio",
@@ -1522,40 +1522,40 @@ function _createGigs() {
         ],
         "packages": {
           "basic": {
-              "header": "Basic Plan",
-              "price": "270.00",
-              "description": "Includes basic services",
-              "time": "7 Days Delivery",
-              "included": [
-                  "Service L",
-                  "Service M"
-              ]
+            "header": "Basic Plan",
+            "price": "270.00",
+            "description": "Includes basic services",
+            "time": "7 Days Delivery",
+            "included": [
+              "Service L",
+              "Service M"
+            ]
           },
           "standard": {
-              "header": "Standard Plan",
-              "price": "540.00",
-              "description": "Includes standard services",
-              "time": "10 Days Delivery",
-              "included": [
-                  "Service L",
-                  "Service M",
-                  "Service N"
-              ]
+            "header": "Standard Plan",
+            "price": "540.00",
+            "description": "Includes standard services",
+            "time": "10 Days Delivery",
+            "included": [
+              "Service L",
+              "Service M",
+              "Service N"
+            ]
           },
           "premium": {
-              "header": "Premium Plan",
-              "price": "810.00",
-              "description": "Includes premium services",
-              "time": "14 Days Delivery",
-              "included": [
-                  "Service L",
-                  "Service M",
-                  "Service N",
-                  "Service O"
-              ]
+            "header": "Premium Plan",
+            "price": "810.00",
+            "description": "Includes premium services",
+            "time": "14 Days Delivery",
+            "included": [
+              "Service L",
+              "Service M",
+              "Service N",
+              "Service O"
+            ]
           }
-      }
-    ,  
+        }
+        ,
         "likedByUsers": ["mini-user"],
         "reviews": [
           {
@@ -1661,7 +1661,7 @@ function _createGigs() {
         ],
         "likedByUsers": ['mini-user'] // for user-wishlist: use $in
       },
-       {
+      {
         "_id": "i117",
         "title": "I will design your logo",
         "price": 12,
@@ -1926,701 +1926,4 @@ function _createGigs() {
     ]
     utilService.saveToStorage(STORAGE_KEY, gigs)
   }
-
-
 }
-
-
-
-// storageService.post(STORAGE_KEY, {vendor: 'Subali Rahok 2', price: 980}).then(x => console.log(x))
-
-      // Old 13 gigs
-      // {
-      //   "_id": "i101",
-      //   "title": "I will do hyper realistic pencil portrait by hand drawing",
-      //   "about": "Hi reader, thanks for your time. I'm an experienced young artist and i specialize in 3D animation, graphic designing and pencil Art. I'm familiar with word processing application. Kindly hit me up if if you need any of my services.",
-      //   "price": 172,
-      //   "owner": {
-      //     "fullname": "frederickkessie",
-      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
-      //     "level": "basic/premium",
-      //     "rate": 2,
-      //     "userStory": "We are PixxelStudio, A full-service design and developing web agency. From designing logos to developing websites to satisfying our customer’s every digital need is what we thrive for. We’ve worked not only with brilliant individuals but also with top companies all around the world. Our mission is to become an indispensable partner to our clients by offering the best ideas, skills and services they could possibly get.",
-      //     "country": "China",
-      //     "responseTime": "1 hour",
-      //     "languages": "Chinese,English",
-      //     "joined": "Dec 2021",
-      //     "lastDelivery": "45 minutes"
-      //   },
-      //   "country": "Ghana",
-      //   "daysToMake": 26,
-      //   "description": "Hello ! Much obliged for visiting my gig :)\nIn this gig I'm offering you an exceptionally 3 one of a kind, best and reasonable bundles.\nIn case you are thinking for giving somebody uncommon an extremely delightful, eye getting gift( hyper practical hand drawing pencil sketch picture)?\nKindly select the helpful bundle and submit your request at this moment and I'll give you an ideal picture sketch, hand drawing, practical drawing, pencil attracting high goal JPEG/PNG advanced document.\nI will give hand-drawn dark and White or hued reasonable pictures.\nSympathetically give me clear reference photograph however much as could be expected.\nThe material I utilized for Creating pencil representations are:\nDrawing materials: graphite pencil, charcoal, Bristol paper, mono eraser, brush, mixing stump, mechanical pencil, graphite powder and so on .\nYou can give me anything:\nPicture photographs\nFamily photographs\nCreature photographs\nAny item photographs\nScene photographs\nEngineering photographs\nAnything you envision\nKindly reach me prior to submitting your request! Much appreciated.\nI DO NOT DELIVER ORIGINAL PHYSICAL COPY BUT A HIGH RESOLUTION JPEG DIGITA",
-      //   "services": [
-      //     "100% Clean Responsive Design",
-      //     "Ecommerce site Design (Standard and Premium Plans Only)",
-      //     "Multiple Payment Methods (PayPal, Stripe, Bank, Credit Card, etc.)",
-      //   ],
-      //   "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/231682055/original/77cc585046a1ceb81a809218fef35ee8252bbb3b.jpg",
-      //   "tags": [
-      //     "pencil drawing",
-      //     "realistic drawing",
-      //     "hand drawing",
-      //     "portrait drawing",
-      //     "pencil sketch"
-      //   ],
-      //   "packages": {
-      //   "basic": {
-      //     "header": "Basic (10 products & 4 pages)",
-      //     "price": "451.37",
-      //     "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
-      //     "time": "3 Days Delivery",
-      //     "included": [
-      //       "Functional website",
-      //       "4 pages",
-      //       "Responsive design",
-      //       "E-commerce functionality",
-      //       "10 products",
-      //       "Payment processing"
-      //     ]
-      //   },
-      //   "standard": {
-      //     "header": "standard (16 products & 6 pages)",
-      //     "price": "580.40",
-      //     "description": "Build 16 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
-      //     "time": "3 Days Delivery",
-      //     "included": [
-      //       "Functional website",
-      //       "6 pages",
-      //       "Responsive design",
-      //       "E-commerce functionality",
-      //       "16 products",
-      //       "Payment processing"
-      //     ]
-      //   },
-      //   "premium": {
-      //     "header": "standard (16 products & 6 pages)",
-      //     "price": "720.60",
-      //     "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
-      //     "time": "3 Days Delivery",
-      //     "included": [
-      //       "Functional website",
-      //       "8 pages",
-      //       "Responsive design",
-      //       "E-commerce functionality",
-      //       "20 products",
-      //       "Payment processing",
-      //       "Chat bot"
-      //     ]
-      //   }
-      // },
-      //   "likedByUsers": ["mini-user"],
-      //   "reviews": [
-      //     {
-      //       "name": "tobiaspille300",
-      //       "country": "Thailand",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1f9-1f1ed.png",
-      //       "review": "frederickkessie ist a super kind artist doing the process he was super professional and only took him 1 shot to deliver a perfect result ! Highly recommended work with this guy !",
-      //       "reviewedAt": "Published 2 months ago"
-      //     },
-      //     {
-      //       "name": "liam31",
-      //       "country": "United Kingdom",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1ec-1f1e7.png",
-      //       "review": "I requested a slightly earlier delivery on this and once again Frederick came through and provided a fantastic delivery. Thanks so much!",
-      //       "reviewedAt": "Published 3 weeks ago"
-      //     },
-      //     {
-      //       "name": "liam31",
-      //       "country": "United Kingdom",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1ec-1f1e7.png",
-      //       "review": "Frederick is amazing and extremely talented. This is the second time working with him and he has been a pleasure yet again!",
-      //       "reviewedAt": "Published 3 weeks ago"
-      //     },
-      //     {
-      //       "name": "larsonraz",
-      //       "country": "United States",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-      //       "review": "Very detailed",
-      //       "reviewedAt": "Published 1 week ago"
-      //     },
-      //     {
-      //       "name": "stevekaszycki",
-      //       "country": "United States",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-      //       "review": "very nice portrait, very good quality.",
-      //       "reviewedAt": "Published 2 weeks ago"
-      //     }
-      //   ]
-      // },
-      // {
-      //   "_id": "i102",
-      //   "title": "I will do hyper realistic pencil sketch portrait by hand drawing",
-      //   "about": "Hello, this is Masuk, stand up for vividstore,I am a young and enthusiastic graphic artist and realistic pencil sketch artist. I am certified as graphic designer from George Washington University, USA. I have almost 11 years experience in this field since my university life. I really love to work with Adobe Illustrator, Adobe Photoshop, and so on as a full time online freelancer. And also passionate about sketching. Thank you.",
-      //   "price": 151,
-      //   "owner": {
-      //     "fullname": "vividstore",
-      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/83cc7c97f9873bdb052590a94d32f84c-1576419363871/ed47443e-0f9b-42ab-beaf-ec0a0acccfe8.jpeg",
-      //     "level": "basic/premium",
-      //     "rate": 4,
-      //     "userStory": "At NexusDesign, we specialize in creating immersive digital experiences that captivate audiences worldwide. From crafting compelling brand identities to building cutting-edge websites, we're committed to exceeding our clients' expectations every step of the way. With a track record of success working with diverse clientele, we strive to be the go-to partner for all digital design and development needs.",
-      //     "country": "Brazil",
-      //     "responseTime": "30 minutes",
-      //     "languages": "Portuguese, Spanish, English",
-      //     "joined": "Jan 2022",
-      //     "lastDelivery": "20 minutes"
-      //   },
-      //   "country": "Bangladesh",
-      //   "daysToMake": 24,
-      //   "description": "Hey ! Thanks for visiting my gig :)\nIn this gig i'm offering you a very 3 unique, preferable and affordable packages.\nIf you are thinking for giving someone special a very beautiful, eye catching gift( hyper realistic hand drawing pencil sketch portrait)?\nPlease select the desirable package and place your order right now and i'll give you a perfect portrait sketch, hand drawing, realistic drawing,pencil drawing in high resolution JPEG/PNG digital file.\nI will provide hand-drawn black & White or colored realistic portraits.\nKindly provide me clear reference photo as much as possible.\nThe material I used for Creating pencil portraits are:\nDrawing materials: graphite pencil, charcoal, Bristol paper, tombomono eraser, brush, blending stump, mechanical pencil, graphite powder etc .\nYou can give me anything:\nPortrait photos\nFamily photos\nAnimal photos\nAny product photos\nLandscape photos\nArchitecture photos\nAnything you imagine\nPlease contact me before placing your order! Thanks.\nI DO NOT DELIVER ORIGINAL PHYSICAL COPY BUT A HIGH RESOLUTION JPEG DIGITAL FILE, IF YOU WANT THE ORIGINAL ONE THEN MESSAGE ME FOR DETAILS.\nFeel free to ask me anything! :)\nThank You...\nvividstore",
-      //   "services": [
-      //     "Custom Graphic Design Solutions",
-      //     "Mobile App Development (iOS and Android)",
-      //     "Search Engine Optimization (SEO) Services",
-      //     "Social Media Integration and Marketing"
-      // ],
-      //   "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/197422311/original/1907136f4b9684daa164acfa5cfedc6035b771b1.jpg",
-      //   "tags": [
-      //     "pencil drawing",
-      //     "realistic drawing",
-      //     "pencil portrait",
-      //     "sketch",
-      //     "pencil sketch"
-      //   ],
-      //   "packages": {
-      //     "basic": {
-      //         "header": "Basic (10 products & 4 pages)",
-      //         "price": "500.00",
-      //         "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
-      //         "time": "5 Days Delivery",
-      //         "included": [
-      //             "Functional website",
-      //             "4 pages",
-      //             "Responsive design",
-      //             "E-commerce functionality",
-      //             "10 products",
-      //             "Payment processing"
-      //         ]
-      //     },
-      //     "standard": {
-      //         "header": "Standard (15 products & 6 pages)",
-      //         "price": "750.00",
-      //         "description": "Build 15 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
-      //         "time": "7 Days Delivery",
-      //         "included": [
-      //             "Functional website",
-      //             "6 pages",
-      //             "Responsive design",
-      //             "E-commerce functionality",
-      //             "15 products",
-      //             "Payment processing"
-      //         ]
-      //     },
-      //     "premium": {
-      //         "header": "Premium (20 products & 8 pages)",
-      //         "price": "1000.00",
-      //         "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
-      //         "time": "10 Days Delivery",
-      //         "included": [
-      //             "Functional website",
-      //             "8 pages",
-      //             "Responsive design",
-      //             "E-commerce functionality",
-      //             "20 products",
-      //             "Payment processing",
-      //             "Chat bot"
-      //         ]
-      //     }
-      // },  
-      //   "likedByUsers": ["mini-user"]
-      // },
-      // {
-      //   "_id": "i103",
-      //   "title": "I will draw a hyperrealistic portrait of face or entire body and animals",
-      //   "about": "Hello! I'm a brazilian artist specialized in hyperrealistic drawings and paintings of human figures and animals, i use a diversity of techniques like Oil painting, dry pastel drawing and pencil. I have over 30 years of experience, check out my portfolio.",
-      //   "price": 198,
-      //   "owner": {
-      //     "fullname": "andreacarvalho_",
-      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/5344c10fd4820db3626c4fc24968783d-1588608774469/1e4a3bd9-b71d-48ce-8ac0-0ff6d667caf4.jpeg",
-      //     "level": "basic/premium",
-      //     "rate": 5,
-      //     "userStory": "Welcome to TechCrafters, your premier destination for innovative digital solutions. From sleek logo designs to robust website development, we are dedicated to elevating your online presence and exceeding your expectations. With a global clientele spanning industries, we are committed to delivering unparalleled creativity and expertise to every project.",
-      //     "country": "Australia",
-      //     "responseTime": "45 minutes",
-      //     "languages": "English",
-      //     "joined": "Feb 2020",
-      //     "lastDelivery": "1 hour"
-      //   },
-      //   "country": "Brazil",
-      //   "daysToMake": 4,
-      //   "description": "Desenho de lápis hiperrealista da sua foto, posso adicionar detalhes de fundo e personalizar o desenho do jeito que você quiser.",
-      //   "services": [
-      //     "UI/UX Design Consultation and Prototyping",
-      //     "Content Management System (CMS) Integration",
-      //     "Secure Payment Gateway Integration",
-      //     "Website Maintenance and Support Packages"
-      // ],
-      //   "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/155512325/original/9d62fbdec2b0bffd0318f9af43c2de023b62f5f0.jpg",
-      //   "tags": ["pencil", "drawing", "portrait", "realistic", "painting"],
-      //   "packages": {
-      //     "basic": {
-      //         "header": "Basic (10 products & 4 pages)",
-      //         "price": "400.00",
-      //         "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
-      //         "time": "5 Days Delivery",
-      //         "included": [
-      //             "Functional website",
-      //             "4 pages",
-      //             "Responsive design",
-      //             "E-commerce functionality",
-      //             "10 products",
-      //             "Payment processing"
-      //         ]
-      //     },
-      //     "standard": {
-      //         "header": "Standard (15 products & 6 pages)",
-      //         "price": "600.00",
-      //         "description": "Build 15 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
-      //         "time": "7 Days Delivery",
-      //         "included": [
-      //             "Functional website",
-      //             "6 pages",
-      //             "Responsive design",
-      //             "E-commerce functionality",
-      //             "15 products",
-      //             "Payment processing"
-      //         ]
-      //     },
-      //     "premium": {
-      //         "header": "Premium (20 products & 8 pages)",
-      //         "price": "800.00",
-      //         "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
-      //         "time": "10 Days Delivery",
-      //         "included": [
-      //             "Functional website",
-      //             "8 pages",
-      //             "Responsive design",
-      //             "E-commerce functionality",
-      //             "20 products",
-      //             "Payment processing",
-      //             "Chat bot"
-      //         ]
-      //     }
-      // },  
-      //   "likedByUsers": ["mini-user"],
-      //   "reviews": [
-      //     {
-      //       "name": "rachelrbarnes1",
-      //       "country": "United States",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-      //       "review": "Incredibly grateful for the amazing experience working with you . You are so talented and a kind soul! I highly recommend if you want high quality art to work with her every time",
-      //       "reviewedAt": "Published 1 month ago"
-      //     },
-      //     {
-      //       "name": "mark001994",
-      //       "country": "Austria",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1e6-1f1f9.png",
-      //       "review": "The artist was very kind and polite also very fast at the communication. The delivery of the project was on time. And her work is worth the money. I'm really excited about the painting she did. I can truely recommend the Aritst and her work. Big Thanks! :)",
-      //       "reviewedAt": "Published 1 month ago"
-      //     },
-      //     {
-      //       "name": "thurstonrobby",
-      //       "country": "United States",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-      //       "review": "incredible on how precise that art is, picture perfect. 100% amazing job and I will use your services again ...",
-      //       "reviewedAt": "Published 3 weeks ago"
-      //     },
-      //     {
-      //       "name": "gavrielm",
-      //       "country": "Israel",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1ee-1f1f1.png",
-      //       "review": "amazing saller and great work",
-      //       "reviewedAt": "Published 6 days ago"
-      //     },
-      //     {
-      //       "name": "garebear52",
-      //       "country": "United States",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-      //       "review": "Beautiful drawing! Just what I wanted.",
-      //       "reviewedAt": "Published 1 week ago"
-      //     }
-      //   ]
-      // },
-      // {
-      //   "id": "i100",
-      //   "title": "I will do hyper realistic pencil portrait by hand drawing",
-      //   "about": "Hi reader, thanks for your time. I'm an experienced young artist and i specialize in 3D animation, graphic designing and pencil Art. I'm familiar with word processing application. Kindly hit me up if if you need any of my services.",
-      //   "price": 172,
-      //   "owner": {
-      //     "id": "u100",
-      //     "fullname": "frederickkessie",
-      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
-      //     "level": "basic/premium",
-      //     "rate": 2,
-      //   },
-      //   "country": "Ghana",
-      //   "daysToMake": 26,
-      //   "description": "Hello ! Much obliged for visiting my gig :)\nIn this gig I'm offering you an exceptionally 3 one of a kind, best and reasonable bundles.\nIn case you are thinking for giving somebody uncommon an extremely delightful, eye getting gift( hyper practical hand drawing pencil sketch picture)?\nKindly select the helpful bundle and submit your request at this moment and I'll give you an ideal picture sketch, hand drawing, practical drawing, pencil attracting high goal JPEG/PNG advanced document.\nI will give hand-drawn dark and White or hued reasonable pictures.\nSympathetically give me clear reference photograph however much as could be expected.\nThe material I utilized for Creating pencil representations are:\nDrawing materials: graphite pencil, charcoal, Bristol paper, mono eraser, brush, mixing stump, mechanical pencil, graphite powder and so on .\nYou can give me anything:\nPicture photographs\nFamily photographs\nCreature photographs\nAny item photographs\nScene photographs\nEngineering photographs\nAnything you envision\nKindly reach me prior to submitting your request! Much appreciated.\nI DO NOT DELIVER ORIGINAL PHYSICAL COPY BUT A HIGH RESOLUTION JPEG DIGITA",
-      //   "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/231682055/original/77cc585046a1ceb81a809218fef35ee8252bbb3b.jpg",
-      //   "tags": [
-      //     "pencil drawing",
-      //     "realistic drawing",
-      //     "hand drawing",
-      //     "portrait drawing",
-      //     "pencil sketch"
-      //   ],
-      //   "likedByUsers": [
-      //     "mini-user"
-      //   ],
-      //   "packages": {
-      //     "basic": {
-      //       "header": "Basic (10 products & 4 pages)",
-      //       "price": "451.37",
-      //       "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
-      //       "time": "3 Days Delivery",
-      //       "included": [
-      //         "Functional website",
-      //         "4 pages",
-      //         "Responsive design",
-      //         "E-commerce functionality",
-      //         "10 products",
-      //         "Payment processing"
-      //       ]
-      //     },
-      //     "standard": {
-      //       "header": "standard (16 products & 6 pages)",
-      //       "price": "580.40",
-      //       "description": "Build 16 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
-      //       "time": "3 Days Delivery",
-      //       "included": [
-      //         "Functional website",
-      //         "6 pages",
-      //         "Responsive design",
-      //         "E-commerce functionality",
-      //         "16 products",
-      //         "Payment processing"
-      //       ]
-      //     },
-      //     "premium": {
-      //       "header": "standard (16 products & 6 pages)",
-      //       "price": "720.60",
-      //       "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
-      //       "time": "3 Days Delivery",
-      //       "included": [
-      //         "Functional website",
-      //         "8 pages",
-      //         "Responsive design",
-      //         "E-commerce functionality",
-      //         "20 products",
-      //         "Payment processing",
-      //         "Chat bot"
-      //       ]
-      //     }
-      //   },
-      //   "services": [
-      //     "100% Clean Responsive Design",
-      //     "Ecommerce site Design (Standard and Premium Plans Only)",
-      //     "Multiple Payment Methods (PayPal, Stripe, Bank, Credit Card, etc.)",
-      //   ],
-      //   "reviews": [
-      //     {
-      //       "name": "tobiaspille300",
-      //       "country": "Thailand",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1f9-1f1ed.png",
-      //       "review": "frederickkessie ist a super kind artist doing the process he was super professional and only took him 1 shot to deliver a perfect result ! Highly recommended work with this guy !",
-      //       "reviewedAt": "Published 2 months ago"
-      //     },
-      //     {
-      //       "name": "liam31",
-      //       "country": "United Kingdom",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1ec-1f1e7.png",
-      //       "review": "I requested a slightly earlier delivery on this and once again Frederick came through and provided a fantastic delivery. Thanks so much!",
-      //       "reviewedAt": "Published 3 weeks ago"
-      //     },
-      //     {
-      //       "name": "liam31",
-      //       "country": "United Kingdom",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1ec-1f1e7.png",
-      //       "review": "Frederick is amazing and extremely talented. This is the second time working with him and he has been a pleasure yet again!",
-      //       "reviewedAt": "Published 3 weeks ago"
-      //     },
-      //     {
-      //       "name": "larsonraz",
-      //       "country": "United States",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-      //       "review": "Very detailed",
-      //       "reviewedAt": "Published 1 week ago"
-      //     },
-      //     {
-      //       "name": "stevekaszycki",
-      //       "country": "United States",
-      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-      //       "review": "very nice portrait, very good quality.",
-      //       "reviewedAt": "Published 2 weeks ago"
-      //     }
-      //   ]
-      // },
-      // {
-      //   "_id": "i102",
-      //   "title": "I will edit professional videos for any occasion",
-      //   "price": 20,
-      //   "owner": {
-      //     "_id": "u102",
-      //     "fullname": "John Doe",
-      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
-      //     "level": "premium",
-      //     "rate": 4.5
-      //   },
-      //   "daysToMake": 7,
-      //   "description": "Transform your raw footage into polished, professional videos! Whether it's for weddings, events, or marketing purposes, we've got you covered. Our editing services include color correction, audio enhancement, and seamless transitions to create engaging content.",
-      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
-      //   "tags": [
-      //     "video-editing",
-      //     "professional",
-      //     "wedding",
-      //     "marketing"
-      //   ],
-      //   "likedByUsers": []
-      // },
-      // {
-      //   "_id": "i103",
-      //   "title": "I will create modern and impactful logo designs",
-      //   "price": 15,
-      //   "owner": {
-      //     "_id": "u101",
-      //     "fullname": "Alice Smith",
-      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
-      //     "level": "premium",
-      //     "rate": 4.8
-      //   },
-      //   "daysToMake": 5,
-      //   "description": "Need a unique logo that represents your brand? Look no further! We specialize in creating modern, memorable, and impactful logo designs. Our designs are tailored to your brand's identity, ensuring that you stand out from the competition.",
-      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
-      //   "tags": [
-      //     "Logo Design",
-      //     "branding",
-      //     "modern",
-      //     "unique"
-      //   ],
-      //   "likedByUsers": []
-      // },
-      // {
-      //   "_id": "i104",
-      //   "title": "I will manage your social media accounts effectively",
-      //   "price": 25,
-      //   "owner": {
-      //     "_id": "u103",
-      //     "fullname": "Emily Johnson",
-      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
-      //     "level": "premium",
-      //     "rate": 4.9
-      //   },
-      //   "daysToMake": 7,
-      //   "description": "Maximize your online presence with our social media management services! We'll handle everything from content creation and scheduling to audience engagement and analytics. Let us take the stress out of managing your social media accounts.",
-      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
-      //   "tags": [
-      //     "social-media-management",
-      //     "content-creation",
-      //     "audience-engagement",
-      //     "analytics"
-      //   ],
-      //   "likedByUsers": []
-      // },
-      // {
-      //   "_id": "i105",
-      //   "title": "I will design eye-catching graphics for your brand",
-      //   "price": 18,
-      //   "owner": {
-      //     "_id": "u104",
-      //     "fullname": "Michael Brown",
-      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
-      //     "level": "premium",
-      //     "rate": 4.7
-      //   },
-      //   "daysToMake": 4,
-      //   "description": "Elevate your brand with stunning graphics! From posters and flyers to social media graphics and infographics, we'll bring your ideas to life. Our designs are tailored to your brand's aesthetic and messaging, ensuring maximum impact.",
-      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
-      //   "tags": [
-      //     "graphic-design",
-      //     "branding",
-      //     "marketing",
-      //     "visuals"
-      //   ],
-      //   "likedByUsers": []
-      // },
-      // {
-      //   "_id": "i106",
-      //   "title": "I will build a custom e-commerce website for your business",
-      //   "price": 30,
-      //   "owner": {
-      //     "_id": "u106",
-      //     "fullname": "David Wilson",
-      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
-      //     "level": "premium",
-      //     "rate": 4.9
-      //   },
-      //   "daysToMake": 10,
-      //   "description": "Take your business online with a custom e-commerce website! Our solutions are tailored to your specific needs, whether you're selling products or services. From user-friendly interfaces to secure payment gateways, we've got you covered.",
-      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
-      //   "tags": [
-      //     "e-commerce",
-      //     "website-development",
-      //     "custom-solutions",
-      //     "online-shopping"
-      //   ],
-      //   "likedByUsers": []
-      // },
-      // {
-      //   "_id": "i107",
-      //   "title": "I will create innovative mobile apps for iOS and Android",
-      //   "price": 35,
-      //   "owner": {
-      //     "_id": "u107",
-      //     "fullname": "Daniel Harris",
-      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
-      //     "level": "premium",
-      //     "rate": 4.8
-      //   },
-      //   "daysToMake": 14,
-      //   "description": "Bring your app idea to life with our mobile app development services! Whether it's for iOS or Android, we'll create innovative and user-friendly apps that stand out in the crowded app market. From concept to launch, we'll guide you every step of the way.",
-      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
-      //   "tags": [
-      //     "mobile-app-development",
-      //     "iOS",
-      //     "Android",
-      //     "innovative"
-      //   ],
-      //   "likedByUsers": []
-      // },
-      // {
-      //   "_id": "i108",
-      //   "title": "I will optimize your website for search engines",
-      //   "price": 20,
-      //   "owner": {
-      //     "_id": "u108",
-      //     "fullname": "Jessica Lee",
-      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
-      //     "level": "premium",
-      //     "rate": 4.7
-      //   },
-      //   "daysToMake": 5,
-      //   "description": "Increase your online visibility with our SEO optimization services! We'll analyze your website, identify opportunities for improvement, and implement strategies to boost your search engine rankings. Get ready to attract more organic traffic and grow your business.",
-      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
-      //   "tags": [
-      //     "SEO",
-      //     "search-engine-optimization",
-      //     "organic-traffic",
-      //     "website-ranking"
-      //   ],
-      //   "likedByUsers": []
-      // },
-      // {
-      //   "_id": "i109",
-      //   "title": "I will be your dedicated virtual assistant",
-      //   "price": 18,
-      //   "owner": {
-      //     "_id": "u109",
-      //     "fullname": "Sarah Johnson",
-      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
-      //     "level": "premium",
-      //     "rate": 4.6
-      //   },
-      //   "daysToMake": 7,
-      //   "description": "Hire a virtual assistant to handle your administrative tasks efficiently! From managing emails and scheduling appointments to data entry and research, we'll take care of the details so you can focus on what matters most – growing your business.",
-      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
-      //   "tags": [
-      //     "virtual-assistant",
-      //     "administrative-tasks",
-      //     "efficiency",
-      //     "remote-support"
-      //   ],
-      //   "likedByUsers": []
-      // },
-      // {
-      //   "_id": "i110",
-      //   "title": "I will design your logo1",
-      //   "price": 12,
-      //   "owner": {
-      //     "_id": "u102",
-      //     "fullname": "Dudu Da",
-      //     "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
-      //     "level": "basic/premium",
-      //     "rate": 4
-      //   },
-      //   "daysToMake": 3,
-      //   "description": "Make a unique logo1...",
-      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
-      //   "tags": [
-      //     "Logo Design",
-      //     "artistic",
-      //     "professional",
-      //     "accessible"
-      //   ],
-      //   "likedByUsers": ['mini-user'] // for user-wishlist: use $in
-      // },
-      // {
-      //   "_id": "i111",
-      //   "title": "I will design your logo2",
-      //   "price": 12,
-      //   "owner": {
-      //     "_id": "u103",
-      //     "fullname": "Dudu Da",
-      //     "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
-      //     "level": "basic/premium",
-      //     "rate": 4
-      //   },
-      //   "daysToMake": 3,
-      //   "description": "Make a unique logo2...",
-      //   "imgUrl": "https://res.cloudinary.com/de2rdmsca/image/upload/v1698329461/promote-your-facebook-page-to-country-targeted-audience_oppvsc.jpg",
-      //   "tags": [
-      //     "Logo Design",
-      //     "artistic",
-      //     "professional",
-      //     "accessible"
-      //   ],
-      //   "likedByUsers": ['mini-user'] // for user-wishlist: use $in
-      // },
-      // {
-      //   "_id": "i112",
-      //   "title": "I will design your logo3",
-      //   "price": 12,
-      //   "owner": {
-      //     "_id": "u104",
-      //     "fullname": "Dudu Da",
-      //     "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
-      //     "level": "basic/premium",
-      //     "rate": 4
-      //   },
-      //   "daysToMake": 3,
-      //   "description": "Make a unique logo3...",
-      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
-      //   "tags": [
-      //     "Logo Design",
-      //     "artistic",
-      //     "professional",
-      //     "accessible"
-      //   ],
-      //   "likedByUsers": ['mini-user'] // for user-wishlist: use $in
-      // }, {
-      //   "_id": "i113",
-      //   "title": "I will design your logo",
-      //   "price": 12,
-      //   "owner": {
-      //     "_id": "u101",
-      //     "fullname": "Dudu Da",
-      //     "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
-      //     "level": "basic/premium",
-      //     "rate": 4
-      //   },
-      //   "daysToMake": 3,
-      //   "description": "Make a unique logo...",
-      //   "imgUrl": "https://res.cloudinary.com/de2rdmsca/image/upload/v1698329461/promote-your-facebook-page-to-country-targeted-audience_oppvsc.jpg",
-      //   "tags": [
-      //     "Logo Design",
-      //     "artistic",
-      //     "professional",
-      //     "accessible"
-      //   ],
-      //   "likedByUsers": ['mini-user'] // for user-wishlist: use $in
-      // },
-
-

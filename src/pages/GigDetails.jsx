@@ -1,188 +1,167 @@
-import React from 'react'
-import ImageCarousel from '../cmps/ImageCarousel'
-import profilePic from '../assets/imgs/profile_pic.png'
-import PackTabs from '../cmps/PackTabs'
-import { useParams } from 'react-router'
-import { useSelector } from 'react-redux/es/hooks/useSelector'
-import { DynamicModal } from '../cmps/DynamicModal'
-import { userService } from '../services/user.service'
-import { useEffect, useState } from 'react'
-import { Star } from 'lucide-react'
-
+import React from "react"
+import ImageCarousel from "../cmps/ImageCarousel"
+import profilePic from "../assets/imgs/profile_pic.png"
+import PackTabs from "../cmps/PackTabs"
+import { useParams } from "react-router"
+import { useSelector } from "react-redux/es/hooks/useSelector"
+import { DynamicModal } from "../cmps/DynamicModal"
+import { userService } from "../services/user.service"
+import { useEffect, useState } from "react"
+import { Star } from "lucide-react"
+import BreadCrumbs from "../cmps/BreadCrumbs"
 
 export function GigDetails() {
-
   const params = useParams()
+  const filterBy = useSelector(storeState => storeState.gigModule.filterBy)
 
-  const gig = useSelector((storeState) => storeState.gigModule.gigs.find((gig) => gig._id == params.gigId));
-  console.log("gig:" + gig);
-  console.log(gig);
+  const gig = useSelector(storeState => storeState.gigModule.gigs.find(gig => gig._id == params.gigId))
   if (!gig) {
-    return (
-      <div>Gig not found</div>
-    )
+    return <div>Gig not found</div>
   }
 
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(null)
 
   useEffect(() => {
     async function fetchUser() {
-      const fetchedUser = await userService.getById(gig.owner._id);
-      setUser(fetchedUser);
+      const fetchedUser = await userService.getById(gig.owner._id)
+      setUser(fetchedUser)
     }
-    fetchUser();
-  }, [gig.owner._id]);
+    fetchUser()
+  }, [gig.owner._id])
 
+  const images = [gig.imgUrl, gig.imgUrl, gig.imgUrl, gig.imgUrl]
 
-
-  async function loadUser() {
-    const user = await userService.getById(gig.owner._id)
-    return user
+  function scrollToAnchor(id) {
+    const element = document.getElementById(id)
+    element.scrollIntoView({ behavior: "smooth" })
   }
 
-  const images = [
-    gig.imgUrl,
-    gig.imgUrl,
-    gig.imgUrl,
-    gig.imgUrl
-  ];
+  function randomColor() {
+    const letters = "0123456789ABCDEF"
+    let color = "#"
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)]
+    }
+    return color
+  }
 
   return (
-    <div className='gig-index'>
-      <div className='gig-details'>
-        <div className='details-header'>
+    <div className="gig-index">
+      <div className="gig-details">
+        <div className="details-header">
+          <BreadCrumbs filterBy={filterBy} />
           <h1>{gig.title}</h1>
-          <div className='about-the-seller'>
-            <img className='profile-picture' src={gig.owner.imgUrl.startsWith("http") ? gig.owner.imgUrl : profilePic} alt='profile picture' />
-            <div className='seller-info-text'>
-              <p>{gig.owner.fullname} </p>
+          <div className="about-the-seller">
+            <img className="profile-picture" src={gig.owner.imgUrl.startsWith("http") ? gig.owner.imgUrl : profilePic} alt="profile picture" />
+            <div className="seller-info-text">
+              <p onClick={() => scrollToAnchor("about-the-seller")}>{gig.owner.fullname}</p>
               <span>
-                {/* <svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z"></path></svg> */}
-                <Star fill='black' />
+                <Star fill="black" />
                 {gig.owner.rate}
               </span>
             </div>
           </div>
         </div>
         <ImageCarousel images={images} />
-        <div className='about-this-gig'>
-          <div className='small-side'>
-            <div className='side-wrapper'>
-              <div className='package-content'>
+        <div className="about-this-gig">
+          <div className="small-side">
+            <div className="side-wrapper">
+              <div className="package-content">
                 <PackTabs />
               </div>
-              <div className='contact-seller'>
+              <div className="contact-seller">
                 <button>Contact me</button>
               </div>
             </div>
           </div>
-          <h2>
-            About this gig
-          </h2>
-          <div className='gig-description'>
+          <h2>About this gig</h2>
+          <div className="gig-description">
             <p>{gig.description}</p>
             <h2>Services:</h2>
-            <ul>
-              {gig.services && gig.services.map((service, index) => (
-                <li key={index}>{service}</li>
-              ))}
-            </ul>
+            <ul>{gig.services && gig.services.map((service, index) => <li key={index}>{service}</li>)}</ul>
             <p>
-              <strong>
-                Please contact us with your requirements before placing the order to avoid cancellation. If you are clear about your requirement, Place your order now.
-              </strong>
+              <strong>Please contact us with your requirements before placing the order to avoid cancellation. If you are clear about your requirement, Place your order now.</strong>
             </p>
           </div>
         </div>
-        <div className='seller-wrapper'>
-          <div className='about-the-seller-big'>
+        <div className="seller-wrapper" id="about-the-seller">
+          <div className="about-the-seller-big">
             <span>About the seller</span>
-            <div className='profile-wrapper'>
-              <img className='profile-picture' src={gig.owner.imgUrl.startsWith("http") ? gig.owner.imgUrl : profilePic} alt='profile picture' />
-              <div className='seller-info-text'>
+            <div className="profile-wrapper">
+              <img className="profile-picture" src={gig.owner.imgUrl.startsWith("http") ? gig.owner.imgUrl : profilePic} alt="profile picture" />
+              <div className="seller-info-text">
                 <p>{gig.owner.fullname} </p>
                 <span>
-                  <svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z"></path></svg>
+                  <Star fill="black" size={16} />
                   {gig.owner.rate}
                 </span>
               </div>
-
             </div>
           </div>
-          <div className='user-description'>
+          <div className="user-description">
             {user && (
               <div>
-                <ul className='user-stats'>
+                <ul className="user-stats">
                   <div>
                     <li>
                       From <br />
-                      <strong>
-                        {gig.owner.country}
-                      </strong>
+                      <strong>{gig.owner.country}</strong>
                     </li>
                     <li>
                       Avg. response time <br />
-                      <strong>
-                        {gig.owner.responseTime}
-                      </strong>
+                      <strong>{gig.owner.responseTime}</strong>
                     </li>
                     <li>
                       Languages <br />
-                      <strong>
-                        {gig.owner.languages}
-                      </strong>
+                      <strong>{gig.owner.languages}</strong>
                     </li>
                   </div>
                   <div>
                     <li>
                       Member since <br />
-                      <strong>
-                        {gig.owner.joined}
-                      </strong>
+                      <strong>{gig.owner.joined}</strong>
                     </li>
                     <li>
                       Last delivery <br />
-                      <strong>
-                        {gig.owner.lastDelivery}
-                      </strong>
+                      <strong>{gig.owner.lastDelivery}</strong>
                     </li>
                   </div>
                 </ul>
-                <div className='user-story'>
-                  <p>
-                    {user.userStory}
-                  </p>
+                <div className="user-story">
+                  <p>{user.userStory}</p>
                 </div>
               </div>
             )}
           </div>
         </div>
-        <div className='reviews'>
+        <div className="reviews">
           <ul>
-            {gig.reviews && gig.reviews.map((review, index) => (
-              <li key={index}>
-                <img className='profile-picture' src={gig.owner.imgUrl.startsWith("http") ? gig.owner.imgUrl : profilePic} alt='profile picture' />
-                <div>
-                  <div className='review-header'>
-                    <p>{review.name}</p>
-                    <span> {review.country}</span>
+            {gig.reviews &&
+              gig.reviews.map((review, index) => (
+                <li key={index}>
+                  <div className="review-img-wrapper" style={{ backgroundColor: randomColor() }}>
+                    <p>{review.name[0].toUpperCase()}</p>
                   </div>
-                  <p>{review.review}</p>
-                  <p>{review.reviewedAt}</p>
-                </div>
-              </li>
-            ))}
+                  <div>
+                    <div className="review-header">
+                      <p>{review.name}</p>
+                      <span> {review.country}</span>
+                    </div>
+                    <p>{review.review}</p>
+                    <p>{review.reviewedAt}</p>
+                  </div>
+                </li>
+              ))}
           </ul>
         </div>
-
       </div>
-      <div className='big-side'>
-        <div className='side-wrapper'>
-          <div className='package-content'>
+      <div className="big-side">
+        <div className="side-wrapper">
+          <div className="package-content">
             <PackTabs />
             <DynamicModal />
           </div>
-          <div className='contact-seller'>
+          <div className="contact-seller">
             <button>Contact me</button>
           </div>
         </div>
