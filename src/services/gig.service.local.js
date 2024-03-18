@@ -267,7 +267,44 @@ function _createGigs() {
             ]
           }
         },
-        "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+        "likedByUsers": ['mini-user'], // for user-wishlist: use $in
+         "reviews": [
+          {
+            "name": "tobiaspille300",
+            "country": "Thailand",
+            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1f9-1f1ed.png",
+            "review": "frederickkessie ist a super kind artist doing the process he was super professional and only took him 1 shot to deliver a perfect result ! Highly recommended work with this guy !",
+            "reviewedAt": "Published 2 months ago"
+          },
+          {
+            "name": "liam31",
+            "country": "United Kingdom",
+            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1ec-1f1e7.png",
+            "review": "I requested a slightly earlier delivery on this and once again Frederick came through and provided a fantastic delivery. Thanks so much!",
+            "reviewedAt": "Published 3 weeks ago"
+          },
+          {
+            "name": "liam31",
+            "country": "United Kingdom",
+            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1ec-1f1e7.png",
+            "review": "Frederick is amazing and extremely talented. This is the second time working with him and he has been a pleasure yet again!",
+            "reviewedAt": "Published 3 weeks ago"
+          },
+          {
+            "name": "larsonraz",
+            "country": "United States",
+            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
+            "review": "Very detailed",
+            "reviewedAt": "Published 1 week ago"
+          },
+          {
+            "name": "stevekaszycki",
+            "country": "United States",
+            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
+            "review": "very nice portrait, very good quality.",
+            "reviewedAt": "Published 2 weeks ago"
+          }
+        ]
       },
       {
         "id": "i100",
