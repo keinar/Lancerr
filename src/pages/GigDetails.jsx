@@ -9,19 +9,33 @@ import { userService } from "../services/user.service"
 import { useEffect, useState } from "react"
 import { Star } from "lucide-react"
 import Breadcrumbs from "../cmps/Breadcrumbs"
-import { getFlagImage } from "../cmps/flags.jsx";
-
+import { getFlagImage } from "../cmps/flags.jsx"
 
 export function GigDetails() {
   const params = useParams()
   const filterBy = useSelector(storeState => storeState.gigModule.filterBy)
-
   const gig = useSelector(storeState => storeState.gigModule.gigs.find(gig => gig._id == params.gigId))
+  const [isSticky, setIsSticky] = useState(false)
+
   if (!gig) {
     return <div>Gig not found</div>
   }
 
   const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sideWrapper = document.querySelector(".side-wrapper")
+      const top = sideWrapper.getBoundingClientRect().top
+      setIsSticky(top <= 0)
+    }
+
+    window.addEventListener("scroll", handleScroll)
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   useEffect(() => {
     async function fetchUser() {
@@ -150,7 +164,8 @@ export function GigDetails() {
                       <span>
                         <img className="country-flag" src={getFlagImage(review.country)} alt={`${review.country} flag`} />
                         {review.country}
-                      </span>                    </div>
+                      </span>
+                    </div>
                     <p>{review.review}</p>
                     <p>{review.reviewedAt}</p>
                   </div>
@@ -159,7 +174,7 @@ export function GigDetails() {
           </ul>
         </div>
       </div>
-      <div className="big-side">
+      <div className={`big-side ${isSticky ? "sticky" : ""}`}>
         <div className="side-wrapper">
           <div className="package-content">
             <PackTabs />

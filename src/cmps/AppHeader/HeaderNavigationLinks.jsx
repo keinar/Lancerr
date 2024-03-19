@@ -4,11 +4,12 @@ import Login from "./Login"
 import { login, logout, signup } from "../../store/actions/user.actions"
 import { Check } from "lucide-react"
 import { showErrorMsg } from "../../services/event-bus.service"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 export default function HeaderNavigationLinks() {
   const [isAuthDialogOpen, setIsAuthDialogOpen] = useState(false)
   const [isNavDialogOpen, setIsNavDialogOpen] = useState(false)
+  const navigate = useNavigate()
   const user = useSelector(storeState => storeState.userModule.user)
   const navDialogRef = useRef(null)
 
@@ -75,9 +76,9 @@ export default function HeaderNavigationLinks() {
   return (
     <nav className="header-links">
       <ul>
-        <Link to={"/explore"}>
-          <li className="explore-btn">Explore</li>
-        </Link>
+        <li className="explore-btn" onClick={() => navigate("/explore")}>
+          Explore
+        </li>
         {!user && (
           <li className="signin-btn" onClick={openAuthDialog}>
             Sign in
@@ -91,8 +92,8 @@ export default function HeaderNavigationLinks() {
 
         {user && (
           <span className="user-info" ref={navDialogRef}>
-              <Link to={"/order"}>
-            <li>Orders</li>
+            <Link to={"/order"}>
+              <li>Orders</li>
             </Link>
             <div>
               {user.imgUrl && <img src={user.imgUrl} alt="user-img" className="user-img" onClick={openNavDialog} title={user.fullname} />}
