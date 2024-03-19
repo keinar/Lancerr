@@ -62,10 +62,14 @@ export default function Payment() {
 
   function onSelectPaypal() {
     document.querySelector(".credit-card-details-wrapper").style.display = "none"
+    document.querySelector('[class="btn continue"]').style.backgroundColor = "#0070ba"
+    document.querySelector('[class="btn continue"]').innerHTML = "Paypal"
   }
 
   function onSelectCredit() {
     document.querySelector(".credit-card-details-wrapper").style.display = "block"
+    document.querySelector('[class="btn continue"]').style.backgroundColor = "black"
+    document.querySelector('[class="btn continue"]').innerHTML = "Confirm & Pay"
   }
 
   return (
@@ -112,7 +116,7 @@ export default function Payment() {
               </div>
               <div className="purchase-btn-container flex">
                 <button className="btn continue" onClick={onPayment}>
-                  Pay in USD
+                  Confirm & Pay
                 </button>
                 <span>
                   <i className="fa-solid fa-lock" aria-hidden="true"></i> SSL Secure Payment
@@ -193,8 +197,8 @@ export default function Payment() {
                 </div>
               </article>
             </form>
-            <section className="payment-option1" onClick={() => onSelectPaypal()}>
-              <label htmlFor="paypal">
+            <section className="payment-option1">
+              <label htmlFor="paypal" onClick={() => onSelectPaypal()}>
                 <input className="form-check-input radio" type="radio" name="payment-option" id="paypal" />
                 <img src="https://res.cloudinary.com/dgsfbxsed/image/upload/v1696838077/paypal-logo_uyhsmo.svg" alt="paypal" className="paypal-logo" />
               </label>
