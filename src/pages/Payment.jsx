@@ -10,9 +10,12 @@ import { saveOrder } from "../store/actions/order.actions"
 export default function Payment() {
   const params = useParams()
   const navigate = useNavigate()
+  const packageType = params.package;
+  
 
   const gig = useSelector(storeState => storeState.gigModule.gigs.find(gig => gig._id == params.gigId))
-
+  const packageDetails = gig.packages[packageType]
+  const totalPrice = parseFloat(packageDetails.price) + 12.5;
   async function onPayment() {
     try {
       // Get buyer details from session storage
@@ -82,8 +85,8 @@ export default function Payment() {
               <span className="package-desc">{gig.title}</span>
             </figure>
             <section className="package-heading">
-              <span className="pack-title">Basic</span>
-              <span className="pack-price">{`$${gig.price}`}</span>
+              <span className="pack-title">{packageDetails.header}</span>
+              <span className="pack-price">{`$${packageDetails.price}`}</span>
             </section>
             <ul className="feature-list">
               {gig.packages.basic.included.map((feature, index) => (
@@ -107,8 +110,8 @@ export default function Payment() {
             </div>
             <div className="summary-footer">
               <div className="user-price flex">
-                <span className="price">You’ll pay</span>
-                <span>{`$${gig.price + 12.5}`}</span>
+                <span className="price">You’ll pay</span>                
+                <span>{`$${totalPrice.toFixed(2)}`}</span>
               </div>
               <div className="user-days flex">
                 <span className="time">Total delivery time</span>
