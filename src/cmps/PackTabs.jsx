@@ -46,7 +46,7 @@ export default function PackTabs() {
   }
 
   function onPackSelect() {
-    navigate(`/payment/${params.gigId}`)
+    navigate(`/payment/${params.gigId}/${selectedTab}`)
   }
 
   console.log(gig.packages[selectedTab].description)
