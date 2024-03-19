@@ -349,9 +349,8 @@ svg.lucide.lucide-chevron-down.collapsed {
         border: 1px solid transparent;
         border-radius: 4px;
         margin: auto;
-        /* Add this line to center the button horizontally */
         display: block;
-        /* Add this line to center the button horizontally */
+        cursor: pointer;
       }
     }
   }
@@ -371,7 +370,7 @@ svg.lucide.lucide-chevron-down.collapsed {
       border: 1px solid black;
       border-radius: 4px;
       margin: auto;
-      /* Add this line to center the button horizontally */
+      cursor: pointer;
       display: block;
     }
   }
