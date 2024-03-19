@@ -9,6 +9,8 @@ import { userService } from "../services/user.service"
 import { useEffect, useState } from "react"
 import { Star } from "lucide-react"
 import Breadcrumbs from "../cmps/Breadcrumbs"
+import { getFlagImage } from "../cmps/flags.jsx";
+
 
 export function GigDetails() {
   const params = useParams()
@@ -145,8 +147,10 @@ export function GigDetails() {
                   <div>
                     <div className="review-header">
                       <p>{review.name}</p>
-                      <span> {review.country}</span>
-                    </div>
+                      <span>
+                        <img className="country-flag" src={getFlagImage(review.country)} alt={`${review.country} flag`} />
+                        {review.country}
+                      </span>                    </div>
                     <p>{review.review}</p>
                     <p>{review.reviewedAt}</p>
                   </div>

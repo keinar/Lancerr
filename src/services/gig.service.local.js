@@ -1018,7 +1018,7 @@ function _createGigs() {
           },
           {
             "name": "applist22",
-            "country": "Austria",
+            "country": "Germany",
             "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1e6-1f1f9.png",
             "review": "Abrar and his team did an amazing job. The communication was great and he was every time available to discuss the project and when problems popped up he was flexible and agile to solve them with great effort & motivation. He provided first-class delivery and project management skills and is a reliable partner for any kind of project! I will work with him in the near future again - was a great pleasure and I'm very satisfied!",
             "reviewedAt": "Published 2 months ago"
@@ -1032,7 +1032,7 @@ function _createGigs() {
           },
           {
             "name": "schneida",
-            "country": "Austria",
+            "country": "Germany",
             "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1e6-1f1f9.png",
             "review": "It was a pleasure to work with Abrar and his team. He is fast responding and an awesome problem solver who always reaches the goals for his clients. He is on my shortlist for other jobs in the future for sure.",
             "reviewedAt": "Published 1 month ago"

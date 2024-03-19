@@ -207,26 +207,24 @@
     .nav-container {
       display: flex;
       justify-content: space-around;
-
-      input {
-        display: none;
-      }
-
-      label {
+    
+      button {
         text-align: center;
         min-width: 33.3333%;
         padding: 1rem;
         border: 0.5px solid #dadbdd;
         border-top: 0px;
         background-color: #fafafa;
+        cursor: pointer; /* Add cursor pointer to make it clear that it's clickable */
       }
-
-      input:checked + label {
+    
+      button.active {
         font-weight: bold;
         background-color: #ffffff;
         border-bottom: 3px solid #222325;
       }
     }
+    
 
     .package-body {
       padding: 32px 24px 10px;
@@ -523,9 +521,15 @@
               }
 
               span {
+                display: flex;
+                flex-direction: row;
                 color: #62646a;
                 font-size: 14px;
                 padding-left: 8px;
+                .country-flag{
+                  width: 20px;
+                  margin-right: 5px;
+                }
               }
             }
           }
