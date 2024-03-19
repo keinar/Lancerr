@@ -9,6 +9,8 @@ import { userService } from "../services/user.service"
 import { useEffect, useState } from "react"
 import { Star } from "lucide-react"
 import Breadcrumbs from "../cmps/Breadcrumbs"
+import { getFlagImage } from "../cmps/flags.jsx";
+
 
 export function GigDetails() {
   const params = useParams()
