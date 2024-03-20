@@ -168,13 +168,24 @@ svg.lucide.lucide-chevron-down.collapsed {
       padding: 24px;
       grid-area: ud;
       width: 92%;
+      border-radius: 4px;
+      margin-bottom: 20px;
 
       .user-stats {
         display: flex;
-        // justify-content: space-between;
         border-bottom: 1px solid #dadbdd;
         padding: 0;
+        margin: 0;
 
+        li {
+          color: #74767e;
+          font-size: 16px;
+          padding-bottom: 16px;
+
+          strong {
+            color: #62646a;
+          }
+        }
         div {
           margin-right: 180px;
           margin-bottom: 20px;
@@ -182,7 +193,10 @@ svg.lucide.lucide-chevron-down.collapsed {
       }
 
       .user-story {
+        padding-top: 15px;
         p {
+          font-size: 16px;
+          color: #62646a;
           margin-bottom: 0px;
         }
       }
@@ -539,6 +553,8 @@ svg.lucide.lucide-chevron-down.collapsed {
       .about-the-seller-big {
         grid-area: seller;
         padding: 32px 0px 0px;
+        font-weight: 700;
+        font-size: 20px;
       }
 
       .reviews {
