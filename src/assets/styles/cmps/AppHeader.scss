@@ -8,7 +8,7 @@
   color: #62646a;
   border-radius: 5px;
   border: 1px solid rgba(98, 100, 106, 0.2901960784);
-
+  z-index: 99;
   ul {
     li {
       width: 100%;
@@ -98,25 +98,33 @@ svg.lucide.lucide-search {
     border-radius: 25px;
   }
 }
-.app-header {
-  background-color: white;
-  transition: 0.5s all ease;
-  &.header-transparent {
-    background-color: transparent;
-    .logo-text {
-      color: white;
-      transition: 0.5s all ease;
-    }
 
-    nav ul li {
-      color: white;
-      transition: 0.5s all ease;
-    }
-    .join-btn {
-      border: 1px solid white;
-      color: white;
-      transition: 0.5s all ease;
-      cursor: pointer;
+.app-header-wrapper {
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .app-header {
+    background-color: white;
+    transition: 0.5s all ease;
+    &.header-transparent {
+      background-color: transparent;
+      .logo-text {
+        color: white;
+        transition: 0.5s all ease;
+      }
+
+      nav ul li {
+        color: white;
+        transition: 0.5s all ease;
+      }
+      .join-btn {
+        border: 1px solid white;
+        color: white;
+        transition: 0.5s all ease;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -186,7 +194,7 @@ svg.lucide.lucide-search {
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  top: 88px;
+  position: relative;
   z-index: 9;
   border-bottom: 1px solid #e4e5e7;
   display: flex;
