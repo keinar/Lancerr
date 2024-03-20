@@ -1,5 +1,5 @@
 import React from "react"
-import { GetFlagImage } from "../../cmps/Flags"
+import { GetFlagImage } from "../../cmps/GetFlagImage"
 
 export default function GigReviews({ reviews }) {
   function randomColor() {
