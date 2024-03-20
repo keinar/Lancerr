@@ -45,6 +45,10 @@
         background-color: $clr1;
         border-radius: 0 4px 4px 0;
         border: none;
+
+        &:hover {
+          background-color: darken($clr1, 5%);
+        }
       }
     }
   }

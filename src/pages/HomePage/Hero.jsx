@@ -59,7 +59,7 @@ export default function Hero() {
               <form className="hp-search-form">
                 <input type="search" placeholder="Search for any service..." value={searchValue} onChange={e => setSearchValue(e.target.value)} />
                 <button type="button" onClick={() => handleClick(searchValue)} className="inside-button">
-                  <SearchIcon size={16} color="white" />
+                  <SearchIcon size={18} color="white" strokeWidth={3} />
                 </button>
               </form>
               <div className="popular-tags">
