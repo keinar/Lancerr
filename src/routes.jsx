@@ -1,4 +1,4 @@
-import { GigDetails } from "./pages/GigDetails.jsx"
+import { GigDetails } from "./pages/GigDetails/GigDetails.jsx"
 import { GigIndex } from "./pages/GigIndex.jsx"
 import { GigSeller } from "./pages/GigSeller.jsx"
 import { HomePage } from "./pages/HomePage/HomePage.jsx"

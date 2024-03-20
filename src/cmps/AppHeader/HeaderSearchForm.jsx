@@ -2,11 +2,9 @@ import { Search } from "lucide-react"
 import React, { useState } from "react"
 import { useNavigate } from "react-router"
 import { setFilterBy } from "../../store/actions/gig.actions"
-import { store } from "../../store/store.js"
 
 export default function HeaderSearchForm() {
   const [longPlaceholderValue, setLongPlaceholderValue] = useState("")
-  const filterBy = store.getState().gigModule.filterBy
   const navigate = useNavigate()
 
   function handleClick(inputValue) {
@@ -14,7 +12,6 @@ export default function HeaderSearchForm() {
       txt: inputValue,
     }
     if (!inputValue) return
-    // const fieldsToUpdate = { ...filterBy, ...updatedFilter }
     const fieldsToUpdate = { ...updatedFilter }
     setFilterBy(fieldsToUpdate)
     navigate("/explore")

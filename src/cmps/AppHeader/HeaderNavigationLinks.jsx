@@ -1,156 +1,74 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import { useSelector } from "react-redux"
-import Login from "./Login"
-import { login, logout, signup } from "../../store/actions/user.actions"
-import { Check } from "lucide-react"
-import { showErrorMsg } from "../../services/event-bus.service"
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
+import AuthDialog from "../AuthDialog"
+import { logout } from "../../store/actions/user.actions"
+import { showErrorMsg, showSuccessMsg } from "../../services/event-bus.service"
 
-export default function HeaderNavigationLinks() {
-  const [isAuthDialogOpen, setIsAuthDialogOpen] = useState(false)
-  const [isNavDialogOpen, setIsNavDialogOpen] = useState(false)
+export default function HeaderNavigation() {
+  const [dialogState, setDialogState] = useState({ auth: false, nav: false })
   const navigate = useNavigate()
-  const user = useSelector(storeState => storeState.userModule.user)
+  const user = useSelector(state => state.userModule.user)
   const navDialogRef = useRef(null)
 
   useEffect(() => {
-    function handleClickOutside(event) {
+    const handleClickOutside = event => {
       if (navDialogRef.current && !navDialogRef.current.contains(event.target)) {
-        if (isNavDialogOpen) closeNavDialog()
-        if (isAuthDialogOpen) closeAuthDialog()
+        setDialogState(prevState => ({
+          ...prevState,
+          nav: false,
+          auth: false,
+        }))
       }
     }
+
     document.addEventListener("mousedown", handleClickOutside)
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [isNavDialogOpen, isAuthDialogOpen])
+    return () => document.removeEventListener("mousedown", handleClickOutside)
+  }, [])
 
-  function openAuthDialog() {
-    setIsAuthDialogOpen(true)
-  }
-
-  function closeAuthDialog() {
-    setIsAuthDialogOpen(false)
-  }
-
-  function openNavDialog() {
-    setIsNavDialogOpen(true)
-  }
-
-  function closeNavDialog() {
-    setIsNavDialogOpen(false)
-  }
-
-  async function onLogin(credentials) {
-    try {
-      const user = await login(credentials)
-      setIsAuthDialogOpen(false)
-      setIsNavDialogOpen(false)
-      showSuccessMsg(`Welcome: ${user.fullname}`)
-    } catch (err) {
-      showErrorMsg("Cannot login")
-    }
-  }
-
-  async function onSignup(credentials) {
-    try {
-      const user = await signup(credentials)
-      setIsAuthDialogOpen(false)
-      showSuccessMsg(`Welcome new user: ${user.fullname}`)
-    } catch (err) {
-      showErrorMsg("Cannot signup")
-    }
-  }
-
-  async function onLogout() {
+  const handleLogout = async () => {
     try {
       await logout()
-      setIsNavDialogOpen(false)
-      showSuccessMsg(`Bye now`)
+      navigate("/")
+      setDialogState({ auth: false, nav: false })
+      showSuccessMsg("Bye now")
     } catch (err) {
       showErrorMsg("Cannot logout")
     }
   }
 
-  function navigateToExplore() {
-    navigate("/explore")
-    window.scrollTo(0, 0)
+  const toggleDialog = type => {
+    setDialogState(prevState => ({ ...prevState, [type]: !prevState[type] }))
   }
 
   return (
     <nav className="header-links">
-      <ul>
-        <li className="explore-btn" onClick={() => navigateToExplore("/explore")}>
+      <ul className="header-links-ul">
+        <li className="explore-btn" onClick={() => navigate("/explore")}>
           Explore
         </li>
-        {!user && (
-          <li className="signin-btn" onClick={openAuthDialog}>
-            Sign in
-          </li>
-        )}
-        {!user && (
-          <li className="join-btn" onClick={openAuthDialog}>
-            Join
-          </li>
-        )}
-
+        {!user &&
+          ["Sign in", "Join"].map((action, index) => (
+            <li key={index} className={`${action.toLowerCase()}-btn`} onClick={() => toggleDialog("auth")}>
+              {action}
+            </li>
+          ))}
         {user && (
           <span className="user-info" ref={navDialogRef}>
-            <Link to={"/order"}>
+            <Link to="/order">
               <li>Orders</li>
             </Link>
             <div>
-              {user.imgUrl && <img src={user.imgUrl} alt="user-img" className="user-img" onClick={openNavDialog} title={user.fullname} />}
-              <dialog open={isNavDialogOpen} className="nav-popover-items-content">
-                <ul onClick={onLogout}>
+              {user.imgUrl && <img src={user.imgUrl} alt="user-img" className="user-img" onClick={() => toggleDialog("nav")} title={user.fullname} />}
+              <dialog open={dialogState.nav} className="nav-popover-items-content">
+                <ul onClick={handleLogout}>
                   <li>Logout</li>
                 </ul>
               </dialog>
             </div>
           </span>
         )}
-
-        {isAuthDialogOpen && (
-          <div className="auth-dialog-container">
-            <dialog open={isAuthDialogOpen} className="auth-dialog">
-              <section className="dialog-left">
-                <h2>Success starts here</h2>
-                <ul>
-                  <li>
-                    <span>
-                      <Check size={15} />
-                    </span>
-                    Over 600 categories
-                  </li>
-                  <li>
-                    <span>
-                      <Check size={15} />
-                    </span>
-                    Pay per project, not per hour
-                  </li>
-                  <li>
-                    <span>
-                      <Check size={15} />
-                    </span>
-                    Access to talent and businesses across the globe
-                  </li>
-                </ul>
-              </section>
-              <section className="dialog-right">
-                <section className="container">
-                  {!user && (
-                    <div className="user-info">
-                      <Login onLogin={onLogin} onSignup={onSignup} />
-                    </div>
-                  )}
-                </section>
-
-                <button onClick={closeAuthDialog}>Close</button>
-              </section>
-            </dialog>
-          </div>
-        )}
+        {dialogState.auth && <AuthDialog toggleDialog={() => toggleDialog("auth")} />}
       </ul>
     </nav>
   )
