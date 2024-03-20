@@ -578,23 +578,33 @@ svg.lucide.lucide-chevron-down.collapsed {
               margin-right: 20px;
               margin-bottom: initial;
             }
-
-            .review-header {
-              margin-bottom: 10px;
-              p {
-                font-weight: 700;
-                margin-bottom: 0px;
+            .review {
+              .reviewed-at {
+                font-size: 14px;
+                color: #62646a;
               }
 
-              span {
-                display: flex;
-                flex-direction: row;
-                color: #62646a;
-                font-size: 14px;
-                padding-left: 8px;
-                .country-flag {
-                  width: 20px;
-                  margin-right: 5px;
+              p {
+                font-size: 16px;
+                font-weight: 500;
+              }
+              .review-header {
+                margin-bottom: 10px;
+                p {
+                  font-weight: 700;
+                  margin-bottom: 0px;
+                }
+
+                span {
+                  display: flex;
+                  flex-direction: row;
+                  color: #62646a;
+                  font-size: 14px;
+                  padding-left: 8px;
+                  .country-flag {
+                    width: 20px;
+                    margin-right: 5px;
+                  }
                 }
               }
             }
