@@ -20,7 +20,7 @@ export default function GigReviews({ reviews }) {
               <div className="review-img-wrapper" style={{ backgroundColor: randomColor() }}>
                 <p>{review.name[0].toUpperCase()}</p>
               </div>
-              <div>
+              <div className="review">
                 <div className="review-header">
                   <p>{review.name}</p>
                   <span>
@@ -29,7 +29,7 @@ export default function GigReviews({ reviews }) {
                   </span>
                 </div>
                 <p>{review.review}</p>
-                <p>{review.reviewedAt}</p>
+                <p className="reviewed-at">{review.reviewedAt}</p>
               </div>
             </li>
           ))}
