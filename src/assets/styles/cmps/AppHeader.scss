@@ -96,6 +96,8 @@ svg.lucide.lucide-search {
   position: relative;
   .user-img {
     width: 33px;
+    height: 33px;
+    object-fit: cover;
     border-radius: 25px;
   }
 }
@@ -250,6 +252,7 @@ svg.lucide.lucide-search {
       padding: 5px 16px;
       color: $clr1;
       cursor: pointer;
+      font-weight: 600;
 
       &:hover {
         background-color: #19a463;
@@ -282,7 +285,8 @@ svg.lucide.lucide-search {
 
     form {
       flex: 1;
-      padding-inline: 30px;
+      padding-right: 30px;
+      max-width: 500px;
     }
 
     .short-placeholder {
@@ -316,7 +320,7 @@ svg.lucide.lucide-search {
       padding: 10px 2px 10px 16px;
       border-radius: 4px;
       outline: none;
-      border: 1px solid #c5c6c9;
+      border: 1px solid #e5e5e7;
       font-size: 16px;
       width: 100%;
     }
@@ -328,6 +332,10 @@ svg.lucide.lucide-search {
       padding-inline: 16px;
       background-color: black;
       border-radius: 0 4px 4px 0;
+      border: none;
+      &:hover {
+        background-color: lighten($color: #000000, $amount: 20%);
+      }
     }
   }
 
@@ -336,7 +344,68 @@ svg.lucide.lucide-search {
       display: block;
       cursor: pointer;
       color: #62646a;
+      font-weight: 600;
     }
+    [class="sign in-btn"] {
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}
+.signup-header,
+.login-header {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.sign-in-link {
+  text-decoration: underline;
+  padding-left: 5px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+
+  select {
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 330px;
+    outline: none;
+  }
+
+  button {
+    font-size: 20px;
+    color: white;
+    background: black;
+    padding: 8px;
+  }
+}
+
+form.signup-form {
+  input[type="text"],
+  input[type="password"] {
+    font-size: 16px;
+    margin: 10px;
+    margin-inline: 0;
+    width: 330px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid black;
+  }
+  input#imgUpload {
+    display: none;
+  }
+  button {
+    font-size: 20px;
+    color: white;
+    background: black;
+    padding: 8px;
+    width: 100%;
+    margin-top: 10px;
   }
 }
 

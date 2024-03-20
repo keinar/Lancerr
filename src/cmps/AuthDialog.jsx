@@ -73,7 +73,6 @@ export default function AuthDialog({ toggleDialog, user }) {
               </div>
             )}
           </section>
-          <button onClick={toggleDialog}>Close</button>
         </section>
       </dialog>
     </div>
