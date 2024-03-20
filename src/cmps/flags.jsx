@@ -1,4 +1,3 @@
-import React from "react"
 import china from "../assets/imgs/china.png"
 import thailand from "../assets/imgs/thailand.png"
 import germany from "../assets/imgs/germany.png"
