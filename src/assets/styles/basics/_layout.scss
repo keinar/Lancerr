@@ -416,14 +416,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 40px;
+    padding-bottom: 40px;
 
     .header {
-      text-transform: uppercase;
-      font-size: 1.625rem;
+      font-weight: 300;
+      font-size: 40px;
       margin-block: 1.875rem;
       margin: 0;
       line-height: 1;
     }
+  }
+
+  .buyer-orders.main-container {
+    padding-inline: 80px;
   }
 
   @include for-mobile-layout {

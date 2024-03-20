@@ -18,6 +18,7 @@ export default function HeaderSearchForm() {
     const fieldsToUpdate = { ...updatedFilter }
     setFilterBy(fieldsToUpdate)
     navigate("/explore")
+    window.scrollTo(0, 0)
   }
   return (
     <form>
