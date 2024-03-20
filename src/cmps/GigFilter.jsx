@@ -1,19 +1,15 @@
 import { setFilterBy } from "../store/actions/gig.actions.js"
-import { store } from "../store/store.js"
 import { useNavigate } from "react-router"
 
 export function GigFilter() {
-  const filterBy = store.getState().gigModule.filterBy
   const navigate = useNavigate()
 
   function handleTagClick(tag) {
-    // Create a new filter with the clicked tag
     const updatedFilter = {
-      // ...filterByToEdit,
-      tags: [tag], // Replace the existing tags with the clicked tag
+      tags: [tag],
     }
-    // const fieldsToUpdate = { ...filterBy, ...updatedFilter }
-     const fieldsToUpdate = { ...updatedFilter }
+
+    const fieldsToUpdate = { ...updatedFilter }
     setFilterBy(fieldsToUpdate)
     navigate("/explore")
     window.scrollTo(0, 0)

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import HeaderCategoriesMenu from "./HeaderCategoriesMenu"
 import HeaderLogo from "./HeaderLogo"
 import HeaderMobileMenuButton from "./HeaderMobileMenuButton"
 import HeaderNavigationLinks from "./HeaderNavigationLinks"
@@ -40,7 +39,6 @@ export function AppHeader() {
       </section>
       {location.pathname !== "/order" && (
         <div className={`cat-wrapper ${location.pathname === "/" && "fixed"} full ${location.pathname === "/" ? (showCategoriesMenu ? "visible" : "") : "visible"}`}>
-          {/* <HeaderCategoriesMenu /> */}
           <GigFilter />
         </div>
       )}

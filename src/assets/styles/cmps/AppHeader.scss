@@ -39,6 +39,7 @@ svg.lucide.lucide-search {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 999;
 
   dialog.auth-dialog {
     position: fixed;
