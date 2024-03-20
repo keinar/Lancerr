@@ -27,8 +27,8 @@ export function AppHeader() {
   }, [])
 
   return (
-    <section>
-      <section className={`app-header main-container full ${location.pathname === "/" && "fixed"} ${isOnTop && location.pathname === "/" ? "header-transparent" : ""}`}>
+    <section className={`app-header-wrapper ${location.pathname === "/" && "fixed"} ${isOnTop && location.pathname === "/" ? "header-transparent" : ""}`}>
+      <section className="app-header main-container full">
         <header className="navbar">
           <HeaderMobileMenuButton />
           <HeaderLogo />
@@ -38,10 +38,12 @@ export function AppHeader() {
           <HeaderNavigationLinks />
         </header>
       </section>
-      <div className={`cat-wrapper ${location.pathname === "/" && "fixed"} full ${location.pathname === "/" ? (showCategoriesMenu ? "visible" : "") : "visible"}`}>
-        {/* <HeaderCategoriesMenu /> */}
-        <GigFilter />
-      </div>
+      {location.pathname !== "/order" && (
+        <div className={`cat-wrapper ${location.pathname === "/" && "fixed"} full ${location.pathname === "/" ? (showCategoriesMenu ? "visible" : "") : "visible"}`}>
+          {/* <HeaderCategoriesMenu /> */}
+          <GigFilter />
+        </div>
+      )}
     </section>
   )
 }

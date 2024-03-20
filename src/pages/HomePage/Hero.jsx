@@ -43,6 +43,7 @@ export default function Hero() {
     const fieldsToUpdate = { ...filterBy, ...updatedFilter }
     setFilterBy(fieldsToUpdate)
     navigate("/explore")
+    window.scrollTo(0, 0)
   }
 
   return (

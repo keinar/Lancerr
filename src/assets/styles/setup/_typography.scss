@@ -7,6 +7,13 @@
 
 @font-face {
   font-family: "Macan";
+  src: url(/fonts/MacanPanWeb-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Macan";
   src: url(/fonts/MacanPanWeb-Bold.woff) format("woff");
   font-weight: bold;
   font-style: normal;
