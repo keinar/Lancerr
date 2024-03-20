@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import { useSelector } from "react-redux/es/hooks/useSelector"
 import { useParams } from "react-router"
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp"
 import CheckIcon from "@mui/icons-material/Check"
 import { ChevronDown, Clock3, Clock9, Info } from "lucide-react"
 
@@ -39,18 +38,13 @@ export default function PackTabs() {
   useEffect(() => {}, [selectedTab])
 
   function onTabClick(selectedTab) {
-    console.log(gig._id)
-    console.log(selectedTab)
     setSelectedTab(selectedTab)
-    console.log(gig)
   }
 
   function onPackSelect() {
     navigate(`/payment/${params.gigId}/${selectedTab}`)
   }
 
-  console.log(gig.packages[selectedTab].description)
-  console.log(selectedTab)
   return (
     <div className="packages-tabs">
       <div className="nav-container">
