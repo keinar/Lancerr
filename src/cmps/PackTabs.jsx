@@ -4,7 +4,7 @@ import { useSelector } from "react-redux/es/hooks/useSelector"
 import { useParams } from "react-router"
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp"
 import CheckIcon from "@mui/icons-material/Check"
-import { ChevronDown, Info } from "lucide-react"
+import { ChevronDown, Clock3, Clock9, Info } from "lucide-react"
 
 const data = {
   basic: {
@@ -78,15 +78,7 @@ export default function PackTabs() {
           <p>{gig.packages[selectedTab].description}</p>
         </div>
         <div className="delivery-wrapper">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="2.656">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              {" "}
-              <rect width="24" height="24" fill="white"></rect> <circle cx="12" cy="12" r="9" stroke="#616469 " stroke-linecap="round" stroke-linejoin="round"></circle>{" "}
-              <path d="M12 5.5V12H18" stroke="#616469 " stroke-linecap="round" stroke-linejoin="round"></path>{" "}
-            </g>
-          </svg>
+          <Clock3 size={16} color="#74767e" />
           <h5>{gig.packages[selectedTab].time}</h5>
         </div>
 

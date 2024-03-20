@@ -41,7 +41,7 @@ svg.lucide.lucide-chevron-down.collapsed {
       width: 100%;
       padding: 32px 24px 0px;
 
-      .about-the-seller {
+      .about-the-seller-top {
         display: flex;
         flex-direction: row;
         margin-top: 25px;
@@ -335,8 +335,6 @@ svg.lucide.lucide-chevron-down.collapsed {
           font-size: 14px;
         }
         svg {
-          width: 16px;
-          padding-bottom: 20px;
           margin-right: 5px;
         }
       }
@@ -591,7 +589,7 @@ svg.lucide.lucide-chevron-down.collapsed {
 
     .big-side {
       display: block;
-
+      margin-top: 80px;
       &.sticky .side-wrapper {
         position: sticky;
         top: 0;
