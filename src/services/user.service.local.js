@@ -88,26 +88,26 @@ function _createUsers() {
         users = [
             {
                 "_id": "u101",
-                "fullname": "User 1",
-                "imgUrl": "/img/img1.jpg",
-                "username": "user1",
+                "fullname": "Lancerr Dev",
+                "imgUrl": "https://res.cloudinary.com/de06koxrk/image/upload/v1710696038/samples/smile.jpg",
+                "username": "Lancerrist",
                 "password": "secret",
                 "level": "basic/premium",
                 "reviews": [
-                  {
-                    "id": "madeId",
-                    "gig": "{optional-mini-gig}",
-                    "txt": "Very kind and works fast",
-                    "rate": 4,
-                    "by": {
-                      "_id": "u102",
-                      "fullname": "user2",
-                      "imgUrl": "/img/img2.jpg"
+                    {
+                        "id": "madeId",
+                        "gig": "{optional-mini-gig}",
+                        "txt": "Very kind and works fast",
+                        "rate": 4,
+                        "by": {
+                            "_id": "u102",
+                            "fullname": "user2",
+                            "imgUrl": "/img/img2.jpg"
+                        }
                     }
-                  }
                 ],
                 "userStory": "We are PixxelStudio, A full-service design and developing web agency. From designing logos to developing websites to satisfying our customer’s every digital need is what we thrive for. We’ve worked not only with brilliant individuals but also with top companies all around the world. Our mission is to become an indispensable partner to our clients by offering the best ideas, skills and services they could possibly get."
-              },
+            },
         ]
         utilService.saveToStorage(STORAGE_KEY, users)
 

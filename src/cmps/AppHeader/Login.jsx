@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react"
 import { userService } from "../../services/user.service.local.js"
-import { showErrorMsg, showSuccessMsg } from "../../services/event-bus.service.js"
-import { LoginSignup } from "../LoginSignup.jsx"
-import { UserMsg } from "../UserMsg.jsx"
 import { useSelector } from "react-redux"
 import { loadUsers } from "../../store/actions/user.actions.js"
 import { ImgUploader } from "../ImgUploader.jsx"
@@ -50,34 +47,50 @@ export default function Login(props) {
   }
 
   return (
-    <div className="login-page">
-      <p>
-        <button className="btn-link" onClick={toggleSignup}>
-          Go To {!isSignup ? "Signup" : "Login"}
-        </button>
-      </p>
+    <div className="login-area">
       {!isSignup && (
-        <form className="login-form" onSubmit={onLogin}>
-          <select name="username" value={credentials.username} onChange={handleChange}>
-            <option value="">Select User</option>
-            {users.map((user, index) => (
-              <option key={index} value={user.username}>
-                {user.fullname}
-              </option>
-            ))}
-          </select>
-          <button>Login!</button>
-        </form>
+        <section>
+          <h4 className="signup-header">Sign in to your account</h4>
+          <p>
+            Don’t have an account?
+            <span className="sign-in-link" onClick={toggleSignup}>
+              Join here
+            </span>
+          </p>
+          <form className="login-form" onSubmit={onLogin}>
+            <select name="username" value={credentials.username} onChange={handleChange}>
+              <option value="">Select User</option>
+              {users.map((user, index) => (
+                <option key={index} value={user.username}>
+                  {user.fullname}
+                </option>
+              ))}
+            </select>
+            <button>Continue</button>
+          </form>
+        </section>
       )}
       <div className="signup-section">
         {isSignup && (
-          <form className="signup-form" onSubmit={onSignup}>
-            <input type="text" name="fullname" value={credentials.fullname} placeholder="Fullname" onChange={handleChange} required />
-            <input type="text" name="username" value={credentials.username} placeholder="Username" onChange={handleChange} required />
-            <input type="password" name="password" value={credentials.password} placeholder="Password" onChange={handleChange} autoComplete="on" required />
-            <ImgUploader onUploaded={onUploaded} />
-            <button>Signup!</button>
-          </form>
+          <section>
+            <h4 className="login-header">Create a new account</h4>
+            <p>
+              Already have an account?
+              <span className="sign-in-link" onClick={toggleSignup}>
+                Sign in
+              </span>
+            </p>
+            <form className="signup-form" onSubmit={onSignup}>
+              <label htmlFor="fullname">Full name</label>
+              <input type="text" name="fullname" id="fullname" value={credentials.fullname} placeholder="Fullname" onChange={handleChange} required />
+              <label htmlFor="username">Username</label>
+              <input type="text" name="username" id="username" value={credentials.username} placeholder="Username" onChange={handleChange} required />
+              <label htmlFor="password">Password</label>
+              <input type="password" name="password" id="password" value={credentials.password} placeholder="Password" onChange={handleChange} autoComplete="on" required />
+              <ImgUploader onUploaded={onUploaded} />
+              <button>Continue</button>
+            </form>
+          </section>
         )}
       </div>
     </div>
