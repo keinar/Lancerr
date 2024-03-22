@@ -62,16 +62,6 @@ export function GigDetails() {
         </div>
         <ImageCarousel images={images} />
         <div className="about-this-gig">
-          <div className="small-side">
-            <div className="side-wrapper">
-              <div className="package-content">
-                <PackTabs />
-              </div>
-              <div className="contact-seller">
-                <button>Contact me</button>
-              </div>
-            </div>
-          </div>
           <h2>About this gig</h2>
           <div className="gig-description">
             <p>{gig.description}</p>
@@ -90,7 +80,6 @@ export function GigDetails() {
         <div className="side-wrapper">
           <div className="package-content">
             <PackTabs />
-            <DynamicModal />
           </div>
           <div className="contact-seller">
             <button>Contact me</button>
