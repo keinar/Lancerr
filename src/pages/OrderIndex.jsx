@@ -51,16 +51,19 @@ export function OrderIndex() {
                   day: "numeric",
                   year: "numeric",
                 })
-
+                const progressWidth = order.status === "fullfilled" ? "100%" : "25%";
+                const progressClass = order.status === "fullfilled" ? "progress-100" : "progress-25";
                 return (
                   <section className="order-card-container flex" key={order._id}>
                     <div className="order-info">
                       <h5 className="card-header">Order status</h5>
-                      <h4 className="status flex pending">{order.status}</h4>
+                      <h4 className={`status flex ${order.status === "fullfilled" ? "fullfilled" : "pending"}`}>{order.status}</h4>
                       <p className="date">Due date on {formattedDueDate}</p>
-                      <div className="progress-bar">
-                        <div className="progress progress-25" style={{ width: "25%" }}></div>
-                      </div>
+                      {
+                        <div className="progress-bar">
+                          <div className={`progress ${progressClass}`} style={{ width: progressWidth }}></div>
+                        </div>
+                      }
                     </div>
                     <div className="gig flex">
                       <div className="gig-img">
