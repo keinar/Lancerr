@@ -2682,9 +2682,9 @@ function _createGigs() {
         "about": "Bonjour! We are a small team of bilingual English, French, and Spanish speakers with extensive experience translating various documents, from academic essays to business reports, subtitles, scripts, and short novels. Our commitment to quality ensures that your translated document maintains its essence, with careful attention to the register and vocabulary used.",
         "price": 109,
         "owner": {
-          "_id": "u101",
-          "fullname": "moremarks",
-          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/c7335c7b5aa8d880333495ef8f4bbee5-1617624531791/a2fc714b-c261-490d-b93a-af081a385234.png",
+          "_id": "u104",
+          "fullname": "Dudu Da",
+          "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
           "level": "basic/premium",
           "rate": 4,
           "country": "United Kingdom",
@@ -3112,541 +3112,711 @@ function _createGigs() {
         "description": "ENGAGE YOUR AUDIENCE!!!\nwith your own whiteboard animated doodle video\nULTRA FAST 48 Hours turn-around available\nPUT YOUR VIDEO MARKETING ON STEROIDS\nWe`ll create a fantastic speed-draw or whiteboard animation of any logo, picture, script or text\nWhat you get for $35:\n30-second video with voice-over recording\nImages from our Exclusive Hand Drawn Library + 2 Custom Drawings\nBackground Music\nYou must Provide the Script for the video - Up to 75 words\n1080p Video in MP4 or any video format you need\nExtras Available\nFull HD 1920x1080 Delivery\nFast Delivery\nScript Writing\nWatermark\nColor\nSubtitles\nIf you have other requirements just contact us and we´ll reply soon.\n100% Satisfaction Guaranteed\nYour satisfaction is important to us.\nORDER NOW!\nATTENTION - Projects of 300+ words, contact me for a quote and timeframe first.",
         "imgUrl": "https://fiverr-res.cloudinary.com/videos/so_5.529489,t_main1,q_auto,f_auto/rjzxgvkwctoquo1bwkeu/create-an-eye-catching-whiteboard-animation-digital-hand-drawn-video-scribe.png",
         "tags": [
-          "Programming & Tech",
-          "explainer video",
-          "doodle",
-          "whiteboard animation",
-          "hand drawing"
+          "Logo Design",
+          "artistic",
+          "professional",
+          "accessible"
         ],
-        "likedByUsers": [
-          "mini-user"
-        ],
-        "packages": {
-          "basic": {
-            "header": "Basic Plan",
-            "price": 164.00,
-            "description": "30-second whiteboard animation video with voice-over",
-            "time": "5 Days Delivery",
-            "included": [
-              "30-second whiteboard animation video with voice-over"
-            ]
-          },
-          "standard": {
-            "header": "Standard Plan",
-            "price": 214.00,
-            "description": "60-second whiteboard animation video with voice-over + 2 Custom Drawings",
-            "time": "7 Days Delivery",
-            "included": [
-              "60-second whiteboard animation video with voice-over",
-              "2 Custom Drawings"
-            ]
-          },
-          "premium": {
-            "header": "Premium Plan",
-            "price": 264.00,
-            "description": "90-second whiteboard animation video with voice-over + Script Writing",
-            "time": "10 Days Delivery",
-            "included": [
-              "90-second whiteboard animation video with voice-over",
-              "Script Writing"
-            ]
-          }
-        },
-        "services": [
-          "Whiteboard Animation",
-          "Script Writing",
-          "Voiceover"
-        ],
-        "reviews": [
-          {
-            "name": "jaygreen341",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "Working with bnn_marketing has been very easy! They provided a product that is better than what I expected. Even when I made a mistake on my order, Daniel was very understanding and professional. There are many companies to choose from; However, I can see why bnn_marketing is a top seller, I would highly recommend them to anyone!",
-            "reviewedAt": "Published 1 month ago"
-          },
-          {
-            "name": "tomiyostoner",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "I didn't exactly have a vision for what the finished project would look like, just a general idea that a whiteboard explainer might work well. BNN_Marketing really delivered exactly what I was looking for. Customizations were spot on and I love the finished product.",
-            "reviewedAt": "Published 2 weeks ago"
-          },
-          {
-            "name": "joetankard",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "daniel is the man!! always high quality work with great customer service. im a repeat customer and his work is featured on my company websites. always 5 stars, highly recommend!",
-            "reviewedAt": "Published 2 months ago"
-          },
-          {
-            "name": "jrwaddington",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "The video came out amazing. They did a great job capturing the essence of the narration. The only down side was that it was 3 days late.",
-            "reviewedAt": "Published 2 months ago"
-          },
-          {
-            "name": "macjacart",
-            "country": "Canada",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1e8-1f1e6.png",
-            "review": "As always a great product. The delivery was a little late, but the production was absolutely first class. I have worked with this Seller before and I look forward to the next project.",
-            "reviewedAt": "Published 6 days ago"
-          }
-        ]
+        "likedByUsers": ['mini-user'] // for user-wishlist: use $in
       },
-      {
-        "_id": "i129",
-        "title": "I will write, rebrand, edit, and optimize your LinkedIn profile",
-        "about": "I'm one of Fiverr's original sellers and I will handle all of your copywriting and SEO blogging needs! You will see my reviews are OUTSTANDING. Fast turn-around and always here to help. :)",
-        "price": 108,
-        "owner": {
-          "_id": "u101",
-          "fullname": "mediagirl",
-          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/e3f2db9a69a2cc7b69c653d3185b6ba9-1592756841572/fbdf1383-4893-4f94-a3c9-a324c68aca4f.jpg",
-          "level": "basic/premium",
-          "rate": 4,
-          "country": "United States",
-          "responseTime": "12 hours",
-          "languages": "English",
-          "joined": "September 2012",
-          "lastDelivery": "3 days"
-        },
-        "country": "United States",
-        "daysToMake": 17,
-        "description": "You've got one chance to make a first impression.\nYour LinkedIn profile is that chance. Are you leaving potential employers with the best impression you can?\nAre you hire-able?\nI'm here to make sure your LinkedIn profile is branded and optimized to its full potential! I will spend time analyzing, researching, and rebranding your profile to help you get noticed.\nI'm back on Fiverr and ready to bring my expertise to help you reach your goals. I was one of the Original Top-Rated Sellers, and my ratings speak for themselves. Over 8k gigs completed, and most all of my completed reviews are 5-star!\nI have 3 packages to choose from depending on the level of help you need.\nI hold a Bachelor's Degree in Communication from the University of Southern California and have been writing in a professional capacity for over 10 years. I have extensive SEO knowledge and I am a trained copywriter, creative writer, and content creation master. Let me help market you for your dream job!",
-        "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/161720033/original/b710f4f32dea2048e662276a241c9d5dfe638106.jpeg",
-        "tags": [
-          "Programming & Tech",
-          "resume writer",
-          "linkedin",
-          "job hunting",
-          "resume writing"
-        ],
-        "likedByUsers": [
-          "mini-user"
-        ],
-        "packages": {
-          "basic": {
-            "header": "Basic Package",
-            "price": 108.00,
-            "description": "LinkedIn profile review and basic optimization",
-            "time": "5 Days Delivery",
-            "included": [
-              "LinkedIn profile review and basic optimization"
-            ]
-          },
-          "standard": {
-            "header": "Standard Package",
-            "price": 158.00,
-            "description": "LinkedIn profile rebranding and keyword optimization",
-            "time": "7 Days Delivery",
-            "included": [
-              "LinkedIn profile rebranding and keyword optimization"
-            ]
-          },
-          "premium": {
-            "header": "Premium Package",
-            "price": 208.00,
-            "description": "LinkedIn profile overhaul, rebranding, and full optimization",
-            "time": "10 Days Delivery",
-            "included": [
-              "LinkedIn profile overhaul, rebranding, and full optimization"
-            ]
-          }
-        },
-        "services": [
-          "LinkedIn Profile Optimization",
-          "Copywriting",
-          "SEO Blogging"
-        ],
-        "reviews": [
-          {
-            "name": "ppiork",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "The written communicate was good. I received a response within a few hours. I did not like that all communications had to go through the Fiverr platform, even after securing the project. (This might be a new Fiverr restriction - not sure.) A lot of time was lost in the wait whereas a call could have cleared up a lot of questions and given greater clarity sooner. Also, I didn't feel the seller fully understood the voice, tone, and purpose for my using the Fiverr. I had to repeat my purpose a couple of times. This seller is very responsive and with time and very detailed directions, she can provide what you're looking for.",
-            "reviewedAt": "Published 2 weeks ago"
-          },
-          {
-            "name": "larrin",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "Thank you for the tips and rewrite. I wanted to know if you would be ok adding Chief Marketing Officer, Patriot Gold Group",
-            "reviewedAt": "Published 1 month ago"
-          },
-          {
-            "name": "adrienne0115",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "Mediagirl is amazing, with a very quick turnaround. She took a most cumbersome task of redoing my LinkedIn, and made it absolutely something that I am proud of. I would highly recommend her services.",
-            "reviewedAt": "Published 4 days ago"
-          },
-          {
-            "name": "antonnakov",
-            "country": "Germany",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1e9-1f1ea.png",
-            "review": "Overall good service and very good value for money. I'd recommend it to others looking for a critical review of their LinkedIn Profile.",
-            "reviewedAt": "Published 5 days ago"
-          },
-          {
-            "name": "nyc1989",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "Mediagirl is truly phenomenal. She has excellent writing skills and helped me to significantly improve my LinkedIn profile. I would highly recommend her.",
-            "reviewedAt": "Published 2 months ago"
-          }
-        ]
-      },
-      {
-        "_id": "i130",
-        "title": "I will fully upgrade your LinkedIn profile",
-        "about": "I am a Certified Professional Resume Writer (CPRW), career consultant, and language expert with 14+ years of experience. As a Harvard graduate, I learned from the experts at the Harvard Career Services Office where I honed my abilities to write powerful resumes and cover letters that get my clients hired. US-based: Boston, MA.",
-        "price": 96,
-        "owner": {
-          "_id": "u101",
-          "fullname": "harvardcv",
-          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/profile/photos/3844073/original/IMG_7304.jpg",
-          "level": "basic/premium",
-          "rate": 3,
-          "country": "United States",
-          "responseTime": "1 day",
-          "languages": "English",
-          "joined": "November 2007",
-          "lastDelivery": "2 days"
-        },
-        "country": "United States",
-        "daysToMake": 22,
-        "description": "This gig is designed to maximize the full range of LinkedIn's networking and recruiting power through using accomplishment-based, optimized content with LinkedIn's internal search algorithms to ensure you appear on the radar of headhunters and recruiters.\nThis service is for clients seeking work with a company, not to promote a business.\nThe Process:\n1) Send in your fully current resume of 1-2 pages max. and the URL (link) to your LinkedIn page.\n2) I will create a full professional summary (the 'about' section) in Word.doc.\n3) I will also fully upgrade your job descriptions, which will be done on the same Word.doc as #2.\n4) Once you transfer this content into your LinkedIn profile, I will complete the full multi-point inspection of your entire public profile to ensure all areas of the profile are fully optimized.\nThe Results:\nMy clients typically see a 300% increase in LinkedIn traffic.\n* To couple a LinkedIn service with a resume/cover letter, please visit this gig:\nhttps://www.fiverr.com/harvardcv/create-edit-and-design-your-cv-cover-letter-and-linkedin-profile",
-        "imgUrl": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/170304213/original/def08eb5abda7475775f229f9e3bd19c39d21fe8/fully-upgrade-your-linkedin-profile.jpg",
-        "tags": [
-          "Programming & Tech",
-          "linkedin profile",
-          "resume writing",
-          "linkedin banner",
-          "Website Design"
-        ],
-        "likedByUsers": [
-          "mini-user"
-        ],
-        "packages": {
-          "basic": {
-            "header": "Basic Package",
-            "price": 96.00,
-            "description": "LinkedIn profile upgrade with professional summary",
-            "time": "10 Days Delivery",
-            "included": [
-              "LinkedIn profile upgrade with professional summary"
-            ]
-          },
-          "standard": {
-            "header": "Standard Package",
-            "price": 146.00,
-            "description": "Full LinkedIn profile optimization including job descriptions",
-            "time": "15 Days Delivery",
-            "included": [
-              "Full LinkedIn profile optimization including job descriptions"
-            ]
-          },
-          "premium": {
-            "header": "Premium Package",
-            "price": 196.00,
-            "description": "Complete LinkedIn profile overhaul and optimization",
-            "time": "20 Days Delivery",
-            "included": [
-              "Complete LinkedIn profile overhaul and optimization"
-            ]
-          }
-        },
-        "services": [
-          "LinkedIn Profile Optimization",
-          "Resume Writing",
-          "LinkedIn Banner Design"
-        ],
-        "reviews": [
-          {
-            "name": "mcdona77",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "WOW, Richard did an amazing job highlighting my skillsets while offering guidance on how to maintain and improve my profile over time. He was incredibly detailed and looked through my entire profile. I'm in marketing, but sometimes it's hard to market yourself. Richard was my second set of eyes and gave me the outside lens I needed to keep my profile in check and improve my keywords. I would highly recommend his services!",
-            "reviewedAt": "Published 1 month ago"
-          },
-          {
-            "name": "igorvidic",
-            "country": "Norway",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1f3-1f1f4.png",
-            "review": "I've got 4 messages from the recruiters within a couple of days after my update of profile (based on harvardcv's suggestions) even though I am not open to work. I've got them before but not at this rate, meaning that the job has been done great. It is only up to me to improve my skills and experience if I want to get more traffic, and then, I will again ask harvardcv to update my linkeding.",
-            "reviewedAt": "Published 1 month ago"
-          },
-          {
-            "name": "amelle55",
-            "country": "Switzerland",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1e8-1f1ed.png",
-            "review": "Richard was great to work with, very professional. He upgraded my LinkedIn profile even if the one I had was not bad, but he was creative and came back with great suggestions and language that I wouldn’t have done on my own. He did the full review, added the necessary optimizations, and even provided advice on my picture and other sections besides the résumé and work experience sections. I am very satisfied and give him 5/5 score. Thank you Richard!",
-            "reviewedAt": "Published 1 month ago"
-          },
-          {
-            "name": "dnassozi",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "Richard is such a great communicator and wow, he tremendously transformed my resume/LinkedIn profile and gave it wings! I love it and can't wait to upload and share my new profile!! Thanks, Richard",
-            "reviewedAt": "Published 1 month ago"
-          },
-          {
-            "name": "uniquedrobinson",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "Exceptionally gifted at handcrafting and customizing a LinkedIn profile that matched my skills and expertise brilliantly. The BEST investment I’ve made in my professional branding. My satisfaction exceeded 100%. He went over and above to deliver magnificent results! I highly recommend. Thank you Richard for helping me to 1OX my professional brand.",
-            "reviewedAt": "Published 5 days ago"
-          }
-        ]
-      },
-      {
-        "_id": "i131",
-        "title": "I will revamp your linkedin profile or write a professional summary, bio",
-        "about": "I am Hina, a Certified Professional Resume Writer and Career Consultant. I can write and design a job-oriented Resume and Cover Letter and Optimize your LinkedIn profiles. I have successfully helped recruit and land jobs for thousands of job seekers. As a professional Article Writer and Editor, I have extensive experience in Content Writing, Blog Post Writing, Proofreading Editing, and Copywriting. I am MS Office Certified and an expert in Data entry, file conversion, and PowerPoint presentations. Order with confidence! Always open to custom offers!",
-        "price": 165,
-        "owner": {
-          "_id": "u101",
-          "fullname": "haniwritertech",
-          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/079e914e9f28e8269dee6bb109ef85a1-1570850131880/40fbde37-316f-4de2-9ca5-07b1300360d2.jpg",
-          "level": "premium",
-          "rate": 2,
-          "country": "Pakistan",
-          "responseTime": "24 hours",
-          "languages": "English",
-          "joined": "2015",
-          "lastDelivery": "2 days"
-        },
-        "country": "Pakistan",
-        "daysToMake": 28,
-        "description": "Are you want to make your LinkedIn profile, resume, and cover letter attractive so that the right employers can find you? I am here to assist you.\nI will revamp, create, and optimize your LinkedIn profile with the right choice of keywords. I know the importance of an attractive and professional Linkedin profile and summary that can help you get the job of your dreams.\nWhat you will get?\nEye-catching Headline title that will make you stand out\nKiller bio/summary to grab attention\nEducation, Certifications & Awards\nProfessional Experience\nLinkedIn profile optimization\nHighlight your skills\n100% satisfaction guarantee\nAts resume writing and cover letter\nNote: If you have any questions or special requirements, send me a message. I will be happy to assist you.\nBest Regards!\nHina",
-        "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/200950826/original/08090f735021ad8441f30fe2f38542ce95a2ead9.png",
-        "tags": [
-          "Programming & Tech",
-          "Website Design",
-          "profile optimization",
-          "linkedin profile",
-          "linkedin summary",
-          "resume writing",
-          "linkedin bio"                    
-        ],
-        "likedByUsers": [
-          "mini-user"
-        ],
-        "packages": {
-          "basic": {
-            "header": "Basic Plan",
-            "price": 165.00,
-            "description": "Revamp and optimize your LinkedIn profile with basic features.",
-            "time": "28 Days Delivery",
-            "included": [
-              "Eye-catching Headline title",
-              "Basic bio/summary",
-              "Education, Certifications & Awards",
-              "Professional Experience"
-            ]
-          },
-          "standard": {
-            "header": "Standard Plan",
-            "price": 225.00,
-            "description": "Revamp and optimize your LinkedIn profile with additional features.",
-            "time": "28 Days Delivery",
-            "included": [
-              "Everything in Basic Plan",
-              "Highlight your skills",
-              "Ats resume writing and cover letter"
-            ]
-          },
-          "premium": {
-            "header": "Premium Plan",
-            "price": 295.00,
-            "description": "Revamp and optimize your LinkedIn profile with all features.",
-            "time": "28 Days Delivery",
-            "included": [
-              "Everything in Standard Plan",
-              "2 rounds of revisions",
-              "Priority support"
-            ]
-          }
-        },
-        "services": [
-          "LinkedIn Profile Optimization",
-          "Resume Writing",
-          "Cover Letter Writing",
-          "Proofreading",
-          "Copywriting",
-          "Data Entry"
-        ],
-        "reviews": [
-          {
-            "name": "stevengcc",
-            "country": "Malaysia",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1f2-1f1fe.png",
-            "review": "i was in hospital when the job automatically completed. the fund was transferred and unfortunately she wrote the description wrongly. however she was willing to redo the work without any complains. very responsible freelancer. highly recommended",
-            "reviewedAt": "Published 1 week ago"
-          },
-          {
-            "name": "lharris02",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "Seller was very fast and prompt, delivered within 12 hours! However, some of my job experiences were padded with skills and programming languages I'm not familiar with. Other than the job experiences, everything looks great.",
-            "reviewedAt": "Published 2 weeks ago"
-          },
-          {
-            "name": "rafhaelgomes992",
-            "country": "Brazil",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1e7-1f1f7.png",
-            "review": "Haniwritertech wrote something even better than I was expecting in a really short period of time. I highly recommend it.",
-            "reviewedAt": "Published 1 month ago"
-          },
-          {
-            "name": "rajraj731",
-            "country": "United Kingdom",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1ec-1f1e7.png",
-            "review": "She has updated my profile in 4hrs time. I really appreciate your time and effort. I will recommend her for everyone",
-            "reviewedAt": "Published 1 month ago"
-          },
-          {
-            "name": "haftomg",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "Thank you hani for doing all the good work in short period of time i can’t thank you enough. Very highly recommended!! Keep up the good work!!",
-            "reviewedAt": "Published 2 months ago"
-          }
-        ]
-      },
-      {
-        "_id": "i132",
-        "title": "I will write and optimize your linkedin profile in 24 hours",
-        "about": "As a CV Writer, Resume Writer, Covering Letter Writer, and LinkedIn Profile Writer, I have written CVs for hundreds of people from all walks of life and within many different market sectors. I help job seekers build their LinkedIn presence and create compelling resumes, so they can get in front of recruiters, impress hiring managers, and land the perfect job for them. I'm excited to help you kickstart your career!",
-        "price": 53,
-        "owner": {
-          "_id": "u101",
-          "fullname": "muzamilbutt401",
-          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/eb5d29b35cb0f6bd47e3a2f1fb8a55db-1595779512175/3d984139-fd41-42b2-a94c-fca974593c8a.jpg",
-          "level": "premium",
-          "rate": 5,
-          "country": "Pakistan",
-          "responseTime": "6 hours",
-          "languages": "English",
-          "joined": "2019",
-          "lastDelivery": "3 days"
-        },
-        "country": "Pakistan",
-        "daysToMake": 14,
-        "description": "✪ LinkedIn Writing and Optimization Services ✪\nDo you want to stand out and take your career or business to the next level?\nI help Entrepreneurs, Change Makers & Big Dreamers stand out and take direction so they can make a great digital first impression!\nMy extensive experience in International Recruitment and Resume Writing has allowed me to gain an in-depth knowledge of industry-specific requirements across a vast range of disciplines. I can make your LinkedIn profile stand out from the crowd!\nChoose one of the packages outlined below or request a custom offer to improve your personal LinkedIn success.\nPackages:\nBasic (Entry-Level Profile): Review and optimization of your LinkedIn Headline and Bio with keywords.\nStandard (Professional Profile): Full LinkedIn profile optimization, including Headline, Bio, and career history rewrite, skill suggestions, and industry-tailored recommendations.\nPremium (Profile Creation): Creation of a full profile from scratch, optimized to meet your career preferences.\nBusiness Profiles ( Message Me To Discuss)\nNow is the time to start moving your career or business to the next level!",
-        "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/159966352/original/1a65840f4a6b0333d7bd37ea876663dc54b9aeaf.jpg",
-        "tags": [
-          "Digital Marketing",
-          "bio",
-          "linkedin profile",
-          "linkedin optimize",
-          "linkedin",
-          "resume writing"
-        ],
-        "likedByUsers": [
-          "mini-user"
-        ],
-        "packages": {
-          "basic": {
-            "header": "Basic Plan",
-            "price": 53.00,
-            "description": "Review and optimize your LinkedIn profile with basic features.",
-            "time": "24 Hours Delivery",
-            "included": [
-              "Review and optimization of LinkedIn Headline and Bio with keywords"
-            ]
-          },
-          "standard": {
-            "header": "Standard Plan",
-            "price": 93.00,
-            "description": "Full LinkedIn profile optimization, including Headline, Bio, and career history rewrite, skill suggestions, and industry-tailored recommendations.",
-            "time": "24 Hours Delivery",
-            "included": [
-              "Everything in Basic Plan",
-              "Optimization of career history and skill suggestions"
-            ]
-          },
-          "premium": {
-            "header": "Premium Plan",
-            "price": 143.00,
-            "description": "Creation of a full profile from scratch, optimized to meet your career preferences.",
-            "time": "24 Hours Delivery",
-            "included": [
-              "Everything in Standard Plan",
-              "Profile creation from scratch"
-            ]
-          }
-        },
-        "services": [
-          "LinkedIn Profile Optimization",
-          "Resume Writing",
-          "Cover Letter Writing",
-          "Career Counseling"
-        ],
-        "reviews": [
-          {
-            "name": "kofaisal",
-            "country": "Kuwait",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1f0-1f1fc.png",
-            "review": "For my case, I didn’t see any value added; the seller could go to my profile and assess what are the things my profile needs. He asked to choose the premium package which means creation of a full LinkedIn profile from scratch. To be fair, I am going to list what are the things I have learned from him: how to put the symbol in the description, shared with me a list skills, that I have to put my full name in the first name, and how to customize my Linkedin URL. Finally, after I received the delivery, I asked if may he share with me a few versions of the “About” section. He said that he was not able to send more versions this is because I have to pay for it. Again, I have paid $50.",
-            "reviewedAt": "Published 1 month ago"
-          },
-          {
-            "name": "simplyjassi",
-            "country": "Germany",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1e9-1f1ea.png",
-            "review": "He is great to work with and I was very impressed how fast he produced work in this quality. My whole profile is coherent and appealing now. I am very happy with it! Also I appreciate when somebody makes changes until the result fits the customer perfectly. Thank you! I loved working with you :)",
-            "reviewedAt": "Published 2 weeks ago"
-          },
-          {
-            "name": "jovial1",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "Very accurate descriptions for Linkedin profile and on-time delivery! Will definitely recommend his services. Thank you so much & Happy holidays!!",
-            "reviewedAt": "Published 2 months ago"
-          },
-          {
-            "name": "zurismommy",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "The seller was very attentive and got the work done on the first attempt. I am very grateful for the time saved and the level of the work. Thank you!!",
-            "reviewedAt": "Published 1 week ago"
-          },
-          {
-            "name": "laispereira94",
-            "country": "United States",
-            "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
-            "review": "I wasn't super clear on what I wanted, and I appreciated their willingness to help and try again. I was super happy with the final product and will surely be recommending them in the future! Thank you again!",
-            "reviewedAt": "Published 1 week ago"
-          }
-        ]
-      }
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
     ]
     utilService.saveToStorage(STORAGE_KEY, gigs)
   }
+
+
 }
 
-// "_id": "i122",
+
+
+// storageService.post(STORAGE_KEY, {vendor: 'Subali Rahok 2', price: 980}).then(x => console.log(x))
+
+      // Old 13 gigs
+      // {
+      //   "_id": "i101",
+      //   "title": "I will do hyper realistic pencil portrait by hand drawing",
+      //   "about": "Hi reader, thanks for your time. I'm an experienced young artist and i specialize in 3D animation, graphic designing and pencil Art. I'm familiar with word processing application. Kindly hit me up if if you need any of my services.",
+      //   "price": 172,
+      //   "owner": {
+      //     "fullname": "frederickkessie",
+      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
+      //     "level": "basic/premium",
+      //     "rate": 2,
+      //     "userStory": "We are PixxelStudio, A full-service design and developing web agency. From designing logos to developing websites to satisfying our customer’s every digital need is what we thrive for. We’ve worked not only with brilliant individuals but also with top companies all around the world. Our mission is to become an indispensable partner to our clients by offering the best ideas, skills and services they could possibly get.",
+      //     "country": "China",
+      //     "responseTime": "1 hour",
+      //     "languages": "Chinese,English",
+      //     "joined": "Dec 2021",
+      //     "lastDelivery": "45 minutes"
+      //   },
+      //   "country": "Ghana",
+      //   "daysToMake": 26,
+      //   "description": "Hello ! Much obliged for visiting my gig :)\nIn this gig I'm offering you an exceptionally 3 one of a kind, best and reasonable bundles.\nIn case you are thinking for giving somebody uncommon an extremely delightful, eye getting gift( hyper practical hand drawing pencil sketch picture)?\nKindly select the helpful bundle and submit your request at this moment and I'll give you an ideal picture sketch, hand drawing, practical drawing, pencil attracting high goal JPEG/PNG advanced document.\nI will give hand-drawn dark and White or hued reasonable pictures.\nSympathetically give me clear reference photograph however much as could be expected.\nThe material I utilized for Creating pencil representations are:\nDrawing materials: graphite pencil, charcoal, Bristol paper, mono eraser, brush, mixing stump, mechanical pencil, graphite powder and so on .\nYou can give me anything:\nPicture photographs\nFamily photographs\nCreature photographs\nAny item photographs\nScene photographs\nEngineering photographs\nAnything you envision\nKindly reach me prior to submitting your request! Much appreciated.\nI DO NOT DELIVER ORIGINAL PHYSICAL COPY BUT A HIGH RESOLUTION JPEG DIGITA",
+      //   "services": [
+      //     "100% Clean Responsive Design",
+      //     "Ecommerce site Design (Standard and Premium Plans Only)",
+      //     "Multiple Payment Methods (PayPal, Stripe, Bank, Credit Card, etc.)",
+      //   ],
+      //   "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/231682055/original/77cc585046a1ceb81a809218fef35ee8252bbb3b.jpg",
+      //   "tags": [
+      //     "pencil drawing",
+      //     "realistic drawing",
+      //     "hand drawing",
+      //     "portrait drawing",
+      //     "pencil sketch"
+      //   ],
+      //   "packages": {
+      //   "basic": {
+      //     "header": "Basic (10 products & 4 pages)",
+      //     "price": "451.37",
+      //     "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
+      //     "time": "3 Days Delivery",
+      //     "included": [
+      //       "Functional website",
+      //       "4 pages",
+      //       "Responsive design",
+      //       "E-commerce functionality",
+      //       "10 products",
+      //       "Payment processing"
+      //     ]
+      //   },
+      //   "standard": {
+      //     "header": "standard (16 products & 6 pages)",
+      //     "price": "580.40",
+      //     "description": "Build 16 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
+      //     "time": "3 Days Delivery",
+      //     "included": [
+      //       "Functional website",
+      //       "6 pages",
+      //       "Responsive design",
+      //       "E-commerce functionality",
+      //       "16 products",
+      //       "Payment processing"
+      //     ]
+      //   },
+      //   "premium": {
+      //     "header": "standard (16 products & 6 pages)",
+      //     "price": "720.60",
+      //     "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
+      //     "time": "3 Days Delivery",
+      //     "included": [
+      //       "Functional website",
+      //       "8 pages",
+      //       "Responsive design",
+      //       "E-commerce functionality",
+      //       "20 products",
+      //       "Payment processing",
+      //       "Chat bot"
+      //     ]
+      //   }
+      // },
+      //   "likedByUsers": ["mini-user"],
+      //   "reviews": [
+      //     {
+      //       "name": "tobiaspille300",
+      //       "country": "Thailand",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1f9-1f1ed.png",
+      //       "review": "frederickkessie ist a super kind artist doing the process he was super professional and only took him 1 shot to deliver a perfect result ! Highly recommended work with this guy !",
+      //       "reviewedAt": "Published 2 months ago"
+      //     },
+      //     {
+      //       "name": "liam31",
+      //       "country": "United Kingdom",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1ec-1f1e7.png",
+      //       "review": "I requested a slightly earlier delivery on this and once again Frederick came through and provided a fantastic delivery. Thanks so much!",
+      //       "reviewedAt": "Published 3 weeks ago"
+      //     },
+      //     {
+      //       "name": "liam31",
+      //       "country": "United Kingdom",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1ec-1f1e7.png",
+      //       "review": "Frederick is amazing and extremely talented. This is the second time working with him and he has been a pleasure yet again!",
+      //       "reviewedAt": "Published 3 weeks ago"
+      //     },
+      //     {
+      //       "name": "larsonraz",
+      //       "country": "United States",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
+      //       "review": "Very detailed",
+      //       "reviewedAt": "Published 1 week ago"
+      //     },
+      //     {
+      //       "name": "stevekaszycki",
+      //       "country": "United States",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
+      //       "review": "very nice portrait, very good quality.",
+      //       "reviewedAt": "Published 2 weeks ago"
+      //     }
+      //   ]
+      // },
+      // {
+      //   "_id": "i102",
+      //   "title": "I will do hyper realistic pencil sketch portrait by hand drawing",
+      //   "about": "Hello, this is Masuk, stand up for vividstore,I am a young and enthusiastic graphic artist and realistic pencil sketch artist. I am certified as graphic designer from George Washington University, USA. I have almost 11 years experience in this field since my university life. I really love to work with Adobe Illustrator, Adobe Photoshop, and so on as a full time online freelancer. And also passionate about sketching. Thank you.",
+      //   "price": 151,
+      //   "owner": {
+      //     "fullname": "vividstore",
+      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/83cc7c97f9873bdb052590a94d32f84c-1576419363871/ed47443e-0f9b-42ab-beaf-ec0a0acccfe8.jpeg",
+      //     "level": "basic/premium",
+      //     "rate": 4,
+      //     "userStory": "At NexusDesign, we specialize in creating immersive digital experiences that captivate audiences worldwide. From crafting compelling brand identities to building cutting-edge websites, we're committed to exceeding our clients' expectations every step of the way. With a track record of success working with diverse clientele, we strive to be the go-to partner for all digital design and development needs.",
+      //     "country": "Brazil",
+      //     "responseTime": "30 minutes",
+      //     "languages": "Portuguese, Spanish, English",
+      //     "joined": "Jan 2022",
+      //     "lastDelivery": "20 minutes"
+      //   },
+      //   "country": "Bangladesh",
+      //   "daysToMake": 24,
+      //   "description": "Hey ! Thanks for visiting my gig :)\nIn this gig i'm offering you a very 3 unique, preferable and affordable packages.\nIf you are thinking for giving someone special a very beautiful, eye catching gift( hyper realistic hand drawing pencil sketch portrait)?\nPlease select the desirable package and place your order right now and i'll give you a perfect portrait sketch, hand drawing, realistic drawing,pencil drawing in high resolution JPEG/PNG digital file.\nI will provide hand-drawn black & White or colored realistic portraits.\nKindly provide me clear reference photo as much as possible.\nThe material I used for Creating pencil portraits are:\nDrawing materials: graphite pencil, charcoal, Bristol paper, tombomono eraser, brush, blending stump, mechanical pencil, graphite powder etc .\nYou can give me anything:\nPortrait photos\nFamily photos\nAnimal photos\nAny product photos\nLandscape photos\nArchitecture photos\nAnything you imagine\nPlease contact me before placing your order! Thanks.\nI DO NOT DELIVER ORIGINAL PHYSICAL COPY BUT A HIGH RESOLUTION JPEG DIGITAL FILE, IF YOU WANT THE ORIGINAL ONE THEN MESSAGE ME FOR DETAILS.\nFeel free to ask me anything! :)\nThank You...\nvividstore",
+      //   "services": [
+      //     "Custom Graphic Design Solutions",
+      //     "Mobile App Development (iOS and Android)",
+      //     "Search Engine Optimization (SEO) Services",
+      //     "Social Media Integration and Marketing"
+      // ],
+      //   "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/197422311/original/1907136f4b9684daa164acfa5cfedc6035b771b1.jpg",
+      //   "tags": [
+      //     "pencil drawing",
+      //     "realistic drawing",
+      //     "pencil portrait",
+      //     "sketch",
+      //     "pencil sketch"
+      //   ],
+      //   "packages": {
+      //     "basic": {
+      //         "header": "Basic (10 products & 4 pages)",
+      //         "price": "500.00",
+      //         "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
+      //         "time": "5 Days Delivery",
+      //         "included": [
+      //             "Functional website",
+      //             "4 pages",
+      //             "Responsive design",
+      //             "E-commerce functionality",
+      //             "10 products",
+      //             "Payment processing"
+      //         ]
+      //     },
+      //     "standard": {
+      //         "header": "Standard (15 products & 6 pages)",
+      //         "price": "750.00",
+      //         "description": "Build 15 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
+      //         "time": "7 Days Delivery",
+      //         "included": [
+      //             "Functional website",
+      //             "6 pages",
+      //             "Responsive design",
+      //             "E-commerce functionality",
+      //             "15 products",
+      //             "Payment processing"
+      //         ]
+      //     },
+      //     "premium": {
+      //         "header": "Premium (20 products & 8 pages)",
+      //         "price": "1000.00",
+      //         "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
+      //         "time": "10 Days Delivery",
+      //         "included": [
+      //             "Functional website",
+      //             "8 pages",
+      //             "Responsive design",
+      //             "E-commerce functionality",
+      //             "20 products",
+      //             "Payment processing",
+      //             "Chat bot"
+      //         ]
+      //     }
+      // },  
+      //   "likedByUsers": ["mini-user"]
+      // },
+      // {
+      //   "_id": "i103",
+      //   "title": "I will draw a hyperrealistic portrait of face or entire body and animals",
+      //   "about": "Hello! I'm a brazilian artist specialized in hyperrealistic drawings and paintings of human figures and animals, i use a diversity of techniques like Oil painting, dry pastel drawing and pencil. I have over 30 years of experience, check out my portfolio.",
+      //   "price": 198,
+      //   "owner": {
+      //     "fullname": "andreacarvalho_",
+      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/5344c10fd4820db3626c4fc24968783d-1588608774469/1e4a3bd9-b71d-48ce-8ac0-0ff6d667caf4.jpeg",
+      //     "level": "basic/premium",
+      //     "rate": 5,
+      //     "userStory": "Welcome to TechCrafters, your premier destination for innovative digital solutions. From sleek logo designs to robust website development, we are dedicated to elevating your online presence and exceeding your expectations. With a global clientele spanning industries, we are committed to delivering unparalleled creativity and expertise to every project.",
+      //     "country": "Australia",
+      //     "responseTime": "45 minutes",
+      //     "languages": "English",
+      //     "joined": "Feb 2020",
+      //     "lastDelivery": "1 hour"
+      //   },
+      //   "country": "Brazil",
+      //   "daysToMake": 4,
+      //   "description": "Desenho de lápis hiperrealista da sua foto, posso adicionar detalhes de fundo e personalizar o desenho do jeito que você quiser.",
+      //   "services": [
+      //     "UI/UX Design Consultation and Prototyping",
+      //     "Content Management System (CMS) Integration",
+      //     "Secure Payment Gateway Integration",
+      //     "Website Maintenance and Support Packages"
+      // ],
+      //   "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/155512325/original/9d62fbdec2b0bffd0318f9af43c2de023b62f5f0.jpg",
+      //   "tags": ["pencil", "drawing", "portrait", "realistic", "painting"],
+      //   "packages": {
+      //     "basic": {
+      //         "header": "Basic (10 products & 4 pages)",
+      //         "price": "400.00",
+      //         "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
+      //         "time": "5 Days Delivery",
+      //         "included": [
+      //             "Functional website",
+      //             "4 pages",
+      //             "Responsive design",
+      //             "E-commerce functionality",
+      //             "10 products",
+      //             "Payment processing"
+      //         ]
+      //     },
+      //     "standard": {
+      //         "header": "Standard (15 products & 6 pages)",
+      //         "price": "600.00",
+      //         "description": "Build 15 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
+      //         "time": "7 Days Delivery",
+      //         "included": [
+      //             "Functional website",
+      //             "6 pages",
+      //             "Responsive design",
+      //             "E-commerce functionality",
+      //             "15 products",
+      //             "Payment processing"
+      //         ]
+      //     },
+      //     "premium": {
+      //         "header": "Premium (20 products & 8 pages)",
+      //         "price": "800.00",
+      //         "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
+      //         "time": "10 Days Delivery",
+      //         "included": [
+      //             "Functional website",
+      //             "8 pages",
+      //             "Responsive design",
+      //             "E-commerce functionality",
+      //             "20 products",
+      //             "Payment processing",
+      //             "Chat bot"
+      //         ]
+      //     }
+      // },  
+      //   "likedByUsers": ["mini-user"],
+      //   "reviews": [
+      //     {
+      //       "name": "rachelrbarnes1",
+      //       "country": "United States",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
+      //       "review": "Incredibly grateful for the amazing experience working with you . You are so talented and a kind soul! I highly recommend if you want high quality art to work with her every time",
+      //       "reviewedAt": "Published 1 month ago"
+      //     },
+      //     {
+      //       "name": "mark001994",
+      //       "country": "Austria",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1e6-1f1f9.png",
+      //       "review": "The artist was very kind and polite also very fast at the communication. The delivery of the project was on time. And her work is worth the money. I'm really excited about the painting she did. I can truely recommend the Aritst and her work. Big Thanks! :)",
+      //       "reviewedAt": "Published 1 month ago"
+      //     },
+      //     {
+      //       "name": "thurstonrobby",
+      //       "country": "United States",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
+      //       "review": "incredible on how precise that art is, picture perfect. 100% amazing job and I will use your services again ...",
+      //       "reviewedAt": "Published 3 weeks ago"
+      //     },
+      //     {
+      //       "name": "gavrielm",
+      //       "country": "Israel",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1ee-1f1f1.png",
+      //       "review": "amazing saller and great work",
+      //       "reviewedAt": "Published 6 days ago"
+      //     },
+      //     {
+      //       "name": "garebear52",
+      //       "country": "United States",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
+      //       "review": "Beautiful drawing! Just what I wanted.",
+      //       "reviewedAt": "Published 1 week ago"
+      //     }
+      //   ]
+      // },
+      // {
+      //   "id": "i100",
+      //   "title": "I will do hyper realistic pencil portrait by hand drawing",
+      //   "about": "Hi reader, thanks for your time. I'm an experienced young artist and i specialize in 3D animation, graphic designing and pencil Art. I'm familiar with word processing application. Kindly hit me up if if you need any of my services.",
+      //   "price": 172,
+      //   "owner": {
+      //     "id": "u100",
+      //     "fullname": "frederickkessie",
+      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
+      //     "level": "basic/premium",
+      //     "rate": 2,
+      //   },
+      //   "country": "Ghana",
+      //   "daysToMake": 26,
+      //   "description": "Hello ! Much obliged for visiting my gig :)\nIn this gig I'm offering you an exceptionally 3 one of a kind, best and reasonable bundles.\nIn case you are thinking for giving somebody uncommon an extremely delightful, eye getting gift( hyper practical hand drawing pencil sketch picture)?\nKindly select the helpful bundle and submit your request at this moment and I'll give you an ideal picture sketch, hand drawing, practical drawing, pencil attracting high goal JPEG/PNG advanced document.\nI will give hand-drawn dark and White or hued reasonable pictures.\nSympathetically give me clear reference photograph however much as could be expected.\nThe material I utilized for Creating pencil representations are:\nDrawing materials: graphite pencil, charcoal, Bristol paper, mono eraser, brush, mixing stump, mechanical pencil, graphite powder and so on .\nYou can give me anything:\nPicture photographs\nFamily photographs\nCreature photographs\nAny item photographs\nScene photographs\nEngineering photographs\nAnything you envision\nKindly reach me prior to submitting your request! Much appreciated.\nI DO NOT DELIVER ORIGINAL PHYSICAL COPY BUT A HIGH RESOLUTION JPEG DIGITA",
+      //   "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/231682055/original/77cc585046a1ceb81a809218fef35ee8252bbb3b.jpg",
+      //   "tags": [
+      //     "pencil drawing",
+      //     "realistic drawing",
+      //     "hand drawing",
+      //     "portrait drawing",
+      //     "pencil sketch"
+      //   ],
+      //   "likedByUsers": [
+      //     "mini-user"
+      //   ],
+      //   "packages": {
+      //     "basic": {
+      //       "header": "Basic (10 products & 4 pages)",
+      //       "price": "451.37",
+      //       "description": "Build 10 products store + 4 pages + Responsive + Speed Optimization + 30 days free support",
+      //       "time": "3 Days Delivery",
+      //       "included": [
+      //         "Functional website",
+      //         "4 pages",
+      //         "Responsive design",
+      //         "E-commerce functionality",
+      //         "10 products",
+      //         "Payment processing"
+      //       ]
+      //     },
+      //     "standard": {
+      //       "header": "standard (16 products & 6 pages)",
+      //       "price": "580.40",
+      //       "description": "Build 16 products store + 6 pages + Responsive + Speed Optimization + 60 days free support",
+      //       "time": "3 Days Delivery",
+      //       "included": [
+      //         "Functional website",
+      //         "6 pages",
+      //         "Responsive design",
+      //         "E-commerce functionality",
+      //         "16 products",
+      //         "Payment processing"
+      //       ]
+      //     },
+      //     "premium": {
+      //       "header": "standard (16 products & 6 pages)",
+      //       "price": "720.60",
+      //       "description": "Build 20 products store + 8 pages + Responsive + Speed Optimization + 90 days free support",
+      //       "time": "3 Days Delivery",
+      //       "included": [
+      //         "Functional website",
+      //         "8 pages",
+      //         "Responsive design",
+      //         "E-commerce functionality",
+      //         "20 products",
+      //         "Payment processing",
+      //         "Chat bot"
+      //       ]
+      //     }
+      //   },
+      //   "services": [
+      //     "100% Clean Responsive Design",
+      //     "Ecommerce site Design (Standard and Premium Plans Only)",
+      //     "Multiple Payment Methods (PayPal, Stripe, Bank, Credit Card, etc.)",
+      //   ],
+      //   "reviews": [
+      //     {
+      //       "name": "tobiaspille300",
+      //       "country": "Thailand",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1f9-1f1ed.png",
+      //       "review": "frederickkessie ist a super kind artist doing the process he was super professional and only took him 1 shot to deliver a perfect result ! Highly recommended work with this guy !",
+      //       "reviewedAt": "Published 2 months ago"
+      //     },
+      //     {
+      //       "name": "liam31",
+      //       "country": "United Kingdom",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1ec-1f1e7.png",
+      //       "review": "I requested a slightly earlier delivery on this and once again Frederick came through and provided a fantastic delivery. Thanks so much!",
+      //       "reviewedAt": "Published 3 weeks ago"
+      //     },
+      //     {
+      //       "name": "liam31",
+      //       "country": "United Kingdom",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1ec-1f1e7.png",
+      //       "review": "Frederick is amazing and extremely talented. This is the second time working with him and he has been a pleasure yet again!",
+      //       "reviewedAt": "Published 3 weeks ago"
+      //     },
+      //     {
+      //       "name": "larsonraz",
+      //       "country": "United States",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
+      //       "review": "Very detailed",
+      //       "reviewedAt": "Published 1 week ago"
+      //     },
+      //     {
+      //       "name": "stevekaszycki",
+      //       "country": "United States",
+      //       "flag": "https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png",
+      //       "review": "very nice portrait, very good quality.",
+      //       "reviewedAt": "Published 2 weeks ago"
+      //     }
+      //   ]
+      // },
+      // {
+      //   "_id": "i102",
+      //   "title": "I will edit professional videos for any occasion",
+      //   "price": 20,
+      //   "owner": {
+      //     "_id": "u102",
+      //     "fullname": "John Doe",
+      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
+      //     "level": "premium",
+      //     "rate": 4.5
+      //   },
+      //   "daysToMake": 7,
+      //   "description": "Transform your raw footage into polished, professional videos! Whether it's for weddings, events, or marketing purposes, we've got you covered. Our editing services include color correction, audio enhancement, and seamless transitions to create engaging content.",
+      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
+      //   "tags": [
+      //     "video-editing",
+      //     "professional",
+      //     "wedding",
+      //     "marketing"
+      //   ],
+      //   "likedByUsers": []
+      // },
+      // {
+      //   "_id": "i103",
+      //   "title": "I will create modern and impactful logo designs",
+      //   "price": 15,
+      //   "owner": {
+      //     "_id": "u101",
+      //     "fullname": "Alice Smith",
+      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
+      //     "level": "premium",
+      //     "rate": 4.8
+      //   },
+      //   "daysToMake": 5,
+      //   "description": "Need a unique logo that represents your brand? Look no further! We specialize in creating modern, memorable, and impactful logo designs. Our designs are tailored to your brand's identity, ensuring that you stand out from the competition.",
+      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
+      //   "tags": [
+      //     "Logo Design",
+      //     "branding",
+      //     "modern",
+      //     "unique"
+      //   ],
+      //   "likedByUsers": []
+      // },
+      // {
+      //   "_id": "i104",
+      //   "title": "I will manage your social media accounts effectively",
+      //   "price": 25,
+      //   "owner": {
+      //     "_id": "u103",
+      //     "fullname": "Emily Johnson",
+      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
+      //     "level": "premium",
+      //     "rate": 4.9
+      //   },
+      //   "daysToMake": 7,
+      //   "description": "Maximize your online presence with our social media management services! We'll handle everything from content creation and scheduling to audience engagement and analytics. Let us take the stress out of managing your social media accounts.",
+      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
+      //   "tags": [
+      //     "social-media-management",
+      //     "content-creation",
+      //     "audience-engagement",
+      //     "analytics"
+      //   ],
+      //   "likedByUsers": []
+      // },
+      // {
+      //   "_id": "i105",
+      //   "title": "I will design eye-catching graphics for your brand",
+      //   "price": 18,
+      //   "owner": {
+      //     "_id": "u104",
+      //     "fullname": "Michael Brown",
+      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
+      //     "level": "premium",
+      //     "rate": 4.7
+      //   },
+      //   "daysToMake": 4,
+      //   "description": "Elevate your brand with stunning graphics! From posters and flyers to social media graphics and infographics, we'll bring your ideas to life. Our designs are tailored to your brand's aesthetic and messaging, ensuring maximum impact.",
+      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
+      //   "tags": [
+      //     "graphic-design",
+      //     "branding",
+      //     "marketing",
+      //     "visuals"
+      //   ],
+      //   "likedByUsers": []
+      // },
+      // {
+      //   "_id": "i106",
+      //   "title": "I will build a custom e-commerce website for your business",
+      //   "price": 30,
+      //   "owner": {
+      //     "_id": "u106",
+      //     "fullname": "David Wilson",
+      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
+      //     "level": "premium",
+      //     "rate": 4.9
+      //   },
+      //   "daysToMake": 10,
+      //   "description": "Take your business online with a custom e-commerce website! Our solutions are tailored to your specific needs, whether you're selling products or services. From user-friendly interfaces to secure payment gateways, we've got you covered.",
+      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
+      //   "tags": [
+      //     "e-commerce",
+      //     "website-development",
+      //     "custom-solutions",
+      //     "online-shopping"
+      //   ],
+      //   "likedByUsers": []
+      // },
+      // {
+      //   "_id": "i107",
+      //   "title": "I will create innovative mobile apps for iOS and Android",
+      //   "price": 35,
+      //   "owner": {
+      //     "_id": "u107",
+      //     "fullname": "Daniel Harris",
+      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
+      //     "level": "premium",
+      //     "rate": 4.8
+      //   },
+      //   "daysToMake": 14,
+      //   "description": "Bring your app idea to life with our mobile app development services! Whether it's for iOS or Android, we'll create innovative and user-friendly apps that stand out in the crowded app market. From concept to launch, we'll guide you every step of the way.",
+      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
+      //   "tags": [
+      //     "mobile-app-development",
+      //     "iOS",
+      //     "Android",
+      //     "innovative"
+      //   ],
+      //   "likedByUsers": []
+      // },
+      // {
+      //   "_id": "i108",
+      //   "title": "I will optimize your website for search engines",
+      //   "price": 20,
+      //   "owner": {
+      //     "_id": "u108",
+      //     "fullname": "Jessica Lee",
+      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
+      //     "level": "premium",
+      //     "rate": 4.7
+      //   },
+      //   "daysToMake": 5,
+      //   "description": "Increase your online visibility with our SEO optimization services! We'll analyze your website, identify opportunities for improvement, and implement strategies to boost your search engine rankings. Get ready to attract more organic traffic and grow your business.",
+      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
+      //   "tags": [
+      //     "SEO",
+      //     "search-engine-optimization",
+      //     "organic-traffic",
+      //     "website-ranking"
+      //   ],
+      //   "likedByUsers": []
+      // },
+      // {
+      //   "_id": "i109",
+      //   "title": "I will be your dedicated virtual assistant",
+      //   "price": 18,
+      //   "owner": {
+      //     "_id": "u109",
+      //     "fullname": "Sarah Johnson",
+      //     "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
+      //     "level": "premium",
+      //     "rate": 4.6
+      //   },
+      //   "daysToMake": 7,
+      //   "description": "Hire a virtual assistant to handle your administrative tasks efficiently! From managing emails and scheduling appointments to data entry and research, we'll take care of the details so you can focus on what matters most – growing your business.",
+      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698676353/sohib-1_pw15oz.webp",
+      //   "tags": [
+      //     "virtual-assistant",
+      //     "administrative-tasks",
+      //     "efficiency",
+      //     "remote-support"
+      //   ],
+      //   "likedByUsers": []
+      // },
+      // {
+      //   "_id": "i110",
+      //   "title": "I will design your logo1",
+      //   "price": 12,
+      //   "owner": {
+      //     "_id": "u102",
+      //     "fullname": "Dudu Da",
+      //     "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
+      //     "level": "basic/premium",
+      //     "rate": 4
+      //   },
+      //   "daysToMake": 3,
+      //   "description": "Make a unique logo1...",
+      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
+      //   "tags": [
+      //     "Logo Design",
+      //     "artistic",
+      //     "professional",
+      //     "accessible"
+      //   ],
+      //   "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+      // },
+      // {
+      //   "_id": "i111",
+      //   "title": "I will design your logo2",
+      //   "price": 12,
+      //   "owner": {
+      //     "_id": "u103",
+      //     "fullname": "Dudu Da",
+      //     "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
+      //     "level": "basic/premium",
+      //     "rate": 4
+      //   },
+      //   "daysToMake": 3,
+      //   "description": "Make a unique logo2...",
+      //   "imgUrl": "https://res.cloudinary.com/de2rdmsca/image/upload/v1698329461/promote-your-facebook-page-to-country-targeted-audience_oppvsc.jpg",
+      //   "tags": [
+      //     "Logo Design",
+      //     "artistic",
+      //     "professional",
+      //     "accessible"
+      //   ],
+      //   "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+      // },
+      // {
+      //   "_id": "i112",
+      //   "title": "I will design your logo3",
+      //   "price": 12,
+      //   "owner": {
+      //     "_id": "u104",
+      //     "fullname": "Dudu Da",
+      //     "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
+      //     "level": "basic/premium",
+      //     "rate": 4
+      //   },
+      //   "daysToMake": 3,
+      //   "description": "Make a unique logo3...",
+      //   "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698679092/tom-1_c1nyop.webp",
+      //   "tags": [
+      //     "Logo Design",
+      //     "artistic",
+      //     "professional",
+      //     "accessible"
+      //   ],
+      //   "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+      // }, {
+      //   "_id": "i113",
+      //   "title": "I will design your logo",
+      //   "price": 12,
+      //   "owner": {
+      //     "_id": "u101",
+      //     "fullname": "Dudu Da",
+      //     "imgUrl": "https://res.cloudinary.com/dgsfbxsed/image/upload/v1698678643/slik_fpytey.webp",
+      //     "level": "basic/premium",
+      //     "rate": 4
+      //   },
+      //   "daysToMake": 3,
+      //   "description": "Make a unique logo...",
+      //   "imgUrl": "https://res.cloudinary.com/de2rdmsca/image/upload/v1698329461/promote-your-facebook-page-to-country-targeted-audience_oppvsc.jpg",
+      //   "tags": [
+      //     "Logo Design",
+      //     "artistic",
+      //     "professional",
+      //     "accessible"
+      //   ],
+      //   "likedByUsers": ['mini-user'] // for user-wishlist: use $in
+      // },
+
+

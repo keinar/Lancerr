@@ -3,7 +3,6 @@ import ImageCarousel from "../../cmps/ImageCarousel.jsx"
 import PackTabs from "../../cmps/PackTabs.jsx"
 import { useParams } from "react-router"
 import { useSelector } from "react-redux/es/hooks/useSelector"
-import { DynamicModal } from "../../cmps/DynamicModal.jsx"
 import { userService } from "../../services/user.service.js"
 import { useEffect, useState } from "react"
 import Breadcrumbs from "../../cmps/Breadcrumbs.jsx"
@@ -15,38 +14,38 @@ import { gigService } from "../../services/gig.service.local.js"
 export function GigDetails() {
   const params = useParams()
   const filterBy = useSelector(storeState => storeState.gigModule.filterBy)
-  // const gig = useSelector(storeState => storeState.gigModule.gigs.find(gig => gig._id == params.gigId))
   const [gig, setGig] = useState(null)
   const [isSticky, setIsSticky] = useState(false)
   const [user, setUser] = useState(null)
 
   useEffect(() => {
-    async function fetchUser() {
-      const fetchedUser = await userService.getById(gig.owner._id)
-      setUser(fetchedUser)
-    }
+    if(!gig) return
     fetchUser()
-  }, [gig?.owner._id])
-
+  }, [gig])
+  
   useEffect(() => {
     if (!params.gigId) return
     loadGig()
   }, [params.gigId])
-
+  
   useEffect(() => {
     const handleScroll = () => {
       const sideWrapper = document.querySelector(".side-wrapper")
       const top = sideWrapper.getBoundingClientRect().top
       setIsSticky(top <= 0)
     }
-
+    
     window.addEventListener("scroll", handleScroll)
-
+    
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
   }, [])
-
+  
+  async function fetchUser() {
+    const fetchedUser = await userService.getById(gig.owner._id)
+    setUser(fetchedUser)
+  }
   async function loadGig() {
 
     try{
@@ -59,10 +58,10 @@ export function GigDetails() {
 
 
 
-  function scrollToAnchor(id) {
-    const element = document.getElementById(id)
-    element.scrollIntoView({ behavior: "smooth" })
-  }
+  // function scrollToAnchor(id) {
+  //   const element = document.getElementById(id)
+  //   element.scrollIntoView({ behavior: "smooth" })
+  // }
 
 
   if (!gig) {
