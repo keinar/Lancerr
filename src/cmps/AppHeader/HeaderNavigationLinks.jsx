@@ -41,10 +41,15 @@ export default function HeaderNavigation() {
     setDialogState(prevState => ({ ...prevState, [type]: !prevState[type] }))
   }
 
+  function navigateToExplore() {
+    navigate("/explore")
+    window.scrollTo(0, 0)
+  }
+
   return (
     <nav className="header-links">
       <ul className="header-links-ul">
-        <li className="explore-btn" onClick={() => navigate("/explore")}>
+        <li className="explore-btn" onClick={() => navigateToExplore("/explore")}>
           Explore
         </li>
         {!user &&
