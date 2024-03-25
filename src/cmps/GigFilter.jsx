@@ -1,3 +1,4 @@
+import { ChevronLeft, ChevronRight } from "lucide-react"
 import { setFilterBy } from "../store/actions/gig.actions.js"
 import { useNavigate } from "react-router"
 
@@ -17,6 +18,7 @@ export function GigFilter() {
 
   return (
     <nav id="categories-menu-package" className="categories-menu-package default has-overflow">
+      {/* <button className="nav-button left"><ChevronLeft size={16} color="#74767e"/></button> */}
       <ul className="categories">
         <li onClick={() => handleTagClick("Logo Design")}>Graphics & Design</li>
         <li onClick={() => handleTagClick("Programming & Tech")}>Programming & Tech</li>
@@ -29,6 +31,7 @@ export function GigFilter() {
         <li onClick={() => handleTagClick("Photography")}>Photography</li>
         <li onClick={() => handleTagClick("AI Services")}>AI Services</li>
       </ul>
+      {/* <button className="nav-button right"><ChevronRight size={16} color="#74767e"/></button> */}
     </nav>
   )
 }
