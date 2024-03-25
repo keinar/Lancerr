@@ -83,6 +83,7 @@
 
 .user-details-container {
   gap: 6.25rem;
+  margin-top: 40px;
 
   .details-container {
     flex-direction: row;
@@ -98,6 +99,11 @@
           align-items: baseline;
           padding-block-end: 14px;
           justify-content: space-between;
+
+          h1{
+            font-size: 18px;
+            font-weight: 600;
+          }
         }
       }
     }
@@ -115,6 +121,20 @@
         line-height: 130%;
         color: #62646a;
         background-color: #fff;
+
+        .user-profile-info{
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem;
+          align-items: center;
+          .user-img img{
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+          }
+        }
+
       }
     }
   }
@@ -561,8 +581,8 @@ main.main-layout {
 
   .orders-layout {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    grid-gap: 2.5em;
+    grid-template-columns: auto auto;
+    gap: 2.5em;
   }
 
   .user-orders {
@@ -572,9 +592,7 @@ main.main-layout {
     margin-top: 40px;
     padding-bottom: 40px;
 
-    .header {
-      font-weight: 300;
-      font-size: 40px;
+    .orders-header {
       margin-block: 1.875rem;
       margin: 0;
       line-height: 1;
