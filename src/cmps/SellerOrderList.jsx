@@ -60,7 +60,7 @@
                                 </span>
                                 {order.status === "pending" && (
                                     <button className="fulfill-button" onClick={() => handleOrderFulfilled(order)}>
-                                        Approved Order</button>
+                                        Approve Order</button>
 
                                 )}
                             </td>

@@ -26,8 +26,8 @@ export function AppHeader() {
   }, [])
 
   return (
-    <section className={`app-header-wrapper ${location.pathname === "/" && "fixed"} ${isOnTop && location.pathname === "/" ? "header-transparent" : ""}`}>
-      <section className="app-header main-container full">
+    <section className={`app-header-wrapper ${location.pathname === "/" && "fixed"} `}>
+      <section className={`app-header main-container full ${isOnTop && location.pathname === "/" ? "header-transparent" : ""}` }>
         <header className="navbar">
           <HeaderMobileMenuButton />
           <HeaderLogo />

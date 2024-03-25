@@ -37,7 +37,7 @@ export function OrderIndex() {
       <section className="buyer-orders-container full">
         <div className="buyer-orders main-container">
           <div className="user-orders">
-            <h1 className="header">Manage Orders</h1>
+            <h1 className="orders-header">My Orders</h1>
           </div>
           {orders.length !== 0 ? (
             <section className="orders-layout">
