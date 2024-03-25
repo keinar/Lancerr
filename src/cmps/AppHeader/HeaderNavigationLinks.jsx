@@ -41,15 +41,16 @@ export default function HeaderNavigation() {
     setDialogState(prevState => ({ ...prevState, [type]: !prevState[type] }))
   }
 
-  function navigateToExplore() {
-    navigate("/explore")
+  function navigateToPage(path) {
+    navigate(path)
     window.scrollTo(0, 0)
+    setDialogState({ auth: false, nav: false })
   }
 
   return (
     <nav className="header-links">
       <ul className="header-links-ul">
-        <li className="explore-btn" onClick={() => navigateToExplore("/explore")}>
+        <li className="explore-btn" onClick={() => navigateToPage("/explore")}>
           Explore
         </li>
         {!user &&
@@ -68,8 +69,8 @@ export default function HeaderNavigation() {
               <dialog open={dialogState.nav} className="nav-popover-items-content">
                 <ul >
                   {/* <li onClick={() => navigate(`/profile/${user._id}`)}>Profile</li> */}
-                  <li onClick={() => navigate("/order")}>Orders</li>
-                  <li onClick={() => navigate("/profile")}>Profile</li>
+                  <li onClick={() => navigateToPage("/order")}>Orders</li>
+                  <li onClick={() => navigateToPage("/profile")}>Profile</li>
                   <li onClick={handleLogout}>Logout</li>
                 </ul>
               </dialog>
