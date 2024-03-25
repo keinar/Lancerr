@@ -26,17 +26,17 @@
   background-color: white;
   box-shadow: #62646a 0 0.0625em 0.1875em;
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   z-index: 999;
 }
 
 .prev-button {
-  left: 0;
+  left: 220px;
 }
 
 .next-button {
-  right: 0;
+  right: 750px;
 }
 
 .thumbnail-container {
