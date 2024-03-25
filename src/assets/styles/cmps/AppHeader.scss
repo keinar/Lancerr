@@ -271,10 +271,21 @@ svg.lucide.lucide-search {
     width: 100%;
     padding-block: 4px;
     border-block: 1px solid #e4e5e7;
-
     animation: fadeIn 1s;
   }
 
+  .categories-menu-package{
+    display: flex;
+    // margin-left: -15%;
+
+    button{
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      display: flex;
+    align-items: center;
+    }
+  }
   .header-links ul {
     .signin-btn {
       display: block;

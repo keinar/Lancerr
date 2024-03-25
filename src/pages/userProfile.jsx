@@ -6,7 +6,7 @@ import { SellerOrdersList } from "../cmps/SellerOrderList.jsx"
 export function UserProfile() {
 
   const orders = useSelector(storeState => storeState.orderModule.orders)
- const owner = useSelector(storeState => storeState.userModule.user)
+  const user = JSON.parse(localStorage.getItem('user'))[0]
   useEffect(() => {
     loadOrders(true)
   }, [])
@@ -21,11 +21,11 @@ export function UserProfile() {
             <div className="user-card">
               <div className="user-profile-info">
                 <div className="user-img">
-                  <img src={owner.imgUrl} />
+                  <img src={user.imgUrl} />
                   </div>
                 < div className="user-profile-label">
-                  <h2>{owner.fullname}</h2>
-                  {/* <h3>@{owner.username}</h3> */}
+                  <h2>{user.fullname}</h2>
+                  <h3>@{user.username}</h3>
                 </div>
               </div>
             </div>
