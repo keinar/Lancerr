@@ -2,6 +2,8 @@ import { Star } from "lucide-react"
 import React from "react"
 
 export default function AboutSeller({ gig, user }) {
+
+  console.log('user:',user);
   return (
     <div className="seller-wrapper" id="about-the-seller">
       <div className="about-the-seller-big">
