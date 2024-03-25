@@ -3,55 +3,73 @@ import ImageCarousel from "../../cmps/ImageCarousel.jsx"
 import PackTabs from "../../cmps/PackTabs.jsx"
 import { useParams } from "react-router"
 import { useSelector } from "react-redux/es/hooks/useSelector"
-import { DynamicModal } from "../../cmps/DynamicModal.jsx"
 import { userService } from "../../services/user.service.js"
 import { useEffect, useState } from "react"
 import Breadcrumbs from "../../cmps/Breadcrumbs.jsx"
 import GigReviews from "./GigReviews.jsx"
 import AboutSeller from "./AboutSeller.jsx"
 import AboutSellerTop from "./AboutSellerTop.jsx"
+import { gigService } from "../../services/gig.service.local.js"
 
 export function GigDetails() {
   const params = useParams()
   const filterBy = useSelector(storeState => storeState.gigModule.filterBy)
-  const gig = useSelector(storeState => storeState.gigModule.gigs.find(gig => gig._id == params.gigId))
+  const [gig, setGig] = useState(null)
   const [isSticky, setIsSticky] = useState(false)
-
-  if (!gig) {
-    return <div>Gig not found</div>
-  }
-
   const [user, setUser] = useState(null)
 
+  useEffect(() => {
+    if(!gig) return
+    fetchUser()
+  }, [gig])
+  
+  useEffect(() => {
+    if (!params.gigId) return
+    loadGig()
+  }, [params.gigId])
+  
   useEffect(() => {
     const handleScroll = () => {
       const sideWrapper = document.querySelector(".side-wrapper")
       const top = sideWrapper.getBoundingClientRect().top
       setIsSticky(top <= 0)
     }
-
+    
     window.addEventListener("scroll", handleScroll)
-
+    
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
   }, [])
+  
+  async function fetchUser() {
+    const fetchedUser = await userService.getById(gig.owner._id)
+    setUser(fetchedUser)
+  }
+  async function loadGig() {
 
-  useEffect(() => {
-    async function fetchUser() {
-      const fetchedUser = await userService.getById(gig.owner._id)
-      setUser(fetchedUser)
-    }
-    fetchUser()
-  }, [gig.owner._id])
+    try{
+      const gig = await gigService.getById(params.gigId)
+      setGig(gig)
 
-  const images = [gig.imgUrl, gig.imgUrl, gig.imgUrl, gig.imgUrl]
-
-  function scrollToAnchor(id) {
-    const element = document.getElementById(id)
-    element.scrollIntoView({ behavior: "smooth" })
+    }catch{(err)=>console.log('errror',err)}
   }
 
+
+
+
+  // function scrollToAnchor(id) {
+  //   const element = document.getElementById(id)
+  //   element.scrollIntoView({ behavior: "smooth" })
+  // }
+
+
+  if (!gig) {
+    return <div>Gig not found</div>
+  }
+
+  console.log('gig :', gig)
+  const images = [gig.imgUrl, gig.imgUrl, gig.imgUrl, gig.imgUrl]
   return (
     <div className="gig-index">
       <div className="gig-details">
@@ -79,7 +97,7 @@ export function GigDetails() {
       <div className={`big-side ${isSticky ? "sticky" : ""}`}>
         <div className="side-wrapper">
           <div className="package-content">
-            <PackTabs />
+            <PackTabs gig={gig}/>
           </div>
           <div className="contact-seller">
             <button>Contact me</button>
