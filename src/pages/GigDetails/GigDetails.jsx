@@ -55,15 +55,6 @@ export function GigDetails() {
     }catch{(err)=>console.log('errror',err)}
   }
 
-
-
-
-  // function scrollToAnchor(id) {
-  //   const element = document.getElementById(id)
-  //   element.scrollIntoView({ behavior: "smooth" })
-  // }
-
-
   if (!gig) {
     return <div>Gig not found</div>
   }

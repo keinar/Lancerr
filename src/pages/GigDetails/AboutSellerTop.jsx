@@ -2,6 +2,12 @@ import { Star } from "lucide-react"
 import React from "react"
 
 export default function AboutSellerTop({ gig }) {
+
+  function scrollToAnchor(id) {
+    const element = document.getElementById(id)
+    element.scrollIntoView({ behavior: "smooth" })
+  }
+  
   return (
     <div className="about-the-seller-top">
       <img className="profile-picture" src={gig.owner.imgUrl.startsWith("http") ? gig.owner.imgUrl : profilePic} alt="profile picture" />
