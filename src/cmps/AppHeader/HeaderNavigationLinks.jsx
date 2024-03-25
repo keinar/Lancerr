@@ -61,8 +61,11 @@ export default function HeaderNavigation() {
             <div>
               {user.imgUrl && <img src={user.imgUrl} alt="user-img" className="user-img" onClick={() => toggleDialog("nav")} title={user.fullname} />}
               <dialog open={dialogState.nav} className="nav-popover-items-content">
-                <ul onClick={handleLogout}>
-                  <li>Logout</li>
+                <ul >
+                  {/* <li onClick={() => navigate(`/profile/${user._id}`)}>Profile</li> */}
+                  <li onClick={() => navigate("/order")}>Orders</li>
+                  <li onClick={() => navigate("/profile")}>Profile</li>
+                  <li onClick={handleLogout}>Logout</li>
                 </ul>
               </dialog>
             </div>
