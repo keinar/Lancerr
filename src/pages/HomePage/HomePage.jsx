@@ -15,7 +15,7 @@ export function HomePage() {
     <main className="home-page">
       <Hero />
       <TrustedBy />
-      <div className="popular-services">
+      <div className="popular-services main-container">
         <h2>Popular Services</h2>
         <PopularServicesCarousel />
       </div>
