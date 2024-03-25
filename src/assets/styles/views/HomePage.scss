@@ -189,3 +189,47 @@
   font-size: 32px;
   font-weight: bold;
 }
+
+.selling-proposition-wrapper{
+  background-color: #f1fdf7;
+  padding: 96px 0;
+
+
+  h2{
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .selling-proposition{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  .selling-proposition-left {
+    width: 50%;
+    padding-right: 180px;
+
+    ul{
+      padding: 0; 
+
+      li{
+
+    
+    h6{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: inherit;
+      font-weight: 600;
+    }  
+  }
+  }
+  }
+
+  .selling-proposition-right {
+    width: 50%;
+    img{
+      width: 100%;
+    }
+  }
+}
+}
