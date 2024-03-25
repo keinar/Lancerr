@@ -145,23 +145,23 @@ svg.lucide.lucide-search {
   .app-header {
     background-color: white;
     transition: 0.5s all ease;
-    &.header-transparent {
-      background-color: transparent;
-      .logo-text {
-        color: white;
-        transition: 0.5s all ease;
-      }
+  }
+  .header-transparent {
+    background-color: transparent;
+    .logo-text {
+      color: white;
+      transition: 0.5s all ease;
+    }
 
-      nav ul li {
-        color: white;
-        transition: 0.5s all ease;
-      }
-      .join-btn {
-        border: 1px solid white;
-        color: white;
-        transition: 0.5s all ease;
-        cursor: pointer;
-      }
+    nav ul li {
+      color: white;
+      transition: 0.5s all ease;
+    }
+    .join-btn {
+      border: 1px solid white;
+      color: white;
+      transition: 0.5s all ease;
+      cursor: pointer;
     }
   }
 }
