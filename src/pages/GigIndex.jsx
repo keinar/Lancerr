@@ -3,7 +3,7 @@ import { useSelector } from "react-redux"
 import { GigList } from "../cmps/GigList.jsx"
 import { loadGigs, setFilterBy } from "../store/actions/gig.actions.js"
 import { useSearchParams } from "react-router-dom"
-import { gigService } from "../services/gig.service.local.js"
+import { gigService } from "../services/gig.service.js"
 import { store } from "../store/store.js"
 import Breadcrumbs from "../cmps/Breadcrumbs.jsx"
 

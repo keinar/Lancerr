@@ -4,7 +4,6 @@ import { useSelector } from "react-redux"
 import { loadOrders } from "../store/actions/order.actions.js"
 // import { GigFilter } from "../cmps/GigFilter.jsx"
 // import { useSearchParams } from "react-router-dom"
-// import { gigService } from "../services/gig.service.local.js"
 import { store } from "../store/store.js"
 import { Link } from "react-router-dom"
 
