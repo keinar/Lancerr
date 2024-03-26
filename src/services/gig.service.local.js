@@ -3249,7 +3249,7 @@ function _createGigs() {
             "header": "Premium Package",
             "price": 208.00,
             "description": "LinkedIn profile overhaul, rebranding, and full optimization",
-            "time": "10 Days Delivery",
+            "time": "2 Days Delivery",
             "included": [
               "LinkedIn profile overhaul, rebranding, and full optimization"
             ]
