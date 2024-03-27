@@ -60,7 +60,17 @@ export function GigDetails() {
   }
 
   console.log('gig :', gig)
-  const images = [gig.imgUrl, gig.imgUrl, gig.imgUrl, gig.imgUrl]
+
+  function getImages() {
+    if(Array.isArray(gig.imgUrl)) {
+      // It's an array
+      return gig.imgUrl.slice(0)
+    } else if(typeof gig.imgUrl === 'string') {
+      // It's a string
+      return [gig.imgUrl, gig.imgUrl, gig.imgUrl]
+    }
+  }
+  const images = getImages()
   return (
     <div className="gig-index">
       <div className="gig-details">

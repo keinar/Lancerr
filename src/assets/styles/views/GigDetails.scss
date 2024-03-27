@@ -486,10 +486,11 @@ svg.lucide.lucide-chevron-down.collapsed {
       .carousel-container {
         background-color: #f5f5f5;
         width: 96%;
+        position: relative;
 
         .selected-image-container {
           position: relative;
-          height: 44.5vh;
+          height: 400px;
 
           .selected-image-wrapper {
             height: 100%;

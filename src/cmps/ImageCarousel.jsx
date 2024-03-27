@@ -1,3 +1,4 @@
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import React, { useState } from "react";
 
 const ImageCarousel = ({ images }) => {
@@ -17,7 +18,7 @@ const ImageCarousel = ({ images }) => {
 
   return (
     <div className="carousel-container">
-      <button className="prev-button" onClick={prevSlide}>&lt;</button>
+      <button className="prev-button" onClick={prevSlide}><ChevronLeft size={24} /></button>
       <div className="selected-image-container">
         <div className="selected-image-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {images.map((image, index) => (
@@ -30,7 +31,7 @@ const ImageCarousel = ({ images }) => {
           ))}
         </div>
       </div>
-      <button className="next-button" onClick={nextSlide}>&gt;</button>
+      <button className="next-button" onClick={nextSlide}><ChevronRight/></button>
 
       <div className="thumbnail-container">
         {images.map((image, index) => (
