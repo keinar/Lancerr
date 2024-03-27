@@ -16,22 +16,30 @@ export function GigFilter() {
     window.scrollTo(0, 0)
   }
 
+  const categories = [
+    "Logo Design",
+    "Programming & Tech",
+    "Digital Marketing",
+    "Video & Animation",
+    "Writing & Translation",
+    "Music & Audio",
+    "Business",
+    "Data",
+    "Photography",
+    "AI Services",
+  ]
+
   return (
     <nav id="categories-menu-package" className="categories-menu-package default has-overflow">
-      {/* <button className="nav-button left"><ChevronLeft size={16} color="#74767e"/></button> */}
       <ul className="categories">
-        <li onClick={() => handleTagClick("Logo Design")}>Graphics & Design</li>
-        <li onClick={() => handleTagClick("Programming & Tech")}>Programming & Tech</li>
-        <li onClick={() => handleTagClick("Digital Marketing")}>Digital Marketing</li>
-        <li onClick={() => handleTagClick("Video & Animation")}>Video & Animation</li>
-        <li onClick={() => handleTagClick("Writing & Translation")}>Writing & Translation</li>
-        <li onClick={() => handleTagClick("Music & Audio")}>Music & Audio</li>
-        <li onClick={() => handleTagClick("Business")}>Business</li>
-        <li onClick={() => handleTagClick("Data")}>Data</li>
-        <li onClick={() => handleTagClick("Photography")}>Photography</li>
-        <li onClick={() => handleTagClick("AI Services")}>AI Services</li>
+       {
+        categories.map(category => (
+          <li key={category} onClick={() => handleTagClick(category)}>
+            {category}
+          </li>
+        ))
+}
       </ul>
-      {/* <button className="nav-button right"><ChevronRight size={16} color="#74767e"/></button> */}
     </nav>
   )
 }

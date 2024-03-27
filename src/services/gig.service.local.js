@@ -197,7 +197,7 @@ function _createGigs() {
         "about": "Hi reader, thanks for your time. I'm an experienced young artist and i specialize in 3D animation, graphic designing and pencil Art. I'm familiar with word processing application. Kindly hit me up if if you need any of my services.",
         "price": 172,
         "owner": {
-          "_id" : "u101",
+          "_id": "u101",
           "fullname": "frederickkessie",
           "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/4abf6f5b58e4d78cfb7c410cf8d7a9ac-1626111679444/4a04b77c-22ee-4ce8-b4be-747fd059e9ff.jpg",
           "level": "basic/premium",
@@ -315,7 +315,7 @@ function _createGigs() {
         "about": "Hello, this is Masuk, stand up for vividstore,I am a young and enthusiastic graphic artist and realistic pencil sketch artist. I am certified as graphic designer from George Washington University, USA. I have almost 11 years experience in this field since my university life. I really love to work with Adobe Illustrator, Adobe Photoshop, and so on as a full time online freelancer. And also passionate about sketching. Thank you.",
         "price": 151,
         "owner": {
-          "_id" : "u101",
+          "_id": "u101",
           "fullname": "vividstore",
           "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/83cc7c97f9873bdb052590a94d32f84c-1576419363871/ed47443e-0f9b-42ab-beaf-ec0a0acccfe8.jpeg",
           "level": "basic/premium",
@@ -397,7 +397,7 @@ function _createGigs() {
         "about": "Hello! I'm a brazilian artist specialized in hyperrealistic drawings and paintings of human figures and animals, i use a diversity of techniques like Oil painting, dry pastel drawing and pencil. I have over 30 years of experience, check out my portfolio.",
         "price": 198,
         "owner": {
-          "_id" : "u101",
+          "_id": "u101",
           "fullname": "andreacarvalho_",
           "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/5344c10fd4820db3626c4fc24968783d-1588608774469/1e4a3bd9-b71d-48ce-8ac0-0ff6d667caf4.jpeg",
           "level": "basic/premium",
@@ -419,7 +419,7 @@ function _createGigs() {
           "Website Maintenance and Support Packages"
         ],
         "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/155512325/original/9d62fbdec2b0bffd0318f9af43c2de023b62f5f0.jpg",
-        "tags": ["pencil", "drawing", "portrait", "realistic", "painting","Video & Animation"],
+        "tags": ["pencil", "drawing", "portrait", "realistic", "painting", "Video & Animation"],
         "packages": {
           "basic": {
             "header": "Basic (10 products & 4 pages)",
@@ -510,7 +510,7 @@ function _createGigs() {
         "about": "My name is Mary , a graduate from Mount Kenya University, I am professional writer and my focus is to every single detail. I will transform your dream to reality. I am experienced in article, project/content writing for a couple of years. Furthermore, I have a long history of writing research-focused content and projects. My ultimate goal is to closely with my client to deliver quality and comprehensive project. Let's take your business to the next level. Thank you",
         "price": 116,
         "owner": {
-          "_id" : "u101",
+          "_id": "u101",
           "fullname": "winny_writer",
           "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/e34531bf0bbed9d144dba7384f6473b6-1621577835789/60307055-cde9-4dc2-9e9e-4daa421991d3.jpg",
           "level": "basic/premium",
@@ -532,7 +532,7 @@ function _createGigs() {
         ]
         ,
         "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/207813409/original/9557f50a12d8fccb5c52fb65b35f91cc036f99c6.jpg",
-        "tags": ["technical writing","Video & Animation"],
+        "tags": ["technical writing", "Video & Animation"],
         "packages": {
           "basic": {
             "header": "Basic Package",
@@ -617,7 +617,7 @@ function _createGigs() {
         "about": "Hello! This is Rashin Faria, a Data Entry Specialist & Virtual Assistant at your service. I have excellent experience in Data Entry, Data Processing, Data Uploading, MS Word/Excel, Google Spreadsheet, PDF, Web Research, Ecommerce Product Entry, Data Scraping and others. With a 24/7 supporting team we work together for the betterment of the projects. We have extensive experience to do our project very fast and professionally. Client satisfaction is our first priority. Order Now! Regards Rashin Faria",
         "price": 200,
         "owner": {
-          "_id" : "u101",
+          "_id": "u101",
           "fullname": "rashin07",
           "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/1fe02234f0b300905f098d1c2eef2599-1621414093019/30dd09bd-748a-49c0-b3bc-ee3071bdfadb.jpg",
           "level": "basic/premium",
@@ -728,7 +728,7 @@ function _createGigs() {
         "about": "Hello fiverr community,my name is Muhammad Waqar and i'm here to help you with your lead generation, web research and data entry projects. We are a group of experts which work together for the betterment of the projects we take from our clients. So don't forget to reach out me for your next project. Thank you very much",
         "price": 134,
         "owner": {
-          "_id" : "u101",
+          "_id": "u101",
           "fullname": "waqarcreatives",
           "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/7928a9bdb9e68c7dcc870f7dac91d92b-768025031598387384699/JPEG_20200826_012943_1616096493516260103.jpg",
           "level": "basic/premium",
@@ -839,7 +839,7 @@ function _createGigs() {
         "about": "I've been working as a Data entry operator for many years. I have a big team with so many professional people for managing data entry tasks. We believe that high quality and customer satisfaction is the most important thing for us. Feel free to drop a message for discussing your needs and objectives.",
         "price": 73,
         "owner": {
-          "_id" : "u101",
+          "_id": "u101",
           "fullname": "masum245",
           "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/8a1623fd3276ad7297d7647a8727bdf0-1589096119095/6c637953-9dc0-4c9c-b04d-c13c947fdc43.jpg",
           "level": "basic/premium",
@@ -950,7 +950,7 @@ function _createGigs() {
         "about": "I'm glad you're here! My name is Abrar Hussain. I’m a professional Transcriptionist and data entry expert. I’ve a BS degree in Mechanical engineering. From last more than three years, I’ve been working as a Data entry operator and English language transcriptionist. To me, customer satisfaction and providing the best quality work are always my top priorities. I’m really good at MS Office and Transcript. Get yourselves a skillful creator and professional Assistant by simply contacting me. So, drop a message, and let's get started. I am also available for long term projects. Thanks!",
         "price": 106,
         "owner": {
-          "_id" : "u101",
+          "_id": "u101",
           "fullname": "abrar_029",
           "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/798a61194492b92313c2f5b27d5397bb-1615924783131/a6a1c7f0-0cc0-4c50-95e1-2693d183ee1c.jpg",
           "level": "basic/premium",
@@ -1064,7 +1064,7 @@ function _createGigs() {
         "about": "Hello! My name is VD. I am a connoisseur of art and music. I love being around nature and my pets. I have a team of professional graphic designers with an experience of 8+ years. We specialize in logo designing. We're available exclusively on fiverr to rock your world with our designing skills. Come and experience it for yourself!",
         "price": 170,
         "owner": {
-          "_id" : "u101",
+          "_id": "u101",
           "fullname": "design_desk",
           "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/044fb5914a845a4eb59fc2b69f7f7b32-1634120039750/4dbc2acb-7322-4cd0-9afb-e5190e8e8a0d.jpg",
           "level": "basic/premium",
@@ -1176,7 +1176,7 @@ function _createGigs() {
         "about": "I am a professional graphics designer from PakIsTaN... Designing is not only my job, it's my Passion. All I need from you is a rough sketch of your idea. Then you can just relax and see the magic happening. Not only you'll get stunning and professional designs, but also you'll have top class custome",
         "price": 61,
         "owner": {
-          "_id" : "u101",
+          "_id": "u101",
           "fullname": "soduzai_gfx1",
           "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/a2dd1a0482bbfe54e61c6c2d6e64696e-1640431251801/943f73b5-dc43-4fe4-9728-9a58f0aafdbc.jpg",
           "level": "basic/premium",
@@ -1286,7 +1286,7 @@ function _createGigs() {
         "about": "I am a professional artist having rich experience in hand sketched and digital artwork. I have served tons of businesses with smarter business solutions. I am here to get the global exposure and would like to contribute more towards our creative community. Thanks.",
         "price": 89,
         "owner": {
-          "_id" : "u101",
+          "_id": "u101",
           "fullname": "modernmarvel",
           "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/d366617946e54cbc9aa114f27259e3ef-1552848300306/3c155f72-15c9-47d0-8f68-b75a519a7999.jpg",
           "level": "basic/premium",
@@ -1399,7 +1399,7 @@ function _createGigs() {
         "about": "Welcome to Budding Solutions. An agency of 15+ Graphic Designers with great expertise. We strive to provide unique & graphically rich designs with exceptional & lifetime customer service. Let us be your GO-TO option for your graphic design needs and you won't be disappointed.",
         "price": 105,
         "owner": {
-          "_id" : "u101",
+          "_id": "u101",
           "fullname": "shailene_george",
           "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/3ec0d56f436079ef157dbcc1d21c4c62-1625030446037/1c926a30-7aa5-4de8-9a3b-6565be7ddd5b.jpg",
           "level": "basic/premium",
@@ -1511,7 +1511,7 @@ function _createGigs() {
         "about": "Thanks for stopping by! I'm a Social Media Specialist with 8+ years experience. I can help with all your Social Media related tasks! Send me a message. Let's get it done!",
         "price": 155,
         "owner": {
-          "_id" : "u101",
+          "_id": "u101",
           "fullname": "bellavida123",
           "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/9e2d7f453419c08e138fbfe9e65347df-696051281638594671.588431/DD8E6DDC-C231-47D3-B61A-97274452D3BF",
           "level": "basic/premium",
@@ -2985,7 +2985,7 @@ function _createGigs() {
         ]
       },
       {
-        "_id": "i127", 
+        "_id": "i127",
         "title": "I will create a professional whiteboard animation",
         "about": "Hi my name is Arnold! I enjoy marketing, i specialize in graphics, especially memes, white board animation and explainer videos. Check out my gigs and feel free to contact me for any other needs! Customer Satisfaction over everything! 100% Rating!!!",
         "price": 197,
@@ -3215,7 +3215,7 @@ function _createGigs() {
         "country": "United States",
         "daysToMake": 17,
         "description": "You've got one chance to make a first impression.\nYour LinkedIn profile is that chance. Are you leaving potential employers with the best impression you can?\nAre you hire-able?\nI'm here to make sure your LinkedIn profile is branded and optimized to its full potential! I will spend time analyzing, researching, and rebranding your profile to help you get noticed.\nI'm back on Fiverr and ready to bring my expertise to help you reach your goals. I was one of the Original Top-Rated Sellers, and my ratings speak for themselves. Over 8k gigs completed, and most all of my completed reviews are 5-star!\nI have 3 packages to choose from depending on the level of help you need.\nI hold a Bachelor's Degree in Communication from the University of Southern California and have been writing in a professional capacity for over 10 years. I have extensive SEO knowledge and I am a trained copywriter, creative writer, and content creation master. Let me help market you for your dream job!",
-        "imgUrl": "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/161720033/original/b710f4f32dea2048e662276a241c9d5dfe638106.jpeg",
+        "imgUrl": ["https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/12402429/original/aae39b85dc0693a4b9a4c38ca30406a6f8379ab3/review-your-linkedin-profile-and-rewrite-content-to-increase-your-network.jpg", "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/133141415/original/c59af9de5f616b094fa1d65f1076b5d5dc935dd1/create-a-fully-optimised-professional-linkedin-profile.png", "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs3/133141415/original/363caf57243079dd77fb901c1b618cd767b4d257/create-a-fully-optimised-professional-linkedin-profile.png", "https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/4f60f96ba4a84db3815a5e8b0b830635-1707024322/Screenshot%202024-02-04%20at%2010.54.24%E2%80%AFAM/promote-you-on-my-10500-plus-linkedin-connections.png"],
         "tags": [
           "Programming & Tech",
           "resume writer",
@@ -3429,7 +3429,7 @@ function _createGigs() {
           "linkedin profile",
           "linkedin summary",
           "resume writing",
-          "linkedin bio"                    
+          "linkedin bio"
         ],
         "likedByUsers": [
           "mini-user"
@@ -3623,27 +3623,27 @@ function _createGigs() {
           }
         ]
       }
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
 
-      
-      
-      
-      
-      
-      
-      
-      
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ]
     utilService.saveToStorage(STORAGE_KEY, gigs)
   }
