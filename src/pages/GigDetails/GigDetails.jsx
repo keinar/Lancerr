@@ -92,7 +92,7 @@ export function GigDetails() {
           </div>
         </div>
         <AboutSeller user={user} gig={gig} />
-        <h3>Reviews</h3>
+        
         <GigReviews reviews={gig.reviews} />
       </div>
       <div className={`big-side ${isSticky ? "sticky" : ""}`}>
