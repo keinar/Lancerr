@@ -11,7 +11,7 @@ export default function AboutSeller({ gig, user }) {
           <div className="seller-info-text">
             <p>{gig.owner.fullname} </p>
             <span>
-              <Star fill="black" size={16} />
+              <Star color="black" fill="black" size={16} />
               {gig.owner.rate}
             </span>
           </div>

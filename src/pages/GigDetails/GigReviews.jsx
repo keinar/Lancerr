@@ -13,6 +13,7 @@ export default function GigReviews({ reviews }) {
 
   return (
     <div className="reviews">
+      <h3 className="reviews-header">Reviews</h3>
       <ul>
         {reviews &&
           reviews.map((review, index) => (

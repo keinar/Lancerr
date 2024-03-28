@@ -48,8 +48,8 @@ svg.lucide.lucide-chevron-down.collapsed {
         margin-bottom: 25px;
 
         .profile-picture {
-          width: 60px;
-          height: 60px;
+          width: 64px;
+          height: 64px;
           margin-left: 0px;
           border-radius: 50%;
           border-style: hidden;
@@ -65,9 +65,15 @@ svg.lucide.lucide-chevron-down.collapsed {
           margin-left: initial;
           margin-right: initial;
           font-weight: 700;
+          line-height: 1em;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
 
           span{
             display: flex;
+            align-items: center;
          }
           p {
             &:hover {
@@ -103,6 +109,7 @@ svg.lucide.lucide-chevron-down.collapsed {
 
         p {
           color: #696b71;
+          font-size: 16px;
         }
 
         li {
@@ -111,6 +118,8 @@ svg.lucide.lucide-chevron-down.collapsed {
 
         h2 {
           padding: 0;
+          font-size: 20px;
+          font-weight: 700;
         }
       }
 
@@ -143,6 +152,11 @@ svg.lucide.lucide-chevron-down.collapsed {
       .seller-info-text {
         grid-area: t;
         margin-left: 19px;
+        line-height: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: 600;
        
         p {
           margin-top: 7px;
@@ -337,6 +351,7 @@ svg.lucide.lucide-chevron-down.collapsed {
         align-items: center;
         h3 {
           font-size: 20px;
+          margin: 0;
         }
       }
 
@@ -349,10 +364,12 @@ svg.lucide.lucide-chevron-down.collapsed {
         flex-direction: row;
         margin-bottom: 1em;
         margin-top: 1em;
+        align-items: center;
         h5 {
           font-weight: 700;
           color: #696b71;
           font-size: 14px;
+          margin: 0;
         }
         svg {
           margin-right: 5px;
@@ -369,12 +386,14 @@ svg.lucide.lucide-chevron-down.collapsed {
         margin: auto;
         display: block;
         cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
       }
     }
   }
 
   .contact-seller {
-    padding: 10px;
+    padding: 25px;
     // background-color: #fafafa;
     height: 60px;
     margin-top: 20px;
@@ -390,6 +409,8 @@ svg.lucide.lucide-chevron-down.collapsed {
       margin: auto;
       cursor: pointer;
       display: block;
+      font-size: 16px;
+      font-weight: 600;
     }
   }
 }
@@ -486,10 +507,11 @@ svg.lucide.lucide-chevron-down.collapsed {
       .carousel-container {
         background-color: #f5f5f5;
         width: 96%;
+        position: relative;
 
         .selected-image-container {
           position: relative;
-          height: 44.5vh;
+          height: 470px;
 
           .selected-image-wrapper {
             height: 100%;
@@ -527,6 +549,10 @@ svg.lucide.lucide-chevron-down.collapsed {
 
       .about-this-gig {
         margin-top: 20px;
+        h2{
+          font-size: 20px;
+          font-weight: 700;
+        }
 
         .gig-description {
           grid-area: description;
@@ -565,7 +591,9 @@ svg.lucide.lucide-chevron-down.collapsed {
 
       .reviews {
         margin-top: 20px;
-
+        .reviews-header{
+          padding-top: 40px;
+        }
         ul {
           padding: 0px;
 

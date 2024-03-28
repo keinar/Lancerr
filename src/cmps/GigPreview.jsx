@@ -1,12 +1,23 @@
 import { Link } from "react-router-dom"
 
 export function GigPreview({ gig }) {
+
+  function getGigImg() {
+    if (Array.isArray(gig.imgUrl)) {
+      // It's an array
+      return gig.imgUrl[0];
+    } else if (typeof gig.imgUrl === 'string') {
+      // It's a string
+      return gig.imgUrl;
+    }
+  }
+
   return (
     <>
       <div className="img-container">
         <Link to={`/details/${gig._id}`}>
           <div className="gig-img">
-            <img src={gig.imgUrl} alt="gig-img" />
+            <img src={getGigImg()} alt="gig-img" />
           </div>
         </Link>
       </div>

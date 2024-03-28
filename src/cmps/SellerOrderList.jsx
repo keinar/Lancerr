@@ -19,7 +19,7 @@
 
 
         const handleOrderFulfilled = (order) => {
-            const updatedOrder = { ...order, status: 'fullfilled' };
+            const updatedOrder = { ...order, status: 'approved' };
             saveOrder(updatedOrder);
         }
 
@@ -56,7 +56,7 @@
                             <td>${order.gig.price}</td>
                             <td className="status">
                                 <span className={`label ${order.status === 'pending' ? 'pending-label' : 'fulfilled-label'}`}>
-                                    {order.status === 'pending' ? 'Pending' : 'Fulfilled'}
+                                    {order.status === 'pending' ? 'Pending' : 'approved'}
                                 </span>
                                 {order.status === "pending" && (
                                     <button className="fulfill-button" onClick={() => handleOrderFulfilled(order)}>
